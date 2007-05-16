@@ -13,7 +13,7 @@
 	<changelog>
 		*0.1.0* Initial release
 	</changelog>
-	<location>release/2.2/asteriskinfo-0.1.0.tgz</location>
+	<location>release/2.3/asteriskinfo-0.1.0.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-AsteriskInfo</info>
-	<md5sum>aa572fa3c7dd5e7ec67a23bb8d1df29d</md5sum>
+	<md5sum>2503d57ba6de5aa21295e748d6b7137b</md5sum>
 </module>
