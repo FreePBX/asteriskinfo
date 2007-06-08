@@ -93,7 +93,7 @@ if (trim($astver) == '99') {
 <div class="rnav"><ul>
 <?php 
 foreach ($modes as $mode => $value) {
-echo "<li><a id=\"".($extdisplay==$mode)."\" href=\"config.php?&type=".urlencode("tool")."&display=".urlencode($dispnum)."&extdisplay=".urlencode($mode)."\">"._($value)."</a></li>";
+	echo "<li><a id=\"".($extdisplay==$mode)."\" href=\"config.php?&type=".urlencode("tool")."&display=".urlencode($dispnum)."&extdisplay=".urlencode($mode)."\">"._($value)."</a></li>";
 }
 ?>
 </ul></div>
@@ -108,57 +108,73 @@ echo "<li><a id=\"".($extdisplay==$mode)."\" href=\"config.php?&type=".urlencode
 
 <table class="box">
 <?php
-if ($extdisplay != "summary") {
-	$arr="arr_".$extdisplay;
-	foreach ($$arr as $key => $value) {
-	?>
-		<tr class="boxheader">
-			<td colspan="2"><h5><?php echo _("$key")?><hr></h5></td>
-		</tr>
+if (!$astman) {
+?>
+	<tr class="boxheader">
+		<td colspan="2" align="center"><h5><?php echo _("ASTERISK MANAGER ERROR")?><hr></h5></td>
+	</tr>
 		<tr class="boxbody">
 			<td>
 			<table border="0" >
 				<tr>
-					<td>
-						<pre>
+					<td align="left">
 							<?php 
-							$response = $astman->send_request('Command',array('Command'=>$value));
-							$new_value = $response['data'];
-							/*
-							$new_value = explode("\n",$new_value);
-							array_shift($new_value);
-							$new_value = implode("\n",$new_value);
-							*/
-							echo ltrim($new_value,'Privilege: Command');
+							echo "<br>The module was unable to connect to the asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>";
 							?>
-						</pre>
-					</td>
-				</tr>
-			</table>
-			</td>
-		</tr>
-	<?php
-		}
-	} else {
-?>
-		<tr class="boxheader">
-			<td colspan="2"><h5><?php echo _("Summary")?><hr></h5></td>
-		</tr>
-		<tr class="boxbody">
-			<td>
-			<table border="0">
-				<tr>
-					<td>
-						<?php echo buildAsteriskInfo(); ?>
 					</td>
 				</tr>
 			</table>
 			</td>
 		</tr>
 <?php
-	}
+} else {
+	if ($extdisplay != "summary") {
+		$arr="arr_".$extdisplay;
+		foreach ($$arr as $key => $value) {
 ?>
-</table>
+			<tr class="boxheader">
+				<td colspan="2" align="center"><h5><?php echo _("$key")?><hr></h5></td>
+			</tr>
+			<tr class="boxbody">
+				<td>
+				<table border="0" >
+					<tr>
+						<td>
+							<pre>
+								<?php 
+								$response = $astman->send_request('Command',array('Command'=>$value));
+								$new_value = $response['data'];
+								echo ltrim($new_value,'Privilege: Command');
+								?>
+							</pre>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		<?php
+			}
+		} else {
+	?>
+			<tr class="boxheader">
+				<td colspan="2" align="center"><h5><?php echo _("Summary")?><hr></h5></td>
+			</tr>
+			<tr class="boxbody">
+				<td>
+				<table border="0">
+					<tr>
+						<td>
+							<?php echo buildAsteriskInfo(); ?>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+<?php
+	}
+}
+?>
+	</table>
 <tr>
 	<td colspan="2"><h6><input name="Submit" type="submit" value="<?php echo _("Refresh")?>"></h6></td>
 </tr>

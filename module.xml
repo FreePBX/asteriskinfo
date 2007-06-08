@@ -1,7 +1,7 @@
 <module>
 	<rawname>asteriskinfo</rawname>
 	<name>Asterisk Info</name>
-	<version>0.1.0</version>
+	<version>0.2.0</version>
 	<type>tool</type>
 	<category>System Administration</category>
 	<description>
@@ -10,8 +10,12 @@
 	<menuitems>
 		<asteriskinfo>Asterisk Info</asteriskinfo>
 	</menuitems>
+	<depends>
+		<engine>asterisk</engine>
+	</depends>
 	<changelog>
 		*0.1.0* Initial release
+		*0.2.0* Add depends asterisk xml tag, proper error checking for manager connection, center table titles
 	</changelog>
 	<location>release/2.3/asteriskinfo-0.1.0.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-AsteriskInfo</info>
