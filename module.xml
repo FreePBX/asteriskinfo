@@ -18,7 +18,7 @@
 		*0.2.0* Add depends asterisk xml tag, proper error checking for manager connection, center table titles
 		*0.1.0* Initial release
 	</changelog>
-	<location>release/2.3/asteriskinfo-0.2.0.tgz</location>
+	<location>release/2.3/asteriskinfo-0.3.0.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-AsteriskInfo</info>
-	<md5sum>e55deca6ace5793d69c5a728484ea3d7</md5sum>
+	<md5sum>7fcb305c985cfd4f1486b50fde9542f7</md5sum>
 </module>
