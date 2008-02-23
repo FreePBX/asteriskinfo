@@ -76,26 +76,7 @@ $arr_voicemail = array(
 $engineinfo = engine_getinfo();
 $astver =  $engineinfo['version'];
 
-if (trim($astver) == '99') {
-	if ($astman) {
-		//get version
-		$response = $astman->send_request('Command', array('Command'=>'show version'));
-		$astver = $response['data'];
-		if (preg_match('/Asterisk (\S+)/', $astver, $matches)) {
-			$astver=$matches[1];
-		}
-	} 
-}
-
-if(preg_match('/([0-9]+)\.([0-9]+)\.([0-9]+)/', $astver, $matches)){
-	$astver_major=$matches[1];
-	$astver_minor=$matches[2];
-}else{
-	$astver_major = 1;
-	$astver_minor = 2;
-}
-
-if ($astver_major == 1 && $astver_minor >= 4) {
+if (version_compare($astver, '1.4', 'ge')) {
 	$arr_all["Uptime"]="core show uptime";
 	$arr_all["Active Channel(s)"]="core show channels";
 	$arr_all["Subscribe/Notify"]="core show hints";
@@ -289,6 +270,8 @@ function getPeer($peer, $channelType = NULL){
 
 function buildAsteriskInfo(){
 	global $astman;
+	global $astver;
+	
 	$arr = array(
 		"Uptime" => "show uptime",
 		"Active SIP Channel(s)" => "sip show channels",
@@ -298,6 +281,10 @@ function buildAsteriskInfo(){
 		"Sip Peers" => "sip show peers",	
 		"IAX2 Peers" => "iax2 show peers",
 	);
+	
+	if (version_compare($astver, '1.4', 'ge')) {
+		$arr['Uptime'] = 'core show uptime';
+	}
 	
 	$htmlOutput  = '<div style="color:#000000;font-size:12px;margin:10px;">';
 	$htmlOutput  .= '<table border="1" cellpadding="10">';
