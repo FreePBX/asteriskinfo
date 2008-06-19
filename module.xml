@@ -1,7 +1,7 @@
 <module>
 	<rawname>asteriskinfo</rawname>
 	<name>Asterisk Info</name>
-	<version>2.4.0</version>
+	<version>2.4.0.1</version>
 	<type>tool</type>
 	<category>System Administration</category>
 	<description>
@@ -14,12 +14,13 @@
 		<engine>asterisk</engine>
 	</depends>
 	<changelog>
+		*2.4.0.1* #2704 Asterisk 1.6 tweaks
 		*2.4.0* bumped to 2.4
 		*0.3.0.1* bump for rc1
 		*0.3.0* #2187 Fix for Asterisk 1.4
 		*0.2.0* Add depends asterisk xml tag, proper error checking for manager connection, center table titles
 		*0.1.0* Initial release
 	</changelog>
-	<location>release/2.4/asteriskinfo-2.4.0.tgz</location>
-	<md5sum>487711c5efecab7695171ddef429228c</md5sum>
+	<location>release/2.4/asteriskinfo-2.4.0.1.tgz</location>
+	<md5sum>34fd3518bc2a04fd908773733398a1b8</md5sum>
 </module>
