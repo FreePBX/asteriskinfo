@@ -175,7 +175,7 @@ if (!$astman) {
 ?>
 	</table>
 <tr>
-	<td colspan="2"><h6><input name="Submit" type="submit" value="<?php echo _("Refresh")?>"></h6></td>
+	<td colspan="2"><h6><input name="Submit" type="submit" value="<?php echo _("Refresh")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>
 </tr>
 </table>
 
