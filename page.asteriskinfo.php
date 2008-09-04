@@ -16,74 +16,97 @@ $dispnum = 'asteriskinfo'; //used for switch on config.php
 $action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
 $extdisplay = isset($_REQUEST['extdisplay'])?$_REQUEST['extdisplay']:'summary';
 
+	$modesummary = _("Summary");
+	$moderegistries = _("Registries");
+	$modechannels = _("Channels");
+	$modepeers = _("Peers");
+	$modesip = _("Sip Info");
+	$modeiax = _("IAX Info");
+	$modeconferences = _("Conferences");
+	$modesubscriptions = _("Subscriptions");
+	$modeall = _("Full Report");
+	
+	$uptime = _("Uptime");
+	$activechannels = _("Active Channel(s)");
+	$sipchannels = _("Sip Channel(s)");
+	$iax2channels = _("IAX2 Channel(s)");
+	$iax2peers = _("IAX2 Peers");
+	$sipregistry = _("Sip Registry");
+	$sippeers = _("Sip Peers");
+	$iax2registry = _("IAX2 Registry");
+	$subscribenotify = _("Subscribe/Notify");
+	$zapteldriverinfo = _("Zaptel driver info");
+	$conferenceinfo = _("Conference Info");
+	$voicemailusers = _("Voicemail Users");
+
 $modes = array(
-	"summary" => "Summary",
-	"registries" => "Registries",
-	"channels" => "Channels",
-	"peers" => "Peers",
-	"sip" => "Sip Info",
-	"iax" => "IAX Info",
-	"conferences" => "Conferences",
-	"subscriptions" => "Subscriptions",
-	"voicemail" => "Voicemail Users",
-	"all" => "Full Report"
+	"summary" => $modesummary,
+	"registries" => $moderegistries,
+	"channels" => $modechannels,
+	"peers" => $modepeers,
+	"sip" => $modesip,
+	"iax" => $modeiax,
+	"conferences" => $modeconferences,
+	"subscriptions" => $modesubscriptions,
+	"voicemail" => $voicemailusers,
+	"all" => $modeall
 );
 $arr_all = array(
-	"Uptime" => "show uptime",
-	"Active Channel(s)" => "show channels",
-	"Sip Channel(s)" => "sip show channels",
-	"IAX2 Channel(s)" => "iax2 show channels",
-	"Sip Registry" => "sip show registry",
-	"Sip Peers" => "sip show peers",
-	"IAX2 Registry" => "iax2 show registry",
-	"IAX2 Peers" => "iax2 show peers",
-	"Subscribe/Notify" => "show hints",
-	"Zaptel driver info" => "zap show channels",
-	"Conference Info" => "meetme",
-	"Voicemail users" => "show voicemail users",
+	$uptime => "show uptime",
+	$activechannels => "show channels",
+	$sipchannels => "sip show channels",
+	$iax2channels => "iax2 show channels",
+	$sipregistry => "sip show registry",
+	$sippeers => "sip show peers",
+	$iax2registry => "iax2 show registry",
+	$iax2peers => "iax2 show peers",
+	$subscribenotify => "show hints",
+	$zapteldriverinfo => "zap show channels",
+	$conferenceinfo => "meetme",
+	$voicemailusers => "show voicemail users",
 );
 $arr_registries = array(
-	"Sip Registry" => "sip show registry",
-	"IAX2 Registry" => "iax2 show registry",
+	$sipregistry => "sip show registry",
+	$iax2registry => "iax2 show registry",
 );
 $arr_channels = array(
-	"Active Channel(s)" => "show channels",
-	"Sip Channel(s)" => "sip show channels",
-	"IAX2 Channel(s)" => "iax2 show channels",
+	$activechannels => "show channels",
+	$sipchannels => "sip show channels",
+	$iax2channels => "iax2 show channels",
 );
 $arr_peers = array(
-	"Sip Peers" => "sip show peers",
-	"IAX2 Peers" => "iax2 show peers",
+	$sippeers => "sip show peers",
+	$iax2peers => "iax2 show peers",
 );
 $arr_sip = array(
-	"Sip Registry" => "sip show registry",
-	"Sip Peers" => "sip show peers",
+	$sipregistry => "sip show registry",
+	$sippeers => "sip show peers",
 );
 $arr_iax = array(
-	"IAX2 Registry" => "iax2 show registry",
-	"IAX2 Peers" => "iax2 show peers",
+	$iax2registry => "iax2 show registry",
+	$iax2peers => "iax2 show peers",
 );
 $arr_conferences = array(
-	"Conference Info" => "meetme",
+	$conferenceinfo => "meetme",
 );
 $arr_subscriptions = array(
-	"Subscribe/Notify" => "show hints"
+	$subscribenotify => "show hints"
 );
 $arr_voicemail = array(
-	"Voicemail users" => "show voicemail users",
+	$voicemailusers => "show voicemail users",
 );
 
 $engineinfo = engine_getinfo();
 $astver =  $engineinfo['version'];
 
 if (version_compare($astver, '1.4', 'ge')) {
-	$arr_all["Uptime"]="core show uptime";
-	$arr_all["Active Channel(s)"]="core show channels";
-	$arr_all["Subscribe/Notify"]="core show hints";
-	$arr_all["Voicemail users"]="voicemail show users";
-	$arr_channels["Active Channel(s)"]="core show channels";
-	$arr_subscriptions["Subscribe/Notify"]="core show hints";
-	$arr_voicemail["Voicemail users"]="voicemail show users";
+	$arr_all[$uptime]="core show uptime";
+	$arr_all[$activechannels]="core show channels";
+	$arr_all[$subscribenotify]="core show hints";
+	$arr_all[$voicemailusers]="voicemail show users";
+	$arr_channels[$activechannels]="core show channels";
+	$arr_subscriptions[$subscribenotify]="core show hints";
+	$arr_voicemail[$voicemailusers]="voicemail show users";
 }
 
 ?>
@@ -118,7 +141,7 @@ if (!$astman) {
 				<tr>
 					<td align="left">
 							<?php 
-							echo "<br>The module was unable to connect to the asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>";
+							echo "<br>"._("The module was unable to connect to the Asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>");
 							?>
 					</td>
 				</tr>
@@ -272,19 +295,27 @@ function getPeer($peer, $channelType = NULL){
 function buildAsteriskInfo(){
 	global $astman;
 	global $astver;
+	$uptime = _("Uptime: ");
+	$activesipchannels = _("Active SIP Channel(s): ");
+	$activeiax2channels = _("Active IAX2 Channel(s): ");
+	$sipregistry = _("Sip Registry: ");
+	$iax2registry = _("IAX2 Registry: ");
+	$sippeers = _("Sip Peers: ");
+	$iax2peers = _("IAX2 Peers: ");
+
 	
 	$arr = array(
-		"Uptime" => "show uptime",
-		"Active SIP Channel(s)" => "sip show channels",
-		"Active IAX2 Channel(s)" => "iax2 show channels",
-		"Sip Registry" => "sip show registry",
-		"IAX2 Registry" => "iax2 show registry",
-		"Sip Peers" => "sip show peers",	
-		"IAX2 Peers" => "iax2 show peers",
+		$uptime => "show uptime",
+		$activesipchannels => "sip show channels",
+		$activeiax2channels => "iax2 show channels",
+		$sipregistry => "sip show registry",
+		$iax2registry => "iax2 show registry",
+		$sippeers => "sip show peers",
+		$iax2peers => "iax2 show peers",	
 	);
 	
 	if (version_compare($astver, '1.4', 'ge')) {
-		$arr['Uptime'] = 'core show uptime';
+		$arr[$uptime] = 'core show uptime';
 	}
 	
 	$htmlOutput  = '<div style="color:#000000;font-size:12px;margin:10px;">';
@@ -296,37 +327,37 @@ function buildAsteriskInfo(){
 		$astout = explode("\n",$response['data']);
 
 		switch ($key) {
-			case 'Uptime':
+			case $uptime:
 				$uptime = $astout;
 				$htmlOutput .= '<tr><td colspan="2">'.$uptime[1]."<br />".$uptime[2]."<br /></td>";
 				$htmlOutput .= '</tr>';
 			break;
-			case 'Active SIP Channel(s)':
+			case $activesipchannels:
 				$activeSipChannel = $astout;
 				$activeSipChannel_count = getActiveChannel($activeSipChannel, $channelType = 'SIP');
 				$htmlOutput .= '<tr>';
-				$htmlOutput .= "<td>Active Sip Channels: ".$activeSipChannel_count."</td>";
+				$htmlOutput .= "<td>".$key.$activeSipChannel_count."</td>";
 			break;
-			case 'Active IAX2 Channel(s)':
+			case $activeiax2channels:
 				$activeIAX2Channel = $astout;
 				$activeIAX2Channel_count = getActiveChannel($activeIAX2Channel, $channelType = 'IAX2');
-				$htmlOutput .= "<td>Active IAX2 Channels: ".$activeIAX2Channel_count."</td>";
+				$htmlOutput .= "<td>".$key.$activeIAX2Channel_count."</td>";
 				$htmlOutput .= '</tr>';
 			break;
 			break;
-			case 'Sip Registry':
+			case $sipregistry:
 				$sipRegistration = $astout;
 				$sipRegistration_count = getRegistration($sipRegistration, $channelType = 'SIP');
 				$htmlOutput .= '<tr>';
-				$htmlOutput .= "<td>SIP Registrations: ".$sipRegistration_count."</td>";
+				$htmlOutput .= "<td>".$key.$sipRegistration_count."</td>";
 			break;
-			case 'IAX2 Registry':
+			case $iax2registry:
 				$iax2Registration = $astout;
 				$iax2Registration_count = getRegistration($iax2Registration, $channelType = 'IAX2');
-				$htmlOutput .= "<td>IAX2 Registrations: ".$iax2Registration_count."</td>";
+				$htmlOutput .= "<td>".$key.$iax2Registration_count."</td>";
 				$htmlOutput .= '</tr>';
 			break;
-			case 'Sip Peers':
+			case $sippeers:
 				$sipPeer = $astout;
 				$sipPeer_arr = getPeer($sipPeer, $channelType = 'SIP');
 				if($sipPeer_arr['offline'] != 0){
@@ -335,9 +366,9 @@ function buildAsteriskInfo(){
 					$sipPeerColor = '#000000';
 				}
 				$htmlOutput .= '<tr>';
-				$htmlOutput .= "<td>SIP Peers<br />&nbsp;&nbsp;&nbsp;&nbsp;Online: ".$sipPeer_arr['online']."<br />&nbsp;&nbsp;&nbsp;&nbsp;Offline: <span style=\"color:".$sipPeerColor.";font-weight:bold;\">".$sipPeer_arr['offline']."</span></td>";
+				$htmlOutput .= "<td>".$key."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Online: ").$sipPeer_arr['online']."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Offline: ")."<span style=\"color:".$sipPeerColor.";font-weight:bold;\">".$sipPeer_arr['offline']."</span></td>";
 			break;
-			case 'IAX2 Peers':
+			case $iax2peers:
 				$iax2Peer = $astout;
 				$iax2Peer_arr = getPeer($iax2Peer, $channelType = 'IAX2');
 				if($iax2Peer_arr['offline'] != 0){
@@ -345,7 +376,7 @@ function buildAsteriskInfo(){
 				}else{
 					$iax2PeerColor = '#000000';
 				}
-				$htmlOutput .= "<td>IAX2 Peers<br />&nbsp;&nbsp;&nbsp;&nbsp;Online: ".$iax2Peer_arr['online']."<br />&nbsp;&nbsp;&nbsp;&nbsp;Offline: <span style=\"color:".$iax2PeerColor.";font-weight:bold;\">".$iax2Peer_arr['offline']."</span><br />&nbsp;&nbsp;&nbsp;&nbsp;Unmonitored: ".$iax2Peer_arr['unmonitored']."</td>";
+				$htmlOutput .= "<td>".$key."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Online: ").$iax2Peer_arr['online']."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Offline: ")."<span style=\"color:".$iax2PeerColor.";font-weight:bold;\">".$iax2Peer_arr['offline']."</span><br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Unmonitored: ").$iax2Peer_arr['unmonitored']."</td>";
 				$htmlOutput .= '</tr>';
 			break;
 			default:

@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX asteriskinfo\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-04 21:50+0200\n"
+"PO-Revision-Date: 2008-09-04 22:18+0100\n"
+"Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: swedish\n"
+"X-Poedit-Country: SWEDEN\n"
+
+#: page.asteriskinfo.php:19
+#: page.asteriskinfo.php:182
+msgid "Summary"
+msgstr "Sammanfattning"
+
+#: page.asteriskinfo.php:20
+msgid "Registries"
+msgstr "Registreringar"
+
+#: page.asteriskinfo.php:21
+msgid "Channels"
+msgstr "Kanaler"
+
+#: page.asteriskinfo.php:22
+msgid "Peers"
+msgstr "Peers"
+
+#: page.asteriskinfo.php:23
+msgid "Sip Info"
+msgstr "SIP-info"
+
+#: page.asteriskinfo.php:24
+msgid "IAX Info"
+msgstr "IAX-info"
+
+#: page.asteriskinfo.php:25
+msgid "Conferences"
+msgstr "Konferenser"
+
+#: page.asteriskinfo.php:26
+msgid "Subscriptions"
+msgstr "Prenumerationer"
+
+#: page.asteriskinfo.php:27
+msgid "Full Report"
+msgstr "Full rapport"
+
+#: page.asteriskinfo.php:29
+msgid "Uptime"
+msgstr "Upptid"
+
+#: page.asteriskinfo.php:30
+msgid "Active Channel(s)"
+msgstr "Aktiv(a) kanal(er)"
+
+#: page.asteriskinfo.php:31
+msgid "Sip Channel(s)"
+msgstr "SIP-kanal(er)"
+
+#: page.asteriskinfo.php:32
+msgid "IAX2 Channel(s)"
+msgstr "IAX2-kanal(er)"
+
+#: page.asteriskinfo.php:33
+msgid "IAX2 Peers"
+msgstr "IAX2 peers"
+
+#: page.asteriskinfo.php:34
+msgid "Sip Registry"
+msgstr "SIP-registrering(ar)"
+
+#: page.asteriskinfo.php:35
+msgid "Sip Peers"
+msgstr "SIP peers"
+
+#: page.asteriskinfo.php:36
+msgid "IAX2 Registry"
+msgstr "IAX2-registrering(ar)"
+
+#: page.asteriskinfo.php:37
+msgid "Subscribe/Notify"
+msgstr "Prenumerationer/Noteringar"
+
+#: page.asteriskinfo.php:38
+msgid "Zaptel driver info"
+msgstr "Zaptel drivrutinsinformation"
+
+#: page.asteriskinfo.php:39
+msgid "Conference Info"
+msgstr "Konferensinformation"
+
+#: page.asteriskinfo.php:40
+msgid "Voicemail Users"
+msgstr "Röstbrevlådor"
+
+#: page.asteriskinfo.php:124
+msgid "Asterisk (Ver. "
+msgstr "Asterisk (Ver."
+
+#: page.asteriskinfo.php:136
+msgid "ASTERISK MANAGER ERROR"
+msgstr "FEL PÅ ASTERISK HANTERARE"
+
+#: page.asteriskinfo.php:144
+msgid "The module was unable to connect to the asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>"
+msgstr "Modulen kunde inte koppla upp sig mot Asterisk hanterare.<br>Kontrollera att Asterisk körs och att dina inställningar i manager.conf är riktiga.<br><br>"
+
+#: page.asteriskinfo.php:201
+msgid "Refresh"
+msgstr "Uppdatera"
+
+#: page.asteriskinfo.php:298
+msgid "Uptime: "
+msgstr "Upptid: "
+
+#: page.asteriskinfo.php:299
+msgid "Active SIP Channel(s): "
+msgstr "Aktiv(a) SIP-kanal(er): "
+
+#: page.asteriskinfo.php:300
+msgid "Active IAX2 Channel(s): "
+msgstr "Aktiv(a) IAX2-kanal(er): "
+
+#: page.asteriskinfo.php:301
+msgid "Sip Registry: "
+msgstr "SIP-registreringar: "
+
+#: page.asteriskinfo.php:302
+msgid "IAX2 Registry: "
+msgstr "IAX2-registreringar: "
+
+#: page.asteriskinfo.php:303
+msgid "Sip Peers: "
+msgstr "SIP-peers: "
+
+#: page.asteriskinfo.php:304
+msgid "IAX2 Peers: "
+msgstr "IAX2-peers: "
+
+#: page.asteriskinfo.php:369
+#: page.asteriskinfo.php:379
+msgid "Online: "
+msgstr "On-line: "
+
+#: page.asteriskinfo.php:369
+#: page.asteriskinfo.php:379
+msgid "Offline: "
+msgstr "Off-line: "
+
+#: page.asteriskinfo.php:379
+msgid "Unmonitored: "
+msgstr "Oövervakad: "
+
