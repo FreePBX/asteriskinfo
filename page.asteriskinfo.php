@@ -236,6 +236,7 @@ function getRegistration($registration, $channelType = 'SIP'){
 
 function getPeer($peer, $channelType = NULL){
 	global $astver_major, $astver_minor;
+	global $astver;
 	if(count($peer) > 1){	
 		if($channelType == NULL || $channelType == 'SIP'){
 			$sipPeer = $peer;
@@ -244,7 +245,7 @@ function getPeer($peer, $channelType = NULL){
 			$sipPeerInfo_string = $sipPeer[$sipPeer_count -2];
 			$sipPeerInfo_arr2 = explode('[',$sipPeerInfo_string);
 			$sipPeerInfo_arr3 = explode(' ',$sipPeerInfo_arr2[1]);
-			if($astver_major == 1 && $astver_minor >= 4){
+			if (version_compare($astver, '1.4', 'ge')) { 
 				$sipPeerInfo_arr['online'] = $sipPeerInfo_arr3[1] + $sipPeerInfo_arr3[6];
 				$sipPeerInfo_arr['offline'] = $sipPeerInfo_arr3[3] + $sipPeerInfo_arr3[8];
 			}else{
