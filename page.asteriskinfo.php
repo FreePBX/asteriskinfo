@@ -1,4 +1,4 @@
-<?php /* $Id: page.parking.php 2243 2006-08-12 17:13:17Z p_lindheimer $ */
+<?php /* $Id: page.asteriskinfo.php 2243 2006-08-12 17:13:17Z p_lindheimer $ */
 //Copyright (C) 2006 Astrogen LLC 
 //
 //This program is free software; you can redistribute it and/or
@@ -15,6 +15,7 @@ $dispnum = 'asteriskinfo'; //used for switch on config.php
 
 $action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
 $extdisplay = isset($_REQUEST['extdisplay'])?$_REQUEST['extdisplay']:'summary';
+$chan_dahdi = ast_with_dahdi();
 
 	$modesummary = _("Summary");
 	$moderegistries = _("Registries");
@@ -36,6 +37,9 @@ $extdisplay = isset($_REQUEST['extdisplay'])?$_REQUEST['extdisplay']:'summary';
 	$iax2registry = _("IAX2 Registry");
 	$subscribenotify = _("Subscribe/Notify");
 	$zapteldriverinfo = _("Zaptel driver info");
+	if ($chan_dahdi){
+		$zapteldriverinfo = _("DAHDI driver info");
+	}
 	$conferenceinfo = _("Conference Info");
 	$voicemailusers = _("Voicemail Users");
 
@@ -109,6 +113,9 @@ if (version_compare($astver, '1.4', 'ge')) {
 	$arr_voicemail[$voicemailusers]="voicemail show users";
 }
 
+if ($chan_dahdi){
+	$arr_all[$zapteldriverinfo]="dahdi show channels";
+}
 ?>
 </div>
 
