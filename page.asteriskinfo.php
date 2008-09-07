@@ -36,9 +36,10 @@ $chan_dahdi = ast_with_dahdi();
 	$sippeers = _("Sip Peers");
 	$iax2registry = _("IAX2 Registry");
 	$subscribenotify = _("Subscribe/Notify");
-	$zapteldriverinfo = _("Zaptel driver info");
 	if ($chan_dahdi){
 		$zapteldriverinfo = _("DAHDI driver info");
+	} else {
+		$zapteldriverinfo = _("Zaptel driver info");
 	}
 	$conferenceinfo = _("Conference Info");
 	$voicemailusers = _("Voicemail Users");
@@ -113,6 +114,9 @@ if (version_compare($astver, '1.4', 'ge')) {
 	$arr_voicemail[$voicemailusers]="voicemail show users";
 }
 
+if ($chan_dahdi){
+	$arr_all[$zapteldriverinfo]="dahdi show channels";
+}
 if ($chan_dahdi){
 	$arr_all[$zapteldriverinfo]="dahdi show channels";
 }
