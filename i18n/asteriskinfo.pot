@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-17 11:08+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: page.asteriskinfo.php:20 page.asteriskinfo.php:193
+msgid "Summary"
+msgstr ""
+
+#: page.asteriskinfo.php:21
+msgid "Registries"
+msgstr ""
+
+#: page.asteriskinfo.php:22
+msgid "Channels"
+msgstr ""
+
+#: page.asteriskinfo.php:23
+msgid "Peers"
+msgstr ""
+
+#: page.asteriskinfo.php:24
+msgid "Sip Info"
+msgstr ""
+
+#: page.asteriskinfo.php:25
+msgid "IAX Info"
+msgstr ""
+
+#: page.asteriskinfo.php:26
+msgid "Conferences"
+msgstr ""
+
+#: page.asteriskinfo.php:27
+msgid "Subscriptions"
+msgstr ""
+
+#: page.asteriskinfo.php:28
+msgid "Full Report"
+msgstr ""
+
+#: page.asteriskinfo.php:30
+msgid "Uptime"
+msgstr ""
+
+#: page.asteriskinfo.php:31
+msgid "Active Channel(s)"
+msgstr ""
+
+#: page.asteriskinfo.php:32
+msgid "Sip Channel(s)"
+msgstr ""
+
+#: page.asteriskinfo.php:33
+msgid "IAX2 Channel(s)"
+msgstr ""
+
+#: page.asteriskinfo.php:34
+msgid "IAX2 Peers"
+msgstr ""
+
+#: page.asteriskinfo.php:35
+msgid "Sip Registry"
+msgstr ""
+
+#: page.asteriskinfo.php:36
+msgid "Sip Peers"
+msgstr ""
+
+#: page.asteriskinfo.php:37
+msgid "IAX2 Registry"
+msgstr ""
+
+#: page.asteriskinfo.php:38
+msgid "Subscribe/Notify"
+msgstr ""
+
+#: page.asteriskinfo.php:40
+msgid "DAHDI driver info"
+msgstr ""
+
+#: page.asteriskinfo.php:42
+msgid "Zaptel driver info"
+msgstr ""
+
+#: page.asteriskinfo.php:44
+msgid "Conference Info"
+msgstr ""
+
+#: page.asteriskinfo.php:45
+msgid "Voicemail Users"
+msgstr ""
+
+#: page.asteriskinfo.php:135
+msgid "Asterisk (Ver. "
+msgstr ""
+
+#: page.asteriskinfo.php:147
+msgid "ASTERISK MANAGER ERROR"
+msgstr ""
+
+#: page.asteriskinfo.php:155
+msgid ""
+"The module was unable to connect to the Asterisk manager.<br>Make sure "
+"Asterisk is running and your manager.conf settings are proper.<br><br>"
+msgstr ""
+
+#: page.asteriskinfo.php:212
+msgid "Refresh"
+msgstr ""
+
+#: page.asteriskinfo.php:309
+msgid "Uptime: "
+msgstr ""
+
+#: page.asteriskinfo.php:310
+msgid "Active SIP Channel(s): "
+msgstr ""
+
+#: page.asteriskinfo.php:311
+msgid "Active IAX2 Channel(s): "
+msgstr ""
+
+#: page.asteriskinfo.php:312
+msgid "Sip Registry: "
+msgstr ""
+
+#: page.asteriskinfo.php:313
+msgid "IAX2 Registry: "
+msgstr ""
+
+#: page.asteriskinfo.php:314
+msgid "Sip Peers: "
+msgstr ""
+
+#: page.asteriskinfo.php:315
+msgid "IAX2 Peers: "
+msgstr ""
+
+#: page.asteriskinfo.php:380 page.asteriskinfo.php:390
+msgid "Online: "
+msgstr ""
+
+#: page.asteriskinfo.php:380 page.asteriskinfo.php:390
+msgid "Offline: "
+msgstr ""
+
+#: page.asteriskinfo.php:390
+msgid "Unmonitored: "
+msgstr ""
