@@ -1,0 +1,162 @@
+# Russian freePBX ver. translation
+# Copyright (c) 2006-2008 PostMet Corporation
+# This file is distributed under the same license as the freePBX package.
+# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
+#
+# Использовать iconv yourfile.new -f UTF-8 -t ISO-8859-5 -o yourfile.po
+# fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-28 01:45+0100\n"
+"PO-Revision-Date: 2008-09-28 16:38+0100\n"
+"Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
+"Language-Team: Russian <faq@postmet.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-5\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: page.asteriskinfo.php:19
+#: page.asteriskinfo.php:182
+msgid "Summary"
+msgstr "Краткая сводка"
+
+#: page.asteriskinfo.php:20
+msgid "Registries"
+msgstr "Регистрации"
+
+#: page.asteriskinfo.php:21
+msgid "Channels"
+msgstr "Каналов"
+
+#: page.asteriskinfo.php:22
+msgid "Peers"
+msgstr "Пиров"
+
+#: page.asteriskinfo.php:23
+msgid "Sip Info"
+msgstr "Информация SIP"
+
+#: page.asteriskinfo.php:24
+msgid "IAX Info"
+msgstr "Информация IAX"
+
+#: page.asteriskinfo.php:25
+msgid "Conferences"
+msgstr "Конференции"
+
+#: page.asteriskinfo.php:26
+msgid "Subscriptions"
+msgstr "Подписки"
+
+#: page.asteriskinfo.php:27
+msgid "Full Report"
+msgstr "Полный отчёт"
+
+#: page.asteriskinfo.php:29
+msgid "Uptime"
+msgstr "Uptime"
+
+#: page.asteriskinfo.php:30
+msgid "Active Channel(s)"
+msgstr "Активных каналов"
+
+#: page.asteriskinfo.php:31
+msgid "Sip Channel(s)"
+msgstr "SIP каналы"
+
+#: page.asteriskinfo.php:32
+msgid "IAX2 Channel(s)"
+msgstr "IAX2 каналы"
+
+#: page.asteriskinfo.php:33
+msgid "IAX2 Peers"
+msgstr "IAX2 пиры"
+
+#: page.asteriskinfo.php:34
+msgid "Sip Registry"
+msgstr "SIP регистрации"
+
+#: page.asteriskinfo.php:35
+msgid "Sip Peers"
+msgstr "SIP пиры"
+
+#: page.asteriskinfo.php:36
+msgid "IAX2 Registry"
+msgstr "IAX2 регистрации"
+
+#: page.asteriskinfo.php:37
+msgid "Subscribe/Notify"
+msgstr "Подписки/Уведомления"
+
+#: page.asteriskinfo.php:38
+msgid "Zaptel driver info"
+msgstr "Информация о драйвере Zaptel"
+
+#: page.asteriskinfo.php:39
+msgid "Conference Info"
+msgstr "Информация по конференциям"
+
+#: page.asteriskinfo.php:40
+msgid "Voicemail Users"
+msgstr "Пользователи голосовой почты"
+
+#: page.asteriskinfo.php:124
+msgid "Asterisk (Ver. "
+msgstr "Астериск (Версия "
+
+#: page.asteriskinfo.php:136
+msgid "ASTERISK MANAGER ERROR"
+msgstr "ОШИБКА МОДУЛЯ МЕНЕДЖЕР"
+
+#: page.asteriskinfo.php:144
+msgid "The module was unable to connect to the asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>"
+msgstr "Модуль не может соединиться с управлением Астериск<br>Убедитесь что Астериск работает, и настройки manager.conf корректны.<br><br>"
+
+#: page.asteriskinfo.php:201
+msgid "Refresh"
+msgstr "Обновить"
+
+#: page.asteriskinfo.php:298
+msgid "Uptime: "
+msgstr "Жив: "
+
+#: page.asteriskinfo.php:299
+msgid "Active SIP Channel(s): "
+msgstr "Активных SIP каналов: "
+
+#: page.asteriskinfo.php:300
+msgid "Active IAX2 Channel(s): "
+msgstr "Активных IAX2 каналов: "
+
+#: page.asteriskinfo.php:301
+msgid "Sip Registry: "
+msgstr "SIP регистраций: "
+
+#: page.asteriskinfo.php:302
+msgid "IAX2 Registry: "
+msgstr "IAX2 регистраций: "
+
+#: page.asteriskinfo.php:303
+msgid "Sip Peers: "
+msgstr "SIP пиров: "
+
+#: page.asteriskinfo.php:304
+msgid "IAX2 Peers: "
+msgstr "IAX2 пиров: "
+
+#: page.asteriskinfo.php:369
+#: page.asteriskinfo.php:379
+msgid "Online: "
+msgstr "Онлайн: "
+
+#: page.asteriskinfo.php:369
+#: page.asteriskinfo.php:379
+msgid "Offline: "
+msgstr "Офлайн: "
+
+#: page.asteriskinfo.php:379
+msgid "Unmonitored: "
+msgstr "Не мониторится: "
+
