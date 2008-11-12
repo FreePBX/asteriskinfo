@@ -1,0 +1,161 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-17 11:08+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+
+#: page.asteriskinfo.php:20
+#: page.asteriskinfo.php:193
+msgid "Summary"
+msgstr "Sommario"
+
+#: page.asteriskinfo.php:21
+msgid "Registries"
+msgstr "Registrazioni"
+
+#: page.asteriskinfo.php:22
+msgid "Channels"
+msgstr "Canali"
+
+#: page.asteriskinfo.php:23
+msgid "Peers"
+msgstr "Peers"
+
+#: page.asteriskinfo.php:24
+msgid "Sip Info"
+msgstr "Info Sip"
+
+#: page.asteriskinfo.php:25
+msgid "IAX Info"
+msgstr "Info IAX"
+
+#: page.asteriskinfo.php:26
+msgid "Conferences"
+msgstr "Conferenze"
+
+#: page.asteriskinfo.php:27
+msgid "Subscriptions"
+msgstr "Subscriptions"
+
+#: page.asteriskinfo.php:28
+msgid "Full Report"
+msgstr "Rapporto Completo"
+
+#: page.asteriskinfo.php:30
+msgid "Uptime"
+msgstr "Tempo di Esercizio"
+
+#: page.asteriskinfo.php:31
+msgid "Active Channel(s)"
+msgstr "Canali Attivi"
+
+#: page.asteriskinfo.php:32
+msgid "Sip Channel(s)"
+msgstr "Canali Sip"
+
+#: page.asteriskinfo.php:33
+msgid "IAX2 Channel(s)"
+msgstr "Canali IAX2"
+
+#: page.asteriskinfo.php:34
+msgid "IAX2 Peers"
+msgstr "Peers IAX2"
+
+#: page.asteriskinfo.php:35
+msgid "Sip Registry"
+msgstr "Registrazioni Sip"
+
+#: page.asteriskinfo.php:36
+msgid "Sip Peers"
+msgstr "Peers Sip"
+
+#: page.asteriskinfo.php:37
+msgid "IAX2 Registry"
+msgstr "Registrazioni IAX2"
+
+#: page.asteriskinfo.php:38
+msgid "Subscribe/Notify"
+msgstr "Subscribe/Notify"
+
+#: page.asteriskinfo.php:40
+msgid "DAHDI driver info"
+msgstr "Info driver DAHDI"
+
+#: page.asteriskinfo.php:42
+msgid "Zaptel driver info"
+msgstr "Info driver Zaptel"
+
+#: page.asteriskinfo.php:44
+msgid "Conference Info"
+msgstr "Info Conferenza"
+
+#: page.asteriskinfo.php:45
+msgid "Voicemail Users"
+msgstr "Utenti Caselle Vocali"
+
+#: page.asteriskinfo.php:135
+msgid "Asterisk (Ver. "
+msgstr "Asterisk (Ver. "
+
+#: page.asteriskinfo.php:147
+msgid "ASTERISK MANAGER ERROR"
+msgstr "ERRORE MANAGER ASTERISK"
+
+#: page.asteriskinfo.php:155
+msgid "The module was unable to connect to the Asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>"
+msgstr "Questo modulo non è stato in grado di connettersi al manager di Asterisk.<br>Assicurarsi che Asterisk sia in esecuzione e che le impostazioni del file manager.conf siano corrette.<br><br>"
+
+#: page.asteriskinfo.php:212
+msgid "Refresh"
+msgstr "Aggiorna"
+
+#: page.asteriskinfo.php:309
+msgid "Uptime: "
+msgstr "Tempo di esercizio: "
+
+#: page.asteriskinfo.php:310
+msgid "Active SIP Channel(s): "
+msgstr "Canali SIP Attivi: "
+
+#: page.asteriskinfo.php:311
+msgid "Active IAX2 Channel(s): "
+msgstr "Canali IAX2 Attivi: "
+
+#: page.asteriskinfo.php:312
+msgid "Sip Registry: "
+msgstr "Registrazioni Sip: "
+
+#: page.asteriskinfo.php:313
+msgid "IAX2 Registry: "
+msgstr "Registrazioni IAX2: "
+
+#: page.asteriskinfo.php:314
+msgid "Sip Peers: "
+msgstr "Peers Sip: "
+
+#: page.asteriskinfo.php:315
+msgid "IAX2 Peers: "
+msgstr "Peers IAX2: "
+
+#: page.asteriskinfo.php:380
+#: page.asteriskinfo.php:390
+msgid "Online: "
+msgstr "In linea: "
+
+#: page.asteriskinfo.php:380
+#: page.asteriskinfo.php:390
+msgid "Offline: "
+msgstr "Non in linea: "
+
+#: page.asteriskinfo.php:390
+msgid "Unmonitored: "
+msgstr "Non monitorati: "
+
