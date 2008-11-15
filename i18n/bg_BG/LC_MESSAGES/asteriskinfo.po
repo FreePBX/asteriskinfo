@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-17 11:08+0200\n"
-"PO-Revision-Date: 2008-11-03 15:11+0200\n"
+"PO-Revision-Date: 2008-11-08 23:26+0200\n"
 "Last-Translator: \n"
 "Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
 "MIME-Version: 1.0\n"
@@ -164,4 +164,8 @@ msgstr "Офлайн"
 #: page.asteriskinfo.php:390
 msgid "Unmonitored: "
 msgstr "Не наблюдавани:"
+
+#: module.xml
+msgid "Asterisk Info"
+msgstr "Астериск Информация"
 
