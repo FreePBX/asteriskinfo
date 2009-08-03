@@ -27,6 +27,6 @@
 		*0.2.0* Add depends asterisk xml tag, proper error checking for manager connection, center table titles
 		*0.1.0* Initial release
 	</changelog>
-	<location>release/2.5/asteriskinfo-2.5.0.1.tgz</location>
-	<md5sum>d710430785b8b2bc8b5dc12af2e2b5a4</md5sum>
+	<location>release/2.6/asteriskinfo-2.6.0.0.tgz</location>
+	<md5sum>c2a40bcb6ba51c87ea3c91afb0ac5828</md5sum>
 </module>
