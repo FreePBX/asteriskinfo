@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 13:44+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,163 +28,121 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: asteriskinfo/asteriskinfo.i18n.php:5 asteriskinfo/asteriskinfo.i18n.php:11
 msgid "Asterisk Info"
 msgstr ""
 
-#: asteriskinfo/asteriskinfo.i18n.php:7
 msgid "System Administration"
 msgstr ""
 
-#: asteriskinfo/asteriskinfo.i18n.php:9
-msgid "Provides a snapshot of the current asterisk configuration"
+msgid "Provides a snapshot of the current Asterisk configuration"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:27
-#: asteriskinfo/page.asteriskinfo.php:200
 msgid "Summary"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:28
 msgid "Registries"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:29
 msgid "Channels"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:30
 msgid "Peers"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:31
 msgid "Sip Info"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:32
 msgid "IAX Info"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:33
 msgid "Conferences"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:34
 msgid "Subscriptions"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:35
 msgid "Full Report"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:37
 msgid "Uptime"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:38
 msgid "Active Channel(s)"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:39
 msgid "Sip Channel(s)"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:40
 msgid "IAX2 Channel(s)"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:41
 msgid "IAX2 Peers"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:42
 msgid "Sip Registry"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:43
 msgid "Sip Peers"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:44
 msgid "IAX2 Registry"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:45
 msgid "Subscribe/Notify"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:47
 msgid "DAHDI driver info"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:49
 msgid "Zaptel driver info"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:51
 msgid "Conference Info"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:52
 msgid "Voicemail Users"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:142
 msgid "Asterisk (Ver. "
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:154
 msgid "ASTERISK MANAGER ERROR"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:162
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:219
 msgid "Refresh"
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:316
 msgid "Uptime: "
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:317
 msgid "Active SIP Channel(s): "
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:318
 msgid "Active IAX2 Channel(s): "
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:319
 msgid "Sip Registry: "
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:320
 msgid "IAX2 Registry: "
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:321
 msgid "Sip Peers: "
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:322
 msgid "IAX2 Peers: "
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:387
-#: asteriskinfo/page.asteriskinfo.php:397
 msgid "Online: "
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:387
-#: asteriskinfo/page.asteriskinfo.php:397
 msgid "Offline: "
 msgstr ""
 
-#: asteriskinfo/page.asteriskinfo.php:397
 msgid "Unmonitored: "
 msgstr ""
