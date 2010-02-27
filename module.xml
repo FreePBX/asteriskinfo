@@ -7,7 +7,7 @@
 	<type>tool</type>
 	<category>System Administration</category>
 	<description>
-		Provides a snapshot of the current asterisk configuration	
+		Provides a snapshot of the current Asterisk configuration
 	</description>
 	<menuitems>
 		<asteriskinfo>Asterisk Info</asteriskinfo>
