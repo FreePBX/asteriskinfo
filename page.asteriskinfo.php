@@ -287,8 +287,11 @@ function getPeer($peer, $channelType = NULL){
 			$sipPeerInfo_arr2 = explode('[',$sipPeerInfo_string);
 			$sipPeerInfo_arr3 = explode(' ',$sipPeerInfo_arr2[1]);
 			if (version_compare($astver, '1.4', 'ge')) { 
-				$sipPeerInfo_arr['online'] = $sipPeerInfo_arr3[1] + $sipPeerInfo_arr3[6];
-				$sipPeerInfo_arr['offline'] = $sipPeerInfo_arr3[3] + $sipPeerInfo_arr3[8];
+				$sipPeerInfo_arr['online'] = $sipPeerInfo_arr3[1] ;
+				$sipPeerInfo_arr['offline'] = $sipPeerInfo_arr3[3];
+
+				$sipPeerInfo_arr['online-unmonitored'] = $sipPeerInfo_arr3[6];
+				$sipPeerInfo_arr['offline-unmonitored'] = $sipPeerInfo_arr3[8];
 			}else{
 				$sipPeerInfo_arr['online'] = $sipPeerInfo_arr3[0];
 				$sipPeerInfo_arr['offline'] = $sipPeerInfo_arr3[3];
@@ -384,7 +387,12 @@ function buildAsteriskInfo(){
 					$sipPeerColor = '#000000';
 				}
 				$htmlOutput .= '<tr>';
-				$htmlOutput .= "<td>".$key."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Online: ").$sipPeer_arr['online']."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Offline: ")."<span style=\"color:".$sipPeerColor.";font-weight:bold;\">".$sipPeer_arr['offline']."</span></td>";
+			  if (version_compare($astver, '1.4', 'ge')) { 
+				  $htmlOutput .= "<td>".$key."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Online: ").$sipPeer_arr['online']."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Online-Unmonitored: ").$sipPeer_arr['online-unmonitored'];
+          $htmlOutput .= "<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Offline: ")."<span style=\"color:".$sipPeerColor.";font-weight:bold;\">".$sipPeer_arr['offline']."</span><br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Offline-Unmonitored: ")."<span style=\"color:".$sipPeerColor.";font-weight:bold;\">".$sipPeer_arr['offline-unmonitored']."</span></td>";
+        } else {
+				  $htmlOutput .= "<td>".$key."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Online: ").$sipPeer_arr['online']."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Offline: ")."<span style=\"color:".$sipPeerColor.";font-weight:bold;\">".$sipPeer_arr['offline']."</span></td>";
+        }
 			break;
 			case $iax2peers:
 				$iax2Peer = $astout;
