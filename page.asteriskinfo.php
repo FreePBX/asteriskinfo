@@ -122,6 +122,10 @@ if (version_compare($astver, '1.4', 'ge')) {
 	$arr_conferences[$conferenceinfo]="meetme list";
 }
 
+if (version_compare($astver, '1.6', 'ge')) {
+	$arr_conferences[$conferenceinfo]="meetme list";
+}
+
 if ($chan_dahdi){
 	$arr_all[$zapteldriverinfo]="dahdi show channels";
 }
