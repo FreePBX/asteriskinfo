@@ -119,7 +119,6 @@ if (version_compare($astver, '1.4', 'ge')) {
 	$arr_channels[$activechannels]="core show channels";
 	$arr_subscriptions[$subscribenotify]="core show hints";
 	$arr_voicemail[$voicemailusers]="voicemail show users";
-	$arr_conferences[$conferenceinfo]="meetme list";
 }
 
 if (version_compare($astver, '1.6', 'ge')) {
