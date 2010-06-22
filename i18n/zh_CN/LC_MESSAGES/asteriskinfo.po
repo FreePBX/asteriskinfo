@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
 "PO-Revision-Date: 2009-01-31 17:05+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -133,8 +133,14 @@ msgstr "IAX2客户："
 msgid "Online: "
 msgstr "在线："
 
+msgid "Online-Unmonitored: "
+msgstr ""
+
 msgid "Offline: "
 msgstr "离线："
+
+msgid "Offline-Unmonitored: "
+msgstr ""
 
 msgid "Unmonitored: "
 msgstr "未监视的："

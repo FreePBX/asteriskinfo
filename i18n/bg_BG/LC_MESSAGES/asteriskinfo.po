@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
 "PO-Revision-Date: 2008-11-08 23:26+0200\n"
 "Last-Translator: \n"
 "Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
@@ -133,8 +133,14 @@ msgstr "IAX2 Peer-и: "
 msgid "Online: "
 msgstr "Онлайн"
 
+msgid "Online-Unmonitored: "
+msgstr ""
+
 msgid "Offline: "
 msgstr "Офлайн"
+
+msgid "Offline-Unmonitored: "
+msgstr ""
 
 msgid "Unmonitored: "
 msgstr "Не наблюдавани:"

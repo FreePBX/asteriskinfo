@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"POT-Creation-Date: 2010-06-22 19:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -141,7 +141,13 @@ msgstr ""
 msgid "Online: "
 msgstr ""
 
+msgid "Online-Unmonitored: "
+msgstr ""
+
 msgid "Offline: "
+msgstr ""
+
+msgid "Offline-Unmonitored: "
 msgstr ""
 
 msgid "Unmonitored: "
