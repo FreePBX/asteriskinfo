@@ -50,6 +50,8 @@ $chan_dahdi = ast_with_dahdi();
 	}
 	$conferenceinfo = _("Conference Info");
 	$voicemailusers = _("Voicemail Users");
+        $gtalkchannels = _("Google Talk Channels");
+        $jabberconnections = _("Jabber Connections");
 
 $modes = array(
 	"summary" => $modesummary,
@@ -68,10 +70,12 @@ $arr_all = array(
 	$activechannels => "show channels",
 	$sipchannels => "sip show channels",
 	$iax2channels => "iax2 show channels",
+        $gtalkchannels => "",
 	$sipregistry => "sip show registry",
 	$sippeers => "sip show peers",
 	$iax2registry => "iax2 show registry",
 	$iax2peers => "iax2 show peers",
+        $jabberconnections => "",
 	$subscribenotify => "show hints",
 	$zapteldriverinfo => "zap show channels",
 	$conferenceinfo => "meetme",
@@ -80,11 +84,13 @@ $arr_all = array(
 $arr_registries = array(
 	$sipregistry => "sip show registry",
 	$iax2registry => "iax2 show registry",
+        $jabberconnections => "",
 );
 $arr_channels = array(
 	$activechannels => "show channels",
 	$sipchannels => "sip show channels",
 	$iax2channels => "iax2 show channels",
+        $gtalkchannels => "",
 );
 $arr_peers = array(
 	$sippeers => "sip show peers",
@@ -112,6 +118,16 @@ $engineinfo = engine_getinfo();
 $astver =  $engineinfo['version'];
 
 if (version_compare($astver, '1.4', 'ge')) {
+  /* Check for Jabber and GTalk modules only if version > 1.4
+     because they weren't introduced til then. */
+
+  $jabber_mod_check = $astman->send_request('Command', array('Command' => 
+    'module show like jabber'));
+  $gtalk_mod_check = $astman->send_request('Command', array('Command' =>
+    'module show like gtalk'));
+  $jabber_module = preg_match('/[1-9] modules loaded/', $jabber_mod_check['data']);
+  $gtalk_module = preg_match('/[1-9] modules loaded/', $gtalk_mod_check['data']);
+
 	$arr_all[$uptime]="core show uptime";
 	$arr_all[$activechannels]="core show channels";
 	$arr_all[$subscribenotify]="core show hints";
@@ -119,10 +135,22 @@ if (version_compare($astver, '1.4', 'ge')) {
 	$arr_channels[$activechannels]="core show channels";
 	$arr_subscriptions[$subscribenotify]="core show hints";
 	$arr_voicemail[$voicemailusers]="voicemail show users";
+  if ($gtalk_module) {
+          $arr_all[$gtalkchannels]="gtalk show channels";
+          $arr_channels[$gtalkchannels]="gtalk show channels";
+  }
+  if ($jabber_module) {
+          $arr_all[$jabberconnections]="jabber show connected";
+          $arr_registries[$jabberconnections]="jabber show connected";
+  }
 }
 
 if (version_compare($astver, '1.6', 'ge')) {
 	$arr_conferences[$conferenceinfo]="meetme list";
+  if ($jabber_module) {
+          $arr_all[$jabberconnections] = "jabber show connections";
+          $arr_registries[$jabberconnections] = "jabber show connections";
+  }
 }
 
 if ($chan_dahdi){
@@ -175,6 +203,7 @@ if (!$astman) {
 	if ($extdisplay != "summary") {
 		$arr="arr_".$extdisplay;
 		foreach ($$arr as $key => $value) {
+                  if ($value) {
 ?>
 			<tr class="boxheader">
 				<td colspan="2" align="center"><h5><?php echo _("$key")?><hr></h5></td>
@@ -197,6 +226,7 @@ if (!$astman) {
 				</td>
 			</tr>
 		<?php
+                          }
 			}
 		} else {
 	?>
