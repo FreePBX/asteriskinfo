@@ -147,6 +147,9 @@ if (version_compare($astver, '1.4', 'ge')) {
 
 if (version_compare($astver, '1.6', 'ge')) {
 	$arr_conferences[$conferenceinfo]="meetme list";
+}
+
+if (version_compare($astver, '1.8', 'ge')) { 
   if ($jabber_module) {
           $arr_all[$jabberconnections] = "jabber show connections";
           $arr_registries[$jabberconnections] = "jabber show connections";
