@@ -2,7 +2,7 @@
 	<rawname>asteriskinfo</rawname>
 	<repo>standard</repo>
 	<name>Asterisk Info</name>
-	<version>2.9.0.0</version>
+	<version>2.9.0.1</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<type>tool</type>
@@ -18,6 +18,7 @@
 		<version>2.5.0rc3</version>
 	</depends>
 	<changelog>
+		*2.9.0.1* #4755
 		*2.9.0.0* 2.9 Update
 		*2.8.0.2* localization updates
 		*2.8.0.1* #4209
@@ -33,6 +34,6 @@
 		*0.2.0* Add depends asterisk xml tag, proper error checking for manager connection, center table titles
 		*0.1.0* Initial release
 	</changelog>
-	<location>release/2.9/asteriskinfo-2.9.0.0.tgz</location>
-	<md5sum>217adc857026e831c4a0abcff49bbdaa</md5sum>
+	<location>release/2.9/asteriskinfo-2.9.0.1.tgz</location>
+	<md5sum>9051a8f7e21675c771e1e3eacdb9ce6b</md5sum>
 </module>
