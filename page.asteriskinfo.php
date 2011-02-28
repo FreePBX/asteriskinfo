@@ -31,6 +31,7 @@ $chan_dahdi = ast_with_dahdi();
 	$modesip = _("Sip Info");
 	$modeiax = _("IAX Info");
 	$modeconferences = _("Conferences");
+	$modequeues = _("Queues");
 	$modesubscriptions = _("Subscriptions");
 	$modeall = _("Full Report");
 	
@@ -49,8 +50,9 @@ $chan_dahdi = ast_with_dahdi();
 		$zapteldriverinfo = _("Zaptel driver info");
 	}
 	$conferenceinfo = _("Conference Info");
+	$queuesinfo = _("Queues Info");
 	$voicemailusers = _("Voicemail Users");
-        $gtalkchannels = _("Google Talk Channels");
+	$gtalkchannels = _("Google Talk Channels");
         $jabberconnections = _("Jabber Connections");
 
 $modes = array(
@@ -63,6 +65,7 @@ $modes = array(
 	"conferences" => $modeconferences,
 	"subscriptions" => $modesubscriptions,
 	"voicemail" => $voicemailusers,
+	"queues" => $modequeues,
 	"all" => $modeall
 );
 $arr_all = array(
@@ -80,6 +83,7 @@ $arr_all = array(
 	$zapteldriverinfo => "zap show channels",
 	$conferenceinfo => "meetme",
 	$voicemailusers => "show voicemail users",
+	$queuesinfo => "show queues",
 );
 $arr_registries = array(
 	$sipregistry => "sip show registry",
@@ -112,6 +116,9 @@ $arr_subscriptions = array(
 );
 $arr_voicemail = array(
 	$voicemailusers => "show voicemail users",
+);
+$arr_queues = array(
+        $queuesinfo => "show queues",
 );
 
 $engineinfo = engine_getinfo();
@@ -154,6 +161,7 @@ if (version_compare($astver, '1.8', 'ge')) {
           $arr_all[$jabberconnections] = "jabber show connections";
           $arr_registries[$jabberconnections] = "jabber show connections";
   }
+  $arr_queues[$queuesinfo] = "queues show";
 }
 
 if ($chan_dahdi){
