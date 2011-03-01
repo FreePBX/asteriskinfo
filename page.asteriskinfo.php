@@ -83,7 +83,7 @@ $arr_all = array(
 	$zapteldriverinfo => "zap show channels",
 	$conferenceinfo => "meetme",
 	$voicemailusers => "show voicemail users",
-	$queuesinfo => "show queues",
+	$queuesinfo => "queue show",
 );
 $arr_registries = array(
 	$sipregistry => "sip show registry",
@@ -118,7 +118,7 @@ $arr_voicemail = array(
 	$voicemailusers => "show voicemail users",
 );
 $arr_queues = array(
-        $queuesinfo => "show queues",
+        $queuesinfo => "queue show",
 );
 
 $engineinfo = engine_getinfo();
@@ -161,7 +161,6 @@ if (version_compare($astver, '1.8', 'ge')) {
           $arr_all[$jabberconnections] = "jabber show connections";
           $arr_registries[$jabberconnections] = "jabber show connections";
   }
-  $arr_queues[$queuesinfo] = "queues show";
 }
 
 if ($chan_dahdi){
