@@ -96,8 +96,8 @@ msgstr "IAX2-registrering(ar)"
 msgid "Subscribe/Notify"
 msgstr "Prenumerationer/Noteringar"
 
-msgid "DAHDI driver info"
-msgstr "Dirvrutinsinforation för DAHDI"
+msgid "DAHDi driver info"
+msgstr "Dirvrutinsinforation för DAHDi"
 
 msgid "Zaptel driver info"
 msgstr "Zaptel drivrutinsinformation"

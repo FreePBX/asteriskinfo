@@ -76,7 +76,7 @@ msgstr ""
 msgid "Subscribe/Notify"
 msgstr ""
 
-msgid "DAHDI driver info"
+msgid "DAHDi driver info"
 msgstr ""
 
 msgid "Zaptel driver info"

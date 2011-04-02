@@ -81,8 +81,8 @@ msgstr "IAX2注册项目"
 msgid "Subscribe/Notify"
 msgstr "订阅/通知"
 
-msgid "DAHDI driver info"
-msgstr "DAHDI驱动信息"
+msgid "DAHDi driver info"
+msgstr "DAHDi驱动信息"
 
 msgid "Zaptel driver info"
 msgstr "Zaptel驱动信息"

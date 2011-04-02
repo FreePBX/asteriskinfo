@@ -80,7 +80,7 @@ msgstr "IAX2 регистрации"
 msgid "Subscribe/Notify"
 msgstr "Подписки/Уведомления"
 
-msgid "DAHDI driver info"
+msgid "DAHDi driver info"
 msgstr ""
 
 msgid "Zaptel driver info"

@@ -45,7 +45,7 @@ $chan_dahdi = ast_with_dahdi();
 	$iax2registry = _("IAX2 Registry");
 	$subscribenotify = _("Subscribe/Notify");
 	if ($chan_dahdi){
-		$zapteldriverinfo = _("DAHDI driver info");
+		$zapteldriverinfo = _("DAHDi driver info");
 	} else {
 		$zapteldriverinfo = _("Zaptel driver info");
 	}

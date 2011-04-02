@@ -77,8 +77,8 @@ msgstr "Registro IAX2"
 msgid "Subscribe/Notify"
 msgstr "Suscribir/Notificar"
 
-msgid "DAHDI driver info"
-msgstr "Información del controlador DAHDI"
+msgid "DAHDi driver info"
+msgstr "Información del controlador DAHDi"
 
 msgid "Zaptel driver info"
 msgstr "Información del controlador Zaptel"
