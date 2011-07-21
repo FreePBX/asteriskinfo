@@ -49,7 +49,8 @@ $chan_dahdi = ast_with_dahdi();
 	} else {
 		$zapteldriverinfo = _("Zaptel driver info");
 	}
-	$conferenceinfo = _("Conference Info");
+        $conf_meetme = _("MeetMe Conference Info");
+        $conf_confbridge = _("Conference Bridge Info");
 	$queuesinfo = _("Queues Info");
 	$voicemailusers = _("Voicemail Users");
 	$gtalkchannels = _("Google Talk Channels");
@@ -81,7 +82,8 @@ $arr_all = array(
         $jabberconnections => "",
 	$subscribenotify => "show hints",
 	$zapteldriverinfo => "zap show channels",
-	$conferenceinfo => "meetme",
+        $conf_meetme => "",
+        $conf_confbridge => "",
 	$voicemailusers => "show voicemail users",
 	$queuesinfo => "queue show",
 );
@@ -109,7 +111,8 @@ $arr_iax = array(
 	$iax2peers => "iax2 show peers",
 );
 $arr_conferences = array(
-	$conferenceinfo => "meetme",
+        $conf_meetme => "",
+        $conf_confbridge => "",
 );
 $arr_subscriptions = array(
 	$subscribenotify => "show hints"
@@ -123,6 +126,23 @@ $arr_queues = array(
 
 $engineinfo = engine_getinfo();
 $astver =  $engineinfo['version'];
+
+if (version_compare($astver, '1.8', 'ge')) {
+    $meetme_check = $astman->send_request('Command', array('Command' =>
+    'module show like meetme'));
+    $confbridge_check = $astman->send_request('Command', array('Command' =>
+    'module show like confbridge'));
+    $meetme_module = preg_match('/[1-9] modules loaded/', $meetme_check['data']);
+    $confbridge_module = preg_match('/[1-9] modules loaded/', $confbridge_check['data']);
+    if ($meetme_module) {
+        $arr_conferences[$conf_meetme]="meetme list";
+        $arr_all[$conf_meetme]="meetme list";
+    }
+    if ($confbridge_module) {
+        $arr_conferences[$conf_confbridge]="confbridge list";
+        $arr_all[$conf_confbridge]="confbridge list";
+    }
+}
 
 if (version_compare($astver, '1.4', 'ge')) {
   /* Check for Jabber and GTalk modules only if version > 1.4
@@ -152,10 +172,6 @@ if (version_compare($astver, '1.4', 'ge')) {
   }
 }
 
-if (version_compare($astver, '1.6', 'ge')) {
-	$arr_conferences[$conferenceinfo]="meetme list";
-}
-
 if (version_compare($astver, '1.8', 'ge')) { 
   if ($jabber_module) {
           $arr_all[$jabberconnections] = "jabber show connections";
@@ -163,9 +179,6 @@ if (version_compare($astver, '1.8', 'ge')) {
   }
 }
 
-if ($chan_dahdi){
-	$arr_all[$zapteldriverinfo]="dahdi show channels";
-}
 if ($chan_dahdi){
 	$arr_all[$zapteldriverinfo]="dahdi show channels";
 }
