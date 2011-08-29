@@ -183,8 +183,6 @@ if ($chan_dahdi){
 	$arr_all[$zapteldriverinfo]="dahdi show channels";
 }
 ?>
-</div>
-
 <div class="rnav"><ul>
 <?php 
 foreach ($modes as $mode => $value) {
@@ -193,7 +191,6 @@ foreach ($modes as $mode => $value) {
 ?>
 </ul></div>
 
-<div class="content">
 <h2><span class="headerHostInfo"><?php echo _("Asterisk (Ver. ").$astver."): "._($modes[$extdisplay])?></span></h2>
 
 <form name="asteriskinfo" action="<?php  $_SERVER['PHP_SELF'] ?>" method="post">
