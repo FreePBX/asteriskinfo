@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-22 19:14+0200\n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -15,7 +15,7 @@ msgstr ""
 msgid "Asterisk Info"
 msgstr ""
 
-msgid "System Administration"
+msgid "Reports"
 msgstr ""
 
 msgid "Provides a snapshot of the current Asterisk configuration"
@@ -41,6 +41,9 @@ msgstr "Info IAX"
 
 msgid "Conferences"
 msgstr "Conferenze"
+
+msgid "Queues"
+msgstr ""
 
 msgid "Subscriptions"
 msgstr "Subscriptions"
@@ -81,11 +84,23 @@ msgstr "Info driver DAHDi"
 msgid "Zaptel driver info"
 msgstr "Info driver Zaptel"
 
-msgid "Conference Info"
-msgstr "Info Conferenza"
+msgid "MeetMe Conference Info"
+msgstr ""
+
+msgid "Conference Bridge Info"
+msgstr ""
+
+msgid "Queues Info"
+msgstr ""
 
 msgid "Voicemail Users"
 msgstr "Utenti Caselle Vocali"
+
+msgid "Google Talk Channels"
+msgstr ""
+
+msgid "Jabber Connections"
+msgstr ""
 
 msgid "Asterisk (Ver. "
 msgstr "Asterisk (Ver. "
@@ -139,3 +154,6 @@ msgstr ""
 
 msgid "Unmonitored: "
 msgstr "Non monitorati: "
+
+#~ msgid "Conference Info"
+#~ msgstr "Info Conferenza"
