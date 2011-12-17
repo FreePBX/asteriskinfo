@@ -1,4 +1,5 @@
 <?php /* $Id: page.asteriskinfo.php 2243 2006-08-12 17:13:17Z p_lindheimer $ */
+if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //This file is part of FreePBX.
 //
 //    FreePBX is free software: you can redistribute it and/or modify
