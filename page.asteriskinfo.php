@@ -22,7 +22,7 @@ $dispnum = 'asteriskinfo'; //used for switch on config.php
 $tabindex = 0;
 
 $action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
-$extdisplay = isset($_REQUEST['extdisplay'])?$_REQUEST['extdisplay']:'summary';
+$extdisplay = !empty($_REQUEST['extdisplay'])?$_REQUEST['extdisplay']:'summary';
 $chan_dahdi = ast_with_dahdi();
 
 	$modesummary = _("Summary");
