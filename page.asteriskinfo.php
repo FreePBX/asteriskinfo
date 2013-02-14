@@ -56,6 +56,7 @@ $chan_dahdi = ast_with_dahdi();
 	$voicemailusers = _("Voicemail Users");
 	$gtalkchannels = _("Google Talk Channels");
         $jabberconnections = _("Jabber Connections");
+	$xmppconnections = _("Motif Connections");
 
 $modes = array(
 	"summary" => $modesummary,
@@ -81,6 +82,7 @@ $arr_all = array(
 	$iax2registry => "iax2 show registry",
 	$iax2peers => "iax2 show peers",
         $jabberconnections => "",
+	$xmppconnections => "",
 	$subscribenotify => "show hints",
 	$zapteldriverinfo => "zap show channels",
         $conf_meetme => "",
@@ -92,6 +94,7 @@ $arr_registries = array(
 	$sipregistry => "sip show registry",
 	$iax2registry => "iax2 show registry",
         $jabberconnections => "",
+	$xmppconnections => "",
 );
 $arr_channels = array(
 	$activechannels => "show channels",
@@ -153,9 +156,11 @@ if (version_compare($astver, '1.4', 'ge')) {
     'module show like jabber'));
   $gtalk_mod_check = $astman->send_request('Command', array('Command' =>
     'module show like gtalk'));
+  $xmpp_mod_check = $astman->send_request('Command', array('Command' =>
+    'module show like xmpp'));
   $jabber_module = preg_match('/[1-9] modules loaded/', $jabber_mod_check['data']);
   $gtalk_module = preg_match('/[1-9] modules loaded/', $gtalk_mod_check['data']);
-
+  $xmpp_module = preg_match('/[1-9] modules loaded/', $xmpp_mod_check['data']);
 	$arr_all[$uptime]="core show uptime";
 	$arr_all[$activechannels]="core show channels";
 	$arr_all[$subscribenotify]="core show hints";
@@ -177,6 +182,13 @@ if (version_compare($astver, '1.8', 'ge')) {
   if ($jabber_module) {
           $arr_all[$jabberconnections] = "jabber show connections";
           $arr_registries[$jabberconnections] = "jabber show connections";
+  }
+}
+
+if (version_compare($astver, '11', 'ge')) {
+  if ($xmpp_module) {
+          $arr_all[$xmppconnections] = "xmpp show connections";
+          $arr_registries[$xmppconnections] = "xmpp show connections";
   }
 }
 
