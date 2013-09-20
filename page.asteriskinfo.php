@@ -417,7 +417,7 @@ function buildAsteriskInfo(){
 		switch ($key) {
 			case $uptime:
 				$uptime = $astout;
-				$htmlOutput .= '<tr><td colspan="2">'.$uptime[1]."<br />".$uptime[2]."<br /></td>";
+				$htmlOutput .= '<tr><td colspan="2">Asterisk '.$uptime[1]."<br />".$uptime[2]."<br /></td>";
 				$htmlOutput .= '</tr>';
 			break;
 			case $activesipchannels:
