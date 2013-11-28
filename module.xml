@@ -38,4 +38,4 @@
 	</changelog>
 	<location>release/2.10/asteriskinfo-2.10.0.0.tgz</location>
 	<md5sum>68febdb79d422d036936a483d9e20194</md5sum>
-</module>
+<supported><version>2.10</version></supported></module>
