@@ -41,4 +41,4 @@
 	</changelog>
 	<location>release/2.11/asteriskinfo-2.11.0.2.tgz</location>
 	<md5sum>7793bdb58d59c1c8f5e4926bac66ac63</md5sum>
-</module>
+<supported><version>2.11</version></supported></module>
