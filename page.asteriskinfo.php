@@ -1,9 +1,6 @@
 <?php /* $Id: page.asteriskinfo.php 2243 2006-08-12 17:13:17Z p_lindheimer $ */
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
-//	License for all code of this FreePBX module can be found in the license file inside the module directory
-//	Copyright 2006 Astrogen LLC
-//	Copyright 2013 Schmooze Com Inc.
-//
+
 $dispnum = 'asteriskinfo'; //used for switch on config.php
 
 $tabindex = 0;
