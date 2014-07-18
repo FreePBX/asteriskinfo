@@ -15,7 +15,7 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //    You should have received a copy of the GNU General Public License
 //    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 //
-//    Copyright (C) 2006 Astrogen LLC 
+//    Copyright (C) 2006 Astrogen LLC
 //
 $dispnum = 'asteriskinfo'; //used for switch on config.php
 
@@ -35,7 +35,7 @@ $chan_dahdi = ast_with_dahdi();
 	$modequeues = _("Queues");
 	$modesubscriptions = _("Subscriptions");
 	$modeall = _("Full Report");
-	
+
 	$uptime = _("Uptime");
 	$activechannels = _("Active Channel(s)");
 	$sipchannels = _("Sip Channel(s)");
@@ -152,7 +152,7 @@ if (version_compare($astver, '1.4', 'ge')) {
   /* Check for Jabber and GTalk modules only if version > 1.4
      because they weren't introduced til then. */
 
-  $jabber_mod_check = $astman->send_request('Command', array('Command' => 
+  $jabber_mod_check = $astman->send_request('Command', array('Command' =>
     'module show like jabber'));
   $gtalk_mod_check = $astman->send_request('Command', array('Command' =>
     'module show like gtalk'));
@@ -178,7 +178,7 @@ if (version_compare($astver, '1.4', 'ge')) {
   }
 }
 
-if (version_compare($astver, '1.8', 'ge')) { 
+if (version_compare($astver, '1.8', 'ge')) {
   if ($jabber_module) {
           $arr_all[$jabberconnections] = "jabber show connections";
           $arr_registries[$jabberconnections] = "jabber show connections";
@@ -197,7 +197,7 @@ if ($chan_dahdi){
 }
 ?>
 <div class="rnav"><ul>
-<?php 
+<?php
 foreach ($modes as $mode => $value) {
 	echo "<li><a id=\"".($extdisplay==$mode)."\" href=\"config.php?&type=".urlencode("tool")."&display=".urlencode($dispnum)."&extdisplay=".urlencode($mode)."\">"._($value)."</a></li>";
 }
@@ -206,7 +206,7 @@ foreach ($modes as $mode => $value) {
 
 <h2><span class="headerHostInfo"><?php echo _("Asterisk (Ver. ").$astver."): "._($modes[$extdisplay])?></span></h2>
 
-<form name="asteriskinfo" action="<?php  $_SERVER['PHP_SELF'] ?>" method="post">
+<form name="asteriskinfo" action="" method="post">
 <input type="hidden" name="display" value="asteriskinfo"/>
 <input type="hidden" name="action" value="asteriskinfo"/>
 <table>
@@ -223,7 +223,7 @@ if (!$astman) {
 			<table border="0" >
 				<tr>
 					<td align="left">
-							<?php 
+							<?php
 							echo "<br>"._("The module was unable to connect to the Asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>");
 							?>
 					</td>
@@ -247,7 +247,7 @@ if (!$astman) {
 					<tr>
 						<td>
 							<pre>
-								<?php 
+								<?php
 								$response = $astman->send_request('Command',array('Command'=>$value));
 								$new_value = $response['data'];
 								echo ltrim($new_value,'Privilege: Command');
@@ -334,7 +334,7 @@ function getRegistration($registration, $channelType = 'SIP'){
 		$sipRegistration_arr = $registration;
 		$sipRegistration_count = count($sipRegistration_arr);
 		return $sipRegistration_count-3;
-		
+
 	}elseif($channelType == 'IAX2'){
 		$iax2Registration_arr = $registration;
 		$iax2Registration_count = count($iax2Registration_arr);
@@ -345,7 +345,7 @@ function getRegistration($registration, $channelType = 'SIP'){
 function getPeer($peer, $channelType = NULL){
 	global $astver_major, $astver_minor;
 	global $astver;
-	if(count($peer) > 1){	
+	if(count($peer) > 1){
 		if($channelType == NULL || $channelType == 'SIP'){
 			$sipPeer = $peer;
 			$sipPeer_count = count($sipPeer);
@@ -353,7 +353,7 @@ function getPeer($peer, $channelType = NULL){
 			$sipPeerInfo_string = $sipPeer[$sipPeer_count -2];
 			$sipPeerInfo_arr2 = explode('[',$sipPeerInfo_string);
 			$sipPeerInfo_arr3 = explode(' ',$sipPeerInfo_arr2[1]);
-			if (version_compare($astver, '1.4', 'ge')) { 
+			if (version_compare($astver, '1.4', 'ge')) {
 				$sipPeerInfo_arr['online'] = $sipPeerInfo_arr3[1] ;
 				$sipPeerInfo_arr['offline'] = $sipPeerInfo_arr3[3];
 
@@ -364,7 +364,7 @@ function getPeer($peer, $channelType = NULL){
 				$sipPeerInfo_arr['offline'] = $sipPeerInfo_arr3[3];
 			}
 			return $sipPeerInfo_arr;
-			
+
 		}elseif($channelType == 'IAX2'){
 			$iax2Peer = $peer;
 			$iax2Peer_count = count($iax2Peer);
@@ -391,7 +391,7 @@ function buildAsteriskInfo(){
 	$sippeers = _("Sip Peers: ");
 	$iax2peers = _("IAX2 Peers: ");
 
-	
+
 	$arr = array(
 		$uptime => "show uptime",
 		$activesipchannels => "sip show channels",
@@ -399,18 +399,18 @@ function buildAsteriskInfo(){
 		$sipregistry => "sip show registry",
 		$iax2registry => "iax2 show registry",
 		$sippeers => "sip show peers",
-		$iax2peers => "iax2 show peers",	
+		$iax2peers => "iax2 show peers",
 	);
-	
+
 	if (version_compare($astver, '1.4', 'ge')) {
 		$arr[$uptime] = 'core show uptime';
 	}
-	
+
 	$htmlOutput  = '<div style="color:#000000;font-size:12px;margin:10px;">';
 	$htmlOutput  .= '<table border="1" cellpadding="10">';
 
 	foreach ($arr as $key => $value) {
-	
+
 		$response = $astman->send_request('Command',array('Command'=>$value));
 		$astout = explode("\n",$response['data']);
 
@@ -454,7 +454,7 @@ function buildAsteriskInfo(){
 					$sipPeerColor = '#000000';
 				}
 				$htmlOutput .= '<tr>';
-			  if (version_compare($astver, '1.4', 'ge')) { 
+			  if (version_compare($astver, '1.4', 'ge')) {
 				  $htmlOutput .= "<td>".$key."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Online: ").$sipPeer_arr['online']."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Online-Unmonitored: ").$sipPeer_arr['online-unmonitored'];
           $htmlOutput .= "<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Offline: ")."<span style=\"color:".$sipPeerColor.";font-weight:bold;\">".$sipPeer_arr['offline']."</span><br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Offline-Unmonitored: ")."<span style=\"color:".$sipPeerColor.";font-weight:bold;\">".$sipPeer_arr['offline-unmonitored']."</span></td>";
         } else {
