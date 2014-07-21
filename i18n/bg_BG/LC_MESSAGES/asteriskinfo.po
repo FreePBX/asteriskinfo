@@ -162,7 +162,7 @@ msgid "Offline-Unmonitored: "
 msgstr "Офлайн-Ненаблюдавани: "
 
 msgid "Unmonitored: "
-msgstr "Не наблюдавани:"
+msgstr "Ненаблюдавани: "
 
 #~ msgid "Conference Info"
 #~ msgstr "Информация за Конференции"
