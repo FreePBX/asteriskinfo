@@ -8,12 +8,16 @@ msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-23 09:52+0000\n"
-"PO-Revision-Date: 2008-11-08 23:26+0200\n"
-"Last-Translator: \n"
-"Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
+"PO-Revision-Date: 2014-07-21 13:06+0200\n"
+"Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
+"Language-Team: Bulgarian "
+"<http://git.freepbx.org/projects/freepbx/asteriskinfo/bg/>\n"
+"Language: bg_BG\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 1.10-dev\n"
 "X-Poedit-Language: Bulgarian\n"
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -22,10 +26,10 @@ msgid "Asterisk Info"
 msgstr "Астериск Информация"
 
 msgid "Reports"
-msgstr ""
+msgstr "Отчети"
 
 msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr ""
+msgstr "Предоставя снимка на текущата Астериск конфигурация"
 
 msgid "Summary"
 msgstr "Резюме"
@@ -49,7 +53,7 @@ msgid "Conferences"
 msgstr "Конференции"
 
 msgid "Queues"
-msgstr ""
+msgstr "Опашки"
 
 msgid "Subscriptions"
 msgstr "Вписвания"
@@ -91,22 +95,22 @@ msgid "Zaptel driver info"
 msgstr "Zaptel драйвер информация"
 
 msgid "MeetMe Conference Info"
-msgstr ""
+msgstr "Информация за MeetMe"
 
 msgid "Conference Bridge Info"
-msgstr ""
+msgstr "Информация за Конференция"
 
 msgid "Queues Info"
-msgstr ""
+msgstr "Информация за Опашки"
 
 msgid "Voicemail Users"
 msgstr "Потребители на Гласова Поща"
 
 msgid "Google Talk Channels"
-msgstr ""
+msgstr "Google Talk Канали"
 
 msgid "Jabber Connections"
-msgstr ""
+msgstr "Jabber Връзки"
 
 msgid "Asterisk (Ver. "
 msgstr "Астериск (Версия "
@@ -125,13 +129,13 @@ msgid "Refresh"
 msgstr "Презареди"
 
 msgid "Uptime: "
-msgstr "Експлоатация:"
+msgstr "Експлоатация: "
 
 msgid "Active SIP Channel(s): "
-msgstr "Активни SIP Канали:"
+msgstr "Активни SIP Канали: "
 
 msgid "Active IAX2 Channel(s): "
-msgstr "Активни IAX2 Канали:"
+msgstr "Активни IAX2 Канали: "
 
 msgid "Sip Registry: "
 msgstr "Sip Регистрирани: "
@@ -146,16 +150,16 @@ msgid "IAX2 Peers: "
 msgstr "IAX2 Peer-и: "
 
 msgid "Online: "
-msgstr "Онлайн"
+msgstr "Онлайн: "
 
 msgid "Online-Unmonitored: "
-msgstr ""
+msgstr "Онлайн-Ненаблюдавани: "
 
 msgid "Offline: "
-msgstr "Офлайн"
+msgstr "Офлайн: "
 
 msgid "Offline-Unmonitored: "
-msgstr ""
+msgstr "Офлайн-Ненаблюдавани: "
 
 msgid "Unmonitored: "
 msgstr "Не наблюдавани:"
