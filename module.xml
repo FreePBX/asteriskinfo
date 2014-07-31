@@ -3,8 +3,9 @@
 	<repo>standard</repo>
 	<name>Asterisk Info</name>
 	<version>12.0.1</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Reports</category>
 	<description>
 		Provides a snapshot of the current Asterisk configuration
@@ -18,6 +19,7 @@
 	</depends>
 	<changelog>
 		*12.0.1* Added PJSip Information FREEPBX-7135
+		*2.11.0.9* Include new license file
 		*2.11.0.7* Packaging of ver 2.11.0.7
 		*2.11.0.6* Packaging of ver 2.11.0.6
 		*2.11.0.3* Packaging of ver 2.11.0.3
