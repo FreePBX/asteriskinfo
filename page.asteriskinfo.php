@@ -29,7 +29,8 @@ $chan_dahdi = ast_with_dahdi();
 	$moderegistries = _("Registries");
 	$modechannels = _("Channels");
 	$modepeers = _("Peers");
-	$modesip = _("Sip Info");
+	$modesip = _("Chan_Sip Info");
+	$modepjsip = _("Chan_PJSip Info");
 	$modeiax = _("IAX Info");
 	$modeconferences = _("Conferences");
 	$modequeues = _("Queues");
@@ -38,11 +39,18 @@ $chan_dahdi = ast_with_dahdi();
 
 	$uptime = _("Uptime");
 	$activechannels = _("Active Channel(s)");
-	$sipchannels = _("Sip Channel(s)");
+	$sipchannels = _("Chan_Sip Channel(s)");
+	$pjsipchannels = _("Chan_PJSip Channel(s)");
 	$iax2channels = _("IAX2 Channel(s)");
 	$iax2peers = _("IAX2 Peers");
-	$sipregistry = _("Sip Registry");
-	$sippeers = _("Sip Peers");
+	$sipregistry = _("Chan_Sip Registry");
+	$pjsipregistry = _("Chan_PJSip Registrations");
+	$pjsiptransports = _("Chan_PJSip Transports");
+	$pjsipcontacts = ("Chan_PJSip Contacts");
+	$pjsipauths = ("Chan_PJSip Auths");
+	$pjsipaors = ("Chan_PJSip AORs");
+	$sippeers = _("Chan_Sip Peers");
+	$pjsipendpoints = _("Chan_PJSip Endpoints");
 	$iax2registry = _("IAX2 Registry");
 	$subscribenotify = _("Subscribe/Notify");
 	if ($chan_dahdi){
@@ -64,6 +72,7 @@ $modes = array(
 	"channels" => $modechannels,
 	"peers" => $modepeers,
 	"sip" => $modesip,
+	"pjsip" => $modepjsip,
 	"iax" => $modeiax,
 	"conferences" => $modeconferences,
 	"subscriptions" => $modesubscriptions,
@@ -75,48 +84,61 @@ $arr_all = array(
 	$uptime => "show uptime",
 	$activechannels => "show channels",
 	$sipchannels => "sip show channels",
+	$pjsipchannels => "",
 	$iax2channels => "iax2 show channels",
-        $gtalkchannels => "",
+	$gtalkchannels => "",
 	$sipregistry => "sip show registry",
+	$pjsipregistry = "",
 	$sippeers => "sip show peers",
+	$pjsipendpoints => "",
 	$iax2registry => "iax2 show registry",
 	$iax2peers => "iax2 show peers",
-        $jabberconnections => "",
+	$jabberconnections => "",
 	$xmppconnections => "",
 	$subscribenotify => "show hints",
 	$zapteldriverinfo => "zap show channels",
-        $conf_meetme => "",
-        $conf_confbridge => "",
+	$conf_meetme => "",
+	$conf_confbridge => "",
 	$voicemailusers => "show voicemail users",
 	$queuesinfo => "queue show",
 );
 $arr_registries = array(
 	$sipregistry => "sip show registry",
+	$pjsipregistry => "pjsip show registrations",
 	$iax2registry => "iax2 show registry",
-        $jabberconnections => "",
+	$jabberconnections => "",
 	$xmppconnections => "",
 );
 $arr_channels = array(
 	$activechannels => "show channels",
 	$sipchannels => "sip show channels",
 	$iax2channels => "iax2 show channels",
-        $gtalkchannels => "",
+	$gtalkchannels => "",
 );
 $arr_peers = array(
 	$sippeers => "sip show peers",
 	$iax2peers => "iax2 show peers",
+	$pjsipendpoints => ""
 );
 $arr_sip = array(
 	$sipregistry => "sip show registry",
 	$sippeers => "sip show peers",
+);
+$arr_pjsip = array(
+	$pjsiptransports => "pjsip show transports",
+	$pjsipregistry => "pjsip show registrations",
+	$pjsipendpoints => "pjsip show endpoints",
+	$pjsipcontacts => "pjsip show contacts",
+	$pjsipauths => "pjsip show auths",
+	$pjsipaors => "pjsip show aors"
 );
 $arr_iax = array(
 	$iax2registry => "iax2 show registry",
 	$iax2peers => "iax2 show peers",
 );
 $arr_conferences = array(
-        $conf_meetme => "",
-        $conf_confbridge => "",
+	$conf_meetme => "",
+	$conf_confbridge => "",
 );
 $arr_subscriptions = array(
 	$subscribenotify => "show hints"
@@ -192,6 +214,33 @@ if (version_compare($astver, '11', 'ge')) {
   }
 }
 
+if (version_compare($astver, '12', 'ge')) {
+	$pjsip_mod_check = $astman->send_request('Command', array('Command' => 'module show like chan_pjsip'));
+	$pjsip_module = preg_match('/[1-9] modules loaded/', $pjsip_mod_check['data']);
+	if ($pjsip_module) {
+		$arr_channels[$pjsipchannels] = "pjsip show channels";
+		$arr_registries[$pjsipregistry] = "pjsip show registrations";
+		$arr_peers[$pjsipendpoints] = "pjsip show endpoints";
+		$arr_all[$pjsipchannels] = "pjsip show channels";
+		$arr_all[$pjsipregistry] = "pjsip show registrations";
+		$arr_all[$pjsipendpoints] = "pjsip show endpoints";
+	} else {
+		unset($modes['pjsip']);
+	}
+
+	$sip_mod_check = $astman->send_request('Command', array('Command' => 'module show like chan_sip'));
+	$sip_module = preg_match('/[1-9] modules loaded/', $sip_mod_check['data']);
+	if (!$sip_module) {
+		unset($arr_channels[$sipchannels]);
+		unset($arr_registries[$sipregistry]);
+		unset($arr_peers[$sippeers]);
+		unset($modes['sip']);
+		unset($arr_all[$sipchannels]);
+		unset($arr_all[$sipregistry]);
+		unset($arr_all[$sippeers]);
+	}
+}
+
 if ($chan_dahdi){
 	$arr_all[$zapteldriverinfo]="dahdi show channels";
 }
@@ -249,7 +298,7 @@ if (!$astman) {
 							<pre>
 								<?php
 								$response = $astman->send_request('Command',array('Command'=>$value));
-								$new_value = $response['data'];
+								$new_value = htmlentities($response['data']);
 								echo ltrim($new_value,'Privilege: Command');
 								?>
 							</pre>
@@ -325,6 +374,17 @@ function getActiveChannel($channel_arr, $channelType = NULL){
 			$iax2Channel_string = $iax2Channel_arr[$iax2Channel_arrCount - 2];
 			$iax2Channel = explode(' ', $iax2Channel_string);
 			return $iax2Channel[0];
+		}elseif($channelType == 'PJSIP'){
+			$channels = 0;
+			foreach($channel_arr as $ln => $line) {
+				if(preg_match('/no objects found/i',$line)) {
+					return 0;
+				}
+				if(preg_match('/channel:/i',$line) && $ln > 2) {
+					$channels++;
+				}
+			}
+			return $channels;
 		}
 	}
 }
@@ -339,6 +399,21 @@ function getRegistration($registration, $channelType = 'SIP'){
 		$iax2Registration_arr = $registration;
 		$iax2Registration_count = count($iax2Registration_arr);
 		return $iax2Registration_count-3;
+	}elseif($channelType == 'PJSIP'){
+		$channels = 0;
+		$start = false;
+		foreach($registration as $ln => $line) {
+			if(preg_match('/no objects found/i',$line)) {
+				return 0;
+			}
+			if($start && !empty($line)) {
+				$channels++;
+			}
+			if(preg_match('/===================/i',$line)) {
+				$start = true;
+			}
+		}
+		return $channels;
 	}
 }
 
@@ -376,6 +451,46 @@ function getPeer($peer, $channelType = NULL){
 			$iax2PeerInfo_arr['offline'] = $iax2PeerInfo_arr3[2];
 			$iax2PeerInfo_arr['unmonitored'] = $iax2PeerInfo_arr3[4];
 			return $iax2PeerInfo_arr;
+		}elseif($channelType == 'PJSIP'){
+			$endpoint = false;
+			$start = false;
+			$contact = false;
+			$array = array(
+				"available" => 0,
+				"unavailable" => 0,
+				"unknown" => 0
+			);
+			foreach($peer as $ln => $line) {
+				if(preg_match('/no objects found/i',$line)) {
+					break;
+				}
+				if($start) {
+					if(preg_match('/endpoint:/i',$line)) {
+						$endpoint = true;
+					}
+					if($endpoint && preg_match('/contact:/i',$line)) {
+						$contact = true;
+						if(preg_match('/unavail/i',$line)) {
+							$array['unavailable']++;
+						} elseif(preg_match('/avail/i',$line)) {
+							$array['available']++;
+						} else {
+							$array['unknown']++;
+						}
+					}
+					if(empty($line)) {
+						if(!$contact && !empty($peer[$ln-1]) && !preg_match('/===================/i',$peer[$ln-1])) {
+							$array['unknown']++;
+						}
+						$contact = false;
+						$endpoint = false;
+					}
+				}
+				if(preg_match('/===================/i',$line)) {
+					$start = true;
+				}
+			}
+			return $array;
 		}
 	}
 }
@@ -383,24 +498,58 @@ function getPeer($peer, $channelType = NULL){
 function buildAsteriskInfo(){
 	global $astman;
 	global $astver;
+	$sipActive = true;
+	$pjsipActive = false;
+	if (version_compare($astver, '12', 'ge')) {
+		$pjsip_mod_check = $astman->send_request('Command', array('Command' => 'module show like chan_pjsip'));
+		$pjsip_module = preg_match('/[1-9] modules loaded/', $pjsip_mod_check['data']);
+		if ($pjsip_module) {
+			$pjsipActive = true;
+		}
+
+		$sip_mod_check = $astman->send_request('Command', array('Command' => 'module show like chan_sip'));
+		$sip_module = preg_match('/[1-9] modules loaded/', $sip_mod_check['data']);
+		if (!$sip_module) {
+			$sipActive = false;
+		}
+	}
 	$uptime = _("Uptime: ");
 	$activesipchannels = _("Active SIP Channel(s): ");
-	$activeiax2channels = _("Active IAX2 Channel(s): ");
 	$sipregistry = _("Sip Registry: ");
-	$iax2registry = _("IAX2 Registry: ");
 	$sippeers = _("Sip Peers: ");
+
+	$activepjsipchannels = _("Active PJSIP Channel(s): ");
+	$pjsipregistrations = _("PJSip Registrations: ");
+	$pjsipendpoints = _("PJSip Endpoints: ");
+
+	$activeiax2channels = _("Active IAX2 Channel(s): ");
+	$iax2registry = _("IAX2 Registry: ");
 	$iax2peers = _("IAX2 Peers: ");
 
 
 	$arr = array(
 		$uptime => "show uptime",
 		$activesipchannels => "sip show channels",
+		$activepjsipchannels => "pjsip show channels",
 		$activeiax2channels => "iax2 show channels",
 		$sipregistry => "sip show registry",
+		$pjsipregistrations => "pjsip show registrations",
 		$iax2registry => "iax2 show registry",
 		$sippeers => "sip show peers",
+		$pjsipendpoints => "pjsip show endpoints",
 		$iax2peers => "iax2 show peers",
 	);
+
+	if(!$sipActive) {
+		unset($arr[$activesipchannels]);
+		unset($arr[$sipregistry]);
+		unset($arr[$sippeers]);
+	}
+	if(!$pjsipActive) {
+		unset($arr[$activepjsipchannels]);
+		unset($arr[$pjsipregistrations]);
+		unset($arr[$pjsipendpoints]);
+	}
 
 	if (version_compare($astver, '1.4', 'ge')) {
 		$arr[$uptime] = 'core show uptime';
@@ -417,8 +566,17 @@ function buildAsteriskInfo(){
 		switch ($key) {
 			case $uptime:
 				$uptime = $astout;
-				$htmlOutput .= '<tr><td colspan="2">Asterisk '.$uptime[1]."<br />".$uptime[2]."<br /></td>";
+				$colspan = ($sipActive && $pjsipActive) ? 3 : 2;
+				$htmlOutput .= '<tr><td colspan="' . $colspan . '">Asterisk '.$uptime[1]."<br />".$uptime[2]."<br /></td>";
 				$htmlOutput .= '</tr>';
+			break;
+			case $activepjsipchannels:
+				$activePJSipChannel = $astout;
+				$activePJSipChannel_count = getActiveChannel($activePJSipChannel, $channelType = 'PJSIP');
+				if(!$sipActive) {
+					$htmlOutput .= '<tr>';
+				}
+				$htmlOutput .= "<td>".$key.$activePJSipChannel_count."</td>";
 			break;
 			case $activesipchannels:
 				$activeSipChannel = $astout;
@@ -438,6 +596,11 @@ function buildAsteriskInfo(){
 				$sipRegistration_count = getRegistration($sipRegistration, $channelType = 'SIP');
 				$htmlOutput .= '<tr>';
 				$htmlOutput .= "<td>".$key.$sipRegistration_count."</td>";
+			break;
+			case $pjsipregistrations:
+				$pjsipRegistration = $astout;
+				$pjsipRegistration_count = getRegistration($pjsipRegistration, $channelType = 'PJSIP');
+				$htmlOutput .= "<td>".$key.$pjsipRegistration_count."</td>";
 			break;
 			case $iax2registry:
 				$iax2Registration = $astout;
@@ -460,6 +623,18 @@ function buildAsteriskInfo(){
         } else {
 				  $htmlOutput .= "<td>".$key."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Online: ").$sipPeer_arr['online']."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Offline: ")."<span style=\"color:".$sipPeerColor.";font-weight:bold;\">".$sipPeer_arr['offline']."</span></td>";
         }
+			break;
+			case $pjsipendpoints:
+				$pjsipPeer = $astout;
+				$pjsipPeer_arr = getPeer($pjsipPeer, $channelType = 'PJSIP');
+				if($pjsipPeer_arr['unavailable'] != 0){
+					$pjsipPeerColor = 'red';
+				}else{
+					$pjsipPeerColor = '#000000';
+				}
+				$htmlOutput .= "<td>".$key."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Available: ").$pjsipPeer_arr['available']."<br />";
+				$htmlOutput .= "&nbsp;&nbsp;&nbsp;&nbsp;"._("Unavailable: ")."<span style=\"color:".$pjsipPeerColor.";font-weight:bold;\">".$pjsipPeer_arr['unavailable']."</span><br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Unknown: ")."<span style=\"color:".$pjsipPeerColor.";font-weight:bold;\">".$pjsipPeer_arr['unknown']."</span></td>";
+
 			break;
 			case $iax2peers:
 				$iax2Peer = $astout;

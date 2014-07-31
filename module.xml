@@ -2,7 +2,7 @@
 	<rawname>asteriskinfo</rawname>
 	<repo>standard</repo>
 	<name>Asterisk Info</name>
-	<version>2.11.0.7</version>
+	<version>12.0.1</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<category>Reports</category>
@@ -17,6 +17,7 @@
 		<version>2.5.0rc3</version>
 	</depends>
 	<changelog>
+		*12.0.1* Added PJSip Information FREEPBX-7135
 		*2.11.0.7* Packaging of ver 2.11.0.7
 		*2.11.0.6* Packaging of ver 2.11.0.6
 		*2.11.0.3* Packaging of ver 2.11.0.3
@@ -44,7 +45,7 @@
 		*0.1.0* Initial release
 	</changelog>
 	<supported>
-		<version>2.10</version>
+		<version>12.0</version>
 	</supported>
 	<location>release/2.11/asteriskinfo-2.11.0.2.tgz</location>
 	<md5sum>7793bdb58d59c1c8f5e4926bac66ac63</md5sum>
