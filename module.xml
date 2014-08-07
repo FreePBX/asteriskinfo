@@ -2,9 +2,10 @@
 	<rawname>asteriskinfo</rawname>
 	<repo>standard</repo>
 	<name>Asterisk Info</name>
-	<version>2.11.0.7</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
+	<version>2.11.0.89</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Reports</category>
 	<description>
 		Provides a snapshot of the current Asterisk configuration
@@ -17,6 +18,7 @@
 		<version>2.5.0rc3</version>
 	</depends>
 	<changelog>
+		*2.11.0.9* Include new license file
 		*2.11.0.7* Packaging of ver 2.11.0.7
 		*2.11.0.6* Packaging of ver 2.11.0.6
 		*2.11.0.3* Packaging of ver 2.11.0.3
