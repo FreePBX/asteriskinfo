@@ -1,7 +1,7 @@
 <?php
-
+namespace FreePBX\modules;
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
-$astinfo = FreePBX::create()->Asteriskinfo;
+$astinfo = \FreePBX::create()->Asteriskinfo;
 $request = $_REQUEST;
 $dispnum = 'asteriskinfo'; //used for switch on config.php
 $astman = $astinfo->astman;
@@ -64,6 +64,29 @@ $modes = array(
 	"queues" => $modequeues,
 	"all" => $modeall
 );
+$hooks = $astinfo->asteriskInfoHooks();
+foreach ($hooks as $hook) {
+	if(!isset($hook['title'])){
+		continue;
+	}
+	if(!isset($hook['mode'])){
+		continue;
+	}
+	if(!isset($hook['commands'])){
+		continue;
+	}
+	$modes[$hook['mode']] = $hook['title'];
+	$hookhtml = '<h2>'.$hook['title'].'</h2>';
+	foreach ($hook['commands'] as $key => $value) {
+		$output .= $astinfo->getOutput($value);
+		$hookhtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+	}
+	$hooktabs .= '<div role="tabpanel" id="'.$hook['mode'].'" class="tab-pane">';
+	$hooktabs .= $hookhtml;
+	$hooktabs .= '</div>';
+	$hookall .= $hookhtml;
+}
+
 $engineinfo = engine_getinfo();
 $astver =  $engineinfo['version'];
 $meetme_check = $astman->send_request('Command', array('Command' =>
@@ -232,7 +255,7 @@ foreach ($arr_voicemail as $key => $value) {
 			<div class="col-sm-9">
 					<div class="fpbx-container">
 						<div class="tab-content display full-border">
-							<div role=tabpanel" id="summary" class="tab-pane active">
+							<div role="tabpanel" id="summary" class="tab-pane active">
 								<h2><?php echo _("Summary")?></h2>
 								<table class="table">
 									<tr>
@@ -242,37 +265,38 @@ foreach ($arr_voicemail as $key => $value) {
 									</tr>
 								</table>
 							</div>
-							<div role=tabpanel" id="registries" class="tab-pane">
+							<div role="tabpanel" id="registries" class="tab-pane">
 								<?php echo $registrieshtml?>
 							</div>
-							<div role=tabpanel" id="channels" class="tab-pane">
+							<div role="tabpanel" id="channels" class="tab-pane">
 								<?php echo $channelshtml?>	
 							</div>
-							<div role=tabpanel" id="peers" class="tab-pane">
+							<div role="tabpanel" id="peers" class="tab-pane">
 								<?php echo $peershtml?>
 							</div>
-							<div role=tabpanel" id="sip" class="tab-pane">
+							<div role="tabpanel" id="sip" class="tab-pane">
 								<?php echo $siphtml?>
 							</div>
-							<div role=tabpanel" id="pjsip" class="tab-pane">
+							<div role="tabpanel" id="pjsip" class="tab-pane">
 							<?php echo $pjsiphtml?>
 							</div>
-							<div role=tabpanel" id="iax" class="tab-pane">
+							<div role="tabpanel" id="iax" class="tab-pane">
 								<?php echo $iaxhtml?>
 							</div>
-							<div role=tabpanel" id="conferences" class="tab-pane">
+							<div role="tabpanel" id="conferences" class="tab-pane">
 								<?php echo $conferenceshtml?>
 							</div>
-							<div role=tabpanel" id="subscriptions" class="tab-pane">
+							<div role="tabpanel" id="subscriptions" class="tab-pane">
 								<?php echo $subscriptionshtml?>
 							</div>
-							<div role=tabpanel" id="voicemail" class="tab-pane">
+							<div role="tabpanel" id="voicemail" class="tab-pane">
 								<?php echo $voicemailhtml?>
 							</div>
-							<div role=tabpanel" id="queues" class="tab-pane">
+							<div role="tabpanel" id="queues" class="tab-pane">
 								<?php echo $queueshtml?>
 							</div>
-							<div role=tabpanel" id="all" class="tab-pane">
+							<?php echo $hooktabs ?>
+							<div role="tabpanel" id="all" class="tab-pane">
 								<?php echo $registrieshtml ?>
 								<?php echo $channelshtml ?>
 								<?php echo $peershtml ?>
@@ -283,6 +307,7 @@ foreach ($arr_voicemail as $key => $value) {
 								<?php echo $subscriptionshtml ?>
 								<?php echo $voicemailhtml ?>
 								<?php echo $queueshtml ?>
+								<?php echo $hookall ?>
 							</div>
 						</div>
 					</div>

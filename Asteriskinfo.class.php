@@ -1,6 +1,6 @@
 <?php
-
-class Asteriskinfo implements BMO {
+namespace FreePBX\modules;
+class Asteriskinfo implements \BMO {
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
 			throw new Exception("Not given a FreePBX Object");
@@ -301,5 +301,16 @@ class Asteriskinfo implements BMO {
 		$response = $this->astman->send_request('Command',array('Command'=>$command));
 		$new_value = htmlentities($response['data']);
 		return ltrim($new_value,'Privilege: Command');
+	}
+	/**
+	 * [asteriskInfoHooks Hooking in to Asterisk Info Module]
+	 * @return [array]
+	 * 		'mode' => "Mode",
+	 * 		'title' => "title",
+	 * 		'commands' => array('subtitle' => 'command1', 'subtitle' => 'command2')
+	 */
+	public function asteriskInfoHooks(){
+		\FreePBX::Hooks()->processHooks($data);
+		return $data;
 	}
 }
