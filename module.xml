@@ -2,7 +2,7 @@
 	<rawname>asteriskinfo</rawname>
 	<repo>standard</repo>
 	<name>Asterisk Info</name>
-	<version>12.0.1</version>
+	<version>13.0.1</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -47,7 +47,7 @@
 		*0.1.0* Initial release
 	</changelog>
 	<supported>
-		<version>12.0</version>
+		<version>13.0</version>
 	</supported>
 	<location>release/2.11/asteriskinfo-2.11.0.2.tgz</location>
 	<md5sum>7793bdb58d59c1c8f5e4926bac66ac63</md5sum>
