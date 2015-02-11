@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX asteriskinfo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 13:38-0500\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,102 +30,200 @@ msgstr ""
 "X-Poedit-Language: swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-msgid "Asterisk Info"
-msgstr "Asterisk-info"
-
-msgid "Reports"
-msgstr ""
-
-msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr "Denna modul ger en ögonblicksbild av din Asteriskkonfiguration"
-
-msgid "Summary"
-msgstr "Sammanfattning"
-
-msgid "Registries"
-msgstr "Registreringar"
-
-msgid "Channels"
-msgstr "Kanaler"
-
-msgid "Peers"
-msgstr "Peers"
-
-msgid "Sip Info"
-msgstr "SIP-info"
-
-msgid "IAX Info"
-msgstr "IAX-info"
-
-msgid "Conferences"
-msgstr "Konferenser"
-
-msgid "Queues"
-msgstr "Köer"
-
-msgid "Subscriptions"
-msgstr "Prenumerationer"
-
-msgid "Full Report"
-msgstr "Full rapport"
-
-msgid "Uptime"
-msgstr "Upptid"
-
-msgid "Active Channel(s)"
-msgstr "Aktiv(a) kanal(er)"
-
-msgid "Sip Channel(s)"
-msgstr "SIP-kanal(er)"
-
-msgid "IAX2 Channel(s)"
-msgstr "IAX2-kanal(er)"
-
-msgid "IAX2 Peers"
-msgstr "IAX2 peers"
-
-msgid "Sip Registry"
-msgstr "SIP-registrering(ar)"
-
-msgid "Sip Peers"
-msgstr "SIP peers"
-
-msgid "IAX2 Registry"
-msgstr "IAX2-registrering(ar)"
-
-msgid "Subscribe/Notify"
-msgstr "Prenumerationer/Noteringar"
-
-msgid "DAHDi driver info"
-msgstr "Dirvrutinsinforation för DAHDi"
-
-msgid "Zaptel driver info"
-msgstr "Zaptel drivrutinsinformation"
-
-msgid "MeetMe Conference Info"
-msgstr ""
-
-msgid "Conference Bridge Info"
-msgstr ""
-
-msgid "Queues Info"
-msgstr "Köinformation"
-
-msgid "Voicemail Users"
-msgstr "Röstbrevlådor"
-
-msgid "Google Talk Channels"
-msgstr "Kanaler för Google Talk"
-
-msgid "Jabber Connections"
-msgstr "Jabberanslutningar"
-
-msgid "Asterisk (Ver. "
-msgstr "Asterisk (Ver."
-
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:252
 msgid "ASTERISK MANAGER ERROR"
 msgstr "FEL PÅ ASTERISK HANTERARE"
 
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:25
+msgid "Active Channel(s)"
+msgstr "Aktiv(a) kanal(er)"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:509
+msgid "Active IAX2 Channel(s): "
+msgstr "Aktiv(a) IAX2-kanal(er): "
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:505
+msgid "Active PJSIP Channel(s): "
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:501
+msgid "Active SIP Channel(s): "
+msgstr "Aktiv(a) SIP-kanal(er): "
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:240
+msgid "Asterisk (Ver. "
+msgstr "Asterisk (Ver."
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:619
+msgid "Available: "
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:27
+msgid "Chan_PJSip Channel(s)"
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:37
+msgid "Chan_PJSip Endpoints"
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:17
+msgid "Chan_PJSip Info"
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:31
+msgid "Chan_PJSip Registrations"
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:32
+msgid "Chan_PJSip Transports"
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:26
+msgid "Chan_Sip Channel(s)"
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:16
+msgid "Chan_Sip Info"
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:36
+msgid "Chan_Sip Peers"
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:30
+msgid "Chan_Sip Registry"
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:14
+msgid "Channels"
+msgstr "Kanaler"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:46
+msgid "Conference Bridge Info"
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:19
+msgid "Conferences"
+msgstr "Konferenser"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:41
+msgid "DAHDi driver info"
+msgstr "Dirvrutinsinforation för DAHDi"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:22
+msgid "Full Report"
+msgstr "Full rapport"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:49
+msgid "Google Talk Channels"
+msgstr "Kanaler för Google Talk"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:18
+msgid "IAX Info"
+msgstr "IAX-info"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:28
+msgid "IAX2 Channel(s)"
+msgstr "IAX2-kanal(er)"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:29
+msgid "IAX2 Peers"
+msgstr "IAX2 peers"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:511
+msgid "IAX2 Peers: "
+msgstr "IAX2-peers: "
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:38
+msgid "IAX2 Registry"
+msgstr "IAX2-registrering(ar)"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:510
+msgid "IAX2 Registry: "
+msgstr "IAX2-registreringar: "
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:50
+msgid "Jabber Connections"
+msgstr "Jabberanslutningar"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:45
+msgid "MeetMe Conference Info"
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:51
+msgid "Motif Connections"
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:606
+msgid "Offline-Unmonitored: "
+msgstr "Off-line oövervakad: "
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:606
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:608
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:631
+msgid "Offline: "
+msgstr "Off-line: "
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:605
+msgid "Online-Unmonitored: "
+msgstr "On-line oövervakad: "
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:605
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:608
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:631
+msgid "Online: "
+msgstr "On-line: "
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:507
+msgid "PJSip Endpoints: "
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:506
+msgid "PJSip Registrations: "
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:15
+msgid "Peers"
+msgstr "Peers"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:20
+msgid "Queues"
+msgstr "Köer"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:47
+msgid "Queues Info"
+msgstr "Köinformation"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:319
+msgid "Refresh"
+msgstr "Uppdatera"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:13
+msgid "Registries"
+msgstr "Registreringar"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:503
+msgid "Sip Peers: "
+msgstr "SIP-peers: "
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:502
+msgid "Sip Registry: "
+msgstr "SIP-registreringar: "
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:39
+msgid "Subscribe/Notify"
+msgstr "Prenumerationer/Noteringar"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:21
+msgid "Subscriptions"
+msgstr "Prenumerationer"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:12
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:300
+msgid "Summary"
+msgstr "Sammanfattning"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:260
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
@@ -133,44 +231,51 @@ msgstr ""
 "Modulen kunde inte koppla upp sig mot Asterisk hanterare.<br>Kontrollera att "
 "Asterisk körs och att dina inställningar i manager.conf är riktiga.<br><br>"
 
-msgid "Refresh"
-msgstr "Uppdatera"
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:620
+msgid "Unavailable: "
+msgstr ""
 
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:620
+msgid "Unknown: "
+msgstr ""
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:631
+msgid "Unmonitored: "
+msgstr "Oövervakad: "
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:24
+msgid "Uptime"
+msgstr "Upptid"
+
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:500
 msgid "Uptime: "
 msgstr "Upptid: "
 
-msgid "Active SIP Channel(s): "
-msgstr "Aktiv(a) SIP-kanal(er): "
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:48
+msgid "Voicemail Users"
+msgstr "Röstbrevlådor"
 
-msgid "Active IAX2 Channel(s): "
-msgstr "Aktiv(a) IAX2-kanal(er): "
+#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:43
+msgid "Zaptel driver info"
+msgstr "Zaptel drivrutinsinformation"
 
-msgid "Sip Registry: "
-msgstr "SIP-registreringar: "
+#~ msgid "Asterisk Info"
+#~ msgstr "Asterisk-info"
 
-msgid "IAX2 Registry: "
-msgstr "IAX2-registreringar: "
+#~ msgid "Provides a snapshot of the current Asterisk configuration"
+#~ msgstr "Denna modul ger en ögonblicksbild av din Asteriskkonfiguration"
 
-msgid "Sip Peers: "
-msgstr "SIP-peers: "
+#~ msgid "Sip Info"
+#~ msgstr "SIP-info"
 
-msgid "IAX2 Peers: "
-msgstr "IAX2-peers: "
+#~ msgid "Sip Channel(s)"
+#~ msgstr "SIP-kanal(er)"
 
-msgid "Online: "
-msgstr "On-line: "
+#~ msgid "Sip Registry"
+#~ msgstr "SIP-registrering(ar)"
 
-msgid "Online-Unmonitored: "
-msgstr "On-line oövervakad: "
-
-msgid "Offline: "
-msgstr "Off-line: "
-
-msgid "Offline-Unmonitored: "
-msgstr "Off-line oövervakad: "
-
-msgid "Unmonitored: "
-msgstr "Oövervakad: "
+#~ msgid "Sip Peers"
+#~ msgstr "SIP peers"
 
 #~ msgid "System Administration"
 #~ msgstr "Systemadministration"
