@@ -1,32 +1,63 @@
-# Russian freePBX ver. translation
-# Copyright (c) 2006-2008 PostMet Corporation
-# This file is distributed under the same license as the freePBX package.
-# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
+# CREDITS for JAPANESE TRANSLATION
+# ================================
+# Current translation & maintenance: QLOOG, Inc. (Kobe, Japan)
+# Inquiries: info@qloog.com / www.qloog.com
 #
-# Использовать iconv yourfile.new -f UTF-8 -t ISO-8859-5 -o yourfile.po
+# This translation is a culmination of the hard work of
+# several outstanding individuals, which started in 2009 with the 
+# first-ever Japanese localization of FreePBX by Kenichi Fukaumi 
+# and Kazuhiro Tokuyama (FreePBX Japanized Project).
+#
+# Beginning in 2013, with the approval of the original authors, 
+# QLOOG undertook a large scale overhaul of the translation to 
+# expand it for compatibility with FreePBX 2.11. Our work is, 
+# of course, released under the same GPLv2 license as FreePBX. 
+# We only ask that you kindly retain these credits in honor of 
+# the time and effort that all of us have contributed. Enjoy!
+#
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for asteriskinfo
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.3\n"
+"Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-11 13:38-0500\n"
-"PO-Revision-Date: 2008-09-28 16:38+0100\n"
-"Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
-"Language-Team: Russian <faq@postmet.com>\n"
+"PO-Revision-Date: 2013-11-26 16:18+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Poedit 1.6beta2\n"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:252
 msgid "ASTERISK MANAGER ERROR"
-msgstr "ОШИБКА МОДУЛЯ МЕНЕДЖЕР"
+msgstr "Asteriskマネージャーエラー"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:25
 msgid "Active Channel(s)"
-msgstr "Активных каналов"
+msgstr "アクティブチャネル"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:509
 msgid "Active IAX2 Channel(s): "
-msgstr "Активных IAX2 каналов: "
+msgstr "アクティブIAX2チャネル："
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:505
 msgid "Active PJSIP Channel(s): "
@@ -34,11 +65,11 @@ msgstr ""
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:501
 msgid "Active SIP Channel(s): "
-msgstr "Активных SIP каналов: "
+msgstr "アクティブSIPチャネル："
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:240
 msgid "Asterisk (Ver. "
-msgstr "Астериск (Версия "
+msgstr "Asterisk (Ver. "
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:619
 msgid "Available: "
@@ -82,83 +113,83 @@ msgstr ""
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:14
 msgid "Channels"
-msgstr "Каналов"
+msgstr "チャネル"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:46
 msgid "Conference Bridge Info"
-msgstr "информация о конференциях ConfBridge"
+msgstr "カンファレンスブリッジ情報"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:19
 msgid "Conferences"
-msgstr "Конференции"
+msgstr "カンファレンス"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:41
 msgid "DAHDi driver info"
-msgstr "информация о драйвере DAHDI"
+msgstr "DAHDiドリバー情報"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:22
 msgid "Full Report"
-msgstr "Полный отчёт"
+msgstr "フルレポート"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:49
 msgid "Google Talk Channels"
-msgstr "Каналы Google Talk"
+msgstr "Googleトークチャンネル"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:18
 msgid "IAX Info"
-msgstr "Информация IAX"
+msgstr "IAX情報"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:28
 msgid "IAX2 Channel(s)"
-msgstr "IAX2 каналы"
+msgstr "IAX2チャネル"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:29
 msgid "IAX2 Peers"
-msgstr "IAX2 пиры"
+msgstr "IAX2ピア"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:511
 msgid "IAX2 Peers: "
-msgstr "IAX2 пиров: "
+msgstr "IAX2ピア："
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:38
 msgid "IAX2 Registry"
-msgstr "IAX2 регистрации"
+msgstr "IAX2レジストリ"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:510
 msgid "IAX2 Registry: "
-msgstr "IAX2 регистраций: "
+msgstr "IAX2レジストリ："
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:50
 msgid "Jabber Connections"
-msgstr "подключения Jabber"
+msgstr "Jabber接続"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:45
 msgid "MeetMe Conference Info"
-msgstr "информация о конференциях MeetMe"
+msgstr "MeetMeカンファレンス情報"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:51
 msgid "Motif Connections"
-msgstr ""
+msgstr "Motif接続"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:606
 msgid "Offline-Unmonitored: "
-msgstr "Офлайн (без мониторинга): "
+msgstr "オフライン-モニタ対象外："
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:606
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:608
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:631
 msgid "Offline: "
-msgstr "Офлайн: "
+msgstr "オフライン："
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:605
 msgid "Online-Unmonitored: "
-msgstr "Онлайн (без мониторинга): "
+msgstr "オンライン-モニタ対象外："
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:605
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:608
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:631
 msgid "Online: "
-msgstr "Онлайн: "
+msgstr "オンライン："
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:507
 msgid "PJSip Endpoints: "
@@ -170,52 +201,53 @@ msgstr ""
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:15
 msgid "Peers"
-msgstr "Пиров"
+msgstr "ピア"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:20
 msgid "Queues"
-msgstr "Очереди"
+msgstr "キュー"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:47
 msgid "Queues Info"
-msgstr "Информация об очередях"
+msgstr "キュー情報"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:319
 msgid "Refresh"
-msgstr "Обновить"
+msgstr "更新"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:13
 msgid "Registries"
-msgstr "Регистрации"
+msgstr "レジストリ"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:503
 msgid "Sip Peers: "
-msgstr "SIP пиров: "
+msgstr "Sipピア："
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:502
 msgid "Sip Registry: "
-msgstr "SIP регистраций: "
+msgstr "Sipレジストリ："
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:39
 msgid "Subscribe/Notify"
-msgstr "Подписки/Уведомления"
+msgstr "サブスクライブ/通知"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:21
 msgid "Subscriptions"
-msgstr "Подписки"
+msgstr "サブスクリプション"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:12
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:300
 msgid "Summary"
-msgstr "Краткая сводка"
+msgstr "サマリー"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:260
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
 msgstr ""
-"Модуль не может соединиться с управлением Астериск<br>Убедитесь что Астериск "
-"работает, и настройки manager.conf корректны.<br><br>"
+"モジュールからAsteriskマネージャーへの接続ができませんでした。<br>Asteriskが"
+"起動しているかどうか、manager.confの設定が適切かどうかを確認してください。"
+"<br><br>"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:620
 msgid "Unavailable: "
@@ -227,44 +259,41 @@ msgstr ""
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:631
 msgid "Unmonitored: "
-msgstr "Не мониторится: "
+msgstr "モニタ対象外："
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:24
 msgid "Uptime"
-msgstr "Время работы"
+msgstr "システム稼働時間"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:500
 msgid "Uptime: "
-msgstr "Жив: "
+msgstr "システム稼働時間: "
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:48
 msgid "Voicemail Users"
-msgstr "Пользователи голосовой почты"
+msgstr "ボイスメールユーザ"
 
 #: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:43
 msgid "Zaptel driver info"
-msgstr "Информация о драйвере Zaptel"
+msgstr "Zaptelドライバ情報"
 
 #~ msgid "Asterisk Info"
-#~ msgstr "Информация об Asterisk"
+#~ msgstr "Asterisk情報"
 
 #~ msgid "Reports"
-#~ msgstr "Отчеты"
+#~ msgstr "レポート"
 
 #~ msgid "Provides a snapshot of the current Asterisk configuration"
-#~ msgstr "Выполняет сохранение текущей версии конфигурации Asterisk"
+#~ msgstr "現在のAsterisk設定のスナップショットを提供"
 
 #~ msgid "Sip Info"
-#~ msgstr "Информация SIP"
+#~ msgstr "Sip情報"
 
 #~ msgid "Sip Channel(s)"
-#~ msgstr "SIP каналы"
+#~ msgstr "Sipチャネル"
 
 #~ msgid "Sip Registry"
-#~ msgstr "SIP регистрации"
+#~ msgstr "Sipレジストリ"
 
 #~ msgid "Sip Peers"
-#~ msgstr "SIP пиры"
-
-#~ msgid "Conference Info"
-#~ msgstr "Информация по конференциям"
+#~ msgstr "Sipピア"
