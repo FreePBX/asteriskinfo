@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 13:38-0500\n"
+"POT-Creation-Date: 2015-02-20 18:59-0500\n"
 "PO-Revision-Date: 2014-07-21 13:06+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -22,200 +22,210 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:252
+#: page.asteriskinfo.php:252
 msgid "ASTERISK MANAGER ERROR"
 msgstr "АСТЕРИСК MANAGER ГРЕШКА"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:25
+#: page.asteriskinfo.php:25
 msgid "Active Channel(s)"
 msgstr "Активни Канали"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:509
+#: page.asteriskinfo.php:509
 msgid "Active IAX2 Channel(s): "
 msgstr "Активни IAX2 Канали: "
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:505
+#: page.asteriskinfo.php:505
 msgid "Active PJSIP Channel(s): "
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:501
+#: page.asteriskinfo.php:501
 msgid "Active SIP Channel(s): "
 msgstr "Активни SIP Канали: "
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:240
+#: page.asteriskinfo.php:240
 msgid "Asterisk (Ver. "
 msgstr "Астериск (Версия "
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:619
+#: asteriskinfo.i18n.php:3 asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:8
+#: asteriskinfo.i18n.php:14
+msgid "Asterisk Info"
+msgstr "Астериск Информация"
+
+#: page.asteriskinfo.php:619
 msgid "Available: "
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:27
+#: page.asteriskinfo.php:27
 msgid "Chan_PJSip Channel(s)"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:37
+#: page.asteriskinfo.php:37
 msgid "Chan_PJSip Endpoints"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:17
+#: page.asteriskinfo.php:17
 msgid "Chan_PJSip Info"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:31
+#: page.asteriskinfo.php:31
 msgid "Chan_PJSip Registrations"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:32
+#: page.asteriskinfo.php:32
 msgid "Chan_PJSip Transports"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:26
+#: page.asteriskinfo.php:26
 msgid "Chan_Sip Channel(s)"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:16
+#: page.asteriskinfo.php:16
 msgid "Chan_Sip Info"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:36
+#: page.asteriskinfo.php:36
 msgid "Chan_Sip Peers"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:30
+#: page.asteriskinfo.php:30
 msgid "Chan_Sip Registry"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:14
+#: page.asteriskinfo.php:14
 msgid "Channels"
 msgstr "Канали"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:46
+#: page.asteriskinfo.php:46
 msgid "Conference Bridge Info"
 msgstr "Информация за Конференция"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:19
+#: page.asteriskinfo.php:19
 msgid "Conferences"
 msgstr "Конференции"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:41
+#: page.asteriskinfo.php:41
 msgid "DAHDi driver info"
 msgstr "DAHDi драйвер информация"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:22
+#: page.asteriskinfo.php:22
 msgid "Full Report"
 msgstr "Пълен Отчет"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:49
+#: page.asteriskinfo.php:49
 msgid "Google Talk Channels"
 msgstr "Google Talk Канали"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:18
+#: page.asteriskinfo.php:18
 msgid "IAX Info"
 msgstr "IAX Информация"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:28
+#: page.asteriskinfo.php:28
 msgid "IAX2 Channel(s)"
 msgstr "IAX2 Канали"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:29
+#: page.asteriskinfo.php:29
 msgid "IAX2 Peers"
 msgstr "IAX2 Peer-и"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:511
+#: page.asteriskinfo.php:511
 msgid "IAX2 Peers: "
 msgstr "IAX2 Peer-и: "
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:38
+#: page.asteriskinfo.php:38
 msgid "IAX2 Registry"
 msgstr "IAX2 Регистрирани"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:510
+#: page.asteriskinfo.php:510
 msgid "IAX2 Registry: "
 msgstr "IAX2 Регистрирани: "
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:50
+#: page.asteriskinfo.php:50
 msgid "Jabber Connections"
 msgstr "Jabber Връзки"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:45
+#: page.asteriskinfo.php:45
 msgid "MeetMe Conference Info"
 msgstr "Информация за MeetMe"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:51
+#: page.asteriskinfo.php:51
 msgid "Motif Connections"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:606
+#: page.asteriskinfo.php:606
 msgid "Offline-Unmonitored: "
 msgstr "Офлайн-Ненаблюдавани: "
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:606
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:608
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:631
+#: page.asteriskinfo.php:606 page.asteriskinfo.php:608
+#: page.asteriskinfo.php:631
 msgid "Offline: "
 msgstr "Офлайн: "
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:605
+#: page.asteriskinfo.php:605
 msgid "Online-Unmonitored: "
 msgstr "Онлайн-Ненаблюдавани: "
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:605
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:608
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:631
+#: page.asteriskinfo.php:605 page.asteriskinfo.php:608
+#: page.asteriskinfo.php:631
 msgid "Online: "
 msgstr "Онлайн: "
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:507
+#: page.asteriskinfo.php:507
 msgid "PJSip Endpoints: "
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:506
+#: page.asteriskinfo.php:506
 msgid "PJSip Registrations: "
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:15
+#: page.asteriskinfo.php:15
 msgid "Peers"
 msgstr "Peer-и"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:20
+#: asteriskinfo.i18n.php:5 asteriskinfo.i18n.php:12
+msgid "Provides a snapshot of the current Asterisk configuration"
+msgstr "Предоставя снимка на текущата Астериск конфигурация"
+
+#: page.asteriskinfo.php:20
 msgid "Queues"
 msgstr "Опашки"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:47
+#: page.asteriskinfo.php:47
 msgid "Queues Info"
 msgstr "Информация за Опашки"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:319
+#: page.asteriskinfo.php:319
 msgid "Refresh"
 msgstr "Презареди"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:13
+#: page.asteriskinfo.php:13
 msgid "Registries"
 msgstr "Регистрации"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:503
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10
+msgid "Reports"
+msgstr "Отчети"
+
+#: page.asteriskinfo.php:503
 msgid "Sip Peers: "
 msgstr "Sip Peer-и: "
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:502
+#: page.asteriskinfo.php:502
 msgid "Sip Registry: "
 msgstr "Sip Регистрирани: "
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:39
+#: page.asteriskinfo.php:39
 msgid "Subscribe/Notify"
 msgstr "Вписвания/Известявания"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:21
+#: page.asteriskinfo.php:21
 msgid "Subscriptions"
 msgstr "Вписвания"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:12
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:300
+#: page.asteriskinfo.php:12 page.asteriskinfo.php:300
 msgid "Summary"
 msgstr "Резюме"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:260
+#: page.asteriskinfo.php:260
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
@@ -223,42 +233,33 @@ msgstr ""
 "Модула не успя да се свърже с Астериск manager.<br>Убедете се че Астериск "
 "работи и настройките на вашия manager.conf са правилни.<br><br>"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:620
+#: page.asteriskinfo.php:620
 msgid "Unavailable: "
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:620
+#: page.asteriskinfo.php:620
 msgid "Unknown: "
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:631
+#: page.asteriskinfo.php:631
 msgid "Unmonitored: "
 msgstr "Ненаблюдавани: "
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:24
+#: page.asteriskinfo.php:24
 msgid "Uptime"
 msgstr "Експлоатация"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:500
+#: page.asteriskinfo.php:500
 msgid "Uptime: "
 msgstr "Експлоатация: "
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:48
+#: page.asteriskinfo.php:48
 msgid "Voicemail Users"
 msgstr "Потребители на Гласова Поща"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:43
+#: page.asteriskinfo.php:43
 msgid "Zaptel driver info"
 msgstr "Zaptel драйвер информация"
-
-#~ msgid "Asterisk Info"
-#~ msgstr "Астериск Информация"
-
-#~ msgid "Reports"
-#~ msgstr "Отчети"
-
-#~ msgid "Provides a snapshot of the current Asterisk configuration"
-#~ msgstr "Предоставя снимка на текущата Астериск конфигурация"
 
 #~ msgid "Sip Info"
 #~ msgstr "Sip Информация"
