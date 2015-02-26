@@ -265,7 +265,7 @@ msgstr "Zaptel驱动信息"
 #~ msgstr "SIP信息"
 
 #~ msgid "Sip Channel(s)"
-#~ msgstr "SIP频道"
+#~ msgstr "SIP通道"
 
 #~ msgid "Sip Registry"
 #~ msgstr "SIP注册项"
