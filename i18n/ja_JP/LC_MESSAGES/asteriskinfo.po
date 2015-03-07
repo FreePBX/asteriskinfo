@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 13:38-0500\n"
+"POT-Creation-Date: 2015-02-20 18:59-0500\n"
 "PO-Revision-Date: 2013-11-26 16:18+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -47,200 +47,210 @@ msgstr ""
 "Language: ja\n"
 "X-Generator: Poedit 1.6beta2\n"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:252
+#: page.asteriskinfo.php:252
 msgid "ASTERISK MANAGER ERROR"
 msgstr "Asteriskマネージャーエラー"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:25
+#: page.asteriskinfo.php:25
 msgid "Active Channel(s)"
 msgstr "アクティブチャネル"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:509
+#: page.asteriskinfo.php:509
 msgid "Active IAX2 Channel(s): "
 msgstr "アクティブIAX2チャネル："
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:505
+#: page.asteriskinfo.php:505
 msgid "Active PJSIP Channel(s): "
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:501
+#: page.asteriskinfo.php:501
 msgid "Active SIP Channel(s): "
 msgstr "アクティブSIPチャネル："
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:240
+#: page.asteriskinfo.php:240
 msgid "Asterisk (Ver. "
 msgstr "Asterisk (Ver. "
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:619
+#: asteriskinfo.i18n.php:3 asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:8
+#: asteriskinfo.i18n.php:14
+msgid "Asterisk Info"
+msgstr "Asterisk情報"
+
+#: page.asteriskinfo.php:619
 msgid "Available: "
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:27
+#: page.asteriskinfo.php:27
 msgid "Chan_PJSip Channel(s)"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:37
+#: page.asteriskinfo.php:37
 msgid "Chan_PJSip Endpoints"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:17
+#: page.asteriskinfo.php:17
 msgid "Chan_PJSip Info"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:31
+#: page.asteriskinfo.php:31
 msgid "Chan_PJSip Registrations"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:32
+#: page.asteriskinfo.php:32
 msgid "Chan_PJSip Transports"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:26
+#: page.asteriskinfo.php:26
 msgid "Chan_Sip Channel(s)"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:16
+#: page.asteriskinfo.php:16
 msgid "Chan_Sip Info"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:36
+#: page.asteriskinfo.php:36
 msgid "Chan_Sip Peers"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:30
+#: page.asteriskinfo.php:30
 msgid "Chan_Sip Registry"
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:14
+#: page.asteriskinfo.php:14
 msgid "Channels"
 msgstr "チャネル"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:46
+#: page.asteriskinfo.php:46
 msgid "Conference Bridge Info"
 msgstr "カンファレンスブリッジ情報"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:19
+#: page.asteriskinfo.php:19
 msgid "Conferences"
 msgstr "カンファレンス"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:41
+#: page.asteriskinfo.php:41
 msgid "DAHDi driver info"
 msgstr "DAHDiドリバー情報"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:22
+#: page.asteriskinfo.php:22
 msgid "Full Report"
 msgstr "フルレポート"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:49
+#: page.asteriskinfo.php:49
 msgid "Google Talk Channels"
 msgstr "Googleトークチャンネル"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:18
+#: page.asteriskinfo.php:18
 msgid "IAX Info"
 msgstr "IAX情報"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:28
+#: page.asteriskinfo.php:28
 msgid "IAX2 Channel(s)"
 msgstr "IAX2チャネル"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:29
+#: page.asteriskinfo.php:29
 msgid "IAX2 Peers"
 msgstr "IAX2ピア"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:511
+#: page.asteriskinfo.php:511
 msgid "IAX2 Peers: "
 msgstr "IAX2ピア："
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:38
+#: page.asteriskinfo.php:38
 msgid "IAX2 Registry"
 msgstr "IAX2レジストリ"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:510
+#: page.asteriskinfo.php:510
 msgid "IAX2 Registry: "
 msgstr "IAX2レジストリ："
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:50
+#: page.asteriskinfo.php:50
 msgid "Jabber Connections"
 msgstr "Jabber接続"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:45
+#: page.asteriskinfo.php:45
 msgid "MeetMe Conference Info"
 msgstr "MeetMeカンファレンス情報"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:51
+#: page.asteriskinfo.php:51
 msgid "Motif Connections"
 msgstr "Motif接続"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:606
+#: page.asteriskinfo.php:606
 msgid "Offline-Unmonitored: "
 msgstr "オフライン-モニタ対象外："
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:606
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:608
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:631
+#: page.asteriskinfo.php:606 page.asteriskinfo.php:608
+#: page.asteriskinfo.php:631
 msgid "Offline: "
 msgstr "オフライン："
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:605
+#: page.asteriskinfo.php:605
 msgid "Online-Unmonitored: "
 msgstr "オンライン-モニタ対象外："
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:605
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:608
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:631
+#: page.asteriskinfo.php:605 page.asteriskinfo.php:608
+#: page.asteriskinfo.php:631
 msgid "Online: "
 msgstr "オンライン："
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:507
+#: page.asteriskinfo.php:507
 msgid "PJSip Endpoints: "
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:506
+#: page.asteriskinfo.php:506
 msgid "PJSip Registrations: "
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:15
+#: page.asteriskinfo.php:15
 msgid "Peers"
 msgstr "ピア"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:20
+#: asteriskinfo.i18n.php:5 asteriskinfo.i18n.php:12
+msgid "Provides a snapshot of the current Asterisk configuration"
+msgstr "現在のAsterisk設定のスナップショットを提供"
+
+#: page.asteriskinfo.php:20
 msgid "Queues"
 msgstr "キュー"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:47
+#: page.asteriskinfo.php:47
 msgid "Queues Info"
 msgstr "キュー情報"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:319
+#: page.asteriskinfo.php:319
 msgid "Refresh"
 msgstr "更新"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:13
+#: page.asteriskinfo.php:13
 msgid "Registries"
 msgstr "レジストリ"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:503
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10
+msgid "Reports"
+msgstr "レポート"
+
+#: page.asteriskinfo.php:503
 msgid "Sip Peers: "
 msgstr "Sipピア："
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:502
+#: page.asteriskinfo.php:502
 msgid "Sip Registry: "
 msgstr "Sipレジストリ："
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:39
+#: page.asteriskinfo.php:39
 msgid "Subscribe/Notify"
 msgstr "サブスクライブ/通知"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:21
+#: page.asteriskinfo.php:21
 msgid "Subscriptions"
 msgstr "サブスクリプション"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:12
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:300
+#: page.asteriskinfo.php:12 page.asteriskinfo.php:300
 msgid "Summary"
 msgstr "サマリー"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:260
+#: page.asteriskinfo.php:260
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
@@ -249,42 +259,33 @@ msgstr ""
 "起動しているかどうか、manager.confの設定が適切かどうかを確認してください。"
 "<br><br>"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:620
+#: page.asteriskinfo.php:620
 msgid "Unavailable: "
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:620
+#: page.asteriskinfo.php:620
 msgid "Unknown: "
 msgstr ""
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:631
+#: page.asteriskinfo.php:631
 msgid "Unmonitored: "
 msgstr "モニタ対象外："
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:24
+#: page.asteriskinfo.php:24
 msgid "Uptime"
 msgstr "システム稼働時間"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:500
+#: page.asteriskinfo.php:500
 msgid "Uptime: "
 msgstr "システム稼働時間: "
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:48
+#: page.asteriskinfo.php:48
 msgid "Voicemail Users"
 msgstr "ボイスメールユーザ"
 
-#: /usr/src/freepbx/asteriskinfo/page.asteriskinfo.php:43
+#: page.asteriskinfo.php:43
 msgid "Zaptel driver info"
 msgstr "Zaptelドライバ情報"
-
-#~ msgid "Asterisk Info"
-#~ msgstr "Asterisk情報"
-
-#~ msgid "Reports"
-#~ msgstr "レポート"
-
-#~ msgid "Provides a snapshot of the current Asterisk configuration"
-#~ msgstr "現在のAsterisk設定のスナップショットを提供"
 
 #~ msgid "Sip Info"
 #~ msgstr "Sip情報"
