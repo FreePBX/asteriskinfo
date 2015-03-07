@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 18:59-0500\n"
+"POT-Creation-Date: 2015-03-06 19:38-0500\n"
 "PO-Revision-Date: 2014-07-21 13:06+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -22,36 +22,27 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: page.asteriskinfo.php:252
-msgid "ASTERISK MANAGER ERROR"
-msgstr "АСТЕРИСК MANAGER ГРЕШКА"
-
 #: page.asteriskinfo.php:25
 msgid "Active Channel(s)"
 msgstr "Активни Канали"
 
-#: page.asteriskinfo.php:509
+#: Asteriskinfo.class.php:46
 msgid "Active IAX2 Channel(s): "
 msgstr "Активни IAX2 Канали: "
 
-#: page.asteriskinfo.php:505
+#: Asteriskinfo.class.php:42
 msgid "Active PJSIP Channel(s): "
 msgstr ""
 
-#: page.asteriskinfo.php:501
+#: Asteriskinfo.class.php:38
 msgid "Active SIP Channel(s): "
 msgstr "Активни SIP Канали: "
 
-#: page.asteriskinfo.php:240
-msgid "Asterisk (Ver. "
-msgstr "Астериск (Версия "
-
-#: asteriskinfo.i18n.php:3 asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:8
-#: asteriskinfo.i18n.php:14
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:248
 msgid "Asterisk Info"
 msgstr "Астериск Информация"
 
-#: page.asteriskinfo.php:619
+#: Asteriskinfo.class.php:151
 msgid "Available: "
 msgstr ""
 
@@ -63,7 +54,7 @@ msgstr ""
 msgid "Chan_PJSip Endpoints"
 msgstr ""
 
-#: page.asteriskinfo.php:17
+#: page.asteriskinfo.php:18
 msgid "Chan_PJSip Info"
 msgstr ""
 
@@ -79,7 +70,7 @@ msgstr ""
 msgid "Chan_Sip Channel(s)"
 msgstr ""
 
-#: page.asteriskinfo.php:16
+#: page.asteriskinfo.php:17
 msgid "Chan_Sip Info"
 msgstr ""
 
@@ -91,7 +82,7 @@ msgstr ""
 msgid "Chan_Sip Registry"
 msgstr ""
 
-#: page.asteriskinfo.php:14
+#: page.asteriskinfo.php:15
 msgid "Channels"
 msgstr "Канали"
 
@@ -99,7 +90,7 @@ msgstr "Канали"
 msgid "Conference Bridge Info"
 msgstr "Информация за Конференция"
 
-#: page.asteriskinfo.php:19
+#: page.asteriskinfo.php:20
 msgid "Conferences"
 msgstr "Конференции"
 
@@ -107,7 +98,7 @@ msgstr "Конференции"
 msgid "DAHDi driver info"
 msgstr "DAHDi драйвер информация"
 
-#: page.asteriskinfo.php:22
+#: page.asteriskinfo.php:23
 msgid "Full Report"
 msgstr "Пълен Отчет"
 
@@ -115,7 +106,7 @@ msgstr "Пълен Отчет"
 msgid "Google Talk Channels"
 msgstr "Google Talk Канали"
 
-#: page.asteriskinfo.php:18
+#: page.asteriskinfo.php:19
 msgid "IAX Info"
 msgstr "IAX Информация"
 
@@ -127,7 +118,7 @@ msgstr "IAX2 Канали"
 msgid "IAX2 Peers"
 msgstr "IAX2 Peer-и"
 
-#: page.asteriskinfo.php:511
+#: Asteriskinfo.class.php:48
 msgid "IAX2 Peers: "
 msgstr "IAX2 Peer-и: "
 
@@ -135,7 +126,7 @@ msgstr "IAX2 Peer-и: "
 msgid "IAX2 Registry"
 msgstr "IAX2 Регистрирани"
 
-#: page.asteriskinfo.php:510
+#: Asteriskinfo.class.php:47
 msgid "IAX2 Registry: "
 msgstr "IAX2 Регистрирани: "
 
@@ -151,41 +142,39 @@ msgstr "Информация за MeetMe"
 msgid "Motif Connections"
 msgstr ""
 
-#: page.asteriskinfo.php:606
+#: Asteriskinfo.class.php:141
 msgid "Offline-Unmonitored: "
 msgstr "Офлайн-Ненаблюдавани: "
 
-#: page.asteriskinfo.php:606 page.asteriskinfo.php:608
-#: page.asteriskinfo.php:631
+#: Asteriskinfo.class.php:141 Asteriskinfo.class.php:163
 msgid "Offline: "
 msgstr "Офлайн: "
 
-#: page.asteriskinfo.php:605
+#: Asteriskinfo.class.php:140
 msgid "Online-Unmonitored: "
 msgstr "Онлайн-Ненаблюдавани: "
 
-#: page.asteriskinfo.php:605 page.asteriskinfo.php:608
-#: page.asteriskinfo.php:631
+#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:163
 msgid "Online: "
 msgstr "Онлайн: "
 
-#: page.asteriskinfo.php:507
+#: Asteriskinfo.class.php:44
 msgid "PJSip Endpoints: "
 msgstr ""
 
-#: page.asteriskinfo.php:506
+#: Asteriskinfo.class.php:43
 msgid "PJSip Registrations: "
 msgstr ""
 
-#: page.asteriskinfo.php:15
+#: page.asteriskinfo.php:16
 msgid "Peers"
 msgstr "Peer-и"
 
-#: asteriskinfo.i18n.php:5 asteriskinfo.i18n.php:12
+#: asteriskinfo.i18n.php:8
 msgid "Provides a snapshot of the current Asterisk configuration"
 msgstr "Предоставя снимка на текущата Астериск конфигурация"
 
-#: page.asteriskinfo.php:20
+#: page.asteriskinfo.php:21
 msgid "Queues"
 msgstr "Опашки"
 
@@ -193,23 +182,19 @@ msgstr "Опашки"
 msgid "Queues Info"
 msgstr "Информация за Опашки"
 
-#: page.asteriskinfo.php:319
-msgid "Refresh"
-msgstr "Презареди"
-
-#: page.asteriskinfo.php:13
+#: page.asteriskinfo.php:14
 msgid "Registries"
 msgstr "Регистрации"
 
-#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10
+#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
 msgid "Reports"
 msgstr "Отчети"
 
-#: page.asteriskinfo.php:503
+#: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
 msgstr "Sip Peer-и: "
 
-#: page.asteriskinfo.php:502
+#: Asteriskinfo.class.php:39
 msgid "Sip Registry: "
 msgstr "Sip Регистрирани: "
 
@@ -217,15 +202,15 @@ msgstr "Sip Регистрирани: "
 msgid "Subscribe/Notify"
 msgstr "Вписвания/Известявания"
 
-#: page.asteriskinfo.php:21
+#: page.asteriskinfo.php:22
 msgid "Subscriptions"
 msgstr "Вписвания"
 
-#: page.asteriskinfo.php:12 page.asteriskinfo.php:300
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:259
 msgid "Summary"
 msgstr "Резюме"
 
-#: page.asteriskinfo.php:260
+#: page.asteriskinfo.php:177
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
@@ -233,15 +218,19 @@ msgstr ""
 "Модула не успя да се свърже с Астериск manager.<br>Убедете се че Астериск "
 "работи и настройките на вашия manager.conf са правилни.<br><br>"
 
-#: page.asteriskinfo.php:620
+#: page.asteriskinfo.php:250
+msgid "This page supplies various information about your Asterisk system"
+msgstr ""
+
+#: Asteriskinfo.class.php:152
 msgid "Unavailable: "
 msgstr ""
 
-#: page.asteriskinfo.php:620
+#: Asteriskinfo.class.php:152
 msgid "Unknown: "
 msgstr ""
 
-#: page.asteriskinfo.php:631
+#: Asteriskinfo.class.php:163
 msgid "Unmonitored: "
 msgstr "Ненаблюдавани: "
 
@@ -249,7 +238,7 @@ msgstr "Ненаблюдавани: "
 msgid "Uptime"
 msgstr "Експлоатация"
 
-#: page.asteriskinfo.php:500
+#: Asteriskinfo.class.php:37
 msgid "Uptime: "
 msgstr "Експлоатация: "
 
@@ -260,6 +249,15 @@ msgstr "Потребители на Гласова Поща"
 #: page.asteriskinfo.php:43
 msgid "Zaptel driver info"
 msgstr "Zaptel драйвер информация"
+
+#~ msgid "ASTERISK MANAGER ERROR"
+#~ msgstr "АСТЕРИСК MANAGER ГРЕШКА"
+
+#~ msgid "Asterisk (Ver. "
+#~ msgstr "Астериск (Версия "
+
+#~ msgid "Refresh"
+#~ msgstr "Презареди"
 
 #~ msgid "Sip Info"
 #~ msgstr "Sip Информация"

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo asteriskinfo module spanish "
 "translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 18:59-0500\n"
+"POT-Creation-Date: 2015-03-06 19:38-0500\n"
 "PO-Revision-Date: 2009-01-22 01:01+0100\n"
 "Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
@@ -14,36 +14,27 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: page.asteriskinfo.php:252
-msgid "ASTERISK MANAGER ERROR"
-msgstr "ERROR EN EL GESTOR DE ASTERISK"
-
 #: page.asteriskinfo.php:25
 msgid "Active Channel(s)"
 msgstr "Canales activos"
 
-#: page.asteriskinfo.php:509
+#: Asteriskinfo.class.php:46
 msgid "Active IAX2 Channel(s): "
 msgstr "Canales IAX2 activos:"
 
-#: page.asteriskinfo.php:505
+#: Asteriskinfo.class.php:42
 msgid "Active PJSIP Channel(s): "
 msgstr ""
 
-#: page.asteriskinfo.php:501
+#: Asteriskinfo.class.php:38
 msgid "Active SIP Channel(s): "
 msgstr "Canales SIP activos:"
 
-#: page.asteriskinfo.php:240
-msgid "Asterisk (Ver. "
-msgstr "Asterisk (Versión"
-
-#: asteriskinfo.i18n.php:3 asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:8
-#: asteriskinfo.i18n.php:14
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:248
 msgid "Asterisk Info"
 msgstr ""
 
-#: page.asteriskinfo.php:619
+#: Asteriskinfo.class.php:151
 msgid "Available: "
 msgstr ""
 
@@ -55,7 +46,7 @@ msgstr ""
 msgid "Chan_PJSip Endpoints"
 msgstr ""
 
-#: page.asteriskinfo.php:17
+#: page.asteriskinfo.php:18
 msgid "Chan_PJSip Info"
 msgstr ""
 
@@ -71,7 +62,7 @@ msgstr ""
 msgid "Chan_Sip Channel(s)"
 msgstr ""
 
-#: page.asteriskinfo.php:16
+#: page.asteriskinfo.php:17
 msgid "Chan_Sip Info"
 msgstr ""
 
@@ -83,7 +74,7 @@ msgstr ""
 msgid "Chan_Sip Registry"
 msgstr ""
 
-#: page.asteriskinfo.php:14
+#: page.asteriskinfo.php:15
 msgid "Channels"
 msgstr "Canales"
 
@@ -91,7 +82,7 @@ msgstr "Canales"
 msgid "Conference Bridge Info"
 msgstr ""
 
-#: page.asteriskinfo.php:19
+#: page.asteriskinfo.php:20
 msgid "Conferences"
 msgstr "Conferencias"
 
@@ -99,7 +90,7 @@ msgstr "Conferencias"
 msgid "DAHDi driver info"
 msgstr "Información del controlador DAHDi"
 
-#: page.asteriskinfo.php:22
+#: page.asteriskinfo.php:23
 msgid "Full Report"
 msgstr "Informe completo"
 
@@ -107,7 +98,7 @@ msgstr "Informe completo"
 msgid "Google Talk Channels"
 msgstr ""
 
-#: page.asteriskinfo.php:18
+#: page.asteriskinfo.php:19
 msgid "IAX Info"
 msgstr "Información IAX"
 
@@ -119,7 +110,7 @@ msgstr "Canales IAX2"
 msgid "IAX2 Peers"
 msgstr "Pares IAX2"
 
-#: page.asteriskinfo.php:511
+#: Asteriskinfo.class.php:48
 msgid "IAX2 Peers: "
 msgstr "Pares IAX2:"
 
@@ -127,7 +118,7 @@ msgstr "Pares IAX2:"
 msgid "IAX2 Registry"
 msgstr "Registro IAX2"
 
-#: page.asteriskinfo.php:510
+#: Asteriskinfo.class.php:47
 msgid "IAX2 Registry: "
 msgstr "Registro IAX2:"
 
@@ -143,41 +134,39 @@ msgstr ""
 msgid "Motif Connections"
 msgstr ""
 
-#: page.asteriskinfo.php:606
+#: Asteriskinfo.class.php:141
 msgid "Offline-Unmonitored: "
 msgstr ""
 
-#: page.asteriskinfo.php:606 page.asteriskinfo.php:608
-#: page.asteriskinfo.php:631
+#: Asteriskinfo.class.php:141 Asteriskinfo.class.php:163
 msgid "Offline: "
 msgstr "Desconectados:"
 
-#: page.asteriskinfo.php:605
+#: Asteriskinfo.class.php:140
 msgid "Online-Unmonitored: "
 msgstr ""
 
-#: page.asteriskinfo.php:605 page.asteriskinfo.php:608
-#: page.asteriskinfo.php:631
+#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:163
 msgid "Online: "
 msgstr "Conectados:"
 
-#: page.asteriskinfo.php:507
+#: Asteriskinfo.class.php:44
 msgid "PJSip Endpoints: "
 msgstr ""
 
-#: page.asteriskinfo.php:506
+#: Asteriskinfo.class.php:43
 msgid "PJSip Registrations: "
 msgstr ""
 
-#: page.asteriskinfo.php:15
+#: page.asteriskinfo.php:16
 msgid "Peers"
 msgstr "Pares"
 
-#: asteriskinfo.i18n.php:5 asteriskinfo.i18n.php:12
+#: asteriskinfo.i18n.php:8
 msgid "Provides a snapshot of the current Asterisk configuration"
 msgstr ""
 
-#: page.asteriskinfo.php:20
+#: page.asteriskinfo.php:21
 msgid "Queues"
 msgstr ""
 
@@ -185,23 +174,19 @@ msgstr ""
 msgid "Queues Info"
 msgstr ""
 
-#: page.asteriskinfo.php:319
-msgid "Refresh"
-msgstr "Actualizar"
-
-#: page.asteriskinfo.php:13
+#: page.asteriskinfo.php:14
 msgid "Registries"
 msgstr "Registros"
 
-#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10
+#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
 msgid "Reports"
 msgstr ""
 
-#: page.asteriskinfo.php:503
+#: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
 msgstr "Pares SIP:"
 
-#: page.asteriskinfo.php:502
+#: Asteriskinfo.class.php:39
 msgid "Sip Registry: "
 msgstr "Registro SIP:"
 
@@ -209,15 +194,15 @@ msgstr "Registro SIP:"
 msgid "Subscribe/Notify"
 msgstr "Suscribir/Notificar"
 
-#: page.asteriskinfo.php:21
+#: page.asteriskinfo.php:22
 msgid "Subscriptions"
 msgstr "Suscripciones"
 
-#: page.asteriskinfo.php:12 page.asteriskinfo.php:300
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:259
 msgid "Summary"
 msgstr "Resumen"
 
-#: page.asteriskinfo.php:260
+#: page.asteriskinfo.php:177
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
@@ -226,15 +211,19 @@ msgstr ""
 "Asterisk se está ejecutando y la configuración de su archivo manager.conf es "
 "correcta."
 
-#: page.asteriskinfo.php:620
+#: page.asteriskinfo.php:250
+msgid "This page supplies various information about your Asterisk system"
+msgstr ""
+
+#: Asteriskinfo.class.php:152
 msgid "Unavailable: "
 msgstr ""
 
-#: page.asteriskinfo.php:620
+#: Asteriskinfo.class.php:152
 msgid "Unknown: "
 msgstr ""
 
-#: page.asteriskinfo.php:631
+#: Asteriskinfo.class.php:163
 msgid "Unmonitored: "
 msgstr "Sin monitorizar:"
 
@@ -242,7 +231,7 @@ msgstr "Sin monitorizar:"
 msgid "Uptime"
 msgstr "Tiempo encendido"
 
-#: page.asteriskinfo.php:500
+#: Asteriskinfo.class.php:37
 msgid "Uptime: "
 msgstr "Tiempo encendido:"
 
@@ -253,6 +242,15 @@ msgstr "Usuarios del buzón de voz"
 #: page.asteriskinfo.php:43
 msgid "Zaptel driver info"
 msgstr "Información del controlador Zaptel"
+
+#~ msgid "ASTERISK MANAGER ERROR"
+#~ msgstr "ERROR EN EL GESTOR DE ASTERISK"
+
+#~ msgid "Asterisk (Ver. "
+#~ msgstr "Asterisk (Versión"
+
+#~ msgid "Refresh"
+#~ msgstr "Actualizar"
 
 #~ msgid "Sip Info"
 #~ msgstr "Información SIP"
