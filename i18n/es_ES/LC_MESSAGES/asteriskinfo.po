@@ -4,7 +4,7 @@ msgstr ""
 "translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 18:59-0500\n"
-"PO-Revision-Date: 2015-03-23 23:51+0200\n"
+"PO-Revision-Date: 2015-03-23 23:53+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish "
 "<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/es_ES/>\n"
@@ -28,7 +28,7 @@ msgstr "Canales activos"
 
 #: page.asteriskinfo.php:509
 msgid "Active IAX2 Channel(s): "
-msgstr "Canales IAX2 activos:"
+msgstr "Canal(es) IAX2 activos: "
 
 #: page.asteriskinfo.php:505
 msgid "Active PJSIP Channel(s): "
@@ -36,11 +36,11 @@ msgstr "Canal(es) Activos PJSIP: "
 
 #: page.asteriskinfo.php:501
 msgid "Active SIP Channel(s): "
-msgstr "Canales SIP activos:"
+msgstr "Canal(es) SIP activos: "
 
 #: page.asteriskinfo.php:240
 msgid "Asterisk (Ver. "
-msgstr "Asterisk (Versión"
+msgstr "Asterisk (Vers. "
 
 #: asteriskinfo.i18n.php:3 asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:8
 #: asteriskinfo.i18n.php:14
@@ -125,7 +125,7 @@ msgstr "Pares IAX2"
 
 #: page.asteriskinfo.php:511
 msgid "IAX2 Peers: "
-msgstr "Pares IAX2:"
+msgstr "Pares IAX2: "
 
 #: page.asteriskinfo.php:38
 msgid "IAX2 Registry"
@@ -133,7 +133,7 @@ msgstr "Registro IAX2"
 
 #: page.asteriskinfo.php:510
 msgid "IAX2 Registry: "
-msgstr "Registro IAX2:"
+msgstr "Registro IAX2: "
 
 #: page.asteriskinfo.php:50
 msgid "Jabber Connections"
@@ -154,7 +154,7 @@ msgstr "Fuera de Linea-No monitoreado: "
 #: page.asteriskinfo.php:606 page.asteriskinfo.php:608
 #: page.asteriskinfo.php:631
 msgid "Offline: "
-msgstr "Desconectados:"
+msgstr "Desconectados: "
 
 #: page.asteriskinfo.php:605
 msgid "Online-Unmonitored: "
@@ -163,7 +163,7 @@ msgstr "En Linea-No Monitoreado "
 #: page.asteriskinfo.php:605 page.asteriskinfo.php:608
 #: page.asteriskinfo.php:631
 msgid "Online: "
-msgstr "Conectados:"
+msgstr "Conectados: "
 
 #: page.asteriskinfo.php:507
 msgid "PJSip Endpoints: "
@@ -203,11 +203,11 @@ msgstr "Reportes"
 
 #: page.asteriskinfo.php:503
 msgid "Sip Peers: "
-msgstr "Pares SIP:"
+msgstr "Pares SIP: "
 
 #: page.asteriskinfo.php:502
 msgid "Sip Registry: "
-msgstr "Registro SIP:"
+msgstr "Registro SIP: "
 
 #: page.asteriskinfo.php:39
 msgid "Subscribe/Notify"
@@ -226,9 +226,9 @@ msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
 msgstr ""
-"El módulo no pudo conectar con el gestor de Asterisk.<br/>Asegúrese de que "
+"El módulo no pudo conectar con el gestor de Asterisk.<br>Asegúrese de que "
 "Asterisk se está ejecutando y la configuración de su archivo manager.conf es "
-"correcta."
+"correcta.<br><br>"
 
 #: page.asteriskinfo.php:620
 msgid "Unavailable: "
@@ -240,7 +240,7 @@ msgstr "Desconocido: "
 
 #: page.asteriskinfo.php:631
 msgid "Unmonitored: "
-msgstr "Sin monitorizar:"
+msgstr "Sin monitorizar: "
 
 #: page.asteriskinfo.php:24
 msgid "Uptime"
@@ -248,7 +248,7 @@ msgstr "Tiempo encendido"
 
 #: page.asteriskinfo.php:500
 msgid "Uptime: "
-msgstr "Tiempo encendido:"
+msgstr "Tiempo encendido: "
 
 #: page.asteriskinfo.php:48
 msgid "Voicemail Users"
