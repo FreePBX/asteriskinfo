@@ -10,25 +10,28 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 18:59-0500\n"
-"PO-Revision-Date: 2015-02-20 18:59-0500\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2015-04-29 21:12+0200\n"
+"Last-Translator: philippebolduc <philippe@florenceinc.com>\n"
+"Language-Team: French "
+"<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/fr_FR/>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: page.asteriskinfo.php:252
 msgid "ASTERISK MANAGER ERROR"
-msgstr ""
+msgstr "ERREUR ASTERISK MANAGER"
 
 #: page.asteriskinfo.php:25
 msgid "Active Channel(s)"
-msgstr ""
+msgstr "Canaux actifs"
 
 #: page.asteriskinfo.php:509
 msgid "Active IAX2 Channel(s): "
-msgstr ""
+msgstr "Canaux IAX2 actifs: "
 
 #: page.asteriskinfo.php:505
 msgid "Active PJSIP Channel(s): "
