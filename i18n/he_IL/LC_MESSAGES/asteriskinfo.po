@@ -217,9 +217,7 @@ msgid "Summary"
 msgstr ""
 
 #: page.asteriskinfo.php:177
-msgid ""
-"The module was unable to connect to the Asterisk manager.<br>Make sure "
-"Asterisk is running and your manager.conf settings are proper.<br><br>"
+msgid "The module was unable to connect to the Asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>"
 msgstr ""
 
 #: page.asteriskinfo.php:250
@@ -252,4 +250,16 @@ msgstr ""
 
 #: page.asteriskinfo.php:43
 msgid "Zaptel driver info"
+msgstr ""
+
+#: page.asteriskinfo.php:252
+msgid "ASTERISK MANAGER ERROR"
+msgstr ""
+
+#: page.asteriskinfo.php:240
+msgid "Asterisk (Ver. "
+msgstr ""
+
+#: page.asteriskinfo.php:319
+msgid "Refresh"
 msgstr ""

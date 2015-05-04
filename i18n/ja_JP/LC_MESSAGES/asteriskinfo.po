@@ -236,13 +236,8 @@ msgid "Summary"
 msgstr "サマリー"
 
 #: page.asteriskinfo.php:177
-msgid ""
-"The module was unable to connect to the Asterisk manager.<br>Make sure "
-"Asterisk is running and your manager.conf settings are proper.<br><br>"
-msgstr ""
-"モジュールからAsteriskマネージャーへの接続ができませんでした。<br>Asteriskが"
-"起動しているかどうか、manager.confの設定が適切かどうかを確認してください。"
-"<br><br>"
+msgid "The module was unable to connect to the Asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>"
+msgstr "モジュールからAsteriskマネージャーへの接続ができませんでした。<br>Asteriskが起動しているかどうか、manager.confの設定が適切かどうかを確認してください。<br><br>"
 
 #: page.asteriskinfo.php:250
 msgid "This page supplies various information about your Asterisk system"
@@ -285,14 +280,14 @@ msgstr "Zaptelドライバ情報"
 #~ msgid "Refresh"
 #~ msgstr "更新"
 
-#~ msgid "Sip Info"
-#~ msgstr "Sip情報"
-
 #~ msgid "Sip Channel(s)"
 #~ msgstr "Sipチャネル"
 
-#~ msgid "Sip Registry"
-#~ msgstr "Sipレジストリ"
+#~ msgid "Sip Info"
+#~ msgstr "Sip情報"
 
 #~ msgid "Sip Peers"
 #~ msgstr "Sipピア"
+
+#~ msgid "Sip Registry"
+#~ msgstr "Sipレジストリ"

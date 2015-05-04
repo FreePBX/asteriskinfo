@@ -1,40 +1,24 @@
-msgid ""
-msgstr ""
-"Project-Id-Version: FreePBX - módulo asteriskinfo module spanish "
-"translation\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 19:38-0500\n"
-"PO-Revision-Date: 2009-01-22 01:01+0100\n"
-"Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
-"Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Spanish\n"
-"X-Poedit-Country: SPAIN\n"
-"X-Poedit-SourceCharset: utf-8\n"
-
 #: page.asteriskinfo.php:25
 msgid "Active Channel(s)"
-msgstr "Canales activos"
+msgstr ""
 
 #: Asteriskinfo.class.php:46
 msgid "Active IAX2 Channel(s): "
-msgstr "Canales IAX2 activos:"
+msgstr ""
 
-#: Asteriskinfo.class.php:42
+#: page.asteriskinfo.php:505
 msgid "Active PJSIP Channel(s): "
 msgstr ""
 
 #: Asteriskinfo.class.php:38
 msgid "Active SIP Channel(s): "
-msgstr "Canales SIP activos:"
+msgstr ""
 
-#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:248
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10
 msgid "Asterisk Info"
 msgstr ""
 
-#: Asteriskinfo.class.php:151
+#: page.asteriskinfo.php:619
 msgid "Available: "
 msgstr ""
 
@@ -46,7 +30,7 @@ msgstr ""
 msgid "Chan_PJSip Endpoints"
 msgstr ""
 
-#: page.asteriskinfo.php:18
+#: page.asteriskinfo.php:17
 msgid "Chan_PJSip Info"
 msgstr ""
 
@@ -62,7 +46,7 @@ msgstr ""
 msgid "Chan_Sip Channel(s)"
 msgstr ""
 
-#: page.asteriskinfo.php:17
+#: page.asteriskinfo.php:16
 msgid "Chan_Sip Info"
 msgstr ""
 
@@ -76,7 +60,7 @@ msgstr ""
 
 #: page.asteriskinfo.php:15
 msgid "Channels"
-msgstr "Canales"
+msgstr ""
 
 #: page.asteriskinfo.php:46
 msgid "Conference Bridge Info"
@@ -84,15 +68,15 @@ msgstr ""
 
 #: page.asteriskinfo.php:20
 msgid "Conferences"
-msgstr "Conferencias"
+msgstr ""
 
 #: page.asteriskinfo.php:41
 msgid "DAHDi driver info"
-msgstr "Información del controlador DAHDi"
+msgstr ""
 
 #: page.asteriskinfo.php:23
 msgid "Full Report"
-msgstr "Informe completo"
+msgstr ""
 
 #: page.asteriskinfo.php:49
 msgid "Google Talk Channels"
@@ -100,27 +84,27 @@ msgstr ""
 
 #: page.asteriskinfo.php:19
 msgid "IAX Info"
-msgstr "Información IAX"
+msgstr ""
 
 #: page.asteriskinfo.php:28
 msgid "IAX2 Channel(s)"
-msgstr "Canales IAX2"
+msgstr ""
 
 #: page.asteriskinfo.php:29
 msgid "IAX2 Peers"
-msgstr "Pares IAX2"
+msgstr ""
 
 #: Asteriskinfo.class.php:48
 msgid "IAX2 Peers: "
-msgstr "Pares IAX2:"
+msgstr ""
 
 #: page.asteriskinfo.php:38
 msgid "IAX2 Registry"
-msgstr "Registro IAX2"
+msgstr ""
 
 #: Asteriskinfo.class.php:47
 msgid "IAX2 Registry: "
-msgstr "Registro IAX2:"
+msgstr ""
 
 #: page.asteriskinfo.php:50
 msgid "Jabber Connections"
@@ -134,39 +118,39 @@ msgstr ""
 msgid "Motif Connections"
 msgstr ""
 
-#: Asteriskinfo.class.php:141
+#: page.asteriskinfo.php:606
 msgid "Offline-Unmonitored: "
 msgstr ""
 
 #: Asteriskinfo.class.php:141 Asteriskinfo.class.php:163
 msgid "Offline: "
-msgstr "Desconectados:"
+msgstr ""
 
-#: Asteriskinfo.class.php:140
+#: page.asteriskinfo.php:605
 msgid "Online-Unmonitored: "
 msgstr ""
 
 #: Asteriskinfo.class.php:140 Asteriskinfo.class.php:163
 msgid "Online: "
-msgstr "Conectados:"
+msgstr ""
 
-#: Asteriskinfo.class.php:44
+#: page.asteriskinfo.php:507
 msgid "PJSip Endpoints: "
 msgstr ""
 
-#: Asteriskinfo.class.php:43
+#: page.asteriskinfo.php:506
 msgid "PJSip Registrations: "
 msgstr ""
 
 #: page.asteriskinfo.php:16
 msgid "Peers"
-msgstr "Pares"
+msgstr ""
 
 #: asteriskinfo.i18n.php:8
 msgid "Provides a snapshot of the current Asterisk configuration"
 msgstr ""
 
-#: page.asteriskinfo.php:21
+#: page.asteriskinfo.php:20
 msgid "Queues"
 msgstr ""
 
@@ -176,7 +160,7 @@ msgstr ""
 
 #: page.asteriskinfo.php:14
 msgid "Registries"
-msgstr "Registros"
+msgstr ""
 
 #: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
 msgid "Reports"
@@ -184,85 +168,56 @@ msgstr ""
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
-msgstr "Pares SIP:"
+msgstr ""
 
 #: Asteriskinfo.class.php:39
 msgid "Sip Registry: "
-msgstr "Registro SIP:"
+msgstr ""
 
 #: page.asteriskinfo.php:39
 msgid "Subscribe/Notify"
-msgstr "Suscribir/Notificar"
+msgstr ""
 
 #: page.asteriskinfo.php:22
 msgid "Subscriptions"
-msgstr "Suscripciones"
+msgstr ""
 
 #: page.asteriskinfo.php:13 page.asteriskinfo.php:259
 msgid "Summary"
-msgstr "Resumen"
+msgstr ""
 
 #: page.asteriskinfo.php:177
-msgid ""
-"The module was unable to connect to the Asterisk manager.<br>Make sure "
-"Asterisk is running and your manager.conf settings are proper.<br><br>"
+msgid "The module was unable to connect to the Asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>"
 msgstr ""
-"El módulo no pudo conectar con el gestor de Asterisk.<br/>Asegúrese de que "
-"Asterisk se está ejecutando y la configuración de su archivo manager.conf es "
-"correcta."
 
 #: page.asteriskinfo.php:250
 msgid "This page supplies various information about your Asterisk system"
 msgstr ""
 
-#: Asteriskinfo.class.php:152
+#: page.asteriskinfo.php:620
 msgid "Unavailable: "
 msgstr ""
 
-#: Asteriskinfo.class.php:152
+#: page.asteriskinfo.php:620
 msgid "Unknown: "
 msgstr ""
 
 #: Asteriskinfo.class.php:163
 msgid "Unmonitored: "
-msgstr "Sin monitorizar:"
+msgstr ""
 
 #: page.asteriskinfo.php:24
 msgid "Uptime"
-msgstr "Tiempo encendido"
+msgstr ""
 
 #: Asteriskinfo.class.php:37
 msgid "Uptime: "
-msgstr "Tiempo encendido:"
+msgstr ""
 
 #: page.asteriskinfo.php:48
 msgid "Voicemail Users"
-msgstr "Usuarios del buzón de voz"
+msgstr ""
 
 #: page.asteriskinfo.php:43
 msgid "Zaptel driver info"
-msgstr "Información del controlador Zaptel"
-
-#~ msgid "ASTERISK MANAGER ERROR"
-#~ msgstr "ERROR EN EL GESTOR DE ASTERISK"
-
-#~ msgid "Asterisk (Ver. "
-#~ msgstr "Asterisk (Versión"
-
-#~ msgid "Refresh"
-#~ msgstr "Actualizar"
-
-#~ msgid "Sip Info"
-#~ msgstr "Información SIP"
-
-#~ msgid "Sip Channel(s)"
-#~ msgstr "Canales SIP"
-
-#~ msgid "Sip Registry"
-#~ msgstr "Registro SIP"
-
-#~ msgid "Sip Peers"
-#~ msgstr "Pares SIP"
-
-#~ msgid "Conference Info"
-#~ msgstr "Información de conferencias"
+msgstr ""

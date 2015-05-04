@@ -24,9 +24,9 @@ msgstr "Активных каналов"
 msgid "Active IAX2 Channel(s): "
 msgstr "Активных IAX2 каналов: "
 
-#: Asteriskinfo.class.php:42
+#: page.asteriskinfo.php:505
 msgid "Active PJSIP Channel(s): "
-msgstr ""
+msgstr "Активный(е) PJSIP канал(ы): "
 
 #: Asteriskinfo.class.php:38
 msgid "Active SIP Channel(s): "
@@ -36,45 +36,45 @@ msgstr "Активных SIP каналов: "
 msgid "Asterisk Info"
 msgstr "Информация об Asterisk"
 
-#: Asteriskinfo.class.php:151
+#: page.asteriskinfo.php:619
 msgid "Available: "
-msgstr ""
+msgstr "Доступно: "
 
 #: page.asteriskinfo.php:27
 msgid "Chan_PJSip Channel(s)"
-msgstr ""
+msgstr "Chan_PJSip канал(ы)"
 
 #: page.asteriskinfo.php:37
 msgid "Chan_PJSip Endpoints"
-msgstr ""
+msgstr "Chan_PJSip конечных точек"
 
-#: page.asteriskinfo.php:18
+#: page.asteriskinfo.php:17
 msgid "Chan_PJSip Info"
-msgstr ""
+msgstr "Информация Chan_PJSip"
 
 #: page.asteriskinfo.php:31
 msgid "Chan_PJSip Registrations"
-msgstr ""
+msgstr "Chan_PJSip регистраций"
 
 #: page.asteriskinfo.php:32
 msgid "Chan_PJSip Transports"
-msgstr ""
+msgstr "Chan_PJSip транспорты"
 
 #: page.asteriskinfo.php:26
 msgid "Chan_Sip Channel(s)"
-msgstr ""
+msgstr "Chan_Sip канал(ы)"
 
-#: page.asteriskinfo.php:17
+#: page.asteriskinfo.php:16
 msgid "Chan_Sip Info"
-msgstr ""
+msgstr "Информация Chan_Sip"
 
 #: page.asteriskinfo.php:36
 msgid "Chan_Sip Peers"
-msgstr ""
+msgstr "Chan_Sip объектов"
 
 #: page.asteriskinfo.php:30
 msgid "Chan_Sip Registry"
-msgstr ""
+msgstr "Chan_Sip регистрации"
 
 #: page.asteriskinfo.php:15
 msgid "Channels"
@@ -134,7 +134,7 @@ msgstr "информация о конференциях MeetMe"
 
 #: page.asteriskinfo.php:51
 msgid "Motif Connections"
-msgstr ""
+msgstr "Соединения Motif"
 
 #: Asteriskinfo.class.php:141
 msgid "Offline-Unmonitored: "
@@ -152,13 +152,13 @@ msgstr "Онлайн (без мониторинга): "
 msgid "Online: "
 msgstr "Онлайн: "
 
-#: Asteriskinfo.class.php:44
+#: page.asteriskinfo.php:507
 msgid "PJSip Endpoints: "
-msgstr ""
+msgstr "PJSip конечных точек: "
 
-#: Asteriskinfo.class.php:43
+#: page.asteriskinfo.php:506
 msgid "PJSip Registrations: "
-msgstr ""
+msgstr "PJSip регистраций: "
 
 #: page.asteriskinfo.php:16
 msgid "Peers"
@@ -205,24 +205,20 @@ msgid "Summary"
 msgstr "Краткая сводка"
 
 #: page.asteriskinfo.php:177
-msgid ""
-"The module was unable to connect to the Asterisk manager.<br>Make sure "
-"Asterisk is running and your manager.conf settings are proper.<br><br>"
-msgstr ""
-"Модуль не может соединиться с управлением Астериск<br>Убедитесь что Астериск "
-"работает, и настройки manager.conf корректны.<br><br>"
+msgid "The module was unable to connect to the Asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>"
+msgstr "Модуль не может соединиться с управлением Астериск<br>Убедитесь что Астериск работает, и настройки manager.conf корректны.<br><br>"
 
 #: page.asteriskinfo.php:250
 msgid "This page supplies various information about your Asterisk system"
 msgstr ""
 
-#: Asteriskinfo.class.php:152
+#: page.asteriskinfo.php:620
 msgid "Unavailable: "
-msgstr ""
+msgstr "Недоступно: "
 
-#: Asteriskinfo.class.php:152
+#: page.asteriskinfo.php:620
 msgid "Unknown: "
-msgstr ""
+msgstr "Неизвестно: "
 
 #: Asteriskinfo.class.php:163
 msgid "Unmonitored: "
@@ -250,20 +246,20 @@ msgstr "Информация о драйвере Zaptel"
 #~ msgid "Asterisk (Ver. "
 #~ msgstr "Астериск (Версия "
 
+#~ msgid "Conference Info"
+#~ msgstr "Информация по конференциям"
+
 #~ msgid "Refresh"
 #~ msgstr "Обновить"
-
-#~ msgid "Sip Info"
-#~ msgstr "Информация SIP"
 
 #~ msgid "Sip Channel(s)"
 #~ msgstr "SIP каналы"
 
-#~ msgid "Sip Registry"
-#~ msgstr "SIP регистрации"
+#~ msgid "Sip Info"
+#~ msgstr "Информация SIP"
 
 #~ msgid "Sip Peers"
 #~ msgstr "SIP пиры"
 
-#~ msgid "Conference Info"
-#~ msgstr "Информация по конференциям"
+#~ msgid "Sip Registry"
+#~ msgstr "SIP регистрации"

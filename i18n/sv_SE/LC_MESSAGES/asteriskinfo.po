@@ -219,12 +219,8 @@ msgid "Summary"
 msgstr "Sammanfattning"
 
 #: page.asteriskinfo.php:177
-msgid ""
-"The module was unable to connect to the Asterisk manager.<br>Make sure "
-"Asterisk is running and your manager.conf settings are proper.<br><br>"
-msgstr ""
-"Modulen kunde inte koppla upp sig mot Asterisk hanterare.<br>Kontrollera att "
-"Asterisk körs och att dina inställningar i manager.conf är riktiga.<br><br>"
+msgid "The module was unable to connect to the Asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>"
+msgstr "Modulen kunde inte koppla upp sig mot Asterisk hanterare.<br>Kontrollera att Asterisk körs och att dina inställningar i manager.conf är riktiga.<br><br>"
 
 #: page.asteriskinfo.php:250
 msgid "This page supplies various information about your Asterisk system"
@@ -264,23 +260,23 @@ msgstr "Zaptel drivrutinsinformation"
 #~ msgid "Asterisk (Ver. "
 #~ msgstr "Asterisk (Ver."
 
+#~ msgid "Conference Info"
+#~ msgstr "Konferensinformation"
+
 #~ msgid "Refresh"
 #~ msgstr "Uppdatera"
-
-#~ msgid "Sip Info"
-#~ msgstr "SIP-info"
 
 #~ msgid "Sip Channel(s)"
 #~ msgstr "SIP-kanal(er)"
 
-#~ msgid "Sip Registry"
-#~ msgstr "SIP-registrering(ar)"
+#~ msgid "Sip Info"
+#~ msgstr "SIP-info"
 
 #~ msgid "Sip Peers"
 #~ msgstr "SIP peers"
 
+#~ msgid "Sip Registry"
+#~ msgstr "SIP-registrering(ar)"
+
 #~ msgid "System Administration"
 #~ msgstr "Systemadministration"
-
-#~ msgid "Conference Info"
-#~ msgstr "Konferensinformation"
