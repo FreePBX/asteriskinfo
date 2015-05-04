@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX asteriskinfo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 18:59-0500\n"
+"POT-Creation-Date: 2015-05-04 09:31-0400\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -54,8 +54,7 @@ msgstr "Aktiv(a) SIP-kanal(er): "
 msgid "Asterisk (Ver. "
 msgstr "Asterisk (Ver."
 
-#: asteriskinfo.i18n.php:3 asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:8
-#: asteriskinfo.i18n.php:14
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10
 msgid "Asterisk Info"
 msgstr "Asterisk-info"
 
@@ -189,7 +188,7 @@ msgstr ""
 msgid "Peers"
 msgstr "Peers"
 
-#: asteriskinfo.i18n.php:5 asteriskinfo.i18n.php:12
+#: asteriskinfo.i18n.php:8
 msgid "Provides a snapshot of the current Asterisk configuration"
 msgstr "Denna modul ger en ögonblicksbild av din Asteriskkonfiguration"
 
@@ -209,7 +208,7 @@ msgstr "Uppdatera"
 msgid "Registries"
 msgstr "Registreringar"
 
-#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10
+#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
 msgid "Reports"
 msgstr ""
 
