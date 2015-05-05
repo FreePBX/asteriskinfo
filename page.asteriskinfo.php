@@ -64,6 +64,7 @@ $modes = array(
 	"queues" => $modequeues,
 	"all" => $modeall
 );
+$hooktabs = $hookall = '';
 $hooks = $astinfo->asteriskInfoHooks();
 foreach ($hooks as $hook) {
 	if(!isset($hook['title'])){
@@ -178,6 +179,7 @@ $amerror .= _("The module was unable to connect to the Asterisk manager.<br>Make
 $amerror .= '</div>';
 //Registries
 $registrieshtml = '<h2>'.$moderegistries.'</h2>';
+$output = '';
 foreach ($arr_registries as $key => $value) {
 	$output .= $astinfo->getOutput($value);
 	$registrieshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
@@ -231,7 +233,7 @@ foreach ($arr_subscriptions as $key => $value) {
 }
 
 //voicemail
-$voicemailhtml = '<h2>'.$modevoicemail.'</h2>';
+$voicemailhtml = '<h2>'.$voicemailusers.'</h2>';
 foreach ($arr_voicemail as $key => $value) {
 	$output .= $astinfo->getOutput($value);
 	$voicemailhtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
@@ -269,7 +271,7 @@ foreach ($arr_voicemail as $key => $value) {
 								<?php echo $registrieshtml?>
 							</div>
 							<div role="tabpanel" id="channels" class="tab-pane">
-								<?php echo $channelshtml?>	
+								<?php echo $channelshtml?>
 							</div>
 							<div role="tabpanel" id="peers" class="tab-pane">
 								<?php echo $peershtml?>

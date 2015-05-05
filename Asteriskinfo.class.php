@@ -27,7 +27,7 @@ class Asteriskinfo implements \BMO {
 			if ($pjsip_module) {
 				$pjsipActive = true;
 			}
-	
+
 			$sip_mod_check = $astman->send_request('Command', array('Command' => 'module show like chan_sip'));
 			$sip_module = preg_match('/[1-9] modules loaded/', $sip_mod_check['data']);
 			if (!$sip_module) {
@@ -38,16 +38,16 @@ class Asteriskinfo implements \BMO {
 		$activesipchannels = _("Active SIP Channel(s): ");
 		$sipregistry = _("Sip Registry: ");
 		$sippeers = _("Sip Peers: ");
-	
+
 		$activepjsipchannels = _("Active PJSIP Channel(s): ");
 		$pjsipregistrations = _("PJSip Registrations: ");
 		$pjsipendpoints = _("PJSip Endpoints: ");
-	
+
 		$activeiax2channels = _("Active IAX2 Channel(s): ");
 		$iax2registry = _("IAX2 Registry: ");
 		$iax2peers = _("IAX2 Peers: ");
-	
-	
+
+
 		$arr = array(
 			$uptime => "show uptime",
 			$activesipchannels => "sip show channels",
@@ -60,7 +60,7 @@ class Asteriskinfo implements \BMO {
 			$pjsipendpoints => "pjsip show endpoints",
 			$iax2peers => "iax2 show peers",
 		);
-	
+
 		if(!$sipActive) {
 			unset($arr[$activesipchannels]);
 			unset($arr[$sipregistry]);
@@ -71,18 +71,18 @@ class Asteriskinfo implements \BMO {
 			unset($arr[$pjsipregistrations]);
 			unset($arr[$pjsipendpoints]);
 		}
-	
+
 		if (version_compare($astver, '1.4', 'ge')) {
 			$arr[$uptime] = 'core show uptime';
 		}
-	
-		$htmlOutput  .= '<table>';
-	
+
+		$htmlOutput  = '<table>';
+
 		foreach ($arr as $key => $value) {
-	
+
 			$response = $astman->send_request('Command',array('Command'=>$value));
 			$astout = explode("\n",$response['data']);
-	
+
 			switch ($key) {
 				case $uptime:
 					$uptime = $astout;
@@ -150,7 +150,7 @@ class Asteriskinfo implements \BMO {
 					}
 					$htmlOutput .= "<td>".$key."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Available: ").$pjsipPeer_arr['available']."<br />";
 					$htmlOutput .= "&nbsp;&nbsp;&nbsp;&nbsp;"._("Unavailable: ")."<span style=\"color:".$pjsipPeerColor.";font-weight:bold;\">".$pjsipPeer_arr['unavailable']."</span><br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Unknown: ")."<span style=\"color:".$pjsipPeerColor.";font-weight:bold;\">".$pjsipPeer_arr['unknown']."</span></td>";
-	
+
 				break;
 				case $iax2peers:
 					$iax2Peer = $astout;
@@ -167,7 +167,7 @@ class Asteriskinfo implements \BMO {
 				}
 			}
 		$htmlOutput .= '</table>';
-		return $htmlOutput."</div>";	
+		return $htmlOutput."</div>";
 	}
 	public function getActiveChannel($channel_arr, $channelType = NULL){
 		if(count($channel_arr) > 1){
@@ -203,7 +203,7 @@ class Asteriskinfo implements \BMO {
 			$sipRegistration_arr = $registration;
 			$sipRegistration_count = count($sipRegistration_arr);
 			return $sipRegistration_count-3;
-	
+
 		}elseif($channelType == 'IAX2'){
 			$iax2Registration_arr = $registration;
 			$iax2Registration_count = count($iax2Registration_arr);
@@ -225,7 +225,7 @@ class Asteriskinfo implements \BMO {
 			return $channels;
 		}
 	}
-	
+
 	public function getPeer($peer, $channelType = NULL){
 		global $astver_major, $astver_minor;
 		global $astver;
@@ -242,7 +242,7 @@ class Asteriskinfo implements \BMO {
 				$sipPeerInfo_arr['online-unmonitored'] = $sipPeerInfo_arr3[6];
 				$sipPeerInfo_arr['offline-unmonitored'] = $sipPeerInfo_arr3[8];
 				return $sipPeerInfo_arr;
-	
+
 			}elseif($channelType == 'IAX2'){
 				$iax2Peer = $peer;
 				$iax2Peer_count = count($iax2Peer);
@@ -310,7 +310,7 @@ class Asteriskinfo implements \BMO {
 	 * 		'commands' => array('subtitle' => 'command1', 'subtitle' => 'command2')
 	 */
 	public function asteriskInfoHooks(){
-		\FreePBX::Hooks()->processHooks($data);
+		$data = \FreePBX::Hooks()->processHooks();
 		return $data;
 	}
 }
