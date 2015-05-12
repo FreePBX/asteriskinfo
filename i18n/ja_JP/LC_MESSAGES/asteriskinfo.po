@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 19:38-0500\n"
+"POT-Creation-Date: 2015-05-12 19:13-0400\n"
 "PO-Revision-Date: 2013-11-26 16:18+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -63,7 +63,7 @@ msgstr ""
 msgid "Active SIP Channel(s): "
 msgstr "アクティブSIPチャネル："
 
-#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:248
+#: page.asteriskinfo.php:252
 msgid "Asterisk Info"
 msgstr "Asterisk情報"
 
@@ -195,10 +195,6 @@ msgstr ""
 msgid "Peers"
 msgstr "ピア"
 
-#: asteriskinfo.i18n.php:8
-msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr "現在のAsterisk設定のスナップショットを提供"
-
 #: page.asteriskinfo.php:21
 msgid "Queues"
 msgstr "キュー"
@@ -210,10 +206,6 @@ msgstr "キュー情報"
 #: page.asteriskinfo.php:14
 msgid "Registries"
 msgstr "レジストリ"
-
-#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
-msgid "Reports"
-msgstr "レポート"
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
@@ -231,15 +223,20 @@ msgstr "サブスクライブ/通知"
 msgid "Subscriptions"
 msgstr "サブスクリプション"
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:259
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:263
 msgid "Summary"
 msgstr "サマリー"
 
-#: page.asteriskinfo.php:177
-msgid "The module was unable to connect to the Asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>"
-msgstr "モジュールからAsteriskマネージャーへの接続ができませんでした。<br>Asteriskが起動しているかどうか、manager.confの設定が適切かどうかを確認してください。<br><br>"
+#: page.asteriskinfo.php:180
+msgid ""
+"The module was unable to connect to the Asterisk manager.<br>Make sure "
+"Asterisk is running and your manager.conf settings are proper.<br><br>"
+msgstr ""
+"モジュールからAsteriskマネージャーへの接続ができませんでした。<br>Asteriskが"
+"起動しているかどうか、manager.confの設定が適切かどうかを確認してください。"
+"<br><br>"
 
-#: page.asteriskinfo.php:250
+#: page.asteriskinfo.php:254
 msgid "This page supplies various information about your Asterisk system"
 msgstr ""
 
@@ -270,6 +267,12 @@ msgstr "ボイスメールユーザ"
 #: page.asteriskinfo.php:43
 msgid "Zaptel driver info"
 msgstr "Zaptelドライバ情報"
+
+#~ msgid "Provides a snapshot of the current Asterisk configuration"
+#~ msgstr "現在のAsterisk設定のスナップショットを提供"
+
+#~ msgid "Reports"
+#~ msgstr "レポート"
 
 #~ msgid "ASTERISK MANAGER ERROR"
 #~ msgstr "Asteriskマネージャーエラー"

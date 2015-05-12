@@ -9,12 +9,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 19:38-0500\n"
+"POT-Creation-Date: 2015-05-12 19:13-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: page.asteriskinfo.php:25
@@ -33,7 +33,7 @@ msgstr ""
 msgid "Active SIP Channel(s): "
 msgstr ""
 
-#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:248
+#: page.asteriskinfo.php:252
 msgid "Asterisk Info"
 msgstr ""
 
@@ -141,7 +141,8 @@ msgstr ""
 msgid "Offline-Unmonitored: "
 msgstr ""
 
-#: Asteriskinfo.class.php:141 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:141
+#: Asteriskinfo.class.php:163
 msgid "Offline: "
 msgstr ""
 
@@ -149,7 +150,8 @@ msgstr ""
 msgid "Online-Unmonitored: "
 msgstr ""
 
-#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:140
+#: Asteriskinfo.class.php:163
 msgid "Online: "
 msgstr ""
 
@@ -165,10 +167,6 @@ msgstr ""
 msgid "Peers"
 msgstr ""
 
-#: asteriskinfo.i18n.php:8
-msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr ""
-
 #: page.asteriskinfo.php:21
 msgid "Queues"
 msgstr ""
@@ -179,10 +177,6 @@ msgstr ""
 
 #: page.asteriskinfo.php:14
 msgid "Registries"
-msgstr ""
-
-#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
-msgid "Reports"
 msgstr ""
 
 #: Asteriskinfo.class.php:40
@@ -201,15 +195,18 @@ msgstr ""
 msgid "Subscriptions"
 msgstr ""
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:259
+#: page.asteriskinfo.php:13
+#: page.asteriskinfo.php:263
 msgid "Summary"
 msgstr ""
 
-#: page.asteriskinfo.php:177
-msgid "The module was unable to connect to the Asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>"
+#: page.asteriskinfo.php:180
+msgid ""
+"The module was unable to connect to the Asterisk manager.<br>Make sure "
+"Asterisk is running and your manager.conf settings are proper.<br><br>"
 msgstr ""
 
-#: page.asteriskinfo.php:250
+#: page.asteriskinfo.php:254
 msgid "This page supplies various information about your Asterisk system"
 msgstr ""
 
@@ -239,16 +236,4 @@ msgstr ""
 
 #: page.asteriskinfo.php:43
 msgid "Zaptel driver info"
-msgstr ""
-
-#: page.asteriskinfo.php:252
-msgid "ASTERISK MANAGER ERROR"
-msgstr ""
-
-#: page.asteriskinfo.php:240
-msgid "Asterisk (Ver. "
-msgstr ""
-
-#: page.asteriskinfo.php:319
-msgid "Refresh"
 msgstr ""

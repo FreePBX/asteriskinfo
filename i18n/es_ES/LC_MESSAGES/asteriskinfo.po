@@ -6,7 +6,7 @@ msgstr ""
 msgid "Active IAX2 Channel(s): "
 msgstr ""
 
-#: page.asteriskinfo.php:505
+#: Asteriskinfo.class.php:42
 msgid "Active PJSIP Channel(s): "
 msgstr ""
 
@@ -14,11 +14,11 @@ msgstr ""
 msgid "Active SIP Channel(s): "
 msgstr ""
 
-#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10
+#: page.asteriskinfo.php:252
 msgid "Asterisk Info"
 msgstr ""
 
-#: page.asteriskinfo.php:619
+#: Asteriskinfo.class.php:151
 msgid "Available: "
 msgstr ""
 
@@ -30,7 +30,7 @@ msgstr ""
 msgid "Chan_PJSip Endpoints"
 msgstr ""
 
-#: page.asteriskinfo.php:17
+#: page.asteriskinfo.php:18
 msgid "Chan_PJSip Info"
 msgstr ""
 
@@ -46,7 +46,7 @@ msgstr ""
 msgid "Chan_Sip Channel(s)"
 msgstr ""
 
-#: page.asteriskinfo.php:16
+#: page.asteriskinfo.php:17
 msgid "Chan_Sip Info"
 msgstr ""
 
@@ -118,7 +118,7 @@ msgstr ""
 msgid "Motif Connections"
 msgstr ""
 
-#: page.asteriskinfo.php:606
+#: Asteriskinfo.class.php:141
 msgid "Offline-Unmonitored: "
 msgstr ""
 
@@ -126,7 +126,7 @@ msgstr ""
 msgid "Offline: "
 msgstr ""
 
-#: page.asteriskinfo.php:605
+#: Asteriskinfo.class.php:140
 msgid "Online-Unmonitored: "
 msgstr ""
 
@@ -134,11 +134,11 @@ msgstr ""
 msgid "Online: "
 msgstr ""
 
-#: page.asteriskinfo.php:507
+#: Asteriskinfo.class.php:44
 msgid "PJSip Endpoints: "
 msgstr ""
 
-#: page.asteriskinfo.php:506
+#: Asteriskinfo.class.php:43
 msgid "PJSip Registrations: "
 msgstr ""
 
@@ -146,11 +146,7 @@ msgstr ""
 msgid "Peers"
 msgstr ""
 
-#: asteriskinfo.i18n.php:8
-msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr ""
-
-#: page.asteriskinfo.php:20
+#: page.asteriskinfo.php:21
 msgid "Queues"
 msgstr ""
 
@@ -160,10 +156,6 @@ msgstr ""
 
 #: page.asteriskinfo.php:14
 msgid "Registries"
-msgstr ""
-
-#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
-msgid "Reports"
 msgstr ""
 
 #: Asteriskinfo.class.php:40
@@ -182,23 +174,25 @@ msgstr ""
 msgid "Subscriptions"
 msgstr ""
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:259
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:263
 msgid "Summary"
 msgstr ""
 
-#: page.asteriskinfo.php:177
-msgid "The module was unable to connect to the Asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>"
+#: page.asteriskinfo.php:180
+msgid ""
+"The module was unable to connect to the Asterisk manager.<br>Make sure "
+"Asterisk is running and your manager.conf settings are proper.<br><br>"
 msgstr ""
 
-#: page.asteriskinfo.php:250
+#: page.asteriskinfo.php:254
 msgid "This page supplies various information about your Asterisk system"
 msgstr ""
 
-#: page.asteriskinfo.php:620
+#: Asteriskinfo.class.php:152
 msgid "Unavailable: "
 msgstr ""
 
-#: page.asteriskinfo.php:620
+#: Asteriskinfo.class.php:152
 msgid "Unknown: "
 msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-04 09:31-0400\n"
+"POT-Creation-Date: 2015-05-12 19:13-0400\n"
 "PO-Revision-Date: 2015-03-19 17:20+0200\n"
 "Last-Translator: Jan Peter <jpveldhuizen@gmail.com>\n"
 "Language-Team: Dutch <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,35 +21,27 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: page.asteriskinfo.php:252
-msgid "ASTERISK MANAGER ERROR"
-msgstr "ASTERISK MANAGER FOUT"
-
 #: page.asteriskinfo.php:25
 msgid "Active Channel(s)"
 msgstr "Actieve kanalen"
 
-#: page.asteriskinfo.php:509
+#: Asteriskinfo.class.php:46
 msgid "Active IAX2 Channel(s): "
 msgstr "Actieve IAX2 kanalen: "
 
-#: page.asteriskinfo.php:505
+#: Asteriskinfo.class.php:42
 msgid "Active PJSIP Channel(s): "
 msgstr "Actieve PJSIP kanalen: "
 
-#: page.asteriskinfo.php:501
+#: Asteriskinfo.class.php:38
 msgid "Active SIP Channel(s): "
 msgstr "Active SIP kanalen: "
 
-#: page.asteriskinfo.php:240
-msgid "Asterisk (Ver. "
-msgstr "Asterisk (ver. "
-
-#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10
+#: page.asteriskinfo.php:252
 msgid "Asterisk Info"
 msgstr "Asterisk informatie"
 
-#: page.asteriskinfo.php:619
+#: Asteriskinfo.class.php:151
 msgid "Available: "
 msgstr "Beschikbaar: "
 
@@ -61,7 +53,7 @@ msgstr "Chan_PJSIP kanalen"
 msgid "Chan_PJSip Endpoints"
 msgstr "Chan_PJSIP eindpunten"
 
-#: page.asteriskinfo.php:17
+#: page.asteriskinfo.php:18
 msgid "Chan_PJSip Info"
 msgstr "Chan_PJSIP informatie"
 
@@ -77,7 +69,7 @@ msgstr "Chan_PJSIP overbrengingen"
 msgid "Chan_Sip Channel(s)"
 msgstr "Chan_SIP kanalen"
 
-#: page.asteriskinfo.php:16
+#: page.asteriskinfo.php:17
 msgid "Chan_Sip Info"
 msgstr "Chan_SIP informatie"
 
@@ -90,7 +82,7 @@ msgstr "Chan_SIP lotgenoten"
 msgid "Chan_Sip Registry"
 msgstr "Chan_SIP register"
 
-#: page.asteriskinfo.php:14
+#: page.asteriskinfo.php:15
 msgid "Channels"
 msgstr "Kanalen"
 
@@ -98,7 +90,7 @@ msgstr "Kanalen"
 msgid "Conference Bridge Info"
 msgstr "Conferentiebrug informatie"
 
-#: page.asteriskinfo.php:19
+#: page.asteriskinfo.php:20
 msgid "Conferences"
 msgstr "Conferenties"
 
@@ -106,7 +98,7 @@ msgstr "Conferenties"
 msgid "DAHDi driver info"
 msgstr "DAHDI stuurprogramma informatie"
 
-#: page.asteriskinfo.php:22
+#: page.asteriskinfo.php:23
 msgid "Full Report"
 msgstr "Volledig rapport"
 
@@ -114,7 +106,7 @@ msgstr "Volledig rapport"
 msgid "Google Talk Channels"
 msgstr "Google Talk kanalen"
 
-#: page.asteriskinfo.php:18
+#: page.asteriskinfo.php:19
 msgid "IAX Info"
 msgstr "IAX informatie"
 
@@ -127,7 +119,7 @@ msgstr "IAX2 kanalen"
 msgid "IAX2 Peers"
 msgstr "IAX2 lotgenoten"
 
-#: page.asteriskinfo.php:511
+#: Asteriskinfo.class.php:48
 msgid "IAX2 Peers: "
 msgstr "IAX2 lotgenoten: "
 
@@ -135,7 +127,7 @@ msgstr "IAX2 lotgenoten: "
 msgid "IAX2 Registry"
 msgstr "IAX2 Register"
 
-#: page.asteriskinfo.php:510
+#: Asteriskinfo.class.php:47
 msgid "IAX2 Registry: "
 msgstr "IAX2 Register: "
 
@@ -151,41 +143,35 @@ msgstr "MeetMe conferentie informatie"
 msgid "Motif Connections"
 msgstr "Motif verbindingen"
 
-#: page.asteriskinfo.php:606
+#: Asteriskinfo.class.php:141
 msgid "Offline-Unmonitored: "
 msgstr "Niet aangemeld - Niet gecontroleerd: "
 
-#: page.asteriskinfo.php:606 page.asteriskinfo.php:608
-#: page.asteriskinfo.php:631
+#: Asteriskinfo.class.php:141 Asteriskinfo.class.php:163
 msgid "Offline: "
 msgstr "Niet aangemeld: "
 
-#: page.asteriskinfo.php:605
+#: Asteriskinfo.class.php:140
 msgid "Online-Unmonitored: "
 msgstr "Aangemeld - Niet gecontroleerd: "
 
-#: page.asteriskinfo.php:605 page.asteriskinfo.php:608
-#: page.asteriskinfo.php:631
+#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:163
 msgid "Online: "
 msgstr "Aangemeld: "
 
-#: page.asteriskinfo.php:507
+#: Asteriskinfo.class.php:44
 msgid "PJSip Endpoints: "
 msgstr "PJSIP eindpunten: "
 
-#: page.asteriskinfo.php:506
+#: Asteriskinfo.class.php:43
 msgid "PJSip Registrations: "
 msgstr "PJSIP registraties: "
 
-#: page.asteriskinfo.php:15
+#: page.asteriskinfo.php:16
 msgid "Peers"
 msgstr "Lotgenoten"
 
-#: asteriskinfo.i18n.php:8
-msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr "Geeft een momentopname van de huidige Asterisk configuratie"
-
-#: page.asteriskinfo.php:20
+#: page.asteriskinfo.php:21
 msgid "Queues"
 msgstr "Wachtrijen"
 
@@ -193,23 +179,15 @@ msgstr "Wachtrijen"
 msgid "Queues Info"
 msgstr "Wachtrijen informatie"
 
-#: page.asteriskinfo.php:319
-msgid "Refresh"
-msgstr "Vernieuwen"
-
-#: page.asteriskinfo.php:13
+#: page.asteriskinfo.php:14
 msgid "Registries"
 msgstr "Registraties"
 
-#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
-msgid "Reports"
-msgstr "Rapporten"
-
-#: page.asteriskinfo.php:503
+#: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
 msgstr "SIP lotgenoten: "
 
-#: page.asteriskinfo.php:502
+#: Asteriskinfo.class.php:39
 msgid "Sip Registry: "
 msgstr "SIP register: "
 
@@ -217,15 +195,15 @@ msgstr "SIP register: "
 msgid "Subscribe/Notify"
 msgstr "Abonneren/Melden"
 
-#: page.asteriskinfo.php:21
+#: page.asteriskinfo.php:22
 msgid "Subscriptions"
 msgstr "Abonnementen"
 
-#: page.asteriskinfo.php:12 page.asteriskinfo.php:300
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:263
 msgid "Summary"
 msgstr "Overzicht"
 
-#: page.asteriskinfo.php:260
+#: page.asteriskinfo.php:180
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
@@ -233,15 +211,19 @@ msgstr ""
 "De module kon geen verbinding maken met de Asterisk Manager.<br>Controleer "
 "of Asterisk actief is, en de instellingen in manager.conf juist zijn.<br><br>"
 
-#: page.asteriskinfo.php:620
+#: page.asteriskinfo.php:254
+msgid "This page supplies various information about your Asterisk system"
+msgstr ""
+
+#: Asteriskinfo.class.php:152
 msgid "Unavailable: "
 msgstr "Niet beschikbaar: "
 
-#: page.asteriskinfo.php:620
+#: Asteriskinfo.class.php:152
 msgid "Unknown: "
 msgstr "Onbekend: "
 
-#: page.asteriskinfo.php:631
+#: Asteriskinfo.class.php:163
 msgid "Unmonitored: "
 msgstr "Niet gecontroleerd: "
 
@@ -249,7 +231,7 @@ msgstr "Niet gecontroleerd: "
 msgid "Uptime"
 msgstr "Tijd actief"
 
-#: page.asteriskinfo.php:500
+#: Asteriskinfo.class.php:37
 msgid "Uptime: "
 msgstr "Tijd actief: "
 
@@ -260,3 +242,18 @@ msgstr "Voicemail gebruikers"
 #: page.asteriskinfo.php:43
 msgid "Zaptel driver info"
 msgstr "Zaptel stuurprogramma informatie"
+
+#~ msgid "ASTERISK MANAGER ERROR"
+#~ msgstr "ASTERISK MANAGER FOUT"
+
+#~ msgid "Asterisk (Ver. "
+#~ msgstr "Asterisk (ver. "
+
+#~ msgid "Provides a snapshot of the current Asterisk configuration"
+#~ msgstr "Geeft een momentopname van de huidige Asterisk configuratie"
+
+#~ msgid "Refresh"
+#~ msgstr "Vernieuwen"
+
+#~ msgid "Reports"
+#~ msgstr "Rapporten"

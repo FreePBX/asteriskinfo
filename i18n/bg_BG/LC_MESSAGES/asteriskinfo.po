@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 19:38-0500\n"
+"POT-Creation-Date: 2015-05-12 19:13-0400\n"
 "PO-Revision-Date: 2014-07-21 13:06+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
-"Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/asteriskinfo/bg/>\n"
+"Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
+"asteriskinfo/bg/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,7 +30,7 @@ msgstr "Активни Канали"
 msgid "Active IAX2 Channel(s): "
 msgstr "Активни IAX2 Канали: "
 
-#: page.asteriskinfo.php:505
+#: Asteriskinfo.class.php:42
 msgid "Active PJSIP Channel(s): "
 msgstr "Активни PJSIP Канали: "
 
@@ -37,11 +38,11 @@ msgstr "Активни PJSIP Канали: "
 msgid "Active SIP Channel(s): "
 msgstr "Активни SIP Канали: "
 
-#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:248
+#: page.asteriskinfo.php:252
 msgid "Asterisk Info"
 msgstr "Астериск Информация"
 
-#: page.asteriskinfo.php:619
+#: Asteriskinfo.class.php:151
 msgid "Available: "
 msgstr "Налични: "
 
@@ -53,7 +54,7 @@ msgstr "Chan_PJSip Канали"
 msgid "Chan_PJSip Endpoints"
 msgstr "Chan_PJSip Телефони"
 
-#: page.asteriskinfo.php:17
+#: page.asteriskinfo.php:18
 msgid "Chan_PJSip Info"
 msgstr "Chan_PJSip Информация"
 
@@ -69,7 +70,7 @@ msgstr "Chan_PJSip Преноси"
 msgid "Chan_Sip Channel(s)"
 msgstr "Chan_Sip Канали"
 
-#: page.asteriskinfo.php:16
+#: page.asteriskinfo.php:17
 msgid "Chan_Sip Info"
 msgstr "Chan_Sip Информация"
 
@@ -157,21 +158,17 @@ msgstr "Онлайн-Ненаблюдавани: "
 msgid "Online: "
 msgstr "Онлайн: "
 
-#: page.asteriskinfo.php:507
+#: Asteriskinfo.class.php:44
 msgid "PJSip Endpoints: "
 msgstr "PJSip Телефони: "
 
-#: page.asteriskinfo.php:506
+#: Asteriskinfo.class.php:43
 msgid "PJSip Registrations: "
 msgstr "PJSip Регистрирани: "
 
 #: page.asteriskinfo.php:16
 msgid "Peers"
 msgstr "Peer-и"
-
-#: asteriskinfo.i18n.php:8
-msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr "Предоставя снимка на текущата Астериск конфигурация"
 
 #: page.asteriskinfo.php:21
 msgid "Queues"
@@ -184,10 +181,6 @@ msgstr "Информация за Опашки"
 #: page.asteriskinfo.php:14
 msgid "Registries"
 msgstr "Регистрации"
-
-#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
-msgid "Reports"
-msgstr "Отчети"
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
@@ -205,23 +198,27 @@ msgstr "Вписвания/Известявания"
 msgid "Subscriptions"
 msgstr "Вписвания"
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:259
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:263
 msgid "Summary"
 msgstr "Резюме"
 
-#: page.asteriskinfo.php:177
-msgid "The module was unable to connect to the Asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>"
-msgstr "Модула не успя да се свърже с Астериск manager.<br>Убедете се че Астериск работи и настройките на вашия manager.conf са правилни.<br><br>"
+#: page.asteriskinfo.php:180
+msgid ""
+"The module was unable to connect to the Asterisk manager.<br>Make sure "
+"Asterisk is running and your manager.conf settings are proper.<br><br>"
+msgstr ""
+"Модула не успя да се свърже с Астериск manager.<br>Убедете се че Астериск "
+"работи и настройките на вашия manager.conf са правилни.<br><br>"
 
-#: page.asteriskinfo.php:250
+#: page.asteriskinfo.php:254
 msgid "This page supplies various information about your Asterisk system"
 msgstr ""
 
-#: page.asteriskinfo.php:620
+#: Asteriskinfo.class.php:152
 msgid "Unavailable: "
 msgstr "Недостъпни: "
 
-#: page.asteriskinfo.php:620
+#: Asteriskinfo.class.php:152
 msgid "Unknown: "
 msgstr "Непознати: "
 
@@ -244,6 +241,12 @@ msgstr "Потребители на Гласова Поща"
 #: page.asteriskinfo.php:43
 msgid "Zaptel driver info"
 msgstr "Zaptel драйвер информация"
+
+#~ msgid "Provides a snapshot of the current Asterisk configuration"
+#~ msgstr "Предоставя снимка на текущата Астериск конфигурация"
+
+#~ msgid "Reports"
+#~ msgstr "Отчети"
 
 #~ msgid "ASTERISK MANAGER ERROR"
 #~ msgstr "АСТЕРИСК MANAGER ГРЕШКА"
