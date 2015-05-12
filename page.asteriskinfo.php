@@ -66,26 +66,28 @@ $modes = array(
 );
 $hooktabs = $hookall = '';
 $hooks = $astinfo->asteriskInfoHooks();
-foreach ($hooks as $hook) {
-	if(!isset($hook['title'])){
-		continue;
+if(!empty($hooks) && is_array($hooks)) {
+	foreach ($hooks as $hook) {
+		if(!isset($hook['title'])){
+			continue;
+		}
+		if(!isset($hook['mode'])){
+			continue;
+		}
+		if(!isset($hook['commands'])){
+			continue;
+		}
+		$modes[$hook['mode']] = $hook['title'];
+		$hookhtml = '<h2>'.$hook['title'].'</h2>';
+		foreach ($hook['commands'] as $key => $value) {
+			$output .= $astinfo->getOutput($value);
+			$hookhtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+		}
+		$hooktabs .= '<div role="tabpanel" id="'.$hook['mode'].'" class="tab-pane">';
+		$hooktabs .= $hookhtml;
+		$hooktabs .= '</div>';
+		$hookall .= $hookhtml;
 	}
-	if(!isset($hook['mode'])){
-		continue;
-	}
-	if(!isset($hook['commands'])){
-		continue;
-	}
-	$modes[$hook['mode']] = $hook['title'];
-	$hookhtml = '<h2>'.$hook['title'].'</h2>';
-	foreach ($hook['commands'] as $key => $value) {
-		$output .= $astinfo->getOutput($value);
-		$hookhtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
-	}
-	$hooktabs .= '<div role="tabpanel" id="'.$hook['mode'].'" class="tab-pane">';
-	$hooktabs .= $hookhtml;
-	$hooktabs .= '</div>';
-	$hookall .= $hookhtml;
 }
 
 $engineinfo = engine_getinfo();
