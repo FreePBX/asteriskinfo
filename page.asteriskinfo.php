@@ -79,9 +79,11 @@ if(!empty($hooks) && is_array($hooks)) {
 		}
 		$modes[$hook['mode']] = $hook['title'];
 		$hookhtml = '<h2>'.$hook['title'].'</h2>';
-		foreach ($hook['commands'] as $key => $value) {
-			$output .= $astinfo->getOutput($value);
-			$hookhtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+		if(!empty($hook['commands']) && is_array($hook['commands'])) {
+			foreach ($hook['commands'] as $key => $value) {
+				$output .= $astinfo->getOutput($value);
+				$hookhtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+			}
 		}
 		$hooktabs .= '<div role="tabpanel" id="'.$hook['mode'].'" class="tab-pane">';
 		$hooktabs .= $hookhtml;
@@ -182,70 +184,90 @@ $amerror .= '</div>';
 //Registries
 $registrieshtml = '<h2>'.$moderegistries.'</h2>';
 $output = '';
-foreach ($arr_registries as $key => $value) {
-	$output .= $astinfo->getOutput($value);
-	$registrieshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+if(!empty($arr_registries) && is_array($arr_registries)) {
+	foreach ($arr_registries as $key => $value) {
+		$output .= $astinfo->getOutput($value);
+		$registrieshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+	}
 }
 //Channels
 $channelshtml = '<h2>'.$modechannels.'</h2>';
-foreach ($arr_channels as $key => $value) {
-	$output .= $astinfo->getOutput($value);
-	$channelshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+if(!empty($arr_channels) && is_array($arr_channels)) {
+	foreach ($arr_channels as $key => $value) {
+		$output .= $astinfo->getOutput($value);
+		$channelshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+	}
 }
 //Peers
 $peershtml = '<h2>'.$modepeers.'</h2>';
-foreach ($arr_peers as $key => $value) {
-	$output .= $astinfo->getOutput($value);
-	$peershtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+if(!empty($arr_peers) && is_array($arr_peers)) {
+	foreach ($arr_peers as $key => $value) {
+		$output .= $astinfo->getOutput($value);
+		$peershtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+	}
 }
 //SIP
 if(isset($modesip)){
 	$siphtml = '<h2>'.$modesip.'</h2>';
-	foreach ($arr_sip as $key => $value) {
-		$output .= $astinfo->getOutput($value);
-		$siphtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+	if(!empty($arr_sip) && is_array($arr_sip)) {
+		foreach ($arr_sip as $key => $value) {
+			$output .= $astinfo->getOutput($value);
+			$siphtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+		}
 	}
 }
 //PJSIP
 if(isset($modepjsip)){
 	$pjsiphtml = '<h2>'.$modepjsip.'</h2>';
-	foreach ($arr_pjsip as $key => $value) {
-		$output .= $astinfo->getOutput($value);
-		$pjsiphtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+		if(!empty($arr_pjsip) && is_array($arr_pjsip)) {
+		foreach ($arr_pjsip as $key => $value) {
+			$output .= $astinfo->getOutput($value);
+			$pjsiphtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+		}
 	}
 }
 //IAX
 $iaxhtml = '<h2>'.$modeiax.'</h2>';
-foreach ($arr_iax as $key => $value) {
-	$output .= $astinfo->getOutput($value);
-	$iaxhtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+if(!empty($arr_iax) && is_array($arr_iax)) {
+	foreach ($arr_iax as $key => $value) {
+		$output .= $astinfo->getOutput($value);
+		$iaxhtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+	}
 }
 //conferences
 $conferenceshtml = '<h2>'.$modeconferences.'</h2>';
-foreach ($arr_conferences as $key => $value) {
-	$output .= $astinfo->getOutput($value);
-	$conferenceshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+if(!empty($arr_conferences) && is_array($arr_conferences)) {
+	foreach ($arr_conferences as $key => $value) {
+		$output .= $astinfo->getOutput($value);
+		$conferenceshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+	}
 }
 
 //subscriptions
 $subscriptionshtml = '<h2>'.$modesubscriptions.'</h2>';
-foreach ($arr_subscriptions as $key => $value) {
-	$output .= $astinfo->getOutput($value);
-	$subscriptionshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+if(!empty($arr_subscriptions) && is_array($arr_subscriptions)) {
+	foreach ($arr_subscriptions as $key => $value) {
+		$output .= $astinfo->getOutput($value);
+		$subscriptionshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+	}
 }
 
 //voicemail
 $voicemailhtml = '<h2>'.$voicemailusers.'</h2>';
-foreach ($arr_voicemail as $key => $value) {
-	$output .= $astinfo->getOutput($value);
-	$voicemailhtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+if(!empty($arr_voicemail) && is_array($arr_voicemail)) {
+	foreach ($arr_voicemail as $key => $value) {
+		$output .= $astinfo->getOutput($value);
+		$voicemailhtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+	}
 }
 
 //queues
 $queueshtml = '<h2>'.$modequeues.'</h2>';
-foreach ($arr_voicemail as $key => $value) {
-	$output .= $astinfo->getOutput($value);
-	$queueshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+if(!empty($arr_voicemail) && is_array($arr_voicemail)) {
+	foreach ($arr_voicemail as $key => $value) {
+		$output .= $astinfo->getOutput($value);
+		$queueshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+	}
 }
 ?>
 <div class="container-fluid">
