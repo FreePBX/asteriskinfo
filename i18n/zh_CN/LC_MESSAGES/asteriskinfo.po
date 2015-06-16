@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-12 19:13-0400\n"
+"POT-Creation-Date: 2015-06-16 15:20-0400\n"
 "PO-Revision-Date: 2015-02-05 21:01+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://git.freepbx.org/projects/freepbx/"
@@ -38,7 +38,7 @@ msgstr ""
 msgid "Active SIP Channel(s): "
 msgstr "活动的SIP频道："
 
-#: page.asteriskinfo.php:252
+#: page.asteriskinfo.php:266
 msgid "Asterisk Info"
 msgstr "Asterisk 信息"
 
@@ -198,11 +198,11 @@ msgstr "订阅/通知"
 msgid "Subscriptions"
 msgstr "订阅"
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:263
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:277
 msgid "Summary"
 msgstr "摘要"
 
-#: page.asteriskinfo.php:180
+#: page.asteriskinfo.php:184
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
@@ -210,7 +210,7 @@ msgstr ""
 "本模块无法连接到Asterisk管理器。<br />请确认Asterisk正在运行并且你的manager."
 "conf设定是正确的。<br><br>"
 
-#: page.asteriskinfo.php:254
+#: page.asteriskinfo.php:268
 msgid "This page supplies various information about your Asterisk system"
 msgstr ""
 

@@ -14,7 +14,7 @@ msgstr ""
 msgid "Active SIP Channel(s): "
 msgstr ""
 
-#: page.asteriskinfo.php:252
+#: page.asteriskinfo.php:266
 msgid "Asterisk Info"
 msgstr ""
 
@@ -174,17 +174,17 @@ msgstr ""
 msgid "Subscriptions"
 msgstr ""
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:263
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:277
 msgid "Summary"
 msgstr ""
 
-#: page.asteriskinfo.php:180
+#: page.asteriskinfo.php:184
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
 msgstr ""
 
-#: page.asteriskinfo.php:254
+#: page.asteriskinfo.php:268
 msgid "This page supplies various information about your Asterisk system"
 msgstr ""
 

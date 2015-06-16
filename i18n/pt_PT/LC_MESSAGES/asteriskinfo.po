@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-12 19:13-0400\n"
+"POT-Creation-Date: 2015-06-16 15:20-0400\n"
 "PO-Revision-Date: 2015-04-24 21:41+0200\n"
 "Last-Translator: Paulo <paulop1975@gmail.com>\n"
 "Language-Team: Portuguese (Portugal) <http://weblate.freepbx.org/projects/"
@@ -37,7 +37,7 @@ msgstr "Canais PJSIP ativos: "
 msgid "Active SIP Channel(s): "
 msgstr "Canais SIP ativos: "
 
-#: page.asteriskinfo.php:252
+#: page.asteriskinfo.php:266
 msgid "Asterisk Info"
 msgstr "Info do Asterisk"
 
@@ -197,17 +197,17 @@ msgstr "Subscrever/Notificar"
 msgid "Subscriptions"
 msgstr "Subscrições"
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:263
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:277
 msgid "Summary"
 msgstr "Resumo"
 
-#: page.asteriskinfo.php:180
+#: page.asteriskinfo.php:184
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
 msgstr ""
 
-#: page.asteriskinfo.php:254
+#: page.asteriskinfo.php:268
 msgid "This page supplies various information about your Asterisk system"
 msgstr ""
 

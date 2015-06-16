@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-12 19:13-0400\n"
+"POT-Creation-Date: 2015-06-16 15:20-0400\n"
 "PO-Revision-Date: 2013-11-26 16:18+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -63,7 +63,7 @@ msgstr ""
 msgid "Active SIP Channel(s): "
 msgstr "アクティブSIPチャネル："
 
-#: page.asteriskinfo.php:252
+#: page.asteriskinfo.php:266
 msgid "Asterisk Info"
 msgstr "Asterisk情報"
 
@@ -223,11 +223,11 @@ msgstr "サブスクライブ/通知"
 msgid "Subscriptions"
 msgstr "サブスクリプション"
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:263
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:277
 msgid "Summary"
 msgstr "サマリー"
 
-#: page.asteriskinfo.php:180
+#: page.asteriskinfo.php:184
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
@@ -236,7 +236,7 @@ msgstr ""
 "起動しているかどうか、manager.confの設定が適切かどうかを確認してください。"
 "<br><br>"
 
-#: page.asteriskinfo.php:254
+#: page.asteriskinfo.php:268
 msgid "This page supplies various information about your Asterisk system"
 msgstr ""
 
