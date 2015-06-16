@@ -117,10 +117,12 @@ $xmpp_module = preg_match('/[1-9] modules loaded/', $xmpp_mod_check['data']);
 $arr_all[$uptime]="core show uptime";
 $arr_all[$activechannels]="core show channels";
 $arr_all[$subscribenotify]="core show hints";
+$arr_all[$modequeues]="queue show";
 $arr_all[$voicemailusers]="voicemail show users";
 $arr_channels[$activechannels]="core show channels";
 $arr_subscriptions[$subscribenotify]="core show hints";
 $arr_voicemail[$voicemailusers]="voicemail show users";
+$arr_queues[$modequeues]="queue show";
 if ($gtalk_module) {
 	$arr_all[$gtalkchannels]="gtalk show channels";
 	$arr_channels[$gtalkchannels]="gtalk show channels";
@@ -182,18 +184,21 @@ $amerror .= '</div>';
 //Registries
 $registrieshtml = '<h2>'.$moderegistries.'</h2>';
 $output = '';
+$arr_registries = is_array($arr_registries)?$arr_registries:array();
 foreach ($arr_registries as $key => $value) {
 	$output .= $astinfo->getOutput($value);
 	$registrieshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
 }
 //Channels
 $channelshtml = '<h2>'.$modechannels.'</h2>';
+$arr_channels = is_array($arr_channels)?$arr_channels:array();
 foreach ($arr_channels as $key => $value) {
 	$output .= $astinfo->getOutput($value);
 	$channelshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
 }
 //Peers
 $peershtml = '<h2>'.$modepeers.'</h2>';
+$arr_peers = is_array($arr_peers)?$arr_peers:array();
 foreach ($arr_peers as $key => $value) {
 	$output .= $astinfo->getOutput($value);
 	$peershtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
@@ -201,6 +206,7 @@ foreach ($arr_peers as $key => $value) {
 //SIP
 if(isset($modesip)){
 	$siphtml = '<h2>'.$modesip.'</h2>';
+	$arr_sip = is_array($arr_sip)?$arr_sip:array();
 	foreach ($arr_sip as $key => $value) {
 		$output .= $astinfo->getOutput($value);
 		$siphtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
@@ -209,6 +215,7 @@ if(isset($modesip)){
 //PJSIP
 if(isset($modepjsip)){
 	$pjsiphtml = '<h2>'.$modepjsip.'</h2>';
+	$arr_pjsip = is_array($arr_pjsip)?$arr_pjsip:array();
 	foreach ($arr_pjsip as $key => $value) {
 		$output .= $astinfo->getOutput($value);
 		$pjsiphtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
@@ -216,12 +223,14 @@ if(isset($modepjsip)){
 }
 //IAX
 $iaxhtml = '<h2>'.$modeiax.'</h2>';
+$arr_iax = is_array($arr_iax)?$arr_iax:array();
 foreach ($arr_iax as $key => $value) {
 	$output .= $astinfo->getOutput($value);
 	$iaxhtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
 }
 //conferences
 $conferenceshtml = '<h2>'.$modeconferences.'</h2>';
+$arr_conferences = is_array($arr_conferences)?$arr_conferences:array();
 foreach ($arr_conferences as $key => $value) {
 	$output .= $astinfo->getOutput($value);
 	$conferenceshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
@@ -229,6 +238,7 @@ foreach ($arr_conferences as $key => $value) {
 
 //subscriptions
 $subscriptionshtml = '<h2>'.$modesubscriptions.'</h2>';
+$arr_subscriptions = is_array($arr_subscriptions)?$arr_subscriptions:array();
 foreach ($arr_subscriptions as $key => $value) {
 	$output .= $astinfo->getOutput($value);
 	$subscriptionshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
@@ -236,6 +246,7 @@ foreach ($arr_subscriptions as $key => $value) {
 
 //voicemail
 $voicemailhtml = '<h2>'.$voicemailusers.'</h2>';
+$arr_voicemail = is_array($arr_voicemail)?$arr_voicemail:array();
 foreach ($arr_voicemail as $key => $value) {
 	$output .= $astinfo->getOutput($value);
 	$voicemailhtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
@@ -243,6 +254,7 @@ foreach ($arr_voicemail as $key => $value) {
 
 //queues
 $queueshtml = '<h2>'.$modequeues.'</h2>';
+$arr_queues = is_array($arr_queues)?$arr_queues:array();
 foreach ($arr_voicemail as $key => $value) {
 	$output .= $astinfo->getOutput($value);
 	$queueshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
