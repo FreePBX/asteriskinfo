@@ -264,8 +264,9 @@ foreach ($arr_voicemail as $key => $value) {
 ?>
 <div class="container-fluid">
 	<h1><?php echo _("Asterisk Info")?></h1>
-	<div class="well well-info">
-		<?php echo _('This page supplies various information about your Asterisk system')?>
+	<div class="alert alert-info">
+		<?php echo _('This page supplies various information about Asterisk')?><br/>
+		<b><?php echo _("Current Asterisk Version:")?></b> <?php echo $astver ?>
 	</div>
 	<?php echo (!$astman)?$amerror:'';?>
 	<div class = "display full-border">
