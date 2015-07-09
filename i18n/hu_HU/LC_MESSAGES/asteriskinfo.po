@@ -70,6 +70,10 @@ msgstr ""
 msgid "Conferences"
 msgstr ""
 
+#: page.asteriskinfo.php:269
+msgid "Current Asterisk Version:"
+msgstr ""
+
 #: page.asteriskinfo.php:41
 msgid "DAHDi driver info"
 msgstr ""
@@ -174,7 +178,7 @@ msgstr ""
 msgid "Subscriptions"
 msgstr ""
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:277
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:278
 msgid "Summary"
 msgstr ""
 
@@ -185,7 +189,7 @@ msgid ""
 msgstr ""
 
 #: page.asteriskinfo.php:268
-msgid "This page supplies various information about your Asterisk system"
+msgid "This page supplies various information about Asterisk"
 msgstr ""
 
 #: Asteriskinfo.class.php:152

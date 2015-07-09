@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-16 15:20-0400\n"
+"POT-Creation-Date: 2015-07-09 12:59-0400\n"
 "PO-Revision-Date: 2014-07-21 13:06+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -93,6 +93,10 @@ msgstr "Информация за Конференция"
 #: page.asteriskinfo.php:20
 msgid "Conferences"
 msgstr "Конференции"
+
+#: page.asteriskinfo.php:269
+msgid "Current Asterisk Version:"
+msgstr ""
 
 #: page.asteriskinfo.php:41
 msgid "DAHDi driver info"
@@ -198,7 +202,7 @@ msgstr "Вписвания/Известявания"
 msgid "Subscriptions"
 msgstr "Вписвания"
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:277
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:278
 msgid "Summary"
 msgstr "Резюме"
 
@@ -211,7 +215,7 @@ msgstr ""
 "работи и настройките на вашия manager.conf са правилни.<br><br>"
 
 #: page.asteriskinfo.php:268
-msgid "This page supplies various information about your Asterisk system"
+msgid "This page supplies various information about Asterisk"
 msgstr ""
 
 #: Asteriskinfo.class.php:152
