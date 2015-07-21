@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-09 12:59-0400\n"
+"POT-Creation-Date: 2015-07-20 21:49-0400\n"
 "PO-Revision-Date: 2015-05-03 02:42+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -37,7 +37,7 @@ msgstr "Canais PJSIP Ativos: "
 msgid "Active SIP Channel(s): "
 msgstr "Canais SIP Ativos: "
 
-#: page.asteriskinfo.php:266
+#: page.asteriskinfo.php:258
 msgid "Asterisk Info"
 msgstr "Info Asterisk"
 
@@ -93,7 +93,7 @@ msgstr "Info Ponte Conferência"
 msgid "Conferences"
 msgstr "Conferências"
 
-#: page.asteriskinfo.php:269
+#: page.asteriskinfo.php:261
 msgid "Current Asterisk Version:"
 msgstr ""
 
@@ -201,11 +201,11 @@ msgstr "Assinar/Notificar"
 msgid "Subscriptions"
 msgstr "Assinaturas"
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:278
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:270
 msgid "Summary"
 msgstr "Resumo"
 
-#: page.asteriskinfo.php:184
+#: page.asteriskinfo.php:176
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
@@ -214,7 +214,7 @@ msgstr ""
 "que o Asterisk esteja rodando e as configurações de seu manager.conf estejam "
 "corretas.<br><br>"
 
-#: page.asteriskinfo.php:268
+#: page.asteriskinfo.php:260
 msgid "This page supplies various information about Asterisk"
 msgstr ""
 
