@@ -20,6 +20,7 @@ $modeiax = _("IAX Info");
 $modeconferences = _("Conferences");
 $modequeues = _("Queues");
 $modesubscriptions = _("Subscriptions");
+$modedahdi = _("Dahdi");
 $modeall = _("Full Report");
 $uptime = _("Uptime");
 $activechannels = _("Active Channel(s)");
@@ -37,11 +38,8 @@ $sippeers = _("Chan_Sip Peers");
 $pjsipendpoints = _("Chan_PJSip Endpoints");
 $iax2registry = _("IAX2 Registry");
 $subscribenotify = _("Subscribe/Notify");
-if ($chan_dahdi){
-	$zapteldriverinfo = _("DAHDi driver info");
-} else {
-	$zapteldriverinfo = _("Zaptel driver info");
-}
+$dahdidriverinfo = _("DAHDi Channels");
+$dahdipriinfo = _("Dahdi PRI Spans");
 $conf_meetme = _("MeetMe Conference Info");
 $conf_confbridge = _("Conference Bridge Info");
 $queuesinfo = _("Queues Info");
@@ -61,9 +59,14 @@ $modes = array(
 	"conferences" => $modeconferences,
 	"subscriptions" => $modesubscriptions,
 	"voicemail" => $voicemailusers,
-	"queues" => $modequeues,
-	"all" => $modeall
+	"queues" => $modequeues
 );
+if ($chan_dahdi){
+	$modes["dahdi"] = $modedahdi;
+}
+//Make sure "ALL" is the last item.
+$modes["all"] = $modeall;
+
 $hooktabs = $hookall = '';
 $hooks = $astinfo->asteriskInfoHooks();
 if(!empty($hooks) && is_array($hooks)) {
@@ -168,9 +171,11 @@ $arr_peers[$iax2peers] = "iax2 show peers";
 $arr_iax[$iax2channels] = "iax2 show channels";
 $arr_iax[$iax2registry] = "iax2 show registry";
 $arr_iax[$iax2peers] = "iax2 show peers";
-
+//DAHDi
 if ($chan_dahdi){
-	$arr_channels[$zapteldriverinfo]="dahdi show channels";
+	$arr_channels[$dahdidriverinfo]="dahdi show channels";
+	$arr_dahdi[$dahdidriverinfo]="dahdi show channels";
+	$arr_dahdi[$dahdipriinfo]="pri show spans";
 }
 $amerror = '<div class="well well-warning">';
 $amerror .= _("The module was unable to connect to the Asterisk manager.<br>Make sure Asterisk is running and your manager.conf settings are proper.<br><br>");
@@ -253,6 +258,15 @@ foreach ($arr_voicemail as $key => $value) {
 	$output = $astinfo->getOutput($value);
 	$queueshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
 }
+if ($chan_dahdi){
+	//Dahdi
+	$dahdihtml = '<h2>'.$modedahdi.'</h2>';
+	$arr_dahdi = !empty($arr_dahdi)&&is_array($arr_dahdi)?$arr_dahdi:array();
+	foreach ($arr_dahdi as $key => $value) {
+		$output = $astinfo->getOutput($value);
+		$dahdihtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
+	}
+}
 ?>
 <div class="container-fluid">
 	<h1><?php echo _("Asterisk Info")?></h1>
@@ -300,6 +314,9 @@ foreach ($arr_voicemail as $key => $value) {
 							<div role="tabpanel" id="subscriptions" class="tab-pane">
 								<?php echo $subscriptionshtml?>
 							</div>
+							<div role="tabpanel" id="dahdi" class="tab-pane">
+								<?php echo $dahdihtml?>
+							</div>
 							<div role="tabpanel" id="voicemail" class="tab-pane">
 								<?php echo $voicemailhtml?>
 							</div>
@@ -314,6 +331,7 @@ foreach ($arr_voicemail as $key => $value) {
 								<?php echo $siphtml ?>
 								<?php echo $pjsiphtml ?>
 								<?php echo $iaxhtml ?>
+								<?php echo $dahdihtml ?>
 								<?php echo $conferenceshtml ?>
 								<?php echo $subscriptionshtml ?>
 								<?php echo $voicemailhtml ?>
