@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX asteriskinfo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-20 21:49-0400\n"
+"POT-Creation-Date: 2015-09-14 10:50-0700\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,7 +30,7 @@ msgstr ""
 "X-Poedit-Language: swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: page.asteriskinfo.php:25
+#: page.asteriskinfo.php:26
 msgid "Active Channel(s)"
 msgstr "Aktiv(a) kanal(er)"
 
@@ -46,7 +46,7 @@ msgstr ""
 msgid "Active SIP Channel(s): "
 msgstr "Aktiv(a) SIP-kanal(er): "
 
-#: page.asteriskinfo.php:258
+#: page.asteriskinfo.php:272
 msgid "Asterisk Info"
 msgstr "Asterisk-info"
 
@@ -54,11 +54,11 @@ msgstr "Asterisk-info"
 msgid "Available: "
 msgstr ""
 
-#: page.asteriskinfo.php:27
+#: page.asteriskinfo.php:28
 msgid "Chan_PJSip Channel(s)"
 msgstr ""
 
-#: page.asteriskinfo.php:37
+#: page.asteriskinfo.php:38
 msgid "Chan_PJSip Endpoints"
 msgstr ""
 
@@ -66,15 +66,15 @@ msgstr ""
 msgid "Chan_PJSip Info"
 msgstr ""
 
-#: page.asteriskinfo.php:31
+#: page.asteriskinfo.php:32
 msgid "Chan_PJSip Registrations"
 msgstr ""
 
-#: page.asteriskinfo.php:32
+#: page.asteriskinfo.php:33
 msgid "Chan_PJSip Transports"
 msgstr ""
 
-#: page.asteriskinfo.php:26
+#: page.asteriskinfo.php:27
 msgid "Chan_Sip Channel(s)"
 msgstr ""
 
@@ -82,11 +82,11 @@ msgstr ""
 msgid "Chan_Sip Info"
 msgstr ""
 
-#: page.asteriskinfo.php:36
+#: page.asteriskinfo.php:37
 msgid "Chan_Sip Peers"
 msgstr ""
 
-#: page.asteriskinfo.php:30
+#: page.asteriskinfo.php:31
 msgid "Chan_Sip Registry"
 msgstr ""
 
@@ -94,7 +94,7 @@ msgstr ""
 msgid "Channels"
 msgstr "Kanaler"
 
-#: page.asteriskinfo.php:46
+#: page.asteriskinfo.php:44
 msgid "Conference Bridge Info"
 msgstr ""
 
@@ -102,19 +102,27 @@ msgstr ""
 msgid "Conferences"
 msgstr "Konferenser"
 
-#: page.asteriskinfo.php:261
+#: page.asteriskinfo.php:275
 msgid "Current Asterisk Version:"
 msgstr ""
 
 #: page.asteriskinfo.php:41
-msgid "DAHDi driver info"
-msgstr "Dirvrutinsinforation för DAHDi"
+msgid "DAHDi Channels"
+msgstr ""
 
 #: page.asteriskinfo.php:23
+msgid "Dahdi"
+msgstr ""
+
+#: page.asteriskinfo.php:42
+msgid "Dahdi PRI Spans"
+msgstr ""
+
+#: page.asteriskinfo.php:24
 msgid "Full Report"
 msgstr "Full rapport"
 
-#: page.asteriskinfo.php:49
+#: page.asteriskinfo.php:47
 msgid "Google Talk Channels"
 msgstr "Kanaler för Google Talk"
 
@@ -122,11 +130,11 @@ msgstr "Kanaler för Google Talk"
 msgid "IAX Info"
 msgstr "IAX-info"
 
-#: page.asteriskinfo.php:28
+#: page.asteriskinfo.php:29
 msgid "IAX2 Channel(s)"
 msgstr "IAX2-kanal(er)"
 
-#: page.asteriskinfo.php:29
+#: page.asteriskinfo.php:30
 msgid "IAX2 Peers"
 msgstr "IAX2 peers"
 
@@ -134,7 +142,7 @@ msgstr "IAX2 peers"
 msgid "IAX2 Peers: "
 msgstr "IAX2-peers: "
 
-#: page.asteriskinfo.php:38
+#: page.asteriskinfo.php:39
 msgid "IAX2 Registry"
 msgstr "IAX2-registrering(ar)"
 
@@ -142,15 +150,15 @@ msgstr "IAX2-registrering(ar)"
 msgid "IAX2 Registry: "
 msgstr "IAX2-registreringar: "
 
-#: page.asteriskinfo.php:50
+#: page.asteriskinfo.php:48
 msgid "Jabber Connections"
 msgstr "Jabberanslutningar"
 
-#: page.asteriskinfo.php:45
+#: page.asteriskinfo.php:43
 msgid "MeetMe Conference Info"
 msgstr ""
 
-#: page.asteriskinfo.php:51
+#: page.asteriskinfo.php:49
 msgid "Motif Connections"
 msgstr ""
 
@@ -186,7 +194,7 @@ msgstr "Peers"
 msgid "Queues"
 msgstr "Köer"
 
-#: page.asteriskinfo.php:47
+#: page.asteriskinfo.php:45
 msgid "Queues Info"
 msgstr "Köinformation"
 
@@ -202,7 +210,7 @@ msgstr "SIP-peers: "
 msgid "Sip Registry: "
 msgstr "SIP-registreringar: "
 
-#: page.asteriskinfo.php:39
+#: page.asteriskinfo.php:40
 msgid "Subscribe/Notify"
 msgstr "Prenumerationer/Noteringar"
 
@@ -210,11 +218,11 @@ msgstr "Prenumerationer/Noteringar"
 msgid "Subscriptions"
 msgstr "Prenumerationer"
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:270
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:284
 msgid "Summary"
 msgstr "Sammanfattning"
 
-#: page.asteriskinfo.php:176
+#: page.asteriskinfo.php:181
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
@@ -222,7 +230,7 @@ msgstr ""
 "Modulen kunde inte koppla upp sig mot Asterisk hanterare.<br>Kontrollera att "
 "Asterisk körs och att dina inställningar i manager.conf är riktiga.<br><br>"
 
-#: page.asteriskinfo.php:260
+#: page.asteriskinfo.php:274
 msgid "This page supplies various information about Asterisk"
 msgstr ""
 
@@ -238,7 +246,7 @@ msgstr ""
 msgid "Unmonitored: "
 msgstr "Oövervakad: "
 
-#: page.asteriskinfo.php:24
+#: page.asteriskinfo.php:25
 msgid "Uptime"
 msgstr "Upptid"
 
@@ -246,13 +254,15 @@ msgstr "Upptid"
 msgid "Uptime: "
 msgstr "Upptid: "
 
-#: page.asteriskinfo.php:48
+#: page.asteriskinfo.php:46
 msgid "Voicemail Users"
 msgstr "Röstbrevlådor"
 
-#: page.asteriskinfo.php:43
-msgid "Zaptel driver info"
-msgstr "Zaptel drivrutinsinformation"
+#~ msgid "DAHDi driver info"
+#~ msgstr "Dirvrutinsinforation för DAHDi"
+
+#~ msgid "Zaptel driver info"
+#~ msgstr "Zaptel drivrutinsinformation"
 
 #~ msgid "Provides a snapshot of the current Asterisk configuration"
 #~ msgstr "Denna modul ger en ögonblicksbild av din Asteriskkonfiguration"

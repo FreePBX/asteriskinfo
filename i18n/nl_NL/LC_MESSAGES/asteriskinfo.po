@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-20 21:49-0400\n"
+"POT-Creation-Date: 2015-09-14 10:50-0700\n"
 "PO-Revision-Date: 2015-03-19 17:20+0200\n"
 "Last-Translator: Jan Peter <jpveldhuizen@gmail.com>\n"
 "Language-Team: Dutch <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: page.asteriskinfo.php:25
+#: page.asteriskinfo.php:26
 msgid "Active Channel(s)"
 msgstr "Actieve kanalen"
 
@@ -37,7 +37,7 @@ msgstr "Actieve PJSIP kanalen: "
 msgid "Active SIP Channel(s): "
 msgstr "Active SIP kanalen: "
 
-#: page.asteriskinfo.php:258
+#: page.asteriskinfo.php:272
 msgid "Asterisk Info"
 msgstr "Asterisk informatie"
 
@@ -45,11 +45,11 @@ msgstr "Asterisk informatie"
 msgid "Available: "
 msgstr "Beschikbaar: "
 
-#: page.asteriskinfo.php:27
+#: page.asteriskinfo.php:28
 msgid "Chan_PJSip Channel(s)"
 msgstr "Chan_PJSIP kanalen"
 
-#: page.asteriskinfo.php:37
+#: page.asteriskinfo.php:38
 msgid "Chan_PJSip Endpoints"
 msgstr "Chan_PJSIP eindpunten"
 
@@ -57,15 +57,15 @@ msgstr "Chan_PJSIP eindpunten"
 msgid "Chan_PJSip Info"
 msgstr "Chan_PJSIP informatie"
 
-#: page.asteriskinfo.php:31
+#: page.asteriskinfo.php:32
 msgid "Chan_PJSip Registrations"
 msgstr "Chan_PJSIP registraties"
 
-#: page.asteriskinfo.php:32
+#: page.asteriskinfo.php:33
 msgid "Chan_PJSip Transports"
 msgstr "Chan_PJSIP overbrengingen"
 
-#: page.asteriskinfo.php:26
+#: page.asteriskinfo.php:27
 msgid "Chan_Sip Channel(s)"
 msgstr "Chan_SIP kanalen"
 
@@ -73,12 +73,12 @@ msgstr "Chan_SIP kanalen"
 msgid "Chan_Sip Info"
 msgstr "Chan_SIP informatie"
 
-#: page.asteriskinfo.php:36
+#: page.asteriskinfo.php:37
 #, fuzzy
 msgid "Chan_Sip Peers"
 msgstr "Chan_SIP lotgenoten"
 
-#: page.asteriskinfo.php:30
+#: page.asteriskinfo.php:31
 msgid "Chan_Sip Registry"
 msgstr "Chan_SIP register"
 
@@ -86,7 +86,7 @@ msgstr "Chan_SIP register"
 msgid "Channels"
 msgstr "Kanalen"
 
-#: page.asteriskinfo.php:46
+#: page.asteriskinfo.php:44
 msgid "Conference Bridge Info"
 msgstr "Conferentiebrug informatie"
 
@@ -94,19 +94,27 @@ msgstr "Conferentiebrug informatie"
 msgid "Conferences"
 msgstr "Conferenties"
 
-#: page.asteriskinfo.php:261
+#: page.asteriskinfo.php:275
 msgid "Current Asterisk Version:"
 msgstr ""
 
 #: page.asteriskinfo.php:41
-msgid "DAHDi driver info"
-msgstr "DAHDI stuurprogramma informatie"
+msgid "DAHDi Channels"
+msgstr ""
 
 #: page.asteriskinfo.php:23
+msgid "Dahdi"
+msgstr ""
+
+#: page.asteriskinfo.php:42
+msgid "Dahdi PRI Spans"
+msgstr ""
+
+#: page.asteriskinfo.php:24
 msgid "Full Report"
 msgstr "Volledig rapport"
 
-#: page.asteriskinfo.php:49
+#: page.asteriskinfo.php:47
 msgid "Google Talk Channels"
 msgstr "Google Talk kanalen"
 
@@ -114,11 +122,11 @@ msgstr "Google Talk kanalen"
 msgid "IAX Info"
 msgstr "IAX informatie"
 
-#: page.asteriskinfo.php:28
+#: page.asteriskinfo.php:29
 msgid "IAX2 Channel(s)"
 msgstr "IAX2 kanalen"
 
-#: page.asteriskinfo.php:29
+#: page.asteriskinfo.php:30
 #, fuzzy
 msgid "IAX2 Peers"
 msgstr "IAX2 lotgenoten"
@@ -127,7 +135,7 @@ msgstr "IAX2 lotgenoten"
 msgid "IAX2 Peers: "
 msgstr "IAX2 lotgenoten: "
 
-#: page.asteriskinfo.php:38
+#: page.asteriskinfo.php:39
 msgid "IAX2 Registry"
 msgstr "IAX2 Register"
 
@@ -135,15 +143,15 @@ msgstr "IAX2 Register"
 msgid "IAX2 Registry: "
 msgstr "IAX2 Register: "
 
-#: page.asteriskinfo.php:50
+#: page.asteriskinfo.php:48
 msgid "Jabber Connections"
 msgstr "Jabber verbindingen"
 
-#: page.asteriskinfo.php:45
+#: page.asteriskinfo.php:43
 msgid "MeetMe Conference Info"
 msgstr "MeetMe conferentie informatie"
 
-#: page.asteriskinfo.php:51
+#: page.asteriskinfo.php:49
 msgid "Motif Connections"
 msgstr "Motif verbindingen"
 
@@ -179,7 +187,7 @@ msgstr "Lotgenoten"
 msgid "Queues"
 msgstr "Wachtrijen"
 
-#: page.asteriskinfo.php:47
+#: page.asteriskinfo.php:45
 msgid "Queues Info"
 msgstr "Wachtrijen informatie"
 
@@ -195,7 +203,7 @@ msgstr "SIP lotgenoten: "
 msgid "Sip Registry: "
 msgstr "SIP register: "
 
-#: page.asteriskinfo.php:39
+#: page.asteriskinfo.php:40
 msgid "Subscribe/Notify"
 msgstr "Abonneren/Melden"
 
@@ -203,11 +211,11 @@ msgstr "Abonneren/Melden"
 msgid "Subscriptions"
 msgstr "Abonnementen"
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:270
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:284
 msgid "Summary"
 msgstr "Overzicht"
 
-#: page.asteriskinfo.php:176
+#: page.asteriskinfo.php:181
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
@@ -215,7 +223,7 @@ msgstr ""
 "De module kon geen verbinding maken met de Asterisk Manager.<br>Controleer "
 "of Asterisk actief is, en de instellingen in manager.conf juist zijn.<br><br>"
 
-#: page.asteriskinfo.php:260
+#: page.asteriskinfo.php:274
 msgid "This page supplies various information about Asterisk"
 msgstr ""
 
@@ -231,7 +239,7 @@ msgstr "Onbekend: "
 msgid "Unmonitored: "
 msgstr "Niet gecontroleerd: "
 
-#: page.asteriskinfo.php:24
+#: page.asteriskinfo.php:25
 msgid "Uptime"
 msgstr "Tijd actief"
 
@@ -239,13 +247,15 @@ msgstr "Tijd actief"
 msgid "Uptime: "
 msgstr "Tijd actief: "
 
-#: page.asteriskinfo.php:48
+#: page.asteriskinfo.php:46
 msgid "Voicemail Users"
 msgstr "Voicemail gebruikers"
 
-#: page.asteriskinfo.php:43
-msgid "Zaptel driver info"
-msgstr "Zaptel stuurprogramma informatie"
+#~ msgid "DAHDi driver info"
+#~ msgstr "DAHDI stuurprogramma informatie"
+
+#~ msgid "Zaptel driver info"
+#~ msgstr "Zaptel stuurprogramma informatie"
 
 #~ msgid "ASTERISK MANAGER ERROR"
 #~ msgstr "ASTERISK MANAGER FOUT"

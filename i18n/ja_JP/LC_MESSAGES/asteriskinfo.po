@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-20 21:49-0400\n"
+"POT-Creation-Date: 2015-09-14 10:50-0700\n"
 "PO-Revision-Date: 2013-11-26 16:18+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -47,7 +47,7 @@ msgstr ""
 "Language: ja\n"
 "X-Generator: Poedit 1.6beta2\n"
 
-#: page.asteriskinfo.php:25
+#: page.asteriskinfo.php:26
 msgid "Active Channel(s)"
 msgstr "アクティブチャネル"
 
@@ -63,7 +63,7 @@ msgstr ""
 msgid "Active SIP Channel(s): "
 msgstr "アクティブSIPチャネル："
 
-#: page.asteriskinfo.php:258
+#: page.asteriskinfo.php:272
 msgid "Asterisk Info"
 msgstr "Asterisk情報"
 
@@ -71,11 +71,11 @@ msgstr "Asterisk情報"
 msgid "Available: "
 msgstr ""
 
-#: page.asteriskinfo.php:27
+#: page.asteriskinfo.php:28
 msgid "Chan_PJSip Channel(s)"
 msgstr ""
 
-#: page.asteriskinfo.php:37
+#: page.asteriskinfo.php:38
 msgid "Chan_PJSip Endpoints"
 msgstr ""
 
@@ -83,15 +83,15 @@ msgstr ""
 msgid "Chan_PJSip Info"
 msgstr ""
 
-#: page.asteriskinfo.php:31
+#: page.asteriskinfo.php:32
 msgid "Chan_PJSip Registrations"
 msgstr ""
 
-#: page.asteriskinfo.php:32
+#: page.asteriskinfo.php:33
 msgid "Chan_PJSip Transports"
 msgstr ""
 
-#: page.asteriskinfo.php:26
+#: page.asteriskinfo.php:27
 msgid "Chan_Sip Channel(s)"
 msgstr ""
 
@@ -99,11 +99,11 @@ msgstr ""
 msgid "Chan_Sip Info"
 msgstr ""
 
-#: page.asteriskinfo.php:36
+#: page.asteriskinfo.php:37
 msgid "Chan_Sip Peers"
 msgstr ""
 
-#: page.asteriskinfo.php:30
+#: page.asteriskinfo.php:31
 msgid "Chan_Sip Registry"
 msgstr ""
 
@@ -111,7 +111,7 @@ msgstr ""
 msgid "Channels"
 msgstr "チャネル"
 
-#: page.asteriskinfo.php:46
+#: page.asteriskinfo.php:44
 msgid "Conference Bridge Info"
 msgstr "カンファレンスブリッジ情報"
 
@@ -119,19 +119,27 @@ msgstr "カンファレンスブリッジ情報"
 msgid "Conferences"
 msgstr "カンファレンス"
 
-#: page.asteriskinfo.php:261
+#: page.asteriskinfo.php:275
 msgid "Current Asterisk Version:"
 msgstr ""
 
 #: page.asteriskinfo.php:41
-msgid "DAHDi driver info"
-msgstr "DAHDiドリバー情報"
+msgid "DAHDi Channels"
+msgstr ""
 
 #: page.asteriskinfo.php:23
+msgid "Dahdi"
+msgstr ""
+
+#: page.asteriskinfo.php:42
+msgid "Dahdi PRI Spans"
+msgstr ""
+
+#: page.asteriskinfo.php:24
 msgid "Full Report"
 msgstr "フルレポート"
 
-#: page.asteriskinfo.php:49
+#: page.asteriskinfo.php:47
 msgid "Google Talk Channels"
 msgstr "Googleトークチャンネル"
 
@@ -139,11 +147,11 @@ msgstr "Googleトークチャンネル"
 msgid "IAX Info"
 msgstr "IAX情報"
 
-#: page.asteriskinfo.php:28
+#: page.asteriskinfo.php:29
 msgid "IAX2 Channel(s)"
 msgstr "IAX2チャネル"
 
-#: page.asteriskinfo.php:29
+#: page.asteriskinfo.php:30
 msgid "IAX2 Peers"
 msgstr "IAX2ピア"
 
@@ -151,7 +159,7 @@ msgstr "IAX2ピア"
 msgid "IAX2 Peers: "
 msgstr "IAX2ピア："
 
-#: page.asteriskinfo.php:38
+#: page.asteriskinfo.php:39
 msgid "IAX2 Registry"
 msgstr "IAX2レジストリ"
 
@@ -159,15 +167,15 @@ msgstr "IAX2レジストリ"
 msgid "IAX2 Registry: "
 msgstr "IAX2レジストリ："
 
-#: page.asteriskinfo.php:50
+#: page.asteriskinfo.php:48
 msgid "Jabber Connections"
 msgstr "Jabber接続"
 
-#: page.asteriskinfo.php:45
+#: page.asteriskinfo.php:43
 msgid "MeetMe Conference Info"
 msgstr "MeetMeカンファレンス情報"
 
-#: page.asteriskinfo.php:51
+#: page.asteriskinfo.php:49
 msgid "Motif Connections"
 msgstr "Motif接続"
 
@@ -203,7 +211,7 @@ msgstr "ピア"
 msgid "Queues"
 msgstr "キュー"
 
-#: page.asteriskinfo.php:47
+#: page.asteriskinfo.php:45
 msgid "Queues Info"
 msgstr "キュー情報"
 
@@ -219,7 +227,7 @@ msgstr "Sipピア："
 msgid "Sip Registry: "
 msgstr "Sipレジストリ："
 
-#: page.asteriskinfo.php:39
+#: page.asteriskinfo.php:40
 msgid "Subscribe/Notify"
 msgstr "サブスクライブ/通知"
 
@@ -227,11 +235,11 @@ msgstr "サブスクライブ/通知"
 msgid "Subscriptions"
 msgstr "サブスクリプション"
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:270
+#: page.asteriskinfo.php:13 page.asteriskinfo.php:284
 msgid "Summary"
 msgstr "サマリー"
 
-#: page.asteriskinfo.php:176
+#: page.asteriskinfo.php:181
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
@@ -240,7 +248,7 @@ msgstr ""
 "起動しているかどうか、manager.confの設定が適切かどうかを確認してください。"
 "<br><br>"
 
-#: page.asteriskinfo.php:260
+#: page.asteriskinfo.php:274
 msgid "This page supplies various information about Asterisk"
 msgstr ""
 
@@ -256,7 +264,7 @@ msgstr ""
 msgid "Unmonitored: "
 msgstr "モニタ対象外："
 
-#: page.asteriskinfo.php:24
+#: page.asteriskinfo.php:25
 msgid "Uptime"
 msgstr "システム稼働時間"
 
@@ -264,13 +272,15 @@ msgstr "システム稼働時間"
 msgid "Uptime: "
 msgstr "システム稼働時間: "
 
-#: page.asteriskinfo.php:48
+#: page.asteriskinfo.php:46
 msgid "Voicemail Users"
 msgstr "ボイスメールユーザ"
 
-#: page.asteriskinfo.php:43
-msgid "Zaptel driver info"
-msgstr "Zaptelドライバ情報"
+#~ msgid "DAHDi driver info"
+#~ msgstr "DAHDiドリバー情報"
+
+#~ msgid "Zaptel driver info"
+#~ msgstr "Zaptelドライバ情報"
 
 #~ msgid "Provides a snapshot of the current Asterisk configuration"
 #~ msgstr "現在のAsterisk設定のスナップショットを提供"
