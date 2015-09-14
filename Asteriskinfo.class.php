@@ -299,7 +299,7 @@ class Asteriskinfo implements \BMO {
 	}
 	public function getOutput($command){
 		$response = $this->astman->send_request('Command',array('Command'=>$command));
-		$new_value = htmlentities($response['data']);
+		$new_value = htmlentities($response['data'],ENT_COMPAT | ENT_HTML401, "UTF-8");
 		return ltrim($new_value,'Privilege: Command');
 	}
 	/**
