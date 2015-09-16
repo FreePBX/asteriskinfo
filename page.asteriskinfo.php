@@ -254,7 +254,7 @@ foreach ($arr_voicemail as $key => $value) {
 //queues
 $queueshtml = '<h2>'.$modequeues.'</h2>';
 $arr_queues = !empty($arr_queues)&&is_array($arr_queues)?$arr_queues:array();
-foreach ($arr_voicemail as $key => $value) {
+foreach ($arr_queues as $key => $value) {
 	$output = $astinfo->getOutput($value);
 	$queueshtml .= load_view(__DIR__.'/views/panel.php', array('title' => $key, 'body' => $output));
 }
