@@ -2,7 +2,7 @@
 	<rawname>asteriskinfo</rawname>
 	<repo>standard</repo>
 	<name>Asterisk Info</name>
-	<version>13.0.5</version>
+	<version>13.0.6</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -18,6 +18,7 @@
 		<version>2.5.0rc3</version>
 	</depends>
 	<changelog>
+		*13.0.6* FREEPBX-10254 Fix Queues html
 		*13.0.5* FREEPBX-10209 htmlentities need to use UTF-8
 		*13.0.4* FREEPBX-9757 asterisk info bad data
 		*13.0.3* FREEPBX-9648 asterisk info has no version information
