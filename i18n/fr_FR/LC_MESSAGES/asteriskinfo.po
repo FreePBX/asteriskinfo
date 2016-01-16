@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-14 10:50-0700\n"
-"PO-Revision-Date: 2016-01-16 09:20+0200\n"
+"PO-Revision-Date: 2016-01-16 10:36+0200\n"
 "Last-Translator: Nicolas <forums@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/fr_FR/>\n"
@@ -23,15 +23,15 @@ msgstr ""
 
 #: page.asteriskinfo.php:26
 msgid "Active Channel(s)"
-msgstr "Canaux actifs"
+msgstr "Canal(aux) actif(s)"
 
 #: Asteriskinfo.class.php:46
 msgid "Active IAX2 Channel(s): "
-msgstr "Canaux IAX2 actifs: "
+msgstr "Canal(aux) IAX2 actif(s) : "
 
 #: Asteriskinfo.class.php:42
 msgid "Active PJSIP Channel(s): "
-msgstr ""
+msgstr "Canal(aux)  PJSIP actif(s) : "
 
 #: Asteriskinfo.class.php:38
 msgid "Active SIP Channel(s): "
