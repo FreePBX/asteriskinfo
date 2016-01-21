@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-14 10:50-0700\n"
-"PO-Revision-Date: 2016-01-16 10:36+0200\n"
+"PO-Revision-Date: 2016-01-21 06:01+0200\n"
 "Last-Translator: Nicolas <forums@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/fr_FR/>\n"
@@ -35,11 +35,11 @@ msgstr "Canal(aux)  PJSIP actif(s) : "
 
 #: Asteriskinfo.class.php:38
 msgid "Active SIP Channel(s): "
-msgstr ""
+msgstr "Canal(aux) SIP actif(s) : "
 
 #: page.asteriskinfo.php:272
 msgid "Asterisk Info"
-msgstr ""
+msgstr "Info Asterisk"
 
 #: Asteriskinfo.class.php:151
 msgid "Available: "
@@ -47,7 +47,7 @@ msgstr "Disponible : "
 
 #: page.asteriskinfo.php:28
 msgid "Chan_PJSip Channel(s)"
-msgstr ""
+msgstr "Canal(aux) Chan_PJSip"
 
 #: page.asteriskinfo.php:38
 msgid "Chan_PJSip Endpoints"
@@ -67,11 +67,11 @@ msgstr ""
 
 #: page.asteriskinfo.php:27
 msgid "Chan_Sip Channel(s)"
-msgstr ""
+msgstr "Canal(aux) Chan_Sip"
 
 #: page.asteriskinfo.php:17
 msgid "Chan_Sip Info"
-msgstr ""
+msgstr "Info Chan_Sip"
 
 #: page.asteriskinfo.php:37
 msgid "Chan_Sip Peers"
@@ -83,7 +83,7 @@ msgstr ""
 
 #: page.asteriskinfo.php:15
 msgid "Channels"
-msgstr ""
+msgstr "Canaux"
 
 #: page.asteriskinfo.php:44
 msgid "Conference Bridge Info"
@@ -91,19 +91,19 @@ msgstr ""
 
 #: page.asteriskinfo.php:20
 msgid "Conferences"
-msgstr ""
+msgstr "Conférences"
 
 #: page.asteriskinfo.php:275
 msgid "Current Asterisk Version:"
-msgstr ""
+msgstr "Version Asterisk courante :"
 
 #: page.asteriskinfo.php:41
 msgid "DAHDi Channels"
-msgstr ""
+msgstr "Canaux DAHDi"
 
 #: page.asteriskinfo.php:23
 msgid "Dahdi"
-msgstr ""
+msgstr "DAHDi"
 
 #: page.asteriskinfo.php:42
 msgid "Dahdi PRI Spans"
@@ -119,11 +119,11 @@ msgstr ""
 
 #: page.asteriskinfo.php:19
 msgid "IAX Info"
-msgstr ""
+msgstr "Info IAX"
 
 #: page.asteriskinfo.php:29
 msgid "IAX2 Channel(s)"
-msgstr ""
+msgstr "Canal(aux) IAX2"
 
 #: page.asteriskinfo.php:30
 msgid "IAX2 Peers"
@@ -191,7 +191,7 @@ msgstr ""
 
 #: page.asteriskinfo.php:14
 msgid "Registries"
-msgstr ""
+msgstr "Registres"
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
@@ -199,7 +199,7 @@ msgstr ""
 
 #: Asteriskinfo.class.php:39
 msgid "Sip Registry: "
-msgstr ""
+msgstr "Registre SIP : "
 
 #: page.asteriskinfo.php:40
 msgid "Subscribe/Notify"
@@ -211,7 +211,7 @@ msgstr ""
 
 #: page.asteriskinfo.php:13 page.asteriskinfo.php:284
 msgid "Summary"
-msgstr ""
+msgstr "Sommaire"
 
 #: page.asteriskinfo.php:181
 msgid ""
@@ -225,15 +225,15 @@ msgstr ""
 
 #: Asteriskinfo.class.php:152
 msgid "Unavailable: "
-msgstr ""
+msgstr "Non disponible : "
 
 #: Asteriskinfo.class.php:152
 msgid "Unknown: "
-msgstr ""
+msgstr "Inconnu : "
 
 #: Asteriskinfo.class.php:163
 msgid "Unmonitored: "
-msgstr ""
+msgstr "Non monitorés : "
 
 #: page.asteriskinfo.php:25
 msgid "Uptime"
