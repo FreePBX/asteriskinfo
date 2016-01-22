@@ -10,13 +10,13 @@ class Asteriskinfo implements \BMO {
 		$this->astman = $this->FreePBX->astman;
 
 	}
-    public function install() {}
-    public function uninstall() {}
-    public function backup() {}
-    public function restore($backup) {}
-    public function doConfigPageInit($page) {}
-    public function showPage(){}
-    public function buildAsteriskInfo(){
+	public function install() {}
+	public function uninstall() {}
+	public function backup() {}
+	public function restore($backup) {}
+	public function doConfigPageInit($page) {}
+	public function showPage(){}
+	public function buildAsteriskInfo(){
 		$astman = $this->astman;
 		global $astver;
 		$sipActive = true;
@@ -46,7 +46,6 @@ class Asteriskinfo implements \BMO {
 		$activeiax2channels = _("Active IAX2 Channel(s): ");
 		$iax2registry = _("IAX2 Registry: ");
 		$iax2peers = _("IAX2 Peers: ");
-
 
 		$arr = array(
 			$uptime => "show uptime",
