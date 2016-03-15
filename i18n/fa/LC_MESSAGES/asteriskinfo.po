@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-14 10:50-0700\n"
-"PO-Revision-Date: 2015-10-10 11:37+0200\n"
+"PO-Revision-Date: 2016-03-15 09:42+0300\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian "
 "<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/fa/>\n"
@@ -27,15 +27,15 @@ msgstr "کانال(های) فعال"
 
 #: Asteriskinfo.class.php:46
 msgid "Active IAX2 Channel(s): "
-msgstr ""
+msgstr "ککانال(های) فعال IAX2"
 
 #: Asteriskinfo.class.php:42
 msgid "Active PJSIP Channel(s): "
-msgstr ""
+msgstr "کانال(های) فعال PJSIP"
 
 #: Asteriskinfo.class.php:38
 msgid "Active SIP Channel(s): "
-msgstr ""
+msgstr "کانال(های) فعال SIP"
 
 #: page.asteriskinfo.php:272
 msgid "Asterisk Info"
@@ -179,7 +179,7 @@ msgstr ""
 
 #: page.asteriskinfo.php:16
 msgid "Peers"
-msgstr ""
+msgstr "همتایان"
 
 #: page.asteriskinfo.php:21
 msgid "Queues"
@@ -221,7 +221,7 @@ msgstr ""
 
 #: page.asteriskinfo.php:274
 msgid "This page supplies various information about Asterisk"
-msgstr ""
+msgstr "این صفحه شامل اطلاعات گوناگونی درباره استریسک میباشد"
 
 #: Asteriskinfo.class.php:152
 msgid "Unavailable: "
