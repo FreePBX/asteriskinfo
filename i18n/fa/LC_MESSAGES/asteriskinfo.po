@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-14 10:50-0700\n"
-"PO-Revision-Date: 2016-03-17 02:30+0200\n"
+"PO-Revision-Date: 2016-03-17 02:31+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian "
 "<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/fa/>\n"
@@ -27,15 +27,15 @@ msgstr "کانال(های) فعال"
 
 #: Asteriskinfo.class.php:46
 msgid "Active IAX2 Channel(s): "
-msgstr "ککانال(های) فعال IAX2"
+msgstr "کانال(های) فعال IAX2: "
 
 #: Asteriskinfo.class.php:42
 msgid "Active PJSIP Channel(s): "
-msgstr "کانال(های) فعال PJSIP"
+msgstr "کانال(های) فعال PJSIP: "
 
 #: Asteriskinfo.class.php:38
 msgid "Active SIP Channel(s): "
-msgstr "کانال(های) فعال SIP"
+msgstr "کانال(های) فعال SIP: "
 
 #: page.asteriskinfo.php:272
 msgid "Asterisk Info"
@@ -103,7 +103,7 @@ msgstr "کانال های DAHDi"
 
 #: page.asteriskinfo.php:23
 msgid "Dahdi"
-msgstr "Dahdi"
+msgstr "دهدی"
 
 #: page.asteriskinfo.php:42
 msgid "Dahdi PRI Spans"
