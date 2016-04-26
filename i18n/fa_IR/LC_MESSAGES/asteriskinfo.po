@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-14 10:50-0700\n"
-"PO-Revision-Date: 2016-04-25 20:08+0200\n"
+"PO-Revision-Date: 2016-04-25 20:29+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) "
 "<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/fa_IR/>\n"
@@ -43,7 +43,7 @@ msgstr "اطلاعات استریسک"
 
 #: Asteriskinfo.class.php:151
 msgid "Available: "
-msgstr "در دسترس： "
+msgstr "در دسترس: "
 
 #: page.asteriskinfo.php:28
 msgid "Chan_PJSip Channel(s)"
@@ -75,7 +75,7 @@ msgstr "اطلاعات Chan_Sip"
 
 #: page.asteriskinfo.php:37
 msgid "Chan_Sip Peers"
-msgstr "جفت های Chan_Sip"
+msgstr "همتایان Chan_Sip"
 
 #: page.asteriskinfo.php:31
 msgid "Chan_Sip Registry"
@@ -107,7 +107,7 @@ msgstr "دهدی (Dahdi)"
 
 #: page.asteriskinfo.php:42
 msgid "Dahdi PRI Spans"
-msgstr "Dahdi PRI  Spans"
+msgstr "اسپن های Dahdi PRI"
 
 #: page.asteriskinfo.php:24
 msgid "Full Report"
@@ -115,7 +115,7 @@ msgstr "گزارش کامل"
 
 #: page.asteriskinfo.php:47
 msgid "Google Talk Channels"
-msgstr "کانال های گوگل تالک"
+msgstr "کانال های Google Talk"
 
 #: page.asteriskinfo.php:19
 msgid "IAX Info"
@@ -127,19 +127,19 @@ msgstr "کانال (های) IAX2"
 
 #: page.asteriskinfo.php:30
 msgid "IAX2 Peers"
-msgstr "IAX2  Peers"
+msgstr "همتایان IAX2"
 
 #: Asteriskinfo.class.php:48
 msgid "IAX2 Peers: "
-msgstr "IAX2 Peers : "
+msgstr "همتایان IAX2: "
 
 #: page.asteriskinfo.php:39
 msgid "IAX2 Registry"
-msgstr "IAX2  Registry"
+msgstr "رجیستری IAX2"
 
 #: Asteriskinfo.class.php:47
 msgid "IAX2 Registry: "
-msgstr "IAX2 Registry : "
+msgstr "رجیستری IAX2: "
 
 #: page.asteriskinfo.php:48
 msgid "Jabber Connections"
@@ -155,27 +155,27 @@ msgstr "اتصالات Motif"
 
 #: Asteriskinfo.class.php:141
 msgid "Offline-Unmonitored: "
-msgstr "Offline-Unmonitored : "
+msgstr "آفلاین-مانتیور نشده: "
 
 #: Asteriskinfo.class.php:141 Asteriskinfo.class.php:163
 msgid "Offline: "
-msgstr "آفلاین： "
+msgstr "آفلاین: "
 
 #: Asteriskinfo.class.php:140
 msgid "Online-Unmonitored: "
-msgstr "Online-Unmonitored : "
+msgstr "آنلاین-مانیتور نشده: "
 
 #: Asteriskinfo.class.php:140 Asteriskinfo.class.php:163
 msgid "Online: "
-msgstr "آنلاین： "
+msgstr "آنلاین: "
 
 #: Asteriskinfo.class.php:44
 msgid "PJSip Endpoints: "
-msgstr "PJSip Endpoints : "
+msgstr "نقاط پایانی PJSip: "
 
 #: Asteriskinfo.class.php:43
 msgid "PJSip Registrations: "
-msgstr "PJSip Registrations : "
+msgstr "رجیستری PJSip: "
 
 #: page.asteriskinfo.php:16
 msgid "Peers"
@@ -183,31 +183,31 @@ msgstr "همتایان"
 
 #: page.asteriskinfo.php:21
 msgid "Queues"
-msgstr "صف"
+msgstr "صف ها"
 
 #: page.asteriskinfo.php:45
 msgid "Queues Info"
-msgstr "اطلاعات صف"
+msgstr "اطلاعات صف ها"
 
 #: page.asteriskinfo.php:14
 msgid "Registries"
-msgstr "ثبت"
+msgstr "وضعیت رجیستری"
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
-msgstr "Sip Peers : "
+msgstr "همتایان Sip: "
 
 #: Asteriskinfo.class.php:39
 msgid "Sip Registry: "
-msgstr "Sip Registry : "
+msgstr "رجیستری Sip: "
 
 #: page.asteriskinfo.php:40
 msgid "Subscribe/Notify"
-msgstr "اشتراک/هشدار"
+msgstr "مشترک / اطلاع رسانی"
 
 #: page.asteriskinfo.php:22
 msgid "Subscriptions"
-msgstr "اشتراک ها"
+msgstr "مشترکین"
 
 #: page.asteriskinfo.php:13 page.asteriskinfo.php:284
 msgid "Summary"
@@ -218,24 +218,24 @@ msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
 msgstr ""
-"The module was unable to connect to the Asterisk manager. <br>Make sure "
-"Asterisk is running and your manager.conf settings are proper.<br><br>"
+"این ماژول امکان اتصال به ماژول مدیریت استریسک را ندارد. <br>از اجرا بودن "
+"سرویس استریسک و صحت تنظیمات manager.conf اطمینان حاصل نمایید. <br><br>"
 
 #: page.asteriskinfo.php:274
 msgid "This page supplies various information about Asterisk"
-msgstr "این صفحه شامل اطلاعات گوناگونی درباره استریسک میباشد"
+msgstr "این صفحه شامل اطلاعات گوناگونی درباره استریسک می باشد"
 
 #: Asteriskinfo.class.php:152
 msgid "Unavailable: "
-msgstr "ناموجود： "
+msgstr "غیر قابل دسترس： "
 
 #: Asteriskinfo.class.php:152
 msgid "Unknown: "
-msgstr "ناشناخته： "
+msgstr "نامشخص: "
 
 #: Asteriskinfo.class.php:163
 msgid "Unmonitored: "
-msgstr "نظارت نشده： "
+msgstr "مانیتور نشده： "
 
 #: page.asteriskinfo.php:25
 msgid "Uptime"
@@ -247,4 +247,4 @@ msgstr "آپ تایم： "
 
 #: page.asteriskinfo.php:46
 msgid "Voicemail Users"
-msgstr "کاربران پست صوتی"
+msgstr "کاربران صندوق صوتی"
