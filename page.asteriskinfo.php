@@ -341,7 +341,7 @@ if ($chan_dahdi){
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-3 hidden-xs bootnav">
+				<div class="col-sm-3 bootnav">
 					<div class="list-group">
 						<?php echo load_view(__DIR__.'/views/bootnav.php', array('modes' => $modes, 'extdisplay' => $extdisplay)); ?>
 					</div>
