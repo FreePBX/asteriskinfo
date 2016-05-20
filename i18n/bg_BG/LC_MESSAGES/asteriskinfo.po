@@ -96,19 +96,19 @@ msgstr "Конференции"
 
 #: page.asteriskinfo.php:275
 msgid "Current Asterisk Version:"
-msgstr ""
+msgstr "Текуща Версия на Астериск :"
 
 #: page.asteriskinfo.php:41
 msgid "DAHDi Channels"
-msgstr ""
+msgstr "DAHDi Канали"
 
 #: page.asteriskinfo.php:23
 msgid "Dahdi"
-msgstr ""
+msgstr "DAHDI"
 
 #: page.asteriskinfo.php:42
 msgid "Dahdi PRI Spans"
-msgstr ""
+msgstr "Dahdi PRI Портове"
 
 #: page.asteriskinfo.php:24
 msgid "Full Report"
@@ -224,7 +224,7 @@ msgstr ""
 
 #: page.asteriskinfo.php:274
 msgid "This page supplies various information about Asterisk"
-msgstr ""
+msgstr "Тази страница предоставя разнообразна информация за Астериск"
 
 #: Asteriskinfo.class.php:152
 msgid "Unavailable: "
