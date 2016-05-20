@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-14 10:50-0700\n"
+"POT-Creation-Date: 2016-05-20 13:03-0700\n"
 "PO-Revision-Date: 2015-05-05 00:31+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -37,11 +37,11 @@ msgstr "Активный(е) PJSIP канал(ы): "
 msgid "Active SIP Channel(s): "
 msgstr "Активных SIP каналов: "
 
-#: page.asteriskinfo.php:272
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:272
 msgid "Asterisk Info"
 msgstr "Информация об Asterisk"
 
-#: Asteriskinfo.class.php:151
+#: Asteriskinfo.class.php:150
 msgid "Available: "
 msgstr "Доступно: "
 
@@ -153,19 +153,19 @@ msgstr "информация о конференциях MeetMe"
 msgid "Motif Connections"
 msgstr "Соединения Motif"
 
-#: Asteriskinfo.class.php:141
+#: Asteriskinfo.class.php:140
 msgid "Offline-Unmonitored: "
 msgstr "Офлайн (без мониторинга): "
 
-#: Asteriskinfo.class.php:141 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:162
 msgid "Offline: "
 msgstr "Офлайн: "
 
-#: Asteriskinfo.class.php:140
+#: Asteriskinfo.class.php:139
 msgid "Online-Unmonitored: "
 msgstr "Онлайн (без мониторинга): "
 
-#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:139 Asteriskinfo.class.php:162
 msgid "Online: "
 msgstr "Онлайн: "
 
@@ -181,6 +181,12 @@ msgstr "PJSip регистраций: "
 msgid "Peers"
 msgstr "Пиров"
 
+#: asteriskinfo.i18n.php:8
+msgid "Provides a snapshot of the current Asterisk configuration"
+msgstr ""
+"Предоставляет моментальный снимок текущей конфигурации Asterisk, в котором "
+"можно получить различную дополнительную информацию"
+
 #: page.asteriskinfo.php:21
 msgid "Queues"
 msgstr "Очереди"
@@ -192,6 +198,10 @@ msgstr "Информация об очередях"
 #: page.asteriskinfo.php:14
 msgid "Registries"
 msgstr "Регистрации"
+
+#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
+msgid "Reports"
+msgstr "Отчеты"
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
@@ -225,15 +235,15 @@ msgstr ""
 msgid "This page supplies various information about Asterisk"
 msgstr ""
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unavailable: "
 msgstr "Недоступно: "
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unknown: "
 msgstr "Неизвестно: "
 
-#: Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
 msgstr "Не мониторится: "
 
@@ -261,16 +271,8 @@ msgstr "Пользователи голосовой почты"
 #~ msgid "Asterisk (Ver. "
 #~ msgstr "Астериск (Версия "
 
-#~ msgid "Provides a snapshot of the current Asterisk configuration"
-#~ msgstr ""
-#~ "Предоставляет моментальный снимок текущей конфигурации Asterisk, в "
-#~ "котором можно получить различную дополнительную информацию"
-
 #~ msgid "Refresh"
 #~ msgstr "Обновить"
-
-#~ msgid "Reports"
-#~ msgstr "Отчеты"
 
 #~ msgid "Sip Info"
 #~ msgstr "Информация SIP"

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX asteriskinfo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-14 10:50-0700\n"
+"POT-Creation-Date: 2016-05-20 13:03-0700\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -46,11 +46,11 @@ msgstr ""
 msgid "Active SIP Channel(s): "
 msgstr "Aktiv(a) SIP-kanal(er): "
 
-#: page.asteriskinfo.php:272
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:272
 msgid "Asterisk Info"
 msgstr "Asterisk-info"
 
-#: Asteriskinfo.class.php:151
+#: Asteriskinfo.class.php:150
 msgid "Available: "
 msgstr ""
 
@@ -162,19 +162,19 @@ msgstr ""
 msgid "Motif Connections"
 msgstr ""
 
-#: Asteriskinfo.class.php:141
+#: Asteriskinfo.class.php:140
 msgid "Offline-Unmonitored: "
 msgstr "Off-line oövervakad: "
 
-#: Asteriskinfo.class.php:141 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:162
 msgid "Offline: "
 msgstr "Off-line: "
 
-#: Asteriskinfo.class.php:140
+#: Asteriskinfo.class.php:139
 msgid "Online-Unmonitored: "
 msgstr "On-line oövervakad: "
 
-#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:139 Asteriskinfo.class.php:162
 msgid "Online: "
 msgstr "On-line: "
 
@@ -190,6 +190,10 @@ msgstr ""
 msgid "Peers"
 msgstr "Peers"
 
+#: asteriskinfo.i18n.php:8
+msgid "Provides a snapshot of the current Asterisk configuration"
+msgstr "Denna modul ger en ögonblicksbild av din Asteriskkonfiguration"
+
 #: page.asteriskinfo.php:21
 msgid "Queues"
 msgstr "Köer"
@@ -201,6 +205,10 @@ msgstr "Köinformation"
 #: page.asteriskinfo.php:14
 msgid "Registries"
 msgstr "Registreringar"
+
+#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
+msgid "Reports"
+msgstr ""
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
@@ -234,15 +242,15 @@ msgstr ""
 msgid "This page supplies various information about Asterisk"
 msgstr ""
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unavailable: "
 msgstr ""
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unknown: "
 msgstr ""
 
-#: Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
 msgstr "Oövervakad: "
 
@@ -263,9 +271,6 @@ msgstr "Röstbrevlådor"
 
 #~ msgid "Zaptel driver info"
 #~ msgstr "Zaptel drivrutinsinformation"
-
-#~ msgid "Provides a snapshot of the current Asterisk configuration"
-#~ msgstr "Denna modul ger en ögonblicksbild av din Asteriskkonfiguration"
 
 #~ msgid "ASTERISK MANAGER ERROR"
 #~ msgstr "FEL PÅ ASTERISK HANTERARE"

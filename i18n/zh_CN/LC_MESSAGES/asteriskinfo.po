@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-14 10:50-0700\n"
+"POT-Creation-Date: 2016-05-20 13:03-0700\n"
 "PO-Revision-Date: 2015-02-05 21:01+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://git.freepbx.org/projects/freepbx/"
@@ -38,11 +38,11 @@ msgstr ""
 msgid "Active SIP Channel(s): "
 msgstr "活动的SIP频道："
 
-#: page.asteriskinfo.php:272
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:272
 msgid "Asterisk Info"
 msgstr "Asterisk 信息"
 
-#: Asteriskinfo.class.php:151
+#: Asteriskinfo.class.php:150
 msgid "Available: "
 msgstr ""
 
@@ -154,19 +154,19 @@ msgstr "MeetMe 会议信息"
 msgid "Motif Connections"
 msgstr ""
 
-#: Asteriskinfo.class.php:141
+#: Asteriskinfo.class.php:140
 msgid "Offline-Unmonitored: "
 msgstr "离线-未检测的 "
 
-#: Asteriskinfo.class.php:141 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:162
 msgid "Offline: "
 msgstr "离线："
 
-#: Asteriskinfo.class.php:140
+#: Asteriskinfo.class.php:139
 msgid "Online-Unmonitored: "
 msgstr "在线-未检测的 "
 
-#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:139 Asteriskinfo.class.php:162
 msgid "Online: "
 msgstr "在线："
 
@@ -182,6 +182,10 @@ msgstr ""
 msgid "Peers"
 msgstr "客户"
 
+#: asteriskinfo.i18n.php:8
+msgid "Provides a snapshot of the current Asterisk configuration"
+msgstr "提供一个当前Asterisk配置简介"
+
 #: page.asteriskinfo.php:21
 msgid "Queues"
 msgstr "队列"
@@ -193,6 +197,10 @@ msgstr "队列信息"
 #: page.asteriskinfo.php:14
 msgid "Registries"
 msgstr "注册项"
+
+#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
+msgid "Reports"
+msgstr "报表"
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
@@ -226,15 +234,15 @@ msgstr ""
 msgid "This page supplies various information about Asterisk"
 msgstr ""
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unavailable: "
 msgstr ""
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unknown: "
 msgstr ""
 
-#: Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
 msgstr "未监视的："
 
@@ -255,12 +263,6 @@ msgstr "语音邮件用户"
 
 #~ msgid "Zaptel driver info"
 #~ msgstr "Zaptel驱动信息"
-
-#~ msgid "Provides a snapshot of the current Asterisk configuration"
-#~ msgstr "提供一个当前Asterisk配置简介"
-
-#~ msgid "Reports"
-#~ msgstr "报表"
 
 #~ msgid "ASTERISK MANAGER ERROR"
 #~ msgstr "Asterisk管理器错误"

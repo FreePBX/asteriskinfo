@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-14 10:50-0700\n"
+"POT-Creation-Date: 2016-05-20 13:03-0700\n"
 "PO-Revision-Date: 2013-11-26 16:18+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -63,11 +63,11 @@ msgstr ""
 msgid "Active SIP Channel(s): "
 msgstr "アクティブSIPチャネル："
 
-#: page.asteriskinfo.php:272
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:272
 msgid "Asterisk Info"
 msgstr "Asterisk情報"
 
-#: Asteriskinfo.class.php:151
+#: Asteriskinfo.class.php:150
 msgid "Available: "
 msgstr ""
 
@@ -179,19 +179,19 @@ msgstr "MeetMeカンファレンス情報"
 msgid "Motif Connections"
 msgstr "Motif接続"
 
-#: Asteriskinfo.class.php:141
+#: Asteriskinfo.class.php:140
 msgid "Offline-Unmonitored: "
 msgstr "オフライン-モニタ対象外："
 
-#: Asteriskinfo.class.php:141 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:162
 msgid "Offline: "
 msgstr "オフライン："
 
-#: Asteriskinfo.class.php:140
+#: Asteriskinfo.class.php:139
 msgid "Online-Unmonitored: "
 msgstr "オンライン-モニタ対象外："
 
-#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:139 Asteriskinfo.class.php:162
 msgid "Online: "
 msgstr "オンライン："
 
@@ -207,6 +207,10 @@ msgstr ""
 msgid "Peers"
 msgstr "ピア"
 
+#: asteriskinfo.i18n.php:8
+msgid "Provides a snapshot of the current Asterisk configuration"
+msgstr "現在のAsterisk設定のスナップショットを提供"
+
 #: page.asteriskinfo.php:21
 msgid "Queues"
 msgstr "キュー"
@@ -218,6 +222,10 @@ msgstr "キュー情報"
 #: page.asteriskinfo.php:14
 msgid "Registries"
 msgstr "レジストリ"
+
+#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
+msgid "Reports"
+msgstr "レポート"
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
@@ -252,15 +260,15 @@ msgstr ""
 msgid "This page supplies various information about Asterisk"
 msgstr ""
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unavailable: "
 msgstr ""
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unknown: "
 msgstr ""
 
-#: Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
 msgstr "モニタ対象外："
 
@@ -281,12 +289,6 @@ msgstr "ボイスメールユーザ"
 
 #~ msgid "Zaptel driver info"
 #~ msgstr "Zaptelドライバ情報"
-
-#~ msgid "Provides a snapshot of the current Asterisk configuration"
-#~ msgstr "現在のAsterisk設定のスナップショットを提供"
-
-#~ msgid "Reports"
-#~ msgstr "レポート"
 
 #~ msgid "ASTERISK MANAGER ERROR"
 #~ msgstr "Asteriskマネージャーエラー"

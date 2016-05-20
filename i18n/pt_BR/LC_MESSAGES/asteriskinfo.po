@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-14 10:50-0700\n"
+"POT-Creation-Date: 2016-05-20 13:03-0700\n"
 "PO-Revision-Date: 2015-05-03 02:42+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -37,11 +37,11 @@ msgstr "Canais PJSIP Ativos: "
 msgid "Active SIP Channel(s): "
 msgstr "Canais SIP Ativos: "
 
-#: page.asteriskinfo.php:272
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:272
 msgid "Asterisk Info"
 msgstr "Info Asterisk"
 
-#: Asteriskinfo.class.php:151
+#: Asteriskinfo.class.php:150
 msgid "Available: "
 msgstr "Disponível: "
 
@@ -153,19 +153,19 @@ msgstr "Info Conferência MeetMe"
 msgid "Motif Connections"
 msgstr "Conexões Motif"
 
-#: Asteriskinfo.class.php:141
+#: Asteriskinfo.class.php:140
 msgid "Offline-Unmonitored: "
 msgstr "Offline-Não Monitorado: "
 
-#: Asteriskinfo.class.php:141 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:162
 msgid "Offline: "
 msgstr "Offline: "
 
-#: Asteriskinfo.class.php:140
+#: Asteriskinfo.class.php:139
 msgid "Online-Unmonitored: "
 msgstr "Online-Não Monitorado: "
 
-#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:139 Asteriskinfo.class.php:162
 msgid "Online: "
 msgstr "Online: "
 
@@ -181,6 +181,10 @@ msgstr "Registros PJSip: "
 msgid "Peers"
 msgstr "Peers"
 
+#: asteriskinfo.i18n.php:8
+msgid "Provides a snapshot of the current Asterisk configuration"
+msgstr "Fornece um retrato da configuração Asterisk atual"
+
 #: page.asteriskinfo.php:21
 msgid "Queues"
 msgstr "Filas"
@@ -192,6 +196,10 @@ msgstr "Info Filas"
 #: page.asteriskinfo.php:14
 msgid "Registries"
 msgstr "Registros"
+
+#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
+msgid "Reports"
+msgstr "Relatórios"
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
@@ -226,15 +234,15 @@ msgstr ""
 msgid "This page supplies various information about Asterisk"
 msgstr ""
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unavailable: "
 msgstr "Indisponível: "
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unknown: "
 msgstr "Desconhecido: "
 
-#: Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
 msgstr "Não Monitorado: "
 
@@ -262,11 +270,5 @@ msgstr "Usuários Correio de Voz"
 #~ msgid "Asterisk (Ver. "
 #~ msgstr "Asterisk  (Ver. "
 
-#~ msgid "Provides a snapshot of the current Asterisk configuration"
-#~ msgstr "Fornece um retrato da configuração Asterisk atual"
-
 #~ msgid "Refresh"
 #~ msgstr "Atualizar"
-
-#~ msgid "Reports"
-#~ msgstr "Relatórios"

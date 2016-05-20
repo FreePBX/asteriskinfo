@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for asteriskinfo
-# Copyright (C) 2008-2015 Sangoma, Inc.
+# Copyright (C) 2008-2016 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-14 10:50-0700\n"
+"POT-Creation-Date: 2016-05-20 13:03-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,11 +33,13 @@ msgstr ""
 msgid "Active SIP Channel(s): "
 msgstr ""
 
+#: asteriskinfo.i18n.php:4
+#: asteriskinfo.i18n.php:10
 #: page.asteriskinfo.php:272
 msgid "Asterisk Info"
 msgstr ""
 
-#: Asteriskinfo.class.php:151
+#: Asteriskinfo.class.php:150
 msgid "Available: "
 msgstr ""
 
@@ -149,21 +151,21 @@ msgstr ""
 msgid "Motif Connections"
 msgstr ""
 
-#: Asteriskinfo.class.php:141
+#: Asteriskinfo.class.php:140
 msgid "Offline-Unmonitored: "
 msgstr ""
 
-#: Asteriskinfo.class.php:141
-#: Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:140
+#: Asteriskinfo.class.php:162
 msgid "Offline: "
 msgstr ""
 
-#: Asteriskinfo.class.php:140
+#: Asteriskinfo.class.php:139
 msgid "Online-Unmonitored: "
 msgstr ""
 
-#: Asteriskinfo.class.php:140
-#: Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:139
+#: Asteriskinfo.class.php:162
 msgid "Online: "
 msgstr ""
 
@@ -179,6 +181,10 @@ msgstr ""
 msgid "Peers"
 msgstr ""
 
+#: asteriskinfo.i18n.php:8
+msgid "Provides a snapshot of the current Asterisk configuration"
+msgstr ""
+
 #: page.asteriskinfo.php:21
 msgid "Queues"
 msgstr ""
@@ -189,6 +195,11 @@ msgstr ""
 
 #: page.asteriskinfo.php:14
 msgid "Registries"
+msgstr ""
+
+#: asteriskinfo.i18n.php:6
+#: asteriskinfo.i18n.php:12
+msgid "Reports"
 msgstr ""
 
 #: Asteriskinfo.class.php:40
@@ -222,15 +233,15 @@ msgstr ""
 msgid "This page supplies various information about Asterisk"
 msgstr ""
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unavailable: "
 msgstr ""
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unknown: "
 msgstr ""
 
-#: Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
 msgstr ""
 

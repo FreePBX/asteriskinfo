@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-14 10:50-0700\n"
+"POT-Creation-Date: 2016-05-20 13:03-0700\n"
 "PO-Revision-Date: 2015-03-19 17:20+0200\n"
 "Last-Translator: Jan Peter <jpveldhuizen@gmail.com>\n"
 "Language-Team: Dutch <http://weblate.freepbx.org/projects/freepbx/"
@@ -37,11 +37,11 @@ msgstr "Actieve PJSIP kanalen: "
 msgid "Active SIP Channel(s): "
 msgstr "Active SIP kanalen: "
 
-#: page.asteriskinfo.php:272
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:272
 msgid "Asterisk Info"
 msgstr "Asterisk informatie"
 
-#: Asteriskinfo.class.php:151
+#: Asteriskinfo.class.php:150
 msgid "Available: "
 msgstr "Beschikbaar: "
 
@@ -155,19 +155,19 @@ msgstr "MeetMe conferentie informatie"
 msgid "Motif Connections"
 msgstr "Motif verbindingen"
 
-#: Asteriskinfo.class.php:141
+#: Asteriskinfo.class.php:140
 msgid "Offline-Unmonitored: "
 msgstr "Niet aangemeld - Niet gecontroleerd: "
 
-#: Asteriskinfo.class.php:141 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:162
 msgid "Offline: "
 msgstr "Niet aangemeld: "
 
-#: Asteriskinfo.class.php:140
+#: Asteriskinfo.class.php:139
 msgid "Online-Unmonitored: "
 msgstr "Aangemeld - Niet gecontroleerd: "
 
-#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:139 Asteriskinfo.class.php:162
 msgid "Online: "
 msgstr "Aangemeld: "
 
@@ -183,6 +183,10 @@ msgstr "PJSIP registraties: "
 msgid "Peers"
 msgstr "Lotgenoten"
 
+#: asteriskinfo.i18n.php:8
+msgid "Provides a snapshot of the current Asterisk configuration"
+msgstr "Geeft een momentopname van de huidige Asterisk configuratie"
+
 #: page.asteriskinfo.php:21
 msgid "Queues"
 msgstr "Wachtrijen"
@@ -194,6 +198,10 @@ msgstr "Wachtrijen informatie"
 #: page.asteriskinfo.php:14
 msgid "Registries"
 msgstr "Registraties"
+
+#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
+msgid "Reports"
+msgstr "Rapporten"
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
@@ -227,15 +235,15 @@ msgstr ""
 msgid "This page supplies various information about Asterisk"
 msgstr ""
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unavailable: "
 msgstr "Niet beschikbaar: "
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unknown: "
 msgstr "Onbekend: "
 
-#: Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
 msgstr "Niet gecontroleerd: "
 
@@ -263,11 +271,5 @@ msgstr "Voicemail gebruikers"
 #~ msgid "Asterisk (Ver. "
 #~ msgstr "Asterisk (ver. "
 
-#~ msgid "Provides a snapshot of the current Asterisk configuration"
-#~ msgstr "Geeft een momentopname van de huidige Asterisk configuratie"
-
 #~ msgid "Refresh"
 #~ msgstr "Vernieuwen"
-
-#~ msgid "Reports"
-#~ msgstr "Rapporten"

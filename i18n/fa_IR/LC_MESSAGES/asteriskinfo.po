@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-14 10:50-0700\n"
+"POT-Creation-Date: 2016-05-20 13:03-0700\n"
 "PO-Revision-Date: 2016-04-25 20:29+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
-"Language-Team: Persian (Iran) "
-"<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/fa_IR/>\n"
-"Language: fa_IR\n"
+"Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
+"asteriskinfo/fa_IR/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fa_IR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -37,11 +37,11 @@ msgstr "کانال(های) فعال PJSIP: "
 msgid "Active SIP Channel(s): "
 msgstr "کانال(های) فعال SIP: "
 
-#: page.asteriskinfo.php:272
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:272
 msgid "Asterisk Info"
 msgstr "اطلاعات استریسک"
 
-#: Asteriskinfo.class.php:151
+#: Asteriskinfo.class.php:150
 msgid "Available: "
 msgstr "در دسترس: "
 
@@ -153,19 +153,19 @@ msgstr "اطلاعات کنفرانس MeetMe"
 msgid "Motif Connections"
 msgstr "اتصالات Motif"
 
-#: Asteriskinfo.class.php:141
+#: Asteriskinfo.class.php:140
 msgid "Offline-Unmonitored: "
 msgstr "آفلاین-مانتیور نشده: "
 
-#: Asteriskinfo.class.php:141 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:162
 msgid "Offline: "
 msgstr "آفلاین: "
 
-#: Asteriskinfo.class.php:140
+#: Asteriskinfo.class.php:139
 msgid "Online-Unmonitored: "
 msgstr "آنلاین-مانیتور نشده: "
 
-#: Asteriskinfo.class.php:140 Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:139 Asteriskinfo.class.php:162
 msgid "Online: "
 msgstr "آنلاین: "
 
@@ -181,6 +181,10 @@ msgstr "رجیستری PJSip: "
 msgid "Peers"
 msgstr "همتایان"
 
+#: asteriskinfo.i18n.php:8
+msgid "Provides a snapshot of the current Asterisk configuration"
+msgstr ""
+
 #: page.asteriskinfo.php:21
 msgid "Queues"
 msgstr "صف ها"
@@ -192,6 +196,10 @@ msgstr "اطلاعات صف ها"
 #: page.asteriskinfo.php:14
 msgid "Registries"
 msgstr "وضعیت رجیستری"
+
+#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
+msgid "Reports"
+msgstr ""
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
@@ -225,15 +233,15 @@ msgstr ""
 msgid "This page supplies various information about Asterisk"
 msgstr "این صفحه شامل اطلاعات گوناگونی درباره استریسک می باشد"
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unavailable: "
 msgstr "غیر قابل دسترس： "
 
-#: Asteriskinfo.class.php:152
+#: Asteriskinfo.class.php:151
 msgid "Unknown: "
 msgstr "نامشخص: "
 
-#: Asteriskinfo.class.php:163
+#: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
 msgstr "مانیتور نشده： "
 
