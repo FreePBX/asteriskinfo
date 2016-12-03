@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-20 13:03-0700\n"
-"PO-Revision-Date: 2015-05-03 02:42+0200\n"
-"Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
-"Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
-"freepbx/asteriskinfo/pt_BR/>\n"
+"PO-Revision-Date: 2016-12-03 08:56+0200\n"
+"Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
+"Language-Team: Portuguese (Brazil) "
+"<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/pt_BR/>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 2.4\n"
 
 #: page.asteriskinfo.php:26
 msgid "Active Channel(s)"
@@ -67,7 +67,7 @@ msgstr "Transportes Chan_PJSip"
 
 #: page.asteriskinfo.php:27
 msgid "Chan_Sip Channel(s)"
-msgstr "Chanais Chan_Sip"
+msgstr "Canais Chan_Sip"
 
 #: page.asteriskinfo.php:17
 msgid "Chan_Sip Info"
@@ -95,15 +95,15 @@ msgstr "Conferências"
 
 #: page.asteriskinfo.php:275
 msgid "Current Asterisk Version:"
-msgstr ""
+msgstr "Versão Atual do Asterisk:"
 
 #: page.asteriskinfo.php:41
 msgid "DAHDi Channels"
-msgstr ""
+msgstr "Canais DAHDi"
 
 #: page.asteriskinfo.php:23
 msgid "Dahdi"
-msgstr ""
+msgstr "Dahdi"
 
 #: page.asteriskinfo.php:42
 msgid "Dahdi PRI Spans"
@@ -183,7 +183,7 @@ msgstr "Peers"
 
 #: asteriskinfo.i18n.php:8
 msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr "Fornece um retrato da configuração Asterisk atual"
+msgstr "Fornece um snapshot da configuração Asterisk atual"
 
 #: page.asteriskinfo.php:21
 msgid "Queues"
@@ -232,7 +232,7 @@ msgstr ""
 
 #: page.asteriskinfo.php:274
 msgid "This page supplies various information about Asterisk"
-msgstr ""
+msgstr "Esta página fornece várias informações sobre o Asterisk"
 
 #: Asteriskinfo.class.php:151
 msgid "Unavailable: "
