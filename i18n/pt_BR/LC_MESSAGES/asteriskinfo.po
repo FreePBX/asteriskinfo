@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-20 13:03-0700\n"
-"PO-Revision-Date: 2016-12-11 02:27+0200\n"
+"PO-Revision-Date: 2016-12-11 02:28+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) "
 "<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/pt_BR/>\n"
@@ -179,7 +179,7 @@ msgstr "Registros PJSip: "
 
 #: page.asteriskinfo.php:16
 msgid "Peers"
-msgstr "Peers"
+msgstr "Pares"
 
 #: asteriskinfo.i18n.php:8
 msgid "Provides a snapshot of the current Asterisk configuration"
