@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-20 13:03-0700\n"
-"PO-Revision-Date: 2016-10-06 19:58+0200\n"
+"PO-Revision-Date: 2016-12-12 18:42+0200\n"
 "Last-Translator: Maxim <maxim@ua.fm>\n"
 "Language-Team: Ukrainian "
 "<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/uk_UA/>\n"
@@ -36,7 +36,7 @@ msgstr ""
 
 #: Asteriskinfo.class.php:38
 msgid "Active SIP Channel(s): "
-msgstr ""
+msgstr "Активних SIP каналів: "
 
 #: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:272
 msgid "Asterisk Info"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: Asteriskinfo.class.php:150
 msgid "Available: "
-msgstr ""
+msgstr "Доступно: "
 
 #: page.asteriskinfo.php:28
 msgid "Chan_PJSip Channel(s)"
@@ -84,7 +84,7 @@ msgstr ""
 
 #: page.asteriskinfo.php:15
 msgid "Channels"
-msgstr ""
+msgstr "Каналів"
 
 #: page.asteriskinfo.php:44
 msgid "Conference Bridge Info"
@@ -92,15 +92,15 @@ msgstr ""
 
 #: page.asteriskinfo.php:20
 msgid "Conferences"
-msgstr ""
+msgstr "Конференції"
 
 #: page.asteriskinfo.php:275
 msgid "Current Asterisk Version:"
-msgstr ""
+msgstr "Поточна версія Asterisk:"
 
 #: page.asteriskinfo.php:41
 msgid "DAHDi Channels"
-msgstr ""
+msgstr "DAHDi канали"
 
 #: page.asteriskinfo.php:23
 msgid "Dahdi"
@@ -112,19 +112,19 @@ msgstr ""
 
 #: page.asteriskinfo.php:24
 msgid "Full Report"
-msgstr ""
+msgstr "Повний звіт"
 
 #: page.asteriskinfo.php:47
 msgid "Google Talk Channels"
-msgstr ""
+msgstr "Google Talk канали"
 
 #: page.asteriskinfo.php:19
 msgid "IAX Info"
-msgstr ""
+msgstr "IAX інформація"
 
 #: page.asteriskinfo.php:29
 msgid "IAX2 Channel(s)"
-msgstr ""
+msgstr "IAX2 канали"
 
 #: page.asteriskinfo.php:30
 msgid "IAX2 Peers"
@@ -160,7 +160,7 @@ msgstr ""
 
 #: Asteriskinfo.class.php:140 Asteriskinfo.class.php:162
 msgid "Offline: "
-msgstr ""
+msgstr "Вимкнені: "
 
 #: Asteriskinfo.class.php:139
 msgid "Online-Unmonitored: "
@@ -168,7 +168,7 @@ msgstr ""
 
 #: Asteriskinfo.class.php:139 Asteriskinfo.class.php:162
 msgid "Online: "
-msgstr ""
+msgstr "Підключені: "
 
 #: Asteriskinfo.class.php:44
 msgid "PJSip Endpoints: "
@@ -184,11 +184,11 @@ msgstr ""
 
 #: asteriskinfo.i18n.php:8
 msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr ""
+msgstr "Забезпечує знімок поточної конфігурації сервера Asterisk"
 
 #: page.asteriskinfo.php:21
 msgid "Queues"
-msgstr ""
+msgstr "Черги"
 
 #: page.asteriskinfo.php:45
 msgid "Queues Info"
@@ -200,7 +200,7 @@ msgstr ""
 
 #: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
 msgid "Reports"
-msgstr ""
+msgstr "Звіти"
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
@@ -208,7 +208,7 @@ msgstr ""
 
 #: Asteriskinfo.class.php:39
 msgid "Sip Registry: "
-msgstr ""
+msgstr "SIP реєстрацій: "
 
 #: page.asteriskinfo.php:40
 msgid "Subscribe/Notify"
@@ -216,11 +216,11 @@ msgstr ""
 
 #: page.asteriskinfo.php:22
 msgid "Subscriptions"
-msgstr ""
+msgstr "Підписки"
 
 #: page.asteriskinfo.php:13 page.asteriskinfo.php:284
 msgid "Summary"
-msgstr ""
+msgstr "Зведення"
 
 #: page.asteriskinfo.php:181
 msgid ""
@@ -230,28 +230,28 @@ msgstr ""
 
 #: page.asteriskinfo.php:274
 msgid "This page supplies various information about Asterisk"
-msgstr ""
+msgstr "Ця сторінка надає різноманітну інформацію про сервер Asterisk"
 
 #: Asteriskinfo.class.php:151
 msgid "Unavailable: "
-msgstr ""
+msgstr "Недоступний: "
 
 #: Asteriskinfo.class.php:151
 msgid "Unknown: "
-msgstr ""
+msgstr "Невідомий: "
 
 #: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
-msgstr ""
+msgstr "Неконтрольований: "
 
 #: page.asteriskinfo.php:25
 msgid "Uptime"
-msgstr ""
+msgstr "Час роботи"
 
 #: Asteriskinfo.class.php:37
 msgid "Uptime: "
-msgstr ""
+msgstr "Час роботи: "
 
 #: page.asteriskinfo.php:46
 msgid "Voicemail Users"
-msgstr ""
+msgstr "Користувачі голосової пошти"
