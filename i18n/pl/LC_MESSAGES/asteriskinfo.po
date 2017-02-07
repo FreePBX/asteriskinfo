@@ -21,38 +21,41 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-20 13:03-0700\n"
-"PO-Revision-Date: 2011-09-23 09:52+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-02-06 22:56+0200\n"
+"Last-Translator: Michal <mboltz@tlen.pl>\n"
+"Language-Team: Polish "
+"<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/pl/>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: page.asteriskinfo.php:26
 msgid "Active Channel(s)"
-msgstr ""
+msgstr "Aktywny kanał(y)"
 
 #: Asteriskinfo.class.php:46
 msgid "Active IAX2 Channel(s): "
-msgstr ""
+msgstr "Aktywny IAX2 kanał(y): "
 
 #: Asteriskinfo.class.php:42
 msgid "Active PJSIP Channel(s): "
-msgstr ""
+msgstr "Aktywny PJSIP kanał(y): "
 
 #: Asteriskinfo.class.php:38
 msgid "Active SIP Channel(s): "
-msgstr ""
+msgstr "Aktywny SIP kanał(y): "
 
 #: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:272
 msgid "Asterisk Info"
-msgstr ""
+msgstr "Informacja odsyłacza"
 
 #: Asteriskinfo.class.php:150
 msgid "Available: "
-msgstr ""
+msgstr "Dostępny: "
 
 #: page.asteriskinfo.php:28
 msgid "Chan_PJSip Channel(s)"
@@ -92,23 +95,23 @@ msgstr ""
 
 #: page.asteriskinfo.php:15
 msgid "Channels"
-msgstr ""
+msgstr "Kanały"
 
 #: page.asteriskinfo.php:44
 msgid "Conference Bridge Info"
-msgstr ""
+msgstr "Informacja mostu konferencji"
 
 #: page.asteriskinfo.php:20
 msgid "Conferences"
-msgstr ""
+msgstr "Konferencje"
 
 #: page.asteriskinfo.php:275
 msgid "Current Asterisk Version:"
-msgstr ""
+msgstr "Aktualna wersja odsyłacza:"
 
 #: page.asteriskinfo.php:41
 msgid "DAHDi Channels"
-msgstr ""
+msgstr "Kanały DAHDi"
 
 #: page.asteriskinfo.php:23
 msgid "Dahdi"
@@ -120,19 +123,19 @@ msgstr ""
 
 #: page.asteriskinfo.php:24
 msgid "Full Report"
-msgstr ""
+msgstr "Pełny raport"
 
 #: page.asteriskinfo.php:47
 msgid "Google Talk Channels"
-msgstr ""
+msgstr "Kanały Google Talk"
 
 #: page.asteriskinfo.php:19
 msgid "IAX Info"
-msgstr ""
+msgstr "Informacje IAX"
 
 #: page.asteriskinfo.php:29
 msgid "IAX2 Channel(s)"
-msgstr ""
+msgstr "Kanał(y) IAX2"
 
 #: page.asteriskinfo.php:30
 msgid "IAX2 Peers"
@@ -144,11 +147,11 @@ msgstr ""
 
 #: page.asteriskinfo.php:39
 msgid "IAX2 Registry"
-msgstr ""
+msgstr "Rejestr IAX2"
 
 #: Asteriskinfo.class.php:47
 msgid "IAX2 Registry: "
-msgstr ""
+msgstr "Rejestr IAX2: "
 
 #: page.asteriskinfo.php:48
 msgid "Jabber Connections"
