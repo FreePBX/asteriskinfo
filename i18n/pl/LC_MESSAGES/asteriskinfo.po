@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-20 13:03-0700\n"
-"PO-Revision-Date: 2017-02-06 22:56+0200\n"
+"PO-Revision-Date: 2017-02-07 18:10+0200\n"
 "Last-Translator: Michal <mboltz@tlen.pl>\n"
 "Language-Team: Polish "
 "<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/pl/>\n"
@@ -59,39 +59,40 @@ msgstr "Dostępny: "
 
 #: page.asteriskinfo.php:28
 msgid "Chan_PJSip Channel(s)"
-msgstr ""
+msgstr "Kanał(y) Chan_PJSip"
 
 #: page.asteriskinfo.php:38
 msgid "Chan_PJSip Endpoints"
-msgstr ""
+msgstr "Chan_PJSip Punkty końcowe"
 
 #: page.asteriskinfo.php:18
 msgid "Chan_PJSip Info"
-msgstr ""
+msgstr "Chan_PJSip Informacje"
 
 #: page.asteriskinfo.php:32
 msgid "Chan_PJSip Registrations"
-msgstr ""
+msgstr "Chan_PJSip Rejestracje"
 
 #: page.asteriskinfo.php:33
 msgid "Chan_PJSip Transports"
-msgstr ""
+msgstr "Chan_PJSip Transport"
 
 #: page.asteriskinfo.php:27
 msgid "Chan_Sip Channel(s)"
-msgstr ""
+msgstr "Chan_Sip Kanał(y)"
 
 #: page.asteriskinfo.php:17
+#, fuzzy
 msgid "Chan_Sip Info"
-msgstr ""
+msgstr "Chan_Sip Info"
 
 #: page.asteriskinfo.php:37
 msgid "Chan_Sip Peers"
-msgstr ""
+msgstr "Chan_Sip Połączenia"
 
 #: page.asteriskinfo.php:31
 msgid "Chan_Sip Registry"
-msgstr ""
+msgstr "Chan_Sip Rejestr"
 
 #: page.asteriskinfo.php:15
 msgid "Channels"
@@ -118,8 +119,9 @@ msgid "Dahdi"
 msgstr ""
 
 #: page.asteriskinfo.php:42
+#, fuzzy
 msgid "Dahdi PRI Spans"
-msgstr ""
+msgstr "Dahdi PRI Spans"
 
 #: page.asteriskinfo.php:24
 msgid "Full Report"
@@ -138,12 +140,14 @@ msgid "IAX2 Channel(s)"
 msgstr "Kanał(y) IAX2"
 
 #: page.asteriskinfo.php:30
+#, fuzzy
 msgid "IAX2 Peers"
-msgstr ""
+msgstr "IAX2 Peers"
 
 #: Asteriskinfo.class.php:48
+#, fuzzy
 msgid "IAX2 Peers: "
-msgstr ""
+msgstr "IAX2 Peers: "
 
 #: page.asteriskinfo.php:39
 msgid "IAX2 Registry"
