@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-20 13:03-0700\n"
-"PO-Revision-Date: 2017-02-09 21:59+0200\n"
+"PO-Revision-Date: 2017-02-09 22:03+0200\n"
 "Last-Translator: Michal <mboltz@tlen.pl>\n"
 "Language-Team: Polish "
 "<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/pl/>\n"
@@ -242,10 +242,12 @@ msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
 msgstr ""
+"Moduł nie mógł połączyć się z menadżerem odsyłacza. <br> Upewnij się że "
+"odsyłacz działa i ustawienia menager.conf są odpowiednie. <br.<br>"
 
 #: page.asteriskinfo.php:274
 msgid "This page supplies various information about Asterisk"
-msgstr ""
+msgstr "Ta strona dostarcza różnych informacji o odsyłaczu"
 
 #: Asteriskinfo.class.php:151
 msgid "Unavailable: "
