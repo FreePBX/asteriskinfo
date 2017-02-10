@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-20 13:03-0700\n"
-"PO-Revision-Date: 2017-02-07 18:10+0200\n"
+"PO-Revision-Date: 2017-02-09 21:59+0200\n"
 "Last-Translator: Michal <mboltz@tlen.pl>\n"
 "Language-Team: Polish "
 "<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/pl/>\n"
@@ -116,7 +116,7 @@ msgstr "Kanały DAHDi"
 
 #: page.asteriskinfo.php:23
 msgid "Dahdi"
-msgstr ""
+msgstr "DAHDi"
 
 #: page.asteriskinfo.php:42
 #, fuzzy
@@ -163,35 +163,35 @@ msgstr ""
 
 #: page.asteriskinfo.php:43
 msgid "MeetMe Conference Info"
-msgstr ""
+msgstr "Informacja o konferencji MeetMe"
 
 #: page.asteriskinfo.php:49
 msgid "Motif Connections"
-msgstr ""
+msgstr "Połączenia Motif"
 
 #: Asteriskinfo.class.php:140
 msgid "Offline-Unmonitored: "
-msgstr ""
+msgstr "Offline-Niekontrolowany: "
 
 #: Asteriskinfo.class.php:140 Asteriskinfo.class.php:162
 msgid "Offline: "
-msgstr ""
+msgstr "Offline: "
 
 #: Asteriskinfo.class.php:139
 msgid "Online-Unmonitored: "
-msgstr ""
+msgstr "Online-Niekontrolowany: "
 
 #: Asteriskinfo.class.php:139 Asteriskinfo.class.php:162
 msgid "Online: "
-msgstr ""
+msgstr "Online: "
 
 #: Asteriskinfo.class.php:44
 msgid "PJSip Endpoints: "
-msgstr ""
+msgstr "Punkty końcowe PJSip: "
 
 #: Asteriskinfo.class.php:43
 msgid "PJSip Registrations: "
-msgstr ""
+msgstr "Rejestry PJSip: "
 
 #: page.asteriskinfo.php:16
 msgid "Peers"
@@ -199,23 +199,23 @@ msgstr ""
 
 #: asteriskinfo.i18n.php:8
 msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr ""
+msgstr "Zapewnia wycinek aktualnej konfiguracji odsyłacza"
 
 #: page.asteriskinfo.php:21
 msgid "Queues"
-msgstr ""
+msgstr "Kolejki"
 
 #: page.asteriskinfo.php:45
 msgid "Queues Info"
-msgstr ""
+msgstr "Informacja o kolejkach"
 
 #: page.asteriskinfo.php:14
 msgid "Registries"
-msgstr ""
+msgstr "Rejestry"
 
 #: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
 msgid "Reports"
-msgstr ""
+msgstr "Raporty"
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
@@ -223,19 +223,19 @@ msgstr ""
 
 #: Asteriskinfo.class.php:39
 msgid "Sip Registry: "
-msgstr ""
+msgstr "Rejestry Sip: "
 
 #: page.asteriskinfo.php:40
 msgid "Subscribe/Notify"
-msgstr ""
+msgstr "Subskrybuj/zawiadom"
 
 #: page.asteriskinfo.php:22
 msgid "Subscriptions"
-msgstr ""
+msgstr "Subskrybcje"
 
 #: page.asteriskinfo.php:13 page.asteriskinfo.php:284
 msgid "Summary"
-msgstr ""
+msgstr "Podsumowanie"
 
 #: page.asteriskinfo.php:181
 msgid ""
@@ -249,24 +249,24 @@ msgstr ""
 
 #: Asteriskinfo.class.php:151
 msgid "Unavailable: "
-msgstr ""
+msgstr "Niedostępny: "
 
 #: Asteriskinfo.class.php:151
 msgid "Unknown: "
-msgstr ""
+msgstr "Nieznany: "
 
 #: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
-msgstr ""
+msgstr "Niekontrolowany: "
 
 #: page.asteriskinfo.php:25
 msgid "Uptime"
-msgstr ""
+msgstr "Czas pracy"
 
 #: Asteriskinfo.class.php:37
 msgid "Uptime: "
-msgstr ""
+msgstr "Czas pracy: "
 
 #: page.asteriskinfo.php:46
 msgid "Voicemail Users"
-msgstr ""
+msgstr "Użytkownicy poczty głosowej"
