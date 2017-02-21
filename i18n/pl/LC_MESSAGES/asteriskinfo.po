@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-20 13:03-0700\n"
-"PO-Revision-Date: 2017-02-09 22:03+0200\n"
+"PO-Revision-Date: 2017-02-20 20:14+0200\n"
 "Last-Translator: Michal <mboltz@tlen.pl>\n"
 "Language-Team: Polish "
 "<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/pl/>\n"
@@ -159,7 +159,7 @@ msgstr "Rejestr IAX2: "
 
 #: page.asteriskinfo.php:48
 msgid "Jabber Connections"
-msgstr ""
+msgstr "Połączenia Jabber"
 
 #: page.asteriskinfo.php:43
 msgid "MeetMe Conference Info"
@@ -195,11 +195,11 @@ msgstr "Rejestry PJSip: "
 
 #: page.asteriskinfo.php:16
 msgid "Peers"
-msgstr ""
+msgstr "Połączenia (Peers)"
 
 #: asteriskinfo.i18n.php:8
 msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr "Zapewnia wycinek aktualnej konfiguracji odsyłacza"
+msgstr "Zapewnia wycinek aktualnej konfiguracji Asterisk"
 
 #: page.asteriskinfo.php:21
 msgid "Queues"
@@ -219,7 +219,7 @@ msgstr "Raporty"
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
-msgstr ""
+msgstr "Połączenia SIP: "
 
 #: Asteriskinfo.class.php:39
 msgid "Sip Registry: "
@@ -242,12 +242,12 @@ msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
 msgstr ""
-"Moduł nie mógł połączyć się z menadżerem odsyłacza. <br> Upewnij się że "
+"Moduł nie mógł połączyć się z menadżerem Asterisk. <br> Upewnij się że "
 "odsyłacz działa i ustawienia menager.conf są odpowiednie. <br.<br>"
 
 #: page.asteriskinfo.php:274
 msgid "This page supplies various information about Asterisk"
-msgstr "Ta strona dostarcza różnych informacji o odsyłaczu"
+msgstr "Ta strona dostarcza różnych informacji o Asterisk"
 
 #: Asteriskinfo.class.php:151
 msgid "Unavailable: "
