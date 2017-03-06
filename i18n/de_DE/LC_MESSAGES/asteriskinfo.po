@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-20 13:03-0700\n"
-"PO-Revision-Date: 2016-12-14 17:07+0200\n"
-"Last-Translator: Sven <spiderrs4@web.de>\n"
+"PO-Revision-Date: 2017-03-06 01:57+0200\n"
+"Last-Translator: hammer125 <auswertung@aon.at>\n"
 "Language-Team: German "
 "<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/de_DE/>\n"
 "Language: de_DE\n"
@@ -75,7 +75,7 @@ msgstr "SIP Informationen"
 
 #: page.asteriskinfo.php:37
 msgid "Chan_Sip Peers"
-msgstr ""
+msgstr "SIP Peers"
 
 #: page.asteriskinfo.php:31
 msgid "Chan_Sip Registry"
@@ -183,7 +183,7 @@ msgstr ""
 
 #: asteriskinfo.i18n.php:8
 msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr "Liefert eine Momentaufnahme der aktuellen Asterisk-Konfiguration."
+msgstr "Liefert eine Momentaufnahme der aktuellen Asterisk-Konfiguration"
 
 #: page.asteriskinfo.php:21
 msgid "Queues"
@@ -228,11 +228,11 @@ msgid ""
 msgstr ""
 "Das Modul konnte keine Verbindung zum Asterisk-Manager herstellen. <br> "
 "Stellen Sie sicher, dass Asterisk ausgeführt wird und Ihre manager.conf "
-"Einstellungen korrekt sind."
+"Einstellungen korrekt sind.<br>"
 
 #: page.asteriskinfo.php:274
 msgid "This page supplies various information about Asterisk"
-msgstr "Diese Seite liefert verschiedene Informationen über Asterisk."
+msgstr "Diese Seite liefert verschiedene Informationen über Asterisk"
 
 #: Asteriskinfo.class.php:151
 msgid "Unavailable: "
