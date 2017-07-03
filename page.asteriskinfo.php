@@ -6,6 +6,11 @@ $request = $_REQUEST;
 $dispnum = 'asteriskinfo'; //used for switch on config.php
 $astman = $astinfo->astman;
 
+//Failsafe. module.xml should prevent the need for this.
+if(!$astman->connected()){
+	echo '<div class = "alert alert-error">'._("Asterisk doesn't appear to be running").'</div>';
+	return;
+}
 
 $action = isset($_REQUEST['action'])?$_REQUEST['action']:'';
 $extdisplay = !empty($_REQUEST['extdisplay'])?$_REQUEST['extdisplay']:'summary';

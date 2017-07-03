@@ -11,7 +11,7 @@
 		Provides a snapshot of the current Asterisk configuration
 	</description>
 	<menuitems>
-		<asteriskinfo>Asterisk Info</asteriskinfo>
+		<asteriskinfo needsenginedb="yes">Asterisk Info</asteriskinfo>
 	</menuitems>
 	<depends>
 		<engine>asterisk</engine>
