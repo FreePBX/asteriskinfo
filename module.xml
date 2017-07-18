@@ -2,7 +2,7 @@
 	<rawname>asteriskinfo</rawname>
 	<repo>standard</repo>
 	<name>Asterisk Info</name>
-	<version>13.0.7</version>
+	<version>13.0.7.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -13,11 +13,8 @@
 	<menuitems>
 		<asteriskinfo needsenginedb="yes">Asterisk Info</asteriskinfo>
 	</menuitems>
-	<depends>
-		<engine>asterisk</engine>
-		<version>2.5.0rc3</version>
-	</depends>
 	<changelog>
+		*13.0.7.1* FREEPBX-15253 Exception Asterisk is not connected
 		*13.0.7* FREEPBX-12153 fix mobile view
 		*13.0.6* FREEPBX-10254 Fix Queues html
 		*13.0.5* FREEPBX-10209 htmlentities need to use UTF-8
@@ -26,37 +23,8 @@
 		*13.0.2* Version bump Beta
 		*13.0.1alpha2* FREEPBX-9481 Asterisk Info error page
 		*13.0.1alpha1* Complete reskin
-		*12.0.1* Added PJSip Information FREEPBX-7135
-		*2.11.0.9* Include new license file
-		*2.11.0.7* Packaging of ver 2.11.0.7
-		*2.11.0.6* Packaging of ver 2.11.0.6
-		*2.11.0.3* Packaging of ver 2.11.0.3
-		*2.11.0.2* Packaging of ver 2.11.0.2
-		*2.11.0.2* #6757
-		*2.11.0.1* Fixes #6288 adds XMPP (Motif)
-		*2.10.0.1* #5523
-		*2.10.0.0* new version changes
-		*2.9.0.3* #4893
-		*2.9.0.2* #4778
-		*2.9.0.1* #4755
-		*2.9.0.0* 2.9 Update
-		*2.8.0.2* localization updates
-		*2.8.0.1* #4209
-		*2.8.0.0* #3703
-		*2.7.0.0* spelling fixes, localization updates
-		*2.6.0.0* localizations, misc
-		*2.5.0.1* #3157, #3153, #3077 (DAHDI Support)
-		*2.5.0* #2845 tabindex
-		*2.4.0.1* #2704 Asterisk 1.6 tweaks
-		*2.4.0* bumped to 2.4
-		*0.3.0.1* bump for rc1
-		*0.3.0* #2187 Fix for Asterisk 1.4
-		*0.2.0* Add depends asterisk xml tag, proper error checking for manager connection, center table titles
-		*0.1.0* Initial release
 	</changelog>
 	<supported>
 		<version>13.0</version>
 	</supported>
-	<location>release/2.11/asteriskinfo-2.11.0.2.tgz</location>
-	<md5sum>7793bdb58d59c1c8f5e4926bac66ac63</md5sum>
 </module>

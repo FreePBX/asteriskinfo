@@ -9,20 +9,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-20 13:03-0700\n"
+"POT-Creation-Date: 2017-07-18 17:20-0400\n"
 "PO-Revision-Date: 2016-12-12 18:42+0200\n"
 "Last-Translator: Maxim <maxim@ua.fm>\n"
-"Language-Team: Ukrainian "
-"<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/uk_UA/>\n"
-"Language: uk_UA\n"
+"Language-Team: Ukrainian <http://weblate.freepbx.org/projects/freepbx/"
+"asteriskinfo/uk_UA/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Language: uk_UA\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: page.asteriskinfo.php:26
+#: page.asteriskinfo.php:31
 msgid "Active Channel(s)"
 msgstr "Активни канали"
 
@@ -38,95 +38,99 @@ msgstr ""
 msgid "Active SIP Channel(s): "
 msgstr "Активних SIP каналів: "
 
-#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:272
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:277
 msgid "Asterisk Info"
+msgstr ""
+
+#: page.asteriskinfo.php:11
+msgid "Asterisk doesn't appear to be running"
 msgstr ""
 
 #: Asteriskinfo.class.php:150
 msgid "Available: "
 msgstr "Доступно: "
 
-#: page.asteriskinfo.php:28
+#: page.asteriskinfo.php:33
 msgid "Chan_PJSip Channel(s)"
 msgstr ""
 
-#: page.asteriskinfo.php:38
+#: page.asteriskinfo.php:43
 msgid "Chan_PJSip Endpoints"
 msgstr ""
 
-#: page.asteriskinfo.php:18
+#: page.asteriskinfo.php:23
 msgid "Chan_PJSip Info"
 msgstr ""
 
-#: page.asteriskinfo.php:32
+#: page.asteriskinfo.php:37
 msgid "Chan_PJSip Registrations"
 msgstr ""
 
-#: page.asteriskinfo.php:33
+#: page.asteriskinfo.php:38
 msgid "Chan_PJSip Transports"
 msgstr ""
 
-#: page.asteriskinfo.php:27
+#: page.asteriskinfo.php:32
 msgid "Chan_Sip Channel(s)"
 msgstr ""
 
-#: page.asteriskinfo.php:17
+#: page.asteriskinfo.php:22
 msgid "Chan_Sip Info"
 msgstr ""
 
-#: page.asteriskinfo.php:37
+#: page.asteriskinfo.php:42
 msgid "Chan_Sip Peers"
 msgstr ""
 
-#: page.asteriskinfo.php:31
+#: page.asteriskinfo.php:36
 msgid "Chan_Sip Registry"
 msgstr ""
 
-#: page.asteriskinfo.php:15
+#: page.asteriskinfo.php:20
 msgid "Channels"
 msgstr "Каналів"
 
-#: page.asteriskinfo.php:44
+#: page.asteriskinfo.php:49
 msgid "Conference Bridge Info"
 msgstr ""
 
-#: page.asteriskinfo.php:20
+#: page.asteriskinfo.php:25
 msgid "Conferences"
 msgstr "Конференції"
 
-#: page.asteriskinfo.php:275
+#: page.asteriskinfo.php:280
 msgid "Current Asterisk Version:"
 msgstr "Поточна версія Asterisk:"
 
-#: page.asteriskinfo.php:41
+#: page.asteriskinfo.php:46
 msgid "DAHDi Channels"
 msgstr "DAHDi канали"
 
-#: page.asteriskinfo.php:23
+#: page.asteriskinfo.php:28
 msgid "Dahdi"
 msgstr ""
 
-#: page.asteriskinfo.php:42
+#: page.asteriskinfo.php:47
 msgid "Dahdi PRI Spans"
 msgstr ""
 
-#: page.asteriskinfo.php:24
+#: page.asteriskinfo.php:29
 msgid "Full Report"
 msgstr "Повний звіт"
 
-#: page.asteriskinfo.php:47
+#: page.asteriskinfo.php:52
 msgid "Google Talk Channels"
 msgstr "Google Talk канали"
 
-#: page.asteriskinfo.php:19
+#: page.asteriskinfo.php:24
 msgid "IAX Info"
 msgstr "IAX інформація"
 
-#: page.asteriskinfo.php:29
+#: page.asteriskinfo.php:34
 msgid "IAX2 Channel(s)"
 msgstr "IAX2 канали"
 
-#: page.asteriskinfo.php:30
+#: page.asteriskinfo.php:35
 msgid "IAX2 Peers"
 msgstr ""
 
@@ -134,7 +138,7 @@ msgstr ""
 msgid "IAX2 Peers: "
 msgstr ""
 
-#: page.asteriskinfo.php:39
+#: page.asteriskinfo.php:44
 msgid "IAX2 Registry"
 msgstr ""
 
@@ -142,15 +146,15 @@ msgstr ""
 msgid "IAX2 Registry: "
 msgstr ""
 
-#: page.asteriskinfo.php:48
+#: page.asteriskinfo.php:53
 msgid "Jabber Connections"
 msgstr ""
 
-#: page.asteriskinfo.php:43
+#: page.asteriskinfo.php:48
 msgid "MeetMe Conference Info"
 msgstr ""
 
-#: page.asteriskinfo.php:49
+#: page.asteriskinfo.php:54
 msgid "Motif Connections"
 msgstr ""
 
@@ -178,7 +182,7 @@ msgstr ""
 msgid "PJSip Registrations: "
 msgstr ""
 
-#: page.asteriskinfo.php:16
+#: page.asteriskinfo.php:21
 msgid "Peers"
 msgstr ""
 
@@ -186,19 +190,19 @@ msgstr ""
 msgid "Provides a snapshot of the current Asterisk configuration"
 msgstr "Забезпечує знімок поточної конфігурації сервера Asterisk"
 
-#: page.asteriskinfo.php:21
+#: page.asteriskinfo.php:26
 msgid "Queues"
 msgstr "Черги"
 
-#: page.asteriskinfo.php:45
+#: page.asteriskinfo.php:50
 msgid "Queues Info"
 msgstr ""
 
-#: page.asteriskinfo.php:14
+#: page.asteriskinfo.php:19
 msgid "Registries"
 msgstr ""
 
-#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
+#: asteriskinfo.i18n.php:6
 msgid "Reports"
 msgstr "Звіти"
 
@@ -210,25 +214,25 @@ msgstr ""
 msgid "Sip Registry: "
 msgstr "SIP реєстрацій: "
 
-#: page.asteriskinfo.php:40
+#: page.asteriskinfo.php:45
 msgid "Subscribe/Notify"
 msgstr ""
 
-#: page.asteriskinfo.php:22
+#: page.asteriskinfo.php:27
 msgid "Subscriptions"
 msgstr "Підписки"
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:284
+#: page.asteriskinfo.php:18 page.asteriskinfo.php:289
 msgid "Summary"
 msgstr "Зведення"
 
-#: page.asteriskinfo.php:181
+#: page.asteriskinfo.php:186
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
 msgstr ""
 
-#: page.asteriskinfo.php:274
+#: page.asteriskinfo.php:279
 msgid "This page supplies various information about Asterisk"
 msgstr "Ця сторінка надає різноманітну інформацію про сервер Asterisk"
 
@@ -244,7 +248,7 @@ msgstr "Невідомий: "
 msgid "Unmonitored: "
 msgstr "Неконтрольований: "
 
-#: page.asteriskinfo.php:25
+#: page.asteriskinfo.php:30
 msgid "Uptime"
 msgstr "Час роботи"
 
@@ -252,6 +256,6 @@ msgstr "Час роботи"
 msgid "Uptime: "
 msgstr "Час роботи: "
 
-#: page.asteriskinfo.php:46
+#: page.asteriskinfo.php:51
 msgid "Voicemail Users"
 msgstr "Користувачі голосової пошти"

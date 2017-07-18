@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX asteriskinfo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-20 13:03-0700\n"
+"POT-Creation-Date: 2017-07-18 17:20-0400\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,7 +30,7 @@ msgstr ""
 "X-Poedit-Language: swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: page.asteriskinfo.php:26
+#: page.asteriskinfo.php:31
 msgid "Active Channel(s)"
 msgstr "Aktiv(a) kanal(er)"
 
@@ -46,95 +46,99 @@ msgstr ""
 msgid "Active SIP Channel(s): "
 msgstr "Aktiv(a) SIP-kanal(er): "
 
-#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:272
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:277
 msgid "Asterisk Info"
 msgstr "Asterisk-info"
+
+#: page.asteriskinfo.php:11
+msgid "Asterisk doesn't appear to be running"
+msgstr ""
 
 #: Asteriskinfo.class.php:150
 msgid "Available: "
 msgstr ""
 
-#: page.asteriskinfo.php:28
+#: page.asteriskinfo.php:33
 msgid "Chan_PJSip Channel(s)"
 msgstr ""
 
-#: page.asteriskinfo.php:38
+#: page.asteriskinfo.php:43
 msgid "Chan_PJSip Endpoints"
 msgstr ""
 
-#: page.asteriskinfo.php:18
+#: page.asteriskinfo.php:23
 msgid "Chan_PJSip Info"
 msgstr ""
 
-#: page.asteriskinfo.php:32
+#: page.asteriskinfo.php:37
 msgid "Chan_PJSip Registrations"
 msgstr ""
 
-#: page.asteriskinfo.php:33
+#: page.asteriskinfo.php:38
 msgid "Chan_PJSip Transports"
 msgstr ""
 
-#: page.asteriskinfo.php:27
+#: page.asteriskinfo.php:32
 msgid "Chan_Sip Channel(s)"
 msgstr ""
 
-#: page.asteriskinfo.php:17
+#: page.asteriskinfo.php:22
 msgid "Chan_Sip Info"
 msgstr ""
 
-#: page.asteriskinfo.php:37
+#: page.asteriskinfo.php:42
 msgid "Chan_Sip Peers"
 msgstr ""
 
-#: page.asteriskinfo.php:31
+#: page.asteriskinfo.php:36
 msgid "Chan_Sip Registry"
 msgstr ""
 
-#: page.asteriskinfo.php:15
+#: page.asteriskinfo.php:20
 msgid "Channels"
 msgstr "Kanaler"
 
-#: page.asteriskinfo.php:44
+#: page.asteriskinfo.php:49
 msgid "Conference Bridge Info"
 msgstr ""
 
-#: page.asteriskinfo.php:20
+#: page.asteriskinfo.php:25
 msgid "Conferences"
 msgstr "Konferenser"
 
-#: page.asteriskinfo.php:275
+#: page.asteriskinfo.php:280
 msgid "Current Asterisk Version:"
 msgstr ""
 
-#: page.asteriskinfo.php:41
+#: page.asteriskinfo.php:46
 msgid "DAHDi Channels"
 msgstr ""
 
-#: page.asteriskinfo.php:23
+#: page.asteriskinfo.php:28
 msgid "Dahdi"
 msgstr ""
 
-#: page.asteriskinfo.php:42
+#: page.asteriskinfo.php:47
 msgid "Dahdi PRI Spans"
 msgstr ""
 
-#: page.asteriskinfo.php:24
+#: page.asteriskinfo.php:29
 msgid "Full Report"
 msgstr "Full rapport"
 
-#: page.asteriskinfo.php:47
+#: page.asteriskinfo.php:52
 msgid "Google Talk Channels"
 msgstr "Kanaler för Google Talk"
 
-#: page.asteriskinfo.php:19
+#: page.asteriskinfo.php:24
 msgid "IAX Info"
 msgstr "IAX-info"
 
-#: page.asteriskinfo.php:29
+#: page.asteriskinfo.php:34
 msgid "IAX2 Channel(s)"
 msgstr "IAX2-kanal(er)"
 
-#: page.asteriskinfo.php:30
+#: page.asteriskinfo.php:35
 msgid "IAX2 Peers"
 msgstr "IAX2 peers"
 
@@ -142,7 +146,7 @@ msgstr "IAX2 peers"
 msgid "IAX2 Peers: "
 msgstr "IAX2-peers: "
 
-#: page.asteriskinfo.php:39
+#: page.asteriskinfo.php:44
 msgid "IAX2 Registry"
 msgstr "IAX2-registrering(ar)"
 
@@ -150,15 +154,15 @@ msgstr "IAX2-registrering(ar)"
 msgid "IAX2 Registry: "
 msgstr "IAX2-registreringar: "
 
-#: page.asteriskinfo.php:48
+#: page.asteriskinfo.php:53
 msgid "Jabber Connections"
 msgstr "Jabberanslutningar"
 
-#: page.asteriskinfo.php:43
+#: page.asteriskinfo.php:48
 msgid "MeetMe Conference Info"
 msgstr ""
 
-#: page.asteriskinfo.php:49
+#: page.asteriskinfo.php:54
 msgid "Motif Connections"
 msgstr ""
 
@@ -186,7 +190,7 @@ msgstr ""
 msgid "PJSip Registrations: "
 msgstr ""
 
-#: page.asteriskinfo.php:16
+#: page.asteriskinfo.php:21
 msgid "Peers"
 msgstr "Peers"
 
@@ -194,19 +198,19 @@ msgstr "Peers"
 msgid "Provides a snapshot of the current Asterisk configuration"
 msgstr "Denna modul ger en ögonblicksbild av din Asteriskkonfiguration"
 
-#: page.asteriskinfo.php:21
+#: page.asteriskinfo.php:26
 msgid "Queues"
 msgstr "Köer"
 
-#: page.asteriskinfo.php:45
+#: page.asteriskinfo.php:50
 msgid "Queues Info"
 msgstr "Köinformation"
 
-#: page.asteriskinfo.php:14
+#: page.asteriskinfo.php:19
 msgid "Registries"
 msgstr "Registreringar"
 
-#: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
+#: asteriskinfo.i18n.php:6
 msgid "Reports"
 msgstr ""
 
@@ -218,19 +222,19 @@ msgstr "SIP-peers: "
 msgid "Sip Registry: "
 msgstr "SIP-registreringar: "
 
-#: page.asteriskinfo.php:40
+#: page.asteriskinfo.php:45
 msgid "Subscribe/Notify"
 msgstr "Prenumerationer/Noteringar"
 
-#: page.asteriskinfo.php:22
+#: page.asteriskinfo.php:27
 msgid "Subscriptions"
 msgstr "Prenumerationer"
 
-#: page.asteriskinfo.php:13 page.asteriskinfo.php:284
+#: page.asteriskinfo.php:18 page.asteriskinfo.php:289
 msgid "Summary"
 msgstr "Sammanfattning"
 
-#: page.asteriskinfo.php:181
+#: page.asteriskinfo.php:186
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
@@ -238,7 +242,7 @@ msgstr ""
 "Modulen kunde inte koppla upp sig mot Asterisk hanterare.<br>Kontrollera att "
 "Asterisk körs och att dina inställningar i manager.conf är riktiga.<br><br>"
 
-#: page.asteriskinfo.php:274
+#: page.asteriskinfo.php:279
 msgid "This page supplies various information about Asterisk"
 msgstr ""
 
@@ -254,7 +258,7 @@ msgstr ""
 msgid "Unmonitored: "
 msgstr "Oövervakad: "
 
-#: page.asteriskinfo.php:25
+#: page.asteriskinfo.php:30
 msgid "Uptime"
 msgstr "Upptid"
 
@@ -262,7 +266,7 @@ msgstr "Upptid"
 msgid "Uptime: "
 msgstr "Upptid: "
 
-#: page.asteriskinfo.php:46
+#: page.asteriskinfo.php:51
 msgid "Voicemail Users"
 msgstr "Röstbrevlådor"
 
