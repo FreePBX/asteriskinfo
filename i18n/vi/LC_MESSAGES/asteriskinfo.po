@@ -1,274 +1,258 @@
 # This file is part of FreePBX.
 #
-#    FreePBX is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 2 of the License, or
-#    (at your option) any later version.
-#
-#    FreePBX is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-#    You should have received a copy of the GNU General Public License
-#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+# For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for asteriskinfo
-# Copyright (C) 2008, 2009, 2010 Bandwith.com
+# Copyright (C) 2008-2016 Sangoma, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-05-20 13:03-0700\n"
-"PO-Revision-Date: 2017-02-20 20:14+0200\n"
-"Last-Translator: Michal <mboltz@tlen.pl>\n"
-"Language-Team: Polish "
-"<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/pl/>\n"
-"Language: pl\n"
+"PO-Revision-Date: 2017-07-10 19:53+0200\n"
+"Last-Translator: PETER <ftek@ymail.com>\n"
+"Language-Team: Vietnamese "
+"<http://weblate.freepbx.org/projects/freepbx/asteriskinfo/vi/>\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.4\n"
 
 #: page.asteriskinfo.php:26
 msgid "Active Channel(s)"
-msgstr "Aktywny kanał(y)"
+msgstr "Các kênh hoạt động"
 
 #: Asteriskinfo.class.php:46
 msgid "Active IAX2 Channel(s): "
-msgstr "Aktywny IAX2 kanał(y): "
+msgstr "Các kênh IAX2 hoạt động "
 
 #: Asteriskinfo.class.php:42
 msgid "Active PJSIP Channel(s): "
-msgstr "Aktywny PJSIP kanał(y): "
+msgstr "Các kênh PJSIP hoạt động: "
 
 #: Asteriskinfo.class.php:38
 msgid "Active SIP Channel(s): "
-msgstr "Aktywny SIP kanał(y): "
+msgstr "Các kênh SIP ( giao thức khởi tạo phiên) hoạt động: "
 
 #: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:272
 msgid "Asterisk Info"
-msgstr "Informacja odsyłacza"
+msgstr "Thông tin Asterisk"
 
 #: Asteriskinfo.class.php:150
 msgid "Available: "
-msgstr "Dostępny: "
+msgstr "Khả dụng: "
 
 #: page.asteriskinfo.php:28
 msgid "Chan_PJSip Channel(s)"
-msgstr "Kanał(y) Chan_PJSip"
+msgstr "Các kênh Chan_PJSip"
 
 #: page.asteriskinfo.php:38
 msgid "Chan_PJSip Endpoints"
-msgstr "Chan_PJSip Punkty końcowe"
+msgstr "Các điểm cuối Chan_PJSip"
 
 #: page.asteriskinfo.php:18
 msgid "Chan_PJSip Info"
-msgstr "Chan_PJSip Informacje"
+msgstr "Thông tin Chan_PJSip"
 
 #: page.asteriskinfo.php:32
 msgid "Chan_PJSip Registrations"
-msgstr "Chan_PJSip Rejestracje"
+msgstr "Các đăng ký Chan_PJSip"
 
 #: page.asteriskinfo.php:33
 msgid "Chan_PJSip Transports"
-msgstr "Chan_PJSip Transport"
+msgstr "Chuyển tải Chan_PJSip"
 
 #: page.asteriskinfo.php:27
 msgid "Chan_Sip Channel(s)"
-msgstr "Chan_Sip Kanał(y)"
+msgstr "Các kênh Chan_Sip"
 
 #: page.asteriskinfo.php:17
-#, fuzzy
 msgid "Chan_Sip Info"
-msgstr "Chan_Sip Info"
+msgstr "Thông tin Chan_Sip"
 
 #: page.asteriskinfo.php:37
 msgid "Chan_Sip Peers"
-msgstr "Chan_Sip Połączenia"
+msgstr "Các đồng đẳng Chan_Sip"
 
 #: page.asteriskinfo.php:31
 msgid "Chan_Sip Registry"
-msgstr "Chan_Sip Rejestr"
+msgstr "Đăng ký Chan_Sip"
 
 #: page.asteriskinfo.php:15
 msgid "Channels"
-msgstr "Kanały"
+msgstr "Các kênh"
 
 #: page.asteriskinfo.php:44
 msgid "Conference Bridge Info"
-msgstr "Informacja mostu konferencji"
+msgstr "Thông tin Conference Bridge (cầu hội nghị)"
 
 #: page.asteriskinfo.php:20
 msgid "Conferences"
-msgstr "Konferencje"
+msgstr "Các hội nghị"
 
 #: page.asteriskinfo.php:275
 msgid "Current Asterisk Version:"
-msgstr "Aktualna wersja odsyłacza:"
+msgstr "Phiên bản Asterisk hiện tại:"
 
 #: page.asteriskinfo.php:41
 msgid "DAHDi Channels"
-msgstr "Kanały DAHDi"
+msgstr "Các kênh DAHDi"
 
 #: page.asteriskinfo.php:23
 msgid "Dahdi"
-msgstr "DAHDi"
+msgstr "Giao thức Dahdi"
 
 #: page.asteriskinfo.php:42
-#, fuzzy
 msgid "Dahdi PRI Spans"
-msgstr "Dahdi PRI Spans"
+msgstr "Các khẩu độ Dahdi PRI"
 
 #: page.asteriskinfo.php:24
 msgid "Full Report"
-msgstr "Pełny raport"
+msgstr "Báo cáo đầy đủ"
 
 #: page.asteriskinfo.php:47
 msgid "Google Talk Channels"
-msgstr "Kanały Google Talk"
+msgstr "Các kênh nói chuyện Google"
 
 #: page.asteriskinfo.php:19
 msgid "IAX Info"
-msgstr "Informacje IAX"
+msgstr "Thông tin IAX ( giao thức trao đổi liên Asterisk)"
 
 #: page.asteriskinfo.php:29
 msgid "IAX2 Channel(s)"
-msgstr "Kanał(y) IAX2"
+msgstr "Các kênh IAX2"
 
 #: page.asteriskinfo.php:30
-#, fuzzy
 msgid "IAX2 Peers"
-msgstr "IAX2 Peers"
+msgstr "Các đồng đẳng IAX2"
 
 #: Asteriskinfo.class.php:48
-#, fuzzy
 msgid "IAX2 Peers: "
-msgstr "IAX2 Peers: "
+msgstr "Các đồng đẳng IAX2 "
 
 #: page.asteriskinfo.php:39
 msgid "IAX2 Registry"
-msgstr "Rejestr IAX2"
+msgstr "Đăng ký IAX2"
 
 #: Asteriskinfo.class.php:47
 msgid "IAX2 Registry: "
-msgstr "Rejestr IAX2: "
+msgstr "Đăng ký IAX2: "
 
 #: page.asteriskinfo.php:48
 msgid "Jabber Connections"
-msgstr "Połączenia Jabber"
+msgstr "Các kết nối Jabber"
 
 #: page.asteriskinfo.php:43
 msgid "MeetMe Conference Info"
-msgstr "Informacja o konferencji MeetMe"
+msgstr "Thông tin hội nghị MeetMe"
 
 #: page.asteriskinfo.php:49
 msgid "Motif Connections"
-msgstr "Połączenia Motif"
+msgstr "Các kết nối Motif"
 
 #: Asteriskinfo.class.php:140
 msgid "Offline-Unmonitored: "
-msgstr "Offline-Niekontrolowany: "
+msgstr "Không trực tuyến- Không được điều khiển: "
 
 #: Asteriskinfo.class.php:140 Asteriskinfo.class.php:162
 msgid "Offline: "
-msgstr "Offline: "
+msgstr "Không trực tuyến: "
 
 #: Asteriskinfo.class.php:139
 msgid "Online-Unmonitored: "
-msgstr "Online-Niekontrolowany: "
+msgstr "Trực tuyến- Không được giám sát: "
 
 #: Asteriskinfo.class.php:139 Asteriskinfo.class.php:162
 msgid "Online: "
-msgstr "Online: "
+msgstr "Trực tuyến: "
 
 #: Asteriskinfo.class.php:44
 msgid "PJSip Endpoints: "
-msgstr "Punkty końcowe PJSip: "
+msgstr "Các điểm cuối: PJSip "
 
 #: Asteriskinfo.class.php:43
 msgid "PJSip Registrations: "
-msgstr "Rejestry PJSip: "
+msgstr "Các đăng ký PJSip: "
 
 #: page.asteriskinfo.php:16
 msgid "Peers"
-msgstr "Połączenia (Peers)"
+msgstr "Các đồng đẳng"
 
 #: asteriskinfo.i18n.php:8
 msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr "Zapewnia wycinek aktualnej konfiguracji Asterisk"
+msgstr "Cung cấp một ảnh chụp của cấu hành Asterisk hiện tại"
 
 #: page.asteriskinfo.php:21
 msgid "Queues"
-msgstr "Kolejki"
+msgstr "Hàng đợi"
 
 #: page.asteriskinfo.php:45
 msgid "Queues Info"
-msgstr "Informacja o kolejkach"
+msgstr "Thông tin các hàng đợi"
 
 #: page.asteriskinfo.php:14
 msgid "Registries"
-msgstr "Rejestry"
+msgstr "Những nơi đăng ký"
 
 #: asteriskinfo.i18n.php:6 asteriskinfo.i18n.php:12
 msgid "Reports"
-msgstr "Raporty"
+msgstr "Các báo cáo"
 
 #: Asteriskinfo.class.php:40
 msgid "Sip Peers: "
-msgstr "Połączenia SIP: "
+msgstr "Các đòng đẳng Sip "
 
 #: Asteriskinfo.class.php:39
 msgid "Sip Registry: "
-msgstr "Rejestry Sip: "
+msgstr "Nơi đăng ký Sip "
 
 #: page.asteriskinfo.php:40
 msgid "Subscribe/Notify"
-msgstr "Subskrybuj/zawiadom"
+msgstr "Theo dõi/ Thông báo"
 
 #: page.asteriskinfo.php:22
 msgid "Subscriptions"
-msgstr "Subskrybcje"
+msgstr "Các thuê bao"
 
 #: page.asteriskinfo.php:13 page.asteriskinfo.php:284
 msgid "Summary"
-msgstr "Podsumowanie"
+msgstr "Tóm tắt"
 
 #: page.asteriskinfo.php:181
 msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
 msgstr ""
-"Moduł nie mógł połączyć się z menadżerem Asterisk. <br> Upewnij się że "
-"odsyłacz działa i ustawienia menager.conf są odpowiednie. <br.<br>"
+"Các mô đun không thể kết nối với trình quản lý Asterisk. <br> Hãy đảm bảo "
+"rằng Asterisk đang chạy và các thiết lập manager.conf của bạn hợp lý. <br>"
 
 #: page.asteriskinfo.php:274
 msgid "This page supplies various information about Asterisk"
-msgstr "Ta strona dostarcza różnych informacji o Asterisk"
+msgstr "Trang này cung cấp những thông tin đa dạng về Asterisk"
 
 #: Asteriskinfo.class.php:151
 msgid "Unavailable: "
-msgstr "Niedostępny: "
+msgstr "Không khả dụng: "
 
 #: Asteriskinfo.class.php:151
 msgid "Unknown: "
-msgstr "Nieznany: "
+msgstr "Không biết được: "
 
 #: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
-msgstr "Niekontrolowany: "
+msgstr "Không được giám sát: "
 
 #: page.asteriskinfo.php:25
 msgid "Uptime"
-msgstr "Czas pracy"
+msgstr "Thời gian thao tác"
 
 #: Asteriskinfo.class.php:37
 msgid "Uptime: "
-msgstr "Czas pracy: "
+msgstr "Thời gian thao tác: "
 
 #: page.asteriskinfo.php:46
 msgid "Voicemail Users"
-msgstr "Użytkownicy poczty głosowej"
+msgstr "Người dùng hộ thư thoại"
