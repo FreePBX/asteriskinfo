@@ -1,5 +1,6 @@
 <?php
 namespace FreePBX\modules;
+use FreePBX\modules\Asteriskinfo\Modules;
 class Asteriskinfo implements \BMO {
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
@@ -8,7 +9,7 @@ class Asteriskinfo implements \BMO {
 		$this->FreePBX = $freepbx;
 		$this->db = $freepbx->Database;
 		$this->astman = $this->FreePBX->astman;
-
+		$this->output = array();
 	}
 	public function install() {}
 	public function uninstall() {}
@@ -18,6 +19,11 @@ class Asteriskinfo implements \BMO {
 	public function showPage(){}
 	public function buildAsteriskInfo(){
 		$astman = $this->astman;
+		foreach (glob(__DIR__."/*.pho") as $filename) {
+			$module = basename($filename,'.php');
+			$class  = new $module($astman);
+			$this->output[$module] = $class->getData();
+		}
 		global $astver;
 		$sipActive = true;
 		$pjsipActive = false;
