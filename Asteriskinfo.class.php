@@ -318,4 +318,40 @@ class Asteriskinfo implements \BMO {
 		$data = \FreePBX::Hooks()->processHooks();
 		return $data;
 	}
+	public function listModules(){
+		$modules = [];
+		foreach(glob(__DIR__.'/Modules/*.php') as $file){
+			$modules[] = basename($file,'.php');
+		}
+		return $modules;
+	}
+	public function getModuleDisplay($module){
+		$output = '';
+		$classname = sprintf('\\FreePBX\\modules\\Asteriskinfo\\Modules\\%s',$module);
+		$o = new $classname();
+		if(method_exists($o,'getDisplay')){
+			$output =  $o->getDisplay();
+			$output = load_view(__DIR__.'/views/panel.php', array('title' => 'Channels', 'body' => $output));
+		}
+		return $output;
+	}
+	
+	public function getRnav($module = 'all'){
+		$rnav =	 sprintf('<a href="?display=asteriskinfo"  class="list-group-item %s">%s</a>',(($module == 'all')?"active":""),_("All"));
+		foreach($this->listModules() as $mod){
+			$rnav .=	 sprintf('<a href="?display=asteriskinfo&module=%s"  class="list-group-item %s">%s</a>',$mod,(($module == $mod)?"active":""),_($mod));
+		}
+		return $rnav;
+	}
+
+	public function getDisplay($module = 'all'){
+		$out = '';
+		if($module != 'all'){
+			return $this->getModuleDisplay($module);
+		}
+		foreach($this->listModules() as $mod){
+			$out .= $this->getModuleDisplay($mod);
+		}
+		return $out;
+	}
 }
