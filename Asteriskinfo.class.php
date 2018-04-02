@@ -331,7 +331,7 @@ class Asteriskinfo implements \BMO {
 		$o = new $classname();
 		if(method_exists($o,'getDisplay')){
 			$output =  $o->getDisplay();
-			$output = load_view(__DIR__.'/views/panel.php', array('title' => 'Channels', 'body' => $output));
+			$output = load_view(__DIR__.'/views/panel.php', array('title' => $module, 'body' => $output));
 		}
 		return $output;
 	}

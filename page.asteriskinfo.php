@@ -1,7 +1,7 @@
 <?php
 namespace FreePBX\modules;
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
-
+$version = \FreePBX::Config()->get('ASTVERSION');
 $astinfo = \FreePBX::create()->Asteriskinfo;
 $request = $_REQUEST;
 $dispnum = 'asteriskinfo'; //used for switch on config.php
@@ -13,7 +13,7 @@ $mode = isset($_GET['module'])?$_GET['module']:'all';
 	<h1><?php echo _("Asterisk Info")?></h1>
 	<div class="alert alert-info">
 		<?php echo _('This page supplies various information about Asterisk')?><br/>
-		<b><?php echo _("Current Asterisk Version:")?></b> <?php echo $astver ?>
+		<b><?php echo _("Current Asterisk Version:")?></b> <?php echo $version ?>
 	</div>
 	<?php echo (!$astman->connected())?$amerror:'';?>
 	<div class = "display full-border">
