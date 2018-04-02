@@ -6,7 +6,7 @@ class Voicemail{
     $this->astman = $this->freepbx->astman;
   }
   public function getDisplay(){
-    $data = $this->freepbx->Asteriskinfo->getOutput('core show hints');
+    $data = $this->freepbx->Asteriskinfo->getOutput('voicemail show users');
     return '<div class="panel panel-default"><div class="panel-body"><pre>'.$data.'</pre></div></div>';
   }
 }

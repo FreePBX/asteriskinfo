@@ -22,17 +22,7 @@ class Asteriskinfo implements \BMO {
 		$new_value = htmlentities($response['data'],ENT_COMPAT | ENT_HTML401, "UTF-8");
 		return ltrim($new_value,'Privilege: Command');
 	}
-	/**
-	 * [asteriskInfoHooks Hooking in to Asterisk Info Module]
-	 * @return [array]
-	 * 		'mode' => "Mode",
-	 * 		'title' => "title",
-	 * 		'commands' => array('subtitle' => 'command1', 'subtitle' => 'command2')
-	 */
-	public function asteriskInfoHooks(){
-		$data = \FreePBX::Hooks()->processHooks();
-		return $data;
-	}
+
 	public function listModules(){
 		$modules = [];
 		foreach(glob(__DIR__.'/Modules/*.php') as $file){
