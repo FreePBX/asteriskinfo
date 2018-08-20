@@ -2,7 +2,7 @@
 	<rawname>asteriskinfo</rawname>
 	<repo>standard</repo>
 	<name>Asterisk Info</name>
-	<version>15.0.1</version>
+	<version>15.0.2</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -14,9 +14,10 @@
 		<asteriskinfo needsenginedb="yes">Asterisk Info</asteriskinfo>
 	</menuitems>
 	<changelog>
+		*15.0.2* Packaging of ver 15.0.2
 		*13.0.1* Fork from 13 branch
 	</changelog>
 	<supported>
-		<version>13.0</version>
+		<version>15.0</version>
 	</supported>
 </module>
