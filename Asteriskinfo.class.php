@@ -11,7 +11,18 @@ class Asteriskinfo implements \BMO {
 		$this->astman = $this->FreePBX->astman;
 		$this->output = array();
 	}
-	public function install() {}
+	public function install() {
+		if(!$this->FreePBX->Config->get('ENABLE_ARI')){
+			$this->FreePBX->Config->update('ENABLE_ARI', true);
+		}
+		if(!$this->FreePBX->Config->get('FPBX_ARI_PASSWORD')){
+			$pwd = md5(openssl_random_pseudo_bytes(16));
+			$this->FreePBX->Config->update('FPBX_ARI_PASSWORD', $pwd);
+		}
+		if(!$this->FreePBX->Config->get('FPBX_ARI_USER')){
+			$this->FreePBX->Config->update('FPBX_ARI_USER', 'freepbxuser');
+		}
+	}
 	public function uninstall() {}
 	public function backup() {}
 	public function restore($backup) {}
