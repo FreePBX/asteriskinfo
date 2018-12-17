@@ -15,19 +15,12 @@ class Asteriskinfo implements \BMO {
 		if(!$this->FreePBX->Config->get('ENABLE_ARI')){
 			$this->FreePBX->Config->update('ENABLE_ARI', true);
 		}
-		if(!$this->FreePBX->Config->get('FPBX_ARI_PASSWORD')){
-			$pwd = md5(openssl_random_pseudo_bytes(16));
-			$this->FreePBX->Config->update('FPBX_ARI_PASSWORD', $pwd);
-		}
-		if(!$this->FreePBX->Config->get('FPBX_ARI_USER')){
-			$this->FreePBX->Config->update('FPBX_ARI_USER', 'freepbxuser');
-		}
 	}
 	public function uninstall() {}
 	public function backup() {}
 	public function restore($backup) {}
 	public function doConfigPageInit($page) {}
-	
+
 	public function getOutput($command){
 		$response = $this->astman->send_request('Command',array('Command'=>$command));
 		$new_value = htmlentities($response['data'],ENT_COMPAT | ENT_HTML401, "UTF-8");
@@ -51,7 +44,7 @@ class Asteriskinfo implements \BMO {
 		}
 		return $output;
 	}
-	
+
 	public function getRnav($module = 'all'){
 		$rnav =	 sprintf('<a href="?display=asteriskinfo"  class="list-group-item %s">%s</a>',(($module == 'all')?"active":""),_("All"));
 		foreach($this->listModules() as $mod){
