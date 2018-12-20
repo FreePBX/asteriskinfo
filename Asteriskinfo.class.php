@@ -12,6 +12,9 @@ class Asteriskinfo implements \BMO {
 		$this->output = array();
 	}
 	public function install() {
+		if(!$this->FreePBX->Config->get('HTTPENABLED')){
+			$this->FreePBX->Config->update('HTTPENABLED', true);
+		}
 		if(!$this->FreePBX->Config->get('ENABLE_ARI')){
 			$this->FreePBX->Config->update('ENABLE_ARI', true);
 		}
