@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-17 19:06-0500\n"
+"POT-Creation-Date: 2018-12-19 19:29-0500\n"
 "PO-Revision-Date: 2016-06-06 20:21+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: Asteriskinfo.class.php:49
+#: Asteriskinfo.class.php:52
 msgid "All"
 msgstr ""
 

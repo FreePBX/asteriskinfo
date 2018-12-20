@@ -1,4 +1,4 @@
-#: Asteriskinfo.class.php:49
+#: Asteriskinfo.class.php:52
 msgid "All"
 msgstr ""
 

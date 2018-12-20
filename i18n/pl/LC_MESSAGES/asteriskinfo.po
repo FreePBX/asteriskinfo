@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-17 19:06-0500\n"
+"POT-Creation-Date: 2018-12-19 19:29-0500\n"
 "PO-Revision-Date: 2017-02-20 20:14+0200\n"
 "Last-Translator: Michal <mboltz@tlen.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
@@ -33,7 +33,7 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: Asteriskinfo.class.php:49
+#: Asteriskinfo.class.php:52
 msgid "All"
 msgstr ""
 

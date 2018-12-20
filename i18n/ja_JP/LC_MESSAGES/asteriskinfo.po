@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-17 19:06-0500\n"
+"POT-Creation-Date: 2018-12-19 19:29-0500\n"
 "PO-Revision-Date: 2013-11-26 16:18+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -47,7 +47,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6beta2\n"
 
-#: Asteriskinfo.class.php:49
+#: Asteriskinfo.class.php:52
 msgid "All"
 msgstr ""
 

@@ -2,7 +2,7 @@
 	<rawname>asteriskinfo</rawname>
 	<repo>standard</repo>
 	<name>Asterisk Info</name>
-	<version>15.0.4</version>
+	<version>15.0.4.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
