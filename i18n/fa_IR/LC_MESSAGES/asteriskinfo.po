@@ -10,16 +10,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-07-18 17:20-0400\n"
-"PO-Revision-Date: 2016-05-26 18:58+0200\n"
-"Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
-"asteriskinfo/fa_IR/>\n"
+"PO-Revision-Date: 2019-01-25 05:52+0000\n"
+"Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
+"Language-Team: Persian <http://*/projects/freepbx/asteriskinfo/fa/>\n"
+"Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fa_IR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: page.asteriskinfo.php:31
 msgid "Active Channel(s)"
@@ -43,7 +42,7 @@ msgstr "اطلاعات استریسک"
 
 #: page.asteriskinfo.php:11
 msgid "Asterisk doesn't appear to be running"
-msgstr ""
+msgstr "استریسک اجرا نشده است"
 
 #: Asteriskinfo.class.php:150
 msgid "Available: "
