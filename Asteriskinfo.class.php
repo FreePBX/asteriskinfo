@@ -75,7 +75,7 @@ class Asteriskinfo implements \BMO {
 			$arr[$uptime] = 'core show uptime';
 		}
 
-		$htmlOutput  = '<table>';
+		$htmlOutput  = '<table width="100%" class="table table-striped table-bordered">';
 
 		foreach ($arr as $key => $value) {
 
@@ -148,7 +148,7 @@ class Asteriskinfo implements \BMO {
 						$pjsipPeerColor = '#000000';
 					}
 					$htmlOutput .= "<td>".$key."<br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Available: ").$pjsipPeer_arr['available']."<br />";
-					$htmlOutput .= "&nbsp;&nbsp;&nbsp;&nbsp;"._("Unavailable: ")."<span style=\"color:".$pjsipPeerColor.";font-weight:bold;\">".$pjsipPeer_arr['unavailable']."</span><br />&nbsp;&nbsp;&nbsp;&nbsp;"._("Unknown: ")."<span style=\"color:".$pjsipPeerColor.";font-weight:bold;\">".$pjsipPeer_arr['unknown']."</span></td>";
+					$htmlOutput .= "&nbsp;&nbsp;&nbsp;&nbsp;"._("Unavailable: ")."<span style=\"color:".$pjsipPeerColor.";font-weight:bold;\">".$pjsipPeer_arr['unavailable']."</span><br /></td>";
 
 				break;
 				case $iax2peers:
@@ -260,7 +260,6 @@ class Asteriskinfo implements \BMO {
 				$array = array(
 					"available" => 0,
 					"unavailable" => 0,
-					"unknown" => 0
 				);
 				foreach($peer as $ln => $line) {
 					if(preg_match('/no objects found/i',$line)) {
@@ -269,25 +268,18 @@ class Asteriskinfo implements \BMO {
 					if($start) {
 						if(preg_match('/endpoint:/i',$line)) {
 							$endpoint = true;
+							if(preg_match('/unavail/i',$line)) {
+								$array['unavailable']++;
+							}
 						}
 						if($endpoint && preg_match('/contact:/i',$line)) {
 							$contact = true;
-							if(preg_match('/unavail/i',$line)) {
-								$array['unavailable']++;
-							} elseif(preg_match('/avail/i',$line)) {
+							if(preg_match('/avail/i',$line)) {
 								$array['available']++;
-							} else {
-								$array['unknown']++;
 							}
-						}
-						if(empty($line)) {
-							if(!$contact && !empty($peer[$ln-1]) && !preg_match('/===================/i',$peer[$ln-1])) {
-								$array['unknown']++;
-							}
-							$contact = false;
-							$endpoint = false;
 						}
 					}
+
 					if(preg_match('/===================/i',$line)) {
 						$start = true;
 					}
