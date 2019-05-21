@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-18 17:20-0400\n"
+"POT-Creation-Date: 2019-05-21 09:09+0530\n"
 "PO-Revision-Date: 2018-10-19 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/asteriskinfo/de/>\n"
@@ -241,10 +241,6 @@ msgstr "Diese Seite liefert verschiedene Informationen über Asterisk"
 msgid "Unavailable: "
 msgstr "Nicht Verfügbar: "
 
-#: Asteriskinfo.class.php:151
-msgid "Unknown: "
-msgstr "Unbekannt: "
-
 #: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
 msgstr "Nicht überwacht: "
@@ -260,3 +256,6 @@ msgstr "Betriebszeit: "
 #: page.asteriskinfo.php:51
 msgid "Voicemail Users"
 msgstr "Benutzernachrichten"
+
+#~ msgid "Unknown: "
+#~ msgstr "Unbekannt: "

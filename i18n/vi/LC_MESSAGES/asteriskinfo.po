@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-18 17:20-0400\n"
+"POT-Creation-Date: 2019-05-21 09:09+0530\n"
 "PO-Revision-Date: 2017-07-10 19:53+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
 "asteriskinfo/vi/>\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: vi\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -241,10 +241,6 @@ msgstr "Trang này cung cấp những thông tin đa dạng về Asterisk"
 msgid "Unavailable: "
 msgstr "Không khả dụng: "
 
-#: Asteriskinfo.class.php:151
-msgid "Unknown: "
-msgstr "Không biết được: "
-
 #: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
 msgstr "Không được giám sát: "
@@ -260,3 +256,6 @@ msgstr "Thời gian thao tác: "
 #: page.asteriskinfo.php:51
 msgid "Voicemail Users"
 msgstr "Người dùng hộ thư thoại"
+
+#~ msgid "Unknown: "
+#~ msgstr "Không biết được: "

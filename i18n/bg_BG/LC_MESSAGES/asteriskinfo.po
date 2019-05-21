@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-18 17:20-0400\n"
+"POT-Creation-Date: 2019-05-21 09:09+0530\n"
 "PO-Revision-Date: 2018-07-03 12:02+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/asteriskinfo/bg/>\n"
@@ -241,10 +241,6 @@ msgstr "Тази страница предоставя разнообразна 
 msgid "Unavailable: "
 msgstr "Недостъпни: "
 
-#: Asteriskinfo.class.php:151
-msgid "Unknown: "
-msgstr "Непознати: "
-
 #: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
 msgstr "Ненаблюдавани: "
@@ -260,6 +256,9 @@ msgstr "Експлоатация: "
 #: page.asteriskinfo.php:51
 msgid "Voicemail Users"
 msgstr "Потребители на Гласова Поща"
+
+#~ msgid "Unknown: "
+#~ msgstr "Непознати: "
 
 #~ msgid "DAHDi driver info"
 #~ msgstr "DAHDi драйвер информация"

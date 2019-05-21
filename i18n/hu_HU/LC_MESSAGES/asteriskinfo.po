@@ -216,10 +216,6 @@ msgstr ""
 msgid "Unavailable: "
 msgstr ""
 
-#: Asteriskinfo.class.php:151
-msgid "Unknown: "
-msgstr ""
-
 #: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
 msgstr ""

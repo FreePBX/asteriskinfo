@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-18 17:20-0400\n"
+"POT-Creation-Date: 2019-05-21 09:09+0530\n"
 "PO-Revision-Date: 2019-01-25 05:52+0000\n"
 "Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://*/projects/freepbx/asteriskinfo/fa/>\n"
@@ -240,10 +240,6 @@ msgstr "این صفحه شامل اطلاعات گوناگونی درباره ا
 msgid "Unavailable: "
 msgstr "غیر قابل دسترس： "
 
-#: Asteriskinfo.class.php:151
-msgid "Unknown: "
-msgstr "نامشخص: "
-
 #: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
 msgstr "مانیتور نشده： "
@@ -259,3 +255,6 @@ msgstr "آپ تایم： "
 #: page.asteriskinfo.php:51
 msgid "Voicemail Users"
 msgstr "کاربران صندوق صوتی"
+
+#~ msgid "Unknown: "
+#~ msgstr "نامشخص: "

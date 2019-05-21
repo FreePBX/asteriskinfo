@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 07:48+0000\n"
+"POT-Creation-Date: 2019-05-21 09:09+0530\n"
 "PO-Revision-Date: 2018-05-28 07:48+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/asteriskinfo/it/>\n"
@@ -222,8 +222,8 @@ msgid ""
 "The module was unable to connect to the Asterisk manager.<br>Make sure "
 "Asterisk is running and your manager.conf settings are proper.<br><br>"
 msgstr ""
-"Il modulo non è stato in grado di connettersi al gestore Asterisco.<br>"
-"Assicurarsi che Asterisk sia in esecuzione e che le impostazioni di "
+"Il modulo non è stato in grado di connettersi al gestore Asterisco."
+"<br>Assicurarsi che Asterisk sia in esecuzione e che le impostazioni di "
 "manager.conf siano corrette.<br><br>"
 
 #: page.asteriskinfo.php:279
@@ -233,10 +233,6 @@ msgstr "Questa pagina fornisce varie informazioni su Asterisco"
 #: Asteriskinfo.class.php:151
 msgid "Unavailable: "
 msgstr "Non disponibile: "
-
-#: Asteriskinfo.class.php:151
-msgid "Unknown: "
-msgstr "Non conosciuto: "
 
 #: Asteriskinfo.class.php:162
 msgid "Unmonitored: "
@@ -253,3 +249,6 @@ msgstr "Tempi di attività: "
 #: page.asteriskinfo.php:51
 msgid "Voicemail Users"
 msgstr "Utenti di Voicemail"
+
+#~ msgid "Unknown: "
+#~ msgstr "Non conosciuto: "
