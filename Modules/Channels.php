@@ -5,9 +5,10 @@ class Channels{
     $this->FreePBX = \FreePBX::Create();
     $this->ariPassword =  $this->FreePBX->Config->get('FPBX_ARI_PASSWORD');
     $this->ariUser = $this->FreePBX->Config->get('FPBX_ARI_USER');
+    $this->ariHttpBindPort = $this->FreePBX->Config->get('HTTPBINDPORT');
   }
   public function getDisplay(){
-    $channels = file_get_contents('http://'.$this->ariUser.':'.$this->ariPassword.'@localhost:8088/ari/endpoints');
+    $channels = file_get_contents('http://'.$this->ariUser.':'.$this->ariPassword.'@localhost:'.$this->ariHttpBindPort.'/ari/endpoints');
     $endpoints = json_decode($channels,true);
     return $this->buildDisplay($endpoints);
   }
