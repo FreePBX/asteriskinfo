@@ -17,7 +17,11 @@ class Registries{
     if ($sip_module) {
       	$arr_registries['SIP'] = "sip show registry";
     }
-    $arr_registries[$iax2registry] = "iax2 show registry";
+    $iax2_mod_check = $this->astman->send_request('Command', array('Command' => 'module show like chan_iax2'));
+    $iax2_module = preg_match('/[1-9] modules loaded/', $iax2_mod_check['data']);
+    if($iax2_module){
+      $arr_registries[$iax2registry] = "iax2 show registry";
+    }
     foreach ($arr_registries as $key => $value) {
       $data = $this->freepbx->Asteriskinfo->getOutput($value);
       $output .= '<div class="panel panel-default"><div class="panel-heading">'.$key.'</div><div class="panel-body"><pre>'.$data.'</pre></div></div>';
