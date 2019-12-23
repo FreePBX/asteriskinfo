@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-19 19:29-0500\n"
+"POT-Creation-Date: 2019-12-23 11:14+0530\n"
 "PO-Revision-Date: 2015-04-24 21:41+0200\n"
 "Last-Translator: Paulo <paulop1975@gmail.com>\n"
 "Language-Team: Portuguese (Portugal) <http://weblate.freepbx.org/projects/"
@@ -35,7 +35,7 @@ msgid ""
 "user?"
 msgstr ""
 
-#: Modules/Channels.php:16
+#: Modules/Channels.php:21
 msgid "Channel Count"
 msgstr ""
 
@@ -51,16 +51,20 @@ msgstr "Proporciona um snapshot da configuração atual do Asterisk"
 msgid "Reports"
 msgstr "Relatórios"
 
-#: Modules/Channels.php:16
+#: Modules/Channels.php:21
 msgid "Resource"
 msgstr ""
 
-#: Modules/Channels.php:16
+#: Modules/Channels.php:21
 msgid "Status"
 msgstr ""
 
-#: Modules/Channels.php:16
+#: Modules/Channels.php:21
 msgid "Tech"
+msgstr ""
+
+#: Modules/Channels.php:12
+msgid "The Asterisk REST Interface is Currently Disabled."
 msgstr ""
 
 #: page.asteriskinfo.php:15

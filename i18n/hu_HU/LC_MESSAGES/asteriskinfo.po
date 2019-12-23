@@ -12,7 +12,7 @@ msgid ""
 "user?"
 msgstr ""
 
-#: Modules/Channels.php:16
+#: Modules/Channels.php:21
 msgid "Channel Count"
 msgstr ""
 
@@ -28,16 +28,20 @@ msgstr ""
 msgid "Reports"
 msgstr ""
 
-#: Modules/Channels.php:16
+#: Modules/Channels.php:21
 msgid "Resource"
 msgstr ""
 
-#: Modules/Channels.php:16
+#: Modules/Channels.php:21
 msgid "Status"
 msgstr ""
 
-#: Modules/Channels.php:16
+#: Modules/Channels.php:21
 msgid "Tech"
+msgstr ""
+
+#: Modules/Channels.php:12
+msgid "The Asterisk REST Interface is Currently Disabled."
 msgstr ""
 
 #: page.asteriskinfo.php:15
