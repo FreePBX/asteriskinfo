@@ -5,14 +5,19 @@ class Channels {
 	$this->FreePBX = \FreePBX::Create();
 	$this->ariPassword =  $this->FreePBX->Config->get('FPBX_ARI_PASSWORD');
 	$this->ariUser = $this->FreePBX->Config->get('FPBX_ARI_USER');
+	$this->httpprefix = $this->FreePBX->Config->get('HTTPPREFIX');
   }
   public function getDisplay() {
+	$url = 'http://'.$this->ariUser.':'.$this->ariPassword.'@localhost:8088/ari/endpoints';
 	$status = $this->checkARIStatus();
 	if(!$status){
 		$info = '<div class="alert alert-danger">'. _('The Asterisk REST Interface is Currently Disabled.').'</div>';
 		return $info;
 	}
-	$channels = file_get_contents('http://'.$this->ariUser.':'.$this->ariPassword.'@localhost:8088/ari/endpoints');
+	if(isset($this->httpprefix) && !empty($this->httpprefix)) {
+		$url = 'http://'.$this->ariUser.':'.$this->ariPassword.'@localhost:8088/'.$this->httpprefix.'/ari/endpoints';
+	}
+	$channels = file_get_contents($url);
 	$endpoints = json_decode($channels,true);
 	return $this->buildDisplay($endpoints);
   }
