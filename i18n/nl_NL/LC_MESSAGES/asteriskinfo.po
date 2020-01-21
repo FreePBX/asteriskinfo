@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-23 11:14+0530\n"
+"POT-Creation-Date: 2020-01-21 17:04+0530\n"
 "PO-Revision-Date: 2016-06-01 07:30+0200\n"
 "Last-Translator: Hans <info@hansvaneijsden.nl>\n"
 "Language-Team: Dutch <http://weblate.freepbx.org/projects/freepbx/"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "All"
 msgstr ""
 
-#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:13
+#: page.asteriskinfo.php:13
 msgid "Asterisk Info"
 msgstr "Asterisk informatie"
 
@@ -35,7 +35,7 @@ msgid ""
 "user?"
 msgstr ""
 
-#: Modules/Channels.php:21
+#: Modules/Channels.php:26
 msgid "Channel Count"
 msgstr ""
 
@@ -43,33 +43,31 @@ msgstr ""
 msgid "Current Asterisk Version:"
 msgstr "Huidige Asteriskversie:"
 
-#: asteriskinfo.i18n.php:8
-msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr "Geeft een momentopname van de huidige Asterisk configuratie"
-
-#: asteriskinfo.i18n.php:6
-msgid "Reports"
-msgstr "Rapporten"
-
-#: Modules/Channels.php:21
+#: Modules/Channels.php:26
 msgid "Resource"
 msgstr ""
 
-#: Modules/Channels.php:21
+#: Modules/Channels.php:26
 msgid "Status"
 msgstr ""
 
-#: Modules/Channels.php:21
+#: Modules/Channels.php:26
 msgid "Tech"
 msgstr ""
 
-#: Modules/Channels.php:12
+#: Modules/Channels.php:14
 msgid "The Asterisk REST Interface is Currently Disabled."
 msgstr ""
 
 #: page.asteriskinfo.php:15
 msgid "This page supplies various information about Asterisk"
 msgstr "Deze pagina toont diverse informatie over Asterisk"
+
+#~ msgid "Provides a snapshot of the current Asterisk configuration"
+#~ msgstr "Geeft een momentopname van de huidige Asterisk configuratie"
+
+#~ msgid "Reports"
+#~ msgstr "Rapporten"
 
 #~ msgid "Active Channel(s)"
 #~ msgstr "Actieve kanalen"

@@ -2,7 +2,7 @@
 	<rawname>asteriskinfo</rawname>
 	<repo>standard</repo>
 	<name>Asterisk Info</name>
-	<version>15.0.6</version>
+	<version>15.0.7</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -14,6 +14,7 @@
 		<asteriskinfo needsenginedb="yes">Asterisk Info</asteriskinfo>
 	</menuitems>
 	<changelog>
+		*15.0.7* FREEPBX-21037
 		*15.0.6* FREEPBX-20873 Whoops\Exception\ErrorException failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found 
 		*15.0.5* FREEPBX-20644 check IAX2 loaded before querying, add SCCP 
 		*15.0.4* FREEPBX-18384 Add ARI dependency; 

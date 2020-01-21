@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-23 11:14+0530\n"
+"POT-Creation-Date: 2020-01-21 17:04+0530\n"
 "PO-Revision-Date: 2015-02-05 21:01+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://git.freepbx.org/projects/freepbx/"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "All"
 msgstr ""
 
-#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:13
+#: page.asteriskinfo.php:13
 msgid "Asterisk Info"
 msgstr "Asterisk 信息"
 
@@ -36,7 +36,7 @@ msgid ""
 "user?"
 msgstr ""
 
-#: Modules/Channels.php:21
+#: Modules/Channels.php:26
 msgid "Channel Count"
 msgstr ""
 
@@ -44,33 +44,31 @@ msgstr ""
 msgid "Current Asterisk Version:"
 msgstr ""
 
-#: asteriskinfo.i18n.php:8
-msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr "提供一个当前Asterisk配置简介"
-
-#: asteriskinfo.i18n.php:6
-msgid "Reports"
-msgstr "报表"
-
-#: Modules/Channels.php:21
+#: Modules/Channels.php:26
 msgid "Resource"
 msgstr ""
 
-#: Modules/Channels.php:21
+#: Modules/Channels.php:26
 msgid "Status"
 msgstr ""
 
-#: Modules/Channels.php:21
+#: Modules/Channels.php:26
 msgid "Tech"
 msgstr ""
 
-#: Modules/Channels.php:12
+#: Modules/Channels.php:14
 msgid "The Asterisk REST Interface is Currently Disabled."
 msgstr ""
 
 #: page.asteriskinfo.php:15
 msgid "This page supplies various information about Asterisk"
 msgstr ""
+
+#~ msgid "Provides a snapshot of the current Asterisk configuration"
+#~ msgstr "提供一个当前Asterisk配置简介"
+
+#~ msgid "Reports"
+#~ msgstr "报表"
 
 #~ msgid "Active Channel(s)"
 #~ msgstr "活动的频道"
