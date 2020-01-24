@@ -12,7 +12,7 @@ msgid ""
 "user?"
 msgstr ""
 
-#: Modules/Channels.php:26
+#: Modules/Channels.php:36
 msgid "Channel Count"
 msgstr ""
 
@@ -20,20 +20,30 @@ msgstr ""
 msgid "Current Asterisk Version:"
 msgstr ""
 
-#: Modules/Channels.php:26
+#: Modules/Channels.php:36
 msgid "Resource"
 msgstr ""
 
-#: Modules/Channels.php:26
+#: Modules/Channels.php:36
 msgid "Status"
 msgstr ""
 
-#: Modules/Channels.php:26
+#: Modules/Channels.php:36
 msgid "Tech"
 msgstr ""
 
-#: Modules/Channels.php:14
+#: Modules/Channels.php:15
+msgid "The Asterisk REST Interface Module is not loaded in asterisk"
+msgstr ""
+
+#: Modules/Channels.php:20
 msgid "The Asterisk REST Interface is Currently Disabled."
+msgstr ""
+
+#: Modules/Channels.php:28
+msgid ""
+"The Asterisk REST Interface is not able to connect please check "
+"configuration in advanced settings."
 msgstr ""
 
 #: page.asteriskinfo.php:15
