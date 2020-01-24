@@ -6,18 +6,28 @@ class Channels {
 	$this->ariPassword =  $this->FreePBX->Config->get('FPBX_ARI_PASSWORD');
 	$this->ariUser = $this->FreePBX->Config->get('FPBX_ARI_USER');
 	$this->httpprefix = $this->FreePBX->Config->get('HTTPPREFIX');
+	$this->httpbindport = $this->FreePBX->Config->get('HTTPBINDPORT');
   }
   public function getDisplay() {
-	$url = 'http://'.$this->ariUser.':'.$this->ariPassword.'@localhost:8088/ari/endpoints';
+	$url = 'http://'.$this->ariUser.':'.$this->ariPassword.'@localhost:'.$this->httpbindport.'/ari/endpoints';
+	$data = $this->FreePBX->Asteriskinfo->getOutput('ari show status');
+	if(preg_match('(No such command)', $data) === 1) {
+		$info = '<div class="alert alert-danger">'. _('The Asterisk REST Interface Module is not loaded in asterisk').'</div>';
+		return $info;
+	}
 	$status = $this->checkARIStatus();
 	if(!$status){
 		$info = '<div class="alert alert-danger">'. _('The Asterisk REST Interface is Currently Disabled.').'</div>';
 		return $info;
 	}
 	if(isset($this->httpprefix) && !empty($this->httpprefix)) {
-		$url = 'http://'.$this->ariUser.':'.$this->ariPassword.'@localhost:8088/'.$this->httpprefix.'/ari/endpoints';
+		$url = 'http://'.$this->ariUser.':'.$this->ariPassword.'@localhost:'.$this->httpbindport.'/'.$this->httpprefix.'/ari/endpoints';
 	}
-	$channels = file_get_contents($url);
+	$channels = @file_get_contents($url);
+	if($channels === false) {
+		$info = '<div class="alert alert-danger">'. _('The Asterisk REST Interface is not able to connect please check configuration in advanced settings.').'</div>';
+		return $info;
+	}
 	$endpoints = json_decode($channels,true);
 	return $this->buildDisplay($endpoints);
   }
