@@ -7,9 +7,13 @@ class Channels {
 	$this->ariUser = $this->FreePBX->Config->get('FPBX_ARI_USER');
 	$this->httpprefix = $this->FreePBX->Config->get('HTTPPREFIX');
 	$this->httpbindport = $this->FreePBX->Config->get('HTTPBINDPORT');
+	$this->httpbindaddr = $this->FreePBX->Config->get('HTTPBINDADDRESS');
   }
   public function getDisplay() {
 	$url = 'http://'.$this->ariUser.':'.$this->ariPassword.'@localhost:'.$this->httpbindport.'/ari/endpoints';
+	if(!empty($this->httpbindaddr) && $this->httpbindaddr != '::') {
+		$url = 'http://'.$this->ariUser.':'.$this->ariPassword.'@'.$this->httpbindaddr.':'.$this->httpbindport.'/ari/endpoints';
+	}
 	$data = $this->FreePBX->Asteriskinfo->getOutput('ari show status');
 	if(preg_match('(No such command)', $data) === 1) {
 		$info = '<div class="alert alert-danger">'. _('The Asterisk REST Interface Module is not loaded in asterisk').'</div>';
