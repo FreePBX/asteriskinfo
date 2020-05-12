@@ -7,6 +7,7 @@ class Registries{
   }
 
   public function getDisplay(){
+    $arr_registries = array();
     $pjsip_mod_check = $this->astman->send_request('Command', array('Command' => 'module show like chan_pjsip'));
 	  $pjsip_module = preg_match('/[1-9] modules loaded/', $pjsip_mod_check['data']);
     if($pjsip_module){
@@ -22,9 +23,13 @@ class Registries{
     if($iax2_module){
       $arr_registries[$iax2registry] = "iax2 show registry";
     }
-    foreach ($arr_registries as $key => $value) {
-      $data = $this->freepbx->Asteriskinfo->getOutput($value);
-      $output .= '<div class="panel panel-default"><div class="panel-heading">'.$key.'</div><div class="panel-body"><pre>'.$data.'</pre></div></div>';
+    if (!empty($arr_registries)) {
+	    foreach ($arr_registries as $key => $value) {
+		    $data = $this->freepbx->Asteriskinfo->getOutput($value);
+		    $output .= '<div class="panel panel-default"><div class="panel-heading">'.$key.'</div><div class="panel-body"><pre>'.$data.'</pre></div></div>';
+	    }
+    } else {
+	    $output .= '<div class="panel-body" align="center"><pre> Drivers (ChanSIP or PJSIP or IAX) are not loaded into asterisk, hence no registration information to display.</pre></div>';
     }
     return $output;
   }
