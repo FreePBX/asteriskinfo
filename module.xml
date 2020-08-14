@@ -2,7 +2,7 @@
 	<rawname>asteriskinfo</rawname>
 	<repo>standard</repo>
 	<name>Asterisk Info</name>
-	<version>15.0.10</version>
+	<version>15.0.11</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -10,10 +10,12 @@
 	<description>
 		Provides a snapshot of the current Asterisk configuration
 	</description>
+	<more-info>https://wiki.freepbx.org/display/FPG/Asterisk+Info+Module</more-info>
 	<menuitems>
 		<asteriskinfo needsenginedb="yes">Asterisk Info</asteriskinfo>
 	</menuitems>
 	<changelog>
+		*15.0.11* Packaging of ver 15.0.11
 		*15.0.10* FREEI-1585 Initializing $arr_registries array 
 		*15.0.9* FREEPBX-21071 Whoops\Exception\ErrorException Error 
 		*15.0.8* FREEI-1144 Getting whoops error while accessing asteriskinfo page. 
