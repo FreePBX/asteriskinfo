@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-11 17:07+0530\n"
+"POT-Creation-Date: 2020-10-29 05:11+0000\n"
 "PO-Revision-Date: 2018-05-28 07:48+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/asteriskinfo/it/>\n"
@@ -34,6 +34,14 @@ msgstr ""
 #: page.asteriskinfo.php:16
 msgid "Current Asterisk Version:"
 msgstr "Versione Asterisco Corrente:"
+
+#: Modules/Dahdi.php:12
+msgid "Dahdi Channels"
+msgstr ""
+
+#: Modules/Dahdi.php:13
+msgid "Dahdi PRI Spans"
+msgstr "Campate Dahdi PRI"
 
 #: asteriskinfo.i18n.php:8
 msgid "Provides a snapshot of the current Asterisk configuration"
@@ -132,9 +140,6 @@ msgstr "Questa pagina fornisce varie informazioni su Asterisco"
 
 #~ msgid "Dahdi"
 #~ msgstr "DAHDI"
-
-#~ msgid "Dahdi PRI Spans"
-#~ msgstr "Campate Dahdi PRI"
 
 #~ msgid "Full Report"
 #~ msgstr "Rapporto completo"

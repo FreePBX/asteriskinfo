@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-11 17:07+0530\n"
+"POT-Creation-Date: 2020-10-29 05:11+0000\n"
 "PO-Revision-Date: 2016-12-11 02:28+0200\n"
 "Last-Translator: Alexander <alexander.schley@paranagua.pr.gov.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -42,6 +42,14 @@ msgstr ""
 #: page.asteriskinfo.php:16
 msgid "Current Asterisk Version:"
 msgstr "Versão Atual do Asterisk:"
+
+#: Modules/Dahdi.php:12
+msgid "Dahdi Channels"
+msgstr ""
+
+#: Modules/Dahdi.php:13
+msgid "Dahdi PRI Spans"
+msgstr "Linhas Dahdi PRI"
 
 #: asteriskinfo.i18n.php:8
 msgid "Provides a snapshot of the current Asterisk configuration"
@@ -137,9 +145,6 @@ msgstr "Esta página fornece várias informações sobre o Asterisk"
 
 #~ msgid "Dahdi"
 #~ msgstr "Dahdi"
-
-#~ msgid "Dahdi PRI Spans"
-#~ msgstr "Linhas Dahdi PRI"
 
 #~ msgid "Full Report"
 #~ msgstr "Relatório Completo"
