@@ -2,16 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-29 05:11+0000\n"
-"PO-Revision-Date: 2018-05-28 07:48+0000\n"
-"Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
-"Language-Team: Italian <http://*/projects/freepbx/asteriskinfo/it/>\n"
+"POT-Creation-Date: 2021-01-21 08:20+0000\n"
+"PO-Revision-Date: 2020-11-18 16:00+0000\n"
+"Last-Translator: Danilo Smaldone <dsmaldone@sangoma.com>\n"
+"Language-Team: Italian <http://weblate.freepbx.org/projects/freepbx/"
+"asteriskinfo/it/>\n"
 "Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.19.1\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: Asteriskinfo.class.php:52
 msgid "All"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:13
 msgid "Asterisk Info"
-msgstr "Informazione asterisco"
+msgstr "Informazioni su Asterisk"
 
 #: Modules/Conferences.php:11
 msgid ""
@@ -33,7 +34,7 @@ msgstr ""
 
 #: page.asteriskinfo.php:16
 msgid "Current Asterisk Version:"
-msgstr "Versione Asterisco Corrente:"
+msgstr "Versione Corrente di Asterisk:"
 
 #: Modules/Dahdi.php:12
 msgid "Dahdi Channels"
@@ -41,11 +42,11 @@ msgstr ""
 
 #: Modules/Dahdi.php:13
 msgid "Dahdi PRI Spans"
-msgstr "Campate Dahdi PRI"
+msgstr "Span Dahdi PRI"
 
 #: asteriskinfo.i18n.php:8
 msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr "Fornisce un'istantanea della configurazione corrente di Asterisk"
+msgstr "Fornisce un'istantanea dell'attuale configurazione di Asterisk"
 
 #: asteriskinfo.i18n.php:6
 msgid "Reports"
@@ -79,31 +80,31 @@ msgstr ""
 
 #: page.asteriskinfo.php:15
 msgid "This page supplies various information about Asterisk"
-msgstr "Questa pagina fornisce varie informazioni su Asterisco"
+msgstr "Questa pagina fornisce informazioni su Asterisk"
 
 #~ msgid "Active Channel(s)"
 #~ msgstr "Canali Attivi"
 
 #~ msgid "Active IAX2 Channel(s): "
-#~ msgstr "Canale IAX2 Attivo "
+#~ msgstr "Canali IAX2 Attivi: "
 
 #~ msgid "Active PJSIP Channel(s): "
-#~ msgstr "Canale PJSIP Attivo "
+#~ msgstr "Canali PJSIP Attivi: "
 
 #~ msgid "Active SIP Channel(s): "
-#~ msgstr "Canale Sip Attivo "
+#~ msgstr "Canali SIP Attivi: "
 
 #~ msgid "Asterisk doesn't appear to be running"
-#~ msgstr "Asterisco non sembra essere in esecuzione"
+#~ msgstr "Asterisk non sembra essere in esecuzione"
 
 #~ msgid "Available: "
 #~ msgstr "Disponibile: "
 
 #~ msgid "Chan_PJSip Channel(s)"
-#~ msgstr "Canale Chan_PJSip"
+#~ msgstr "Canali Chan_PJSip"
 
 #~ msgid "Chan_PJSip Endpoints"
-#~ msgstr "Punto finale Chan_PJSip"
+#~ msgstr "Endpoint Chan_PJSip"
 
 #~ msgid "Chan_PJSip Info"
 #~ msgstr "Informazioni Chan_PJSip"
@@ -115,25 +116,25 @@ msgstr "Questa pagina fornisce varie informazioni su Asterisco"
 #~ msgstr "Trasporti Chan_PJSip"
 
 #~ msgid "Chan_Sip Channel(s)"
-#~ msgstr "Canale Chan_Sip"
+#~ msgstr "Canali Chan_Sip"
 
 #~ msgid "Chan_Sip Info"
 #~ msgstr "Informazioni Chan_Sip"
 
 #~ msgid "Chan_Sip Peers"
-#~ msgstr "Colleghi Chan_Sip"
+#~ msgstr "Peer Chan_Sip"
 
 #~ msgid "Chan_Sip Registry"
-#~ msgstr "Registro Chan_Sip"
+#~ msgstr "Registri Chan_Sip"
 
 #~ msgid "Channels"
 #~ msgstr "Canali"
 
 #~ msgid "Conference Bridge Info"
-#~ msgstr "Informazioni sul ponte di conferenza"
+#~ msgstr "Informazioni su bridge Riunioni"
 
 #~ msgid "Conferences"
-#~ msgstr "Conferenze"
+#~ msgstr "Riunioni"
 
 #~ msgid "DAHDi Channels"
 #~ msgstr "Canali DAHDi"
@@ -145,31 +146,31 @@ msgstr "Questa pagina fornisce varie informazioni su Asterisco"
 #~ msgstr "Rapporto completo"
 
 #~ msgid "Google Talk Channels"
-#~ msgstr "Canali Google Parla"
+#~ msgstr "Canali Google Talk"
 
 #~ msgid "IAX Info"
 #~ msgstr "Informazioni IAX"
 
 #~ msgid "IAX2 Channel(s)"
-#~ msgstr "Canale IAX2"
+#~ msgstr "Canali IAX2"
 
 #~ msgid "IAX2 Peers"
-#~ msgstr "Colleghi IAX2"
+#~ msgstr "Peer IAX2"
 
 #~ msgid "IAX2 Peers: "
-#~ msgstr "Colleghi IAX2: "
+#~ msgstr "Peer IAX2: "
 
 #~ msgid "IAX2 Registry"
-#~ msgstr "Registro IAX2"
+#~ msgstr "Registri IAX2"
 
 #~ msgid "IAX2 Registry: "
-#~ msgstr "Registro IAX2: "
+#~ msgstr "Registri IAX2: "
 
 #~ msgid "Jabber Connections"
 #~ msgstr "Connessioni Jabber"
 
 #~ msgid "MeetMe Conference Info"
-#~ msgstr "Informazioni Conferenza MeetMe"
+#~ msgstr "Informazioni MeetMe Conference"
 
 #~ msgid "Motif Connections"
 #~ msgstr "Connessioni Motif"
@@ -187,31 +188,31 @@ msgstr "Questa pagina fornisce varie informazioni su Asterisco"
 #~ msgstr "Connesso: "
 
 #~ msgid "PJSip Endpoints: "
-#~ msgstr "Punto finale PJSip "
+#~ msgstr "Endpoint PJSip "
 
 #~ msgid "PJSip Registrations: "
 #~ msgstr "Registrazioni PJSip: "
 
 #~ msgid "Peers"
-#~ msgstr "Colleghi"
+#~ msgstr "Peer"
 
 #~ msgid "Queues"
 #~ msgstr "Code"
 
 #~ msgid "Queues Info"
-#~ msgstr "Code di Informazioni"
+#~ msgstr "Informazioni sulle Code"
 
 #~ msgid "Registries"
 #~ msgstr "Registri"
 
 #~ msgid "Sip Peers: "
-#~ msgstr "Colleghi Sip: "
+#~ msgstr "Peer Sip: "
 
 #~ msgid "Sip Registry: "
-#~ msgstr "Registro Sip: "
+#~ msgstr "Registri Sip: "
 
 #~ msgid "Subscribe/Notify"
-#~ msgstr "Iscriviti / Notifica"
+#~ msgstr "Subscribe/Notify"
 
 #~ msgid "Subscriptions"
 #~ msgstr "Sottoscrizioni"
@@ -223,24 +224,24 @@ msgstr "Questa pagina fornisce varie informazioni su Asterisco"
 #~ "The module was unable to connect to the Asterisk manager.<br>Make sure "
 #~ "Asterisk is running and your manager.conf settings are proper.<br><br>"
 #~ msgstr ""
-#~ "Il modulo non è stato in grado di connettersi al gestore Asterisco."
+#~ "Il modulo non è stato in grado di connettersi all'Asterisk manager."
 #~ "<br>Assicurarsi che Asterisk sia in esecuzione e che le impostazioni di "
 #~ "manager.conf siano corrette.<br><br>"
 
 #~ msgid "Unavailable: "
 #~ msgstr "Non disponibile: "
 
-#~ msgid "Unknown: "
-#~ msgstr "Non conosciuto: "
-
 #~ msgid "Unmonitored: "
 #~ msgstr "Non monitorato: "
 
 #~ msgid "Uptime"
-#~ msgstr "tempi di attività"
+#~ msgstr "Tempo di attività"
 
 #~ msgid "Uptime: "
-#~ msgstr "Tempi di attività: "
+#~ msgstr "Tempo di attività: "
 
 #~ msgid "Voicemail Users"
-#~ msgstr "Utenti di Voicemail"
+#~ msgstr "Utenti Voicemail"
+
+#~ msgid "Unknown: "
+#~ msgstr "Non conosciuto: "
