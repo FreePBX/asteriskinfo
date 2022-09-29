@@ -2,7 +2,7 @@
 	<rawname>asteriskinfo</rawname>
 	<repo>standard</repo>
 	<name>Asterisk Info</name>
-	<version>16.0.5</version>
+	<version>17.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -15,16 +15,12 @@
 		<asteriskinfo needsenginedb="yes">Asterisk Info</asteriskinfo>
 	</menuitems>
 	<changelog>
-		*16.0.5* Packaging of ver 16.0.5
-		*16.0.4* FREEI-2356 Adding Dahdi into asteriskinfo 
-		*16.0.3* Packaging of ver 16.0.3
-		*16.0.2* FREEI-1585 Initializing $arr_registries array 
-		*16.0.1alpha* 16.0.1 alpha release
+		*17.0.1alpha* 17.0.1 alpha release
 	</changelog>
 	<depends>
 		<module>arimanager</module>
 	</depends>
 	<supported>
-		<version>16.0</version>
+		<version>17.0</version>
 	</supported>
 </module>
