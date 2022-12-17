@@ -5,85 +5,159 @@
 # FreePBX language template for asteriskinfo
 # Copyright (C) 2008-2021 Sangoma Technologies, Inc.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-16 11:29+0000\n"
+"POT-Creation-Date: 2022-12-25 13:42+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+"X-Poedit-SearchPathExcluded-1: i18n\n"
 
-#: Asteriskinfo.class.php:52
+#: Asteriskinfo.class.php:69
+#, php-format
+msgid "Page Not Found (%s)!!!!"
+msgstr ""
+
+#: Asteriskinfo.class.php:101
 msgid "All"
 msgstr ""
 
-#: asteriskinfo.i18n.php:4
-#: asteriskinfo.i18n.php:10
-#: page.asteriskinfo.php:13
-msgid "Asterisk Info"
+#: Modules/Channels.php:11
+msgid "Channels"
 msgstr ""
 
-#: Modules/Conferences.php:11
-msgid ""
-"Can't connect to Asterisk. Is Asterisk running and started by the correct "
-"user?"
-msgstr ""
-
-#: Modules/Channels.php:40
-msgid "Channel Count"
-msgstr ""
-
-#: page.asteriskinfo.php:16
-msgid "Current Asterisk Version:"
-msgstr ""
-
-#: Modules/Dahdi.php:12
-msgid "Dahdi Channels"
-msgstr ""
-
-#: Modules/Dahdi.php:13
-msgid "Dahdi PRI Spans"
-msgstr ""
-
-#: asteriskinfo.i18n.php:8
-msgid "Provides a snapshot of the current Asterisk configuration"
-msgstr ""
-
-#: asteriskinfo.i18n.php:6
-msgid "Reports"
-msgstr ""
-
-#: Modules/Channels.php:40
-msgid "Resource"
-msgstr ""
-
-#: Modules/Channels.php:40
-msgid "Status"
-msgstr ""
-
-#: Modules/Channels.php:40
-msgid "Tech"
-msgstr ""
-
-#: Modules/Channels.php:19
+#: Modules/Channels.php:25
 msgid "The Asterisk REST Interface Module is not loaded in asterisk"
 msgstr ""
 
-#: Modules/Channels.php:24
+#: Modules/Channels.php:32
 msgid "The Asterisk REST Interface is Currently Disabled."
 msgstr ""
 
-#: Modules/Channels.php:32
+#: Modules/Channels.php:43
 msgid ""
 "The Asterisk REST Interface is not able to connect please check "
 "configuration in advanced settings."
 msgstr ""
 
-#: page.asteriskinfo.php:15
+#: Modules/Channels.php:54
+msgid "Status"
+msgstr ""
+
+#: Modules/Channels.php:54
+msgid "Tech"
+msgstr ""
+
+#: Modules/Channels.php:54
+msgid "Resource"
+msgstr ""
+
+#: Modules/Channels.php:54
+msgid "Channel Count"
+msgstr ""
+
+#: Modules/Conferences.php:12
+msgid "Conferences"
+msgstr ""
+
+#: Modules/Conferences.php:20
+msgid ""
+"Can't connect to Asterisk. Is Asterisk running and started by the correct "
+"user?"
+msgstr ""
+
+#: Modules/Conferences.php:29
+msgid "MeetMe Conference Info"
+msgstr ""
+
+#: Modules/Conferences.php:34
+msgid "Conference Bridge Info"
+msgstr ""
+
+#: Modules/Dahdi.php:12
+msgid "Dahdi"
+msgstr ""
+
+#: Modules/Dahdi.php:23
+msgid "Dahdi Channels"
+msgstr ""
+
+#: Modules/Dahdi.php:27
+msgid "Dahdi PRI Spans"
+msgstr ""
+
+#: Modules/Dahdi.php:39
+msgid ""
+"Dahdi is not loaded into asterisk, hence no channels / spans information "
+"to display."
+msgstr ""
+
+#: Modules/Peers.php:12
+msgid "Peers"
+msgstr ""
+
+#: Modules/Peers.php:55
+msgid ""
+"Drivers (ChanSIP or PJSIP or IAX or SCCP) are not loaded into asterisk, "
+"hence no Peers information to display."
+msgstr ""
+
+#: Modules/Queues.php:11
+msgid "Queues"
+msgstr ""
+
+#: Modules/Queues.php:14
+msgid "Queues Info"
+msgstr ""
+
+#: Modules/Registries.php:12
+msgid "Registries"
+msgstr ""
+
+#: Modules/Registries.php:51
+msgid ""
+"Drivers (ChanSIP or PJSIP or IAX) are not loaded into asterisk, hence no "
+"registration information to display."
+msgstr ""
+
+#: Modules/Subscriptions.php:11
+msgid "Subscriptions"
+msgstr ""
+
+#: Modules/Subscriptions.php:14
+msgid "Subscribe/Notify"
+msgstr ""
+
+#: Modules/Voicemail.php:11
+msgid "Voicemail"
+msgstr ""
+
+#: Modules/Voicemail.php:14
+msgid "Voicemail Users"
+msgstr ""
+
+#: views/page.asteriskinfo.php:5
+msgid "Asterisk Info"
+msgstr ""
+
+#: views/page.asteriskinfo.php:8
+msgid "Asterisk doesn't appear to be running!"
+msgstr ""
+
+#: views/page.asteriskinfo.php:12
 msgid "This page supplies various information about Asterisk"
+msgstr ""
+
+#: views/page.asteriskinfo.php:13
+msgid "Current Asterisk Version:"
 msgstr ""
