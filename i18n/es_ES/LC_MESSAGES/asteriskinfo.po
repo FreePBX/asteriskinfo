@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-25 13:42+0100\n"
+"POT-Creation-Date: 2023-01-11 11:04+0000\n"
 "PO-Revision-Date: 2022-12-25 13:42+0100\n"
 "Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -14,54 +14,18 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 3.2.2\n"
 
-#: Asteriskinfo.class.php:69
-#, php-format
-msgid "Page Not Found (%s)!!!!"
-msgstr "¡¡¡¡Página no encontrada (%s)!!!!"
-
-#: Asteriskinfo.class.php:101
+#: Asteriskinfo.class.php:102
 msgid "All"
 msgstr "Todo"
 
-#: Modules/Channels.php:11
-msgid "Channels"
-msgstr "Canales"
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10
+#: views/page.asteriskinfo.php:5
+msgid "Asterisk Info"
+msgstr "Información Asterisk"
 
-#: Modules/Channels.php:25
-msgid "The Asterisk REST Interface Module is not loaded in asterisk"
-msgstr "El módulo de interfaz REST de Asterisk no está cargado en asterisk"
-
-#: Modules/Channels.php:32
-msgid "The Asterisk REST Interface is Currently Disabled."
-msgstr "La interfaz REST de Asterisk está actualmente deshabilitada."
-
-#: Modules/Channels.php:43
-msgid ""
-"The Asterisk REST Interface is not able to connect please check "
-"configuration in advanced settings."
-msgstr ""
-"La interfaz REST de Asterisk no puede conectarse, por favor, compruebe la "
-"configuración en los ajustes avanzados."
-
-#: Modules/Channels.php:54
-msgid "Status"
-msgstr "Estado"
-
-#: Modules/Channels.php:54
-msgid "Tech"
-msgstr "Tecnología"
-
-#: Modules/Channels.php:54
-msgid "Resource"
-msgstr "Recurso"
-
-#: Modules/Channels.php:54
-msgid "Channel Count"
-msgstr "Recuento de Canales"
-
-#: Modules/Conferences.php:12
-msgid "Conferences"
-msgstr "Conferencias"
+#: views/page.asteriskinfo.php:8
+msgid "Asterisk doesn't appear to be running!"
+msgstr "¡Asterisk no parece estar funcionando!"
 
 #: Modules/Conferences.php:20
 msgid ""
@@ -71,13 +35,25 @@ msgstr ""
 "No puedo conectarme a Asterisk. ¿Está Asterisk funcionando e iniciado por el "
 "usuario correcto?"
 
-#: Modules/Conferences.php:29
-msgid "MeetMe Conference Info"
-msgstr "Información de conferencia MeetMe"
+#: Modules/Channels.php:53
+msgid "Channel Count"
+msgstr "Recuento de Canales"
+
+#: Modules/Channels.php:11
+msgid "Channels"
+msgstr "Canales"
 
 #: Modules/Conferences.php:34
 msgid "Conference Bridge Info"
 msgstr "Información Puente de Conferencia"
+
+#: Modules/Conferences.php:12
+msgid "Conferences"
+msgstr "Conferencias"
+
+#: views/page.asteriskinfo.php:13
+msgid "Current Asterisk Version:"
+msgstr "Version Asterisk Corriente:"
 
 #: Modules/Dahdi.php:12
 msgid "Dahdi"
@@ -99,10 +75,6 @@ msgstr ""
 "Dahdi no está cargado en asterisk, por lo tanto no hay información de "
 "canales / spans para mostrar."
 
-#: Modules/Peers.php:12
-msgid "Peers"
-msgstr "Pares"
-
 #: Modules/Peers.php:55
 msgid ""
 "Drivers (ChanSIP or PJSIP or IAX or SCCP) are not loaded into asterisk, "
@@ -110,6 +82,40 @@ msgid ""
 msgstr ""
 "Los controladores (ChanSIP o PJSIP o IAX o SCCP) no están cargados en "
 "asterisk, por lo tanto no hay información de Peers para mostrar."
+
+#: Modules/Registries.php:51
+msgid ""
+"Drivers (ChanSIP or PJSIP or IAX) are not loaded into asterisk, hence no "
+"registration information to display."
+msgstr ""
+"Los controladores (ChanSIP o PJSIP o IAX) no se cargan en asterisk, por lo "
+"tanto no hay información de registro para mostrar."
+
+#: Asteriskinfo.class.php:150
+#, php-format
+msgid "Error: Module '%s' not found!"
+msgstr ""
+
+#: Modules/Conferences.php:29
+msgid "MeetMe Conference Info"
+msgstr "Información de conferencia MeetMe"
+
+#: Asteriskinfo.class.php:187
+msgid "Module Not Valid!"
+msgstr ""
+
+#: Asteriskinfo.class.php:69
+#, php-format
+msgid "Page Not Found (%s)!!!!"
+msgstr "¡¡¡¡Página no encontrada (%s)!!!!"
+
+#: Modules/Peers.php:12
+msgid "Peers"
+msgstr "Pares"
+
+#: asteriskinfo.i18n.php:8
+msgid "Provides a snapshot of the current Asterisk configuration"
+msgstr "Proporciona una instantánea de la configuración actual del Asterisk"
 
 #: Modules/Queues.php:11
 msgid "Queues"
@@ -123,21 +129,49 @@ msgstr "Información de Colas"
 msgid "Registries"
 msgstr "Registros"
 
-#: Modules/Registries.php:51
-msgid ""
-"Drivers (ChanSIP or PJSIP or IAX) are not loaded into asterisk, hence no "
-"registration information to display."
-msgstr ""
-"Los controladores (ChanSIP o PJSIP o IAX) no se cargan en asterisk, por lo "
-"tanto no hay información de registro para mostrar."
+#: asteriskinfo.i18n.php:6
+msgid "Reports"
+msgstr "Reportes"
+
+#: Modules/Channels.php:53
+msgid "Resource"
+msgstr "Recurso"
+
+#: Modules/Channels.php:53
+msgid "Status"
+msgstr "Estado"
+
+#: Modules/Subscriptions.php:14
+msgid "Subscribe/Notify"
+msgstr "Suscribir/Notificar"
 
 #: Modules/Subscriptions.php:11
 msgid "Subscriptions"
 msgstr "Suscripciones"
 
-#: Modules/Subscriptions.php:14
-msgid "Subscribe/Notify"
-msgstr "Suscribir/Notificar"
+#: Modules/Channels.php:53
+msgid "Tech"
+msgstr "Tecnología"
+
+#: Modules/Channels.php:25
+msgid "The Asterisk REST Interface Module is not loaded in asterisk"
+msgstr "El módulo de interfaz REST de Asterisk no está cargado en asterisk"
+
+#: Modules/Channels.php:32
+msgid "The Asterisk REST Interface is Currently Disabled."
+msgstr "La interfaz REST de Asterisk está actualmente deshabilitada."
+
+#: Modules/Channels.php:43
+msgid ""
+"The Asterisk REST Interface is not able to connect please check "
+"configuration in advanced settings."
+msgstr ""
+"La interfaz REST de Asterisk no puede conectarse, por favor, compruebe la "
+"configuración en los ajustes avanzados."
+
+#: views/page.asteriskinfo.php:12
+msgid "This page supplies various information about Asterisk"
+msgstr "Esta página provee informaciones varias acerca de Asterisk"
 
 #: Modules/Voicemail.php:11
 msgid "Voicemail"
@@ -146,28 +180,6 @@ msgstr "Mensaje de voz"
 #: Modules/Voicemail.php:14
 msgid "Voicemail Users"
 msgstr "Usuarios del buzón de voz"
-
-#: views/page.asteriskinfo.php:5
-msgid "Asterisk Info"
-msgstr "Información Asterisk"
-
-#: views/page.asteriskinfo.php:8
-msgid "Asterisk doesn't appear to be running!"
-msgstr "¡Asterisk no parece estar funcionando!"
-
-#: views/page.asteriskinfo.php:12
-msgid "This page supplies various information about Asterisk"
-msgstr "Esta página provee informaciones varias acerca de Asterisk"
-
-#: views/page.asteriskinfo.php:13
-msgid "Current Asterisk Version:"
-msgstr "Version Asterisk Corriente:"
-
-#~ msgid "Provides a snapshot of the current Asterisk configuration"
-#~ msgstr "Proporciona una instantánea de la configuración actual del Asterisk"
-
-#~ msgid "Reports"
-#~ msgstr "Reportes"
 
 #~ msgid "Active Channel(s)"
 #~ msgstr "Canales activos"

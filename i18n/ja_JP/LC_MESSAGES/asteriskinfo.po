@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-29 05:11+0000\n"
+"POT-Creation-Date: 2023-01-11 11:04+0000\n"
 "PO-Revision-Date: 2013-11-26 16:18+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -47,73 +47,162 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6beta2\n"
 
-#: Asteriskinfo.class.php:52
+#: Asteriskinfo.class.php:102
 msgid "All"
 msgstr ""
 
-#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10 page.asteriskinfo.php:13
+#: asteriskinfo.i18n.php:4 asteriskinfo.i18n.php:10
+#: views/page.asteriskinfo.php:5
 msgid "Asterisk Info"
 msgstr "Asterisk情報"
 
-#: Modules/Conferences.php:11
+#: views/page.asteriskinfo.php:8
+msgid "Asterisk doesn't appear to be running!"
+msgstr ""
+
+#: Modules/Conferences.php:20
 msgid ""
 "Can't connect to Asterisk. Is Asterisk running and started by the correct "
 "user?"
 msgstr ""
 
-#: Modules/Channels.php:40
+#: Modules/Channels.php:53
 msgid "Channel Count"
 msgstr ""
 
-#: page.asteriskinfo.php:16
+#: Modules/Channels.php:11
+msgid "Channels"
+msgstr "チャネル"
+
+#: Modules/Conferences.php:34
+msgid "Conference Bridge Info"
+msgstr "カンファレンスブリッジ情報"
+
+#: Modules/Conferences.php:12
+msgid "Conferences"
+msgstr "カンファレンス"
+
+#: views/page.asteriskinfo.php:13
 msgid "Current Asterisk Version:"
 msgstr ""
 
 #: Modules/Dahdi.php:12
+msgid "Dahdi"
+msgstr ""
+
+#: Modules/Dahdi.php:23
 msgid "Dahdi Channels"
 msgstr ""
 
-#: Modules/Dahdi.php:13
+#: Modules/Dahdi.php:27
 msgid "Dahdi PRI Spans"
 msgstr ""
+
+#: Modules/Dahdi.php:39
+msgid ""
+"Dahdi is not loaded into asterisk, hence no channels / spans information to "
+"display."
+msgstr ""
+
+#: Modules/Peers.php:55
+msgid ""
+"Drivers (ChanSIP or PJSIP or IAX or SCCP) are not loaded into asterisk, "
+"hence no Peers information to display."
+msgstr ""
+
+#: Modules/Registries.php:51
+msgid ""
+"Drivers (ChanSIP or PJSIP or IAX) are not loaded into asterisk, hence no "
+"registration information to display."
+msgstr ""
+
+#: Asteriskinfo.class.php:150
+#, php-format
+msgid "Error: Module '%s' not found!"
+msgstr ""
+
+#: Modules/Conferences.php:29
+msgid "MeetMe Conference Info"
+msgstr "MeetMeカンファレンス情報"
+
+#: Asteriskinfo.class.php:187
+msgid "Module Not Valid!"
+msgstr ""
+
+#: Asteriskinfo.class.php:69
+#, php-format
+msgid "Page Not Found (%s)!!!!"
+msgstr ""
+
+#: Modules/Peers.php:12
+msgid "Peers"
+msgstr "ピア"
 
 #: asteriskinfo.i18n.php:8
 msgid "Provides a snapshot of the current Asterisk configuration"
 msgstr "現在のAsterisk設定のスナップショットを提供"
 
+#: Modules/Queues.php:11
+msgid "Queues"
+msgstr "キュー"
+
+#: Modules/Queues.php:14
+msgid "Queues Info"
+msgstr "キュー情報"
+
+#: Modules/Registries.php:12
+msgid "Registries"
+msgstr "レジストリ"
+
 #: asteriskinfo.i18n.php:6
 msgid "Reports"
 msgstr "レポート"
 
-#: Modules/Channels.php:40
+#: Modules/Channels.php:53
 msgid "Resource"
 msgstr ""
 
-#: Modules/Channels.php:40
+#: Modules/Channels.php:53
 msgid "Status"
 msgstr ""
 
-#: Modules/Channels.php:40
+#: Modules/Subscriptions.php:14
+msgid "Subscribe/Notify"
+msgstr "サブスクライブ/通知"
+
+#: Modules/Subscriptions.php:11
+msgid "Subscriptions"
+msgstr "サブスクリプション"
+
+#: Modules/Channels.php:53
 msgid "Tech"
 msgstr ""
 
-#: Modules/Channels.php:19
+#: Modules/Channels.php:25
 msgid "The Asterisk REST Interface Module is not loaded in asterisk"
 msgstr ""
 
-#: Modules/Channels.php:24
+#: Modules/Channels.php:32
 msgid "The Asterisk REST Interface is Currently Disabled."
 msgstr ""
 
-#: Modules/Channels.php:32
+#: Modules/Channels.php:43
 msgid ""
 "The Asterisk REST Interface is not able to connect please check "
 "configuration in advanced settings."
 msgstr ""
 
-#: page.asteriskinfo.php:15
+#: views/page.asteriskinfo.php:12
 msgid "This page supplies various information about Asterisk"
 msgstr ""
+
+#: Modules/Voicemail.php:11
+msgid "Voicemail"
+msgstr ""
+
+#: Modules/Voicemail.php:14
+msgid "Voicemail Users"
+msgstr "ボイスメールユーザ"
 
 #~ msgid "Active Channel(s)"
 #~ msgstr "アクティブチャネル"
@@ -123,15 +212,6 @@ msgstr ""
 
 #~ msgid "Active SIP Channel(s): "
 #~ msgstr "アクティブSIPチャネル："
-
-#~ msgid "Channels"
-#~ msgstr "チャネル"
-
-#~ msgid "Conference Bridge Info"
-#~ msgstr "カンファレンスブリッジ情報"
-
-#~ msgid "Conferences"
-#~ msgstr "カンファレンス"
 
 #~ msgid "Full Report"
 #~ msgstr "フルレポート"
@@ -160,9 +240,6 @@ msgstr ""
 #~ msgid "Jabber Connections"
 #~ msgstr "Jabber接続"
 
-#~ msgid "MeetMe Conference Info"
-#~ msgstr "MeetMeカンファレンス情報"
-
 #~ msgid "Motif Connections"
 #~ msgstr "Motif接続"
 
@@ -178,29 +255,11 @@ msgstr ""
 #~ msgid "Online: "
 #~ msgstr "オンライン："
 
-#~ msgid "Peers"
-#~ msgstr "ピア"
-
-#~ msgid "Queues"
-#~ msgstr "キュー"
-
-#~ msgid "Queues Info"
-#~ msgstr "キュー情報"
-
-#~ msgid "Registries"
-#~ msgstr "レジストリ"
-
 #~ msgid "Sip Peers: "
 #~ msgstr "Sipピア："
 
 #~ msgid "Sip Registry: "
 #~ msgstr "Sipレジストリ："
-
-#~ msgid "Subscribe/Notify"
-#~ msgstr "サブスクライブ/通知"
-
-#~ msgid "Subscriptions"
-#~ msgstr "サブスクリプション"
 
 #~ msgid "Summary"
 #~ msgstr "サマリー"
@@ -221,9 +280,6 @@ msgstr ""
 
 #~ msgid "Uptime: "
 #~ msgstr "システム稼働時間: "
-
-#~ msgid "Voicemail Users"
-#~ msgstr "ボイスメールユーザ"
 
 #~ msgid "DAHDi driver info"
 #~ msgstr "DAHDiドリバー情報"
