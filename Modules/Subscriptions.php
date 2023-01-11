@@ -1,12 +1,16 @@
 <?php
 namespace FreePBX\modules\Asteriskinfo\Modules;
-class Subscriptions{
- public function __construct(){
-    $this->freepbx = \FreePBX::Create();
-    $this->astman = $this->freepbx->astman;
-  }
-  public function getDisplay(){
-    $data = $this->freepbx->Asteriskinfo->getOutput('core show hints');
-    return '<div class="panel panel-default"><div class="panel-body"><pre>'.$data.'</pre></div></div>';
-  }
+
+require_once 'ModuleBase.php';
+
+class Subscriptions extends ModuleBase
+{
+	public function __construct()
+	{
+		parent::__construct();
+		$this->name = _("Subscriptions");
+
+		$this->cmd   	 = "core show hints";
+		$this->cmd_title = _("Subscribe/Notify");
+	}
 }
