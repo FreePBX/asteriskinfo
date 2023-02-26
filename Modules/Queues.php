@@ -8,7 +8,8 @@ class Queues extends ModuleBase
 	public function __construct()
 	{
 		parent::__construct();
-		$this->name = _("Queues");
+		$this->name    = _("Queues");
+		$this->nameraw = "queues";
 
 		$this->cmd   	 = "queue show";
 		$this->cmd_title = _("Queues Info");

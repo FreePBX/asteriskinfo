@@ -5,10 +5,17 @@ require_once 'ModuleBase.php';
 
 class Channels extends ModuleBase
 {
+	private $ariPassword  = "";
+	private $ariUser 	  = "";
+	private $httpprefix   = "";
+	private $httpbindport = "";
+	private $httpbindaddr = "";
+
 	public function __construct()
 	{
 		parent::__construct();
-		$this->name = _("Channels");
+		$this->name 	= _("Channels");
+		$this->nameraw  = "channels";
 
 		$this->ariPassword 	= $this->config->get('FPBX_ARI_PASSWORD');
 		$this->ariUser 		= $this->config->get('FPBX_ARI_USER');
@@ -17,72 +24,109 @@ class Channels extends ModuleBase
 		$this->httpbindaddr = $this->config->get('HTTPBINDADDRESS');
 	}
 	
-	public function getDisplay()
+	public function getDisplay($ajax = false)
 	{
-		$data = $this->getOutput('ari show status');
-		if(preg_match('(No such command)', $data) === 1)
-		{
-			$info = sprintf('<div class="alert alert-danger">%s</div>', _('The Asterisk REST Interface Module is not loaded in asterisk'));
-			return $info;
-		}
+		$data_return = "";
+		$data_ari	 = $this->getARIInfo();
 
-		$status = $this->checkARIStatus();
-		if(!$status)
+		if ($data_ari['status'] == false)
 		{
-			$info = sprintf('<div class="alert alert-danger">%s</div>', _('The Asterisk REST Interface is Currently Disabled.'));
-			return $info;
+			$data_return = sprintf('<div class="alert alert-danger">%s</div>', $data_ari['error']);
 		}
-		
-		$prefix = (!empty($this->httpprefix)) 									? "/".$this->httpprefix : '';
-		$host	= (!empty($this->httpbindaddr) && $this->httpbindaddr != '::') 	? $this->httpbindaddr : "localhost";
-		$url	= sprintf('http://%s:%s@%s:%s%s/ari/endpoints', $this->ariUser, $this->ariPassword, $host, $this->httpbindport, $prefix);
-
-		$channels = @file_get_contents($url);
-		if($channels === false)
+		else
 		{
-			$info = sprintf('<div class="alert alert-danger">%s</div>', _('The Asterisk REST Interface is not able to connect please check configuration in advanced settings.'));
-			return $info;
+			$data_return = $this->buildDisplay($data_ari['data'], $ajax);
 		}
-		$endpoints = json_decode($channels, true);
-		return $this->buildDisplay($endpoints);
+		return $data_return;
 	}
 
-	public function buildDisplay($endpoints = [])
+	public function buildDisplay($endpoints = [], $ajax = false)
 	{
-		$out = '<table class="table  table-bordered table-asteriskinfo-channels">';
-		$out .= sprintf('<tr><th class="col-status">%s</th><th>%s</th><th>%s</th><th>%s</th></tr>',_("Status"), _("Tech"), _("Resource"), _("Channel Count"));
-		foreach($endpoints as $row)
+		if ($ajax == true)
 		{
-			$status_row = strtoupper($row['state']);
-			$status_icon = "";
-			$status_color = "";
-
-			switch($status_row)
-			{
-				case "ONLINE":
-					$status_icon = "fa-toggle-on";
-					$status_color = "channel-status-online";
-					break;
-
-				case "OFFLINE":
-					$status_icon = "fa-toggle-off";
-					$status_color = "channel-status-offline";
-					break;
-
-				case "UNKNOWN":
-					$status_icon = "fa-question";
-					$status_color = "channel-status-unknown";
-					break;
-
-				default:
-					$status_icon = "fa-exclamation";
-					$status_color = "channel-status-default";
-					break;
-			}
-
-			$out .= sprintf('<tr class="%s"><td class="col-status"><i class="fa  fa-lg %s" aria-hidden="true" title="%s"></td><td>%s</td><td>%s</i></td><td>%s</td></tr>',$status_color, $status_icon, $status_row, $row['technology'], $row['resource'], count($row['channel_ids']));
+			$data_template = array(
+				'table_id' 	  => $this->nameraw,
+				'module_id'   => $this->nameraw,
+				'class_extra' => 'table-asteriskinfo-channels',
+				'row_style'	  => 'modChannelsRowStyle',
+				'url_ajax'	  => sprintf('ajax.php?module=asteriskinfo&command=getGrid&module_info=%s', $this->nameraw),
+				'cols' => array(
+					'state' => array(
+						'text' 	    => _("Status"),
+						'class'     => 'text-center col-status',
+						'sortable'  => true,
+						'formatter' => 'modChannelsStatusFormatter'
+					),
+					'technology' => array(
+						'text' 	   => _("Tech"),
+						'class'     => 'col-tecnology',
+						'sortable' => true,
+					),
+					'resource' => array(
+						'text' 	   => _("Resource"),
+						'class'     => 'col-resource',
+						'sortable' => true,
+					),
+					'channel_count' => array(
+						'text' 	   => _("Channel Count"),
+						'class'     => 'text-center col-channel_count',
+						'sortable' => true,
+					),
+				),
+				'toolbar' => array(
+					array(
+						'type' 	   => 'dropdown-menu',
+						'icon' 	   => 'fa-filter',
+						'text' 	   => _("Filter"),
+						'id'   	   => 'filter-status-channels-btn',
+						'subitems' => array(
+							array(
+								'text' 		 => _("Online"),
+								'icon' 		 => 'fa-check',
+								'extra-data' => array(
+									'status' => 'online',
+								),
+							),
+							array(
+								'text' 		 => _("Offline"),
+								'icon' 		 => 'fa-times',
+								'extra-data' => array(
+									'status' => 'offline',
+								),
+							),
+							array(
+								'text' 		 => _("Unknown"),
+								'icon' 		 => 'fa-question',
+								'extra-data' => array(
+									'status' => 'unknown',
+								),
+							),
+							array(
+								'type' 		 => 'divider',
+							),
+							array(
+								'text' 		 => _("Undefined"),
+								'icon' 		 => 'fa-exclamation',
+								'extra-data' => array(
+									'status' => 'undefined',
+								),
+							)
+						),
+					),
+					array(
+						'type' => 'button',
+						'icon' => 'fa-undo',
+						'text' => _("Clean Filter"),
+						'id'   => 'filter-reset-btn',
+					)
+				),
+			);
+			$out = load_view(__DIR__.'/../views/view.asteriskinfo.grid.php', $data_template);
 		}
-		$out .= '</table>';
+		else
+		{
+			
+		}
 		return $out;
 	}
 
@@ -102,5 +146,77 @@ class Channels extends ModuleBase
 			}
 		}
 		return $status;
+	}
+
+	public function getARIInfo()
+	{
+		$data_return = array(
+			'status' => true,
+			'error'  => '',
+			'data' 	 => array(),
+		);
+
+		$data = $this->getOutput('ari show status');
+		if(preg_match('(No such command)', $data) === 1)
+		{
+			$data_return['status'] = false;
+			$data_return['error']  = _('The Asterisk REST Interface Module is not loaded in asterisk');
+		}
+		else
+		{
+			$status = $this->checkARIStatus();
+			if(!$status)
+			{
+				$data_return['status'] = false;
+				$data_return['error']  = _('The Asterisk REST Interface is Currently Disabled.');
+			}
+			else
+			{
+				$prefix = (!empty($this->httpprefix)) 									? "/".$this->httpprefix : '';
+				$host	= (!empty($this->httpbindaddr) && $this->httpbindaddr != '::') 	? $this->httpbindaddr : "localhost";
+				$url	= sprintf('http://%s:%s@%s:%s%s/ari/endpoints', $this->ariUser, $this->ariPassword, $host, $this->httpbindport, $prefix);
+		
+				$channels = @file_get_contents($url);
+				if($channels === false)
+				{
+					$data_return['status'] = false;
+					$data_return['error']  = _('The Asterisk REST Interface is not able to connect please check configuration in advanced settings.');
+				}
+				else
+				{
+					$data_return['data'] = json_decode($channels, true);
+				}
+			}
+		}
+		return $data_return;
+	}
+
+	public function getByAjax()
+	{
+		return true;
+	}
+
+	public function getDataAjax()
+	{
+		$data_ari	 = $this->getARIInfo();
+		$data_return = array(
+			'rows' 	 => array(),
+			'status' => true,
+		);
+
+		if ($data_ari['status'] == false)
+		{
+			$data_return['status'] 			= false;
+			$data_return['rows'][]['error'] = $data_ari['error'];
+		}
+		else
+		{
+			foreach($data_ari['data'] as $row)
+			{
+				$row['channel_count']  = count($row['channel_ids']);
+				$data_return['rows'][] = $row;
+			}
+		}
+		return $data_return;
 	}
 }

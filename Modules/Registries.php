@@ -9,7 +9,8 @@ class Registries extends ModuleBase
 	public function __construct()
 	{
 		parent::__construct();
-		$this->name = _("Registries");
+		$this->name    = _("Registries");
+		$this->nameraw = "registries";
 	}
 
 	public function getDisplay()

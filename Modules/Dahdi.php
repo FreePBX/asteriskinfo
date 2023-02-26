@@ -9,7 +9,8 @@ class Dahdi extends ModuleBase
 	public function __construct()
 	{
 		parent::__construct();
-		$this->name = _("Dahdi");
+		$this->name    = _("Dahdi");
+		$this->nameraw = "dahdi";
 	}
 
 	public function getDisplay()

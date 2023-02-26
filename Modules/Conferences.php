@@ -9,7 +9,8 @@ class Conferences extends ModuleBase
 	public function __construct()
 	{
 		parent::__construct();
-		$this->name = _("Conferences");
+		$this->name    = _("Conferences");
+		$this->nameraw = "conferences";
 	}
 
 	public function getDisplay()

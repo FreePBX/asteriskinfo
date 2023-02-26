@@ -33,34 +33,45 @@ tr.boxbody {
 }
 
 .table-asteriskinfo-channels {
-
 	.col-status {
-		width: 90px;
+		width: 150px;
+		text-align: center;
+	}
+	.col-channel_count {
+		width: 200px;
 		text-align: center;
 	}
 
-	.channel-status-online {
-		color: #3c763d;
-		background-color: #dff0d8;
-		border-color: #d6e9c6;
-	}
+	tbody {
+		tr.channel-status-online td {
+			color: #3c763d;
+			background-color: #dff0d8;
+			i.fa {
+				color: #02cc02;
+  				background-color: #DFF0D8;
+  				border-color: #D6E9C6;
+			}
+		}
+		tr.channel-status-offline td {
+			color: #a94442;
+			background-color: #f2dede;
+			i.fa {
+				color: #FF0000;
+				background-color: #F2DEDE;
+				border-color: #EBCCD1;
+			}
+		}
+		tr.channel-status-unknown td {
+			color: #31708f;
+			background-color: #d9edf7;
+		}
+		tr.channel-status-default td {
+			color: #8a6d3b;
+			background-color: #fcf8e3;
+		}
 
-	.channel-status-offline {
-		color: #a94442;
-		background-color: #f2dede;
-		border-color: #ebccd1;
+		tr td {
+			vertical-align: middle;
+		}
 	}
-
-	.channel-status-unknown {
-		color: #31708f;
-		background-color: #d9edf7;
-		border-color: #bce8f1;
-	}
-	
-	.channel-status-default {
-		color: #8a6d3b;
-		background-color: #fcf8e3;
-		border-color: #faebcc;
-	}
-
 }
