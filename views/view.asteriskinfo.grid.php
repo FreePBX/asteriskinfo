@@ -14,7 +14,7 @@ foreach ( $toolbar as $item )
 		case 'dropdown-menu':
 			$item_id_dropdown = empty($item['id']) ? '' : sprintf('dropdown-menu-%s', $item['id']);
 
-			$toolbar_html .= '<div class="btn-group open">';
+			$toolbar_html .= '<div class="btn-group">';
 			$toolbar_html .= sprintf('<a class="btn btn-primary %s" href="#" %s><i class="fa %s fa-fw"></i> %s</a>', $item_class, $item_id, $item['icon'], $item['text']);
 			$toolbar_html .= '<a class="btn btn-primarfy dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-caret-down" title="Toggle dropdown menu"></span></a>';
 			$toolbar_html .= sprintf('<ul class="dropdown-menu %s">', $item_id_dropdown);
