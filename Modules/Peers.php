@@ -9,7 +9,8 @@ class Peers extends ModuleBase
 	public function __construct()
 	{
 		parent::__construct();
-		$this->name = _("Peers");
+		$this->name    = _("Peers");
+		$this->nameraw = "peers";
 	}
 
 	public function getDisplay()

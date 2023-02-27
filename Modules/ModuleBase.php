@@ -5,6 +5,7 @@ namespace FreePBX\modules\Asteriskinfo\Modules;
 class ModuleBase {
 
 	public $name 	  = "";
+	public $nameraw	  = "";
 	public $cmd   	  = "";
 	public $cmd_title = "";
 
@@ -65,5 +66,15 @@ class ModuleBase {
 		$mod_check = $this->astman->send_request('Command', array('Command' => $cmd_check));
 		$mod_load  = preg_match('/[1-9] modules loaded/', $mod_check['data']);
 		return (bool) $mod_load;
+	}
+
+	public function getByAjax()
+	{
+		return false;
+	}
+
+	public function getDataAjax()
+	{
+		return array();
 	}
 }

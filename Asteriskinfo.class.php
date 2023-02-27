@@ -112,6 +112,7 @@ class Asteriskinfo implements \BMO
 				$className 		= $module_name;
 				$classNameFull 	= sprintf('\\FreePBX\\modules\\Asteriskinfo\\Modules\\%s', $className);
 				$moduleName  	= "";
+				$moduleAjax 	= false;
 
 				if (! class_exists($classNameFull, false))
 				{
@@ -129,10 +130,16 @@ class Asteriskinfo implements \BMO
 						$moduleName = _($className);
 					}
 
+					if(method_exists($o, 'getByAjax'))
+					{
+						$moduleAjax = $o->getByAjax();
+					}
+
 					$modules[$module_id] = array(
 						'class_full' => $classNameFull,
 						'class' 	 => $className,
 						'name'  	 => $moduleName,
+						'ajax'		 => $moduleAjax,
 					);
 				}
 			}
@@ -153,11 +160,12 @@ class Asteriskinfo implements \BMO
 		{
 			$classFull 	= $ls_modules[$module]['class_full'];
 			$moduleName = $ls_modules[$module]['name'];
+			$isAjax     = $ls_modules[$module]['ajax'];
 
 			$o = new $classFull();
 			if(method_exists($o, 'getDisplay'))
 			{
-				$output = $o->getDisplay();
+				$output = $o->getDisplay($isAjax);
 				$output = load_view(__DIR__.'/views/view.asteriskinfo.panel.php', array('title' => $moduleName, 'body' => $output));
 			}
 		}
@@ -189,5 +197,75 @@ class Asteriskinfo implements \BMO
 		}
 
 		return $out;
+	}
+
+	public function ajaxRequest($req, &$setting)
+	{
+		// ** Allow remote consultation with Postman **
+		// ********************************************
+		// $setting['authenticate'] = false;
+		// $setting['allowremote'] = true;
+		// return true;
+		// ********************************************
+		switch($req) {
+			case 'getGrid':
+				return true;
+
+			default:
+				return false;
+		}
+	}
+
+	public function ajaxHandler()
+	{
+		$request = $_REQUEST;
+		$command = isset($request['command']) ? trim($request['command']) : '';
+		switch($command)
+		{
+			case 'getGrid':
+				$module = isset($request['module_info']) ? strtolower(trim($request['module_info'])) : '';
+				if ($module == "all")
+				{
+					$module = "";
+				}
+
+				$ret = array();
+				if (! empty($module))
+				{
+					$ls_modules = $this->listModules();
+					if (array_key_exists($module, $ls_modules))
+					{
+						$classFull = $ls_modules[$module]['class_full'];
+						$isAjax    = $ls_modules[$module]['ajax'];
+
+						if ($isAjax)
+						{
+							$o = new $classFull();
+							if(method_exists($o, 'getDataAjax'))
+							{
+								$ajax = $o->getDataAjax();
+								if ($ajax['status'] == true)
+								{
+									$ret = $ajax['rows'];
+								}
+								else
+								{
+									dbug($ajax['error']);
+								}
+							}
+						}
+					}
+					else
+					{
+						dbug(sprintf(_("Error: Module '%s' not found!"), $module));
+					}
+				}
+				$retrun_data = $ret;
+				break;
+
+			default:
+				$retrun_data = array("status" => false, "message" => _("Command not found!"), "command" => $command);
+		}
+		return $retrun_data;
 	}
 }
