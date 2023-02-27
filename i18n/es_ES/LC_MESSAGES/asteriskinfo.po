@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-11 11:04+0000\n"
+"POT-Creation-Date: 2023-02-27 01:20+0000\n"
 "PO-Revision-Date: 2022-12-25 13:42+0100\n"
 "Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -27,7 +27,7 @@ msgstr "Información Asterisk"
 msgid "Asterisk doesn't appear to be running!"
 msgstr "¡Asterisk no parece estar funcionando!"
 
-#: Modules/Conferences.php:20
+#: Modules/Conferences.php:21
 msgid ""
 "Can't connect to Asterisk. Is Asterisk running and started by the correct "
 "user?"
@@ -35,15 +35,23 @@ msgstr ""
 "No puedo conectarme a Asterisk. ¿Está Asterisk funcionando e iniciado por el "
 "usuario correcto?"
 
-#: Modules/Channels.php:53
+#: Modules/Channels.php:71
 msgid "Channel Count"
 msgstr "Recuento de Canales"
 
-#: Modules/Channels.php:11
+#: Modules/Channels.php:17
 msgid "Channels"
 msgstr "Canales"
 
-#: Modules/Conferences.php:34
+#: Modules/Channels.php:119
+msgid "Clean Filter"
+msgstr ""
+
+#: Asteriskinfo.class.php:267
+msgid "Command not found!"
+msgstr ""
+
+#: Modules/Conferences.php:35
 msgid "Conference Bridge Info"
 msgstr "Información Puente de Conferencia"
 
@@ -59,15 +67,15 @@ msgstr "Version Asterisk Corriente:"
 msgid "Dahdi"
 msgstr "DAHDi"
 
-#: Modules/Dahdi.php:23
+#: Modules/Dahdi.php:24
 msgid "Dahdi Channels"
 msgstr "Canales Dahdi"
 
-#: Modules/Dahdi.php:27
+#: Modules/Dahdi.php:28
 msgid "Dahdi PRI Spans"
 msgstr "Líneas PRI Dahdi"
 
-#: Modules/Dahdi.php:39
+#: Modules/Dahdi.php:40
 msgid ""
 "Dahdi is not loaded into asterisk, hence no channels / spans information to "
 "display."
@@ -75,7 +83,7 @@ msgstr ""
 "Dahdi no está cargado en asterisk, por lo tanto no hay información de "
 "canales / spans para mostrar."
 
-#: Modules/Peers.php:55
+#: Modules/Peers.php:56
 msgid ""
 "Drivers (ChanSIP or PJSIP or IAX or SCCP) are not loaded into asterisk, "
 "hence no Peers information to display."
@@ -83,7 +91,7 @@ msgstr ""
 "Los controladores (ChanSIP o PJSIP o IAX o SCCP) no están cargados en "
 "asterisk, por lo tanto no hay información de Peers para mostrar."
 
-#: Modules/Registries.php:51
+#: Modules/Registries.php:52
 msgid ""
 "Drivers (ChanSIP or PJSIP or IAX) are not loaded into asterisk, hence no "
 "registration information to display."
@@ -91,17 +99,33 @@ msgstr ""
 "Los controladores (ChanSIP o PJSIP o IAX) no se cargan en asterisk, por lo "
 "tanto no hay información de registro para mostrar."
 
-#: Asteriskinfo.class.php:150
+#: Asteriskinfo.class.php:157 Asteriskinfo.class.php:260
 #, php-format
 msgid "Error: Module '%s' not found!"
 msgstr ""
 
-#: Modules/Conferences.php:29
+#: Modules/Fax.php:11 Modules/Fax.php:15
+msgid "Fax"
+msgstr ""
+
+#: Modules/Channels.php:80
+msgid "Filter"
+msgstr ""
+
+#: Modules/Conferences.php:30
 msgid "MeetMe Conference Info"
 msgstr "Información de conferencia MeetMe"
 
-#: Asteriskinfo.class.php:187
+#: Asteriskinfo.class.php:195
 msgid "Module Not Valid!"
+msgstr ""
+
+#: Modules/Channels.php:91 assets/js/asteriskinfo.js:49
+msgid "Offline"
+msgstr ""
+
+#: Modules/Channels.php:84 assets/js/asteriskinfo.js:44
+msgid "Online"
 msgstr ""
 
 #: Asteriskinfo.class.php:69
@@ -121,7 +145,7 @@ msgstr "Proporciona una instantánea de la configuración actual del Asterisk"
 msgid "Queues"
 msgstr "Colas"
 
-#: Modules/Queues.php:14
+#: Modules/Queues.php:15
 msgid "Queues Info"
 msgstr "Información de Colas"
 
@@ -133,15 +157,20 @@ msgstr "Registros"
 msgid "Reports"
 msgstr "Reportes"
 
-#: Modules/Channels.php:53
+#: Modules/Channels.php:66
 msgid "Resource"
 msgstr "Recurso"
 
-#: Modules/Channels.php:53
+#: Modules/Channels.php:55
 msgid "Status"
 msgstr "Estado"
 
-#: Modules/Subscriptions.php:14
+#: assets/js/asteriskinfo.js:62
+#, perl-format
+msgid "Status: %s"
+msgstr ""
+
+#: Modules/Subscriptions.php:15
 msgid "Subscribe/Notify"
 msgstr "Suscribir/Notificar"
 
@@ -149,19 +178,19 @@ msgstr "Suscribir/Notificar"
 msgid "Subscriptions"
 msgstr "Suscripciones"
 
-#: Modules/Channels.php:53
+#: Modules/Channels.php:61
 msgid "Tech"
 msgstr "Tecnología"
 
-#: Modules/Channels.php:25
+#: Modules/Channels.php:163
 msgid "The Asterisk REST Interface Module is not loaded in asterisk"
 msgstr "El módulo de interfaz REST de Asterisk no está cargado en asterisk"
 
-#: Modules/Channels.php:32
+#: Modules/Channels.php:171
 msgid "The Asterisk REST Interface is Currently Disabled."
 msgstr "La interfaz REST de Asterisk está actualmente deshabilitada."
 
-#: Modules/Channels.php:43
+#: Modules/Channels.php:183
 msgid ""
 "The Asterisk REST Interface is not able to connect please check "
 "configuration in advanced settings."
@@ -173,11 +202,19 @@ msgstr ""
 msgid "This page supplies various information about Asterisk"
 msgstr "Esta página provee informaciones varias acerca de Asterisk"
 
+#: Modules/Channels.php:108 assets/js/asteriskinfo.js:59
+msgid "Undefined"
+msgstr ""
+
+#: Modules/Channels.php:98 assets/js/asteriskinfo.js:54
+msgid "Unknown"
+msgstr ""
+
 #: Modules/Voicemail.php:11
 msgid "Voicemail"
 msgstr "Mensaje de voz"
 
-#: Modules/Voicemail.php:14
+#: Modules/Voicemail.php:15
 msgid "Voicemail Users"
 msgstr "Usuarios del buzón de voz"
 
