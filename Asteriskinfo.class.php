@@ -4,16 +4,23 @@ use FreePBX\modules\Asteriskinfo\Modules;
 
 class Asteriskinfo implements \BMO
 {
+	public $FreePBX;
+	public $db;
+	public $astman;
+	public $config;
+	public $output;
+
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
 			throw new \Exception("Not given a FreePBX Object");
 		}
-		$this->FreePBX 	= $freepbx;
-		$this->db 		= $freepbx->Database;
-		$this->astman 	= $this->FreePBX->astman;
-		$this->config	= $this->FreePBX->Config;
-		$this->output 	= array();
+		$this->FreePBX = $freepbx;
+		$this->db 	   = $freepbx->Database;
+		$this->astman  = $this->FreePBX->astman;
+		$this->config  = $this->FreePBX->Config;
+		$this->output  = array();
 	}
+
 	public function install()
 	{
 		$configs = array(
@@ -28,6 +35,7 @@ class Asteriskinfo implements \BMO
 			}
 		}
 	}
+	
 	public function uninstall() {}
 	public function backup() {}
 	public function restore($backup) {}
@@ -130,16 +138,26 @@ class Asteriskinfo implements \BMO
 						$moduleName = _($className);
 					}
 
+					if(method_exists($o, 'getNamePretty'))
+					{
+						$namePretty = $o->getNamePretty();
+					}
+					else
+					{
+						$namePretty = $moduleName;
+					}
+
 					if(method_exists($o, 'getByAjax'))
 					{
 						$moduleAjax = $o->getByAjax();
 					}
 
 					$modules[$module_id] = array(
-						'class_full' => $classNameFull,
-						'class' 	 => $className,
-						'name'  	 => $moduleName,
-						'ajax'		 => $moduleAjax,
+						'class_full'  => $classNameFull,
+						'class' 	  => $className,
+						'name'  	  => $moduleName,
+						'name_pretty' => $namePretty,
+						'ajax'		  => $moduleAjax,
 					);
 				}
 			}
@@ -159,7 +177,7 @@ class Asteriskinfo implements \BMO
 		else
 		{
 			$classFull 	= $ls_modules[$module]['class_full'];
-			$moduleName = $ls_modules[$module]['name'];
+			$moduleName = $ls_modules[$module]['name_pretty'];
 			$isAjax     = $ls_modules[$module]['ajax'];
 
 			$o = new $classFull();

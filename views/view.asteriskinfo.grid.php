@@ -2,22 +2,31 @@
 $toolbar_html = "";
 foreach ( $toolbar as $item )
 {
-	$item_id    = sprintf('id="%s"', empty($item['id']) ? '' : $item['id']);
+	$item_id    = empty($item['id']) ? '' : sprintf('id="%s"', $item['id']);
 	$item_class = empty($item['class']) ? '' : $item['class'];
-
+	
 	switch ( $item['type'] ) 
 	{
 		case 'button':
-			$toolbar_html .= sprintf('<button type="button" class="btn btn-default %s" %s><i class="fa %s fa-fw"></i> %s</button>', $item_class, $item_id, $item['icon'], $item['text']);
+			$item_data = '';
+			if (! empty($item['extra-data']) && is_array($item['extra-data']))
+			{
+				foreach ($item['extra-data'] as $data_key => $data_value)
+				{
+					$item_data .= sprintf(' data-%s ="%s" ', $data_key, $data_value);
+				}
+			}
+			$toolbar_html .= sprintf('<button type="button" class="btn btn-default %s" %s %s><i class="fa %s fa-fw"></i> %s</button>', $item_class, $item_id, $item_data, $item['icon'], $item['text']);
 			break;
 
 		case 'dropdown-menu':
-			$item_id_dropdown = empty($item['id']) ? '' : sprintf('dropdown-menu-%s', $item['id']);
+			$item_id_dropdown = empty($item['id']) 		 ? '' : sprintf('dropdown-menu-%s', $item['id']);
+			$ul_class 		  = empty($item['ul-class']) ? '' : $item['ul-class'];
 
 			$toolbar_html .= '<div class="btn-group">';
 			$toolbar_html .= sprintf('<a class="btn btn-primary %s" href="#" %s><i class="fa %s fa-fw"></i> %s</a>', $item_class, $item_id, $item['icon'], $item['text']);
 			$toolbar_html .= '<a class="btn btn-primarfy dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-caret-down" title="Toggle dropdown menu"></span></a>';
-			$toolbar_html .= sprintf('<ul class="dropdown-menu %s">', $item_id_dropdown);
+			$toolbar_html .= sprintf('<ul class="dropdown-menu %s %s">', $ul_class, $item_id_dropdown);
 			if (! empty($item['subitems']) && is_array($item['subitems']) )
 			{
 				foreach ($item['subitems'] as $subitem) 
@@ -99,6 +108,14 @@ $row_style 	 = empty($row_style)    ? '' : sprintf('data-row-style="%s"', $row_s
 							{
 								$oter_opt .= sprintf(' data-formatter="%s" ', trim($val));
 							}
+							break;
+
+						case "width":
+							if (!empty(trim($val)))
+							{
+								$oter_opt .= sprintf(' data-width="%s" ', trim($val));
+							}
+							break;
 							break;
 					}
 				}
