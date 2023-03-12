@@ -75,7 +75,7 @@ class Fax extends ModuleBase
 								'icon' 		 => 'fa-globe',
 								'extra-data' => array(
 									'filterKey' => 'module',
-									'filterVal' => 'global',
+									'filterVal' => 'Global',
 									'filterMod' => $this->nameraw,
 									'filterTab' => $this->nameraw,
 								),
@@ -143,7 +143,7 @@ class Fax extends ModuleBase
 			foreach ($data_cmd['global'] as $name => $value)
 			{
 				$rows[] = array(
-					'module' => _('Global'),
+					'module' => 'Global',
 					'key' 	 => $name,
 					'val' 	 => $value,
 				);
