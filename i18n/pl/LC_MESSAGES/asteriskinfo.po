@@ -21,8 +21,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-21 09:09+0530\n"
-"PO-Revision-Date: 2017-02-20 20:14+0200\n"
-"Last-Translator: Michal <mboltz@tlen.pl>\n"
+"PO-Revision-Date: 2023-03-13 09:01+0000\n"
+"Last-Translator: Klemens Starybrat <klemens.starybrat@gmail.com>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
 "asteriskinfo/pl/>\n"
 "Language: pl\n"
@@ -31,7 +31,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: page.asteriskinfo.php:31
 msgid "Active Channel(s)"
@@ -55,7 +55,7 @@ msgstr "Informacja odsyłacza"
 
 #: page.asteriskinfo.php:11
 msgid "Asterisk doesn't appear to be running"
-msgstr ""
+msgstr "Asterisk wydaje się nie działać"
 
 #: Asteriskinfo.class.php:150
 msgid "Available: "
@@ -86,7 +86,6 @@ msgid "Chan_Sip Channel(s)"
 msgstr "Chan_Sip Kanał(y)"
 
 #: page.asteriskinfo.php:22
-#, fuzzy
 msgid "Chan_Sip Info"
 msgstr "Chan_Sip Info"
 
@@ -123,9 +122,8 @@ msgid "Dahdi"
 msgstr "DAHDi"
 
 #: page.asteriskinfo.php:47
-#, fuzzy
 msgid "Dahdi PRI Spans"
-msgstr "Dahdi PRI Spans"
+msgstr "Dahdi PRI Spany"
 
 #: page.asteriskinfo.php:29
 msgid "Full Report"
@@ -144,14 +142,12 @@ msgid "IAX2 Channel(s)"
 msgstr "Kanał(y) IAX2"
 
 #: page.asteriskinfo.php:35
-#, fuzzy
 msgid "IAX2 Peers"
-msgstr "IAX2 Peers"
+msgstr "IAX2 Peery"
 
 #: Asteriskinfo.class.php:48
-#, fuzzy
 msgid "IAX2 Peers: "
-msgstr "IAX2 Peers: "
+msgstr "IAX2 Peery: "
 
 #: page.asteriskinfo.php:44
 msgid "IAX2 Registry"
