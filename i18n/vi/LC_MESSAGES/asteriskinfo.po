@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-09 09:42+0000\n"
+"POT-Creation-Date: 2023-03-27 10:38+0000\n"
 "PO-Revision-Date: 2017-07-10 19:53+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -139,7 +139,7 @@ msgstr ""
 msgid "Fax Statistics"
 msgstr ""
 
-#: Modules/Fax.php:74 Modules/Fax.php:146
+#: Modules/Fax.php:74
 msgid "Global"
 msgstr ""
 

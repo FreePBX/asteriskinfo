@@ -116,7 +116,7 @@ msgstr ""
 msgid "Fax Statistics"
 msgstr ""
 
-#: Modules/Fax.php:74 Modules/Fax.php:146
+#: Modules/Fax.php:74
 msgid "Global"
 msgstr ""
 
