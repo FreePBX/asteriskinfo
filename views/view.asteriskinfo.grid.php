@@ -24,8 +24,8 @@ foreach ( $toolbar as $item )
 			$ul_class 		  = empty($item['ul-class']) ? '' : $item['ul-class'];
 
 			$toolbar_html .= '<div class="btn-group">';
-			$toolbar_html .= sprintf('<a class="btn btn-primary %s" href="#" %s><i class="fa %s fa-fw"></i> %s</a>', $item_class, $item_id, $item['icon'], $item['text']);
-			$toolbar_html .= '<a class="btn btn-primarfy dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-caret-down" title="Toggle dropdown menu"></span></a>';
+			$toolbar_html .= sprintf('<a class="btn btn-primary %s" data-toggle="dropdown" href="#" %s><i class="fa %s fa-fw"></i> %s</a>', $item_class, $item_id, $item['icon'], $item['text']);
+			$toolbar_html .= '<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-caret-down" title="Toggle dropdown menu"></span></a>';
 			$toolbar_html .= sprintf('<ul class="dropdown-menu %s %s">', $ul_class, $item_id_dropdown);
 			if (! empty($item['subitems']) && is_array($item['subitems']) )
 			{
