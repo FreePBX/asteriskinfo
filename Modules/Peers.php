@@ -1,38 +1,61 @@
 <?php
 namespace FreePBX\modules\Asteriskinfo\Modules;
-class Peers{
-  public function __construct(){
-    $this->freepbx = \FreePBX::Create();
-    $this->astman = $this->freepbx->astman;
-  }
 
-  public function getDisplay(){
-    $pjsip_mod_check = $this->astman->send_request('Command', array('Command' => 'module show like chan_pjsip'));
-    $pjsip_module = preg_match('/[1-9] modules loaded/', $pjsip_mod_check['data']);
-    if($pjsip_module){
-      $arr_peers['PJSIP'] = "pjsip show endpoints";
-    }
-    $sip_mod_check = $this->astman->send_request('Command', array('Command' => 'module show like chan_sip'));
-    $sip_module = preg_match('/[1-9] modules loaded/', $sip_mod_check['data']);
-    if($sip_module){
-      $arr_peers['CHANSIP'] = "sip show peers";
-    }
-    $iax2_mod_check = $this->astman->send_request('Command', array('Command' => 'module show like chan_iax2'));
-    $iax2_module = preg_match('/[1-9] modules loaded/', $iax2_mod_check['data']);
-    if($iax2_module){
-      $arr_peers['IAX2'] = "iax2 show peers";
-    }
-    $sccp_mod_check = $this->astman->send_request('Command', array('Command' => 'module show like chan_sccp'));
-    $sccp_module = preg_match('/[1-9] modules loaded/', $sccp_mod_check['data']);
-    if($sccp_module){
-      $arr_peers['SCCP'] = "sccp show devices";
-    }
+require_once 'ModuleBase.php';
 
-    $arr_peers = !empty($arr_peers)&&is_array($arr_peers)?$arr_peers:array();
-    foreach ($arr_peers as $key => $value) {
-      $data = $this->freepbx->Asteriskinfo->getOutput($value);
-      $output .= '<div class="panel panel-default"><div class="panel-heading">'.$key.'</div><div class="panel-body"><pre>'.$data.'</pre></div></div>';
-    }
-    return $output;
-  }
+class Peers extends ModuleBase
+{
+
+	public function __construct()
+	{
+		parent::__construct();
+		$this->name    = _("Peers");
+		$this->nameraw = "peers";
+	}
+
+	public function getDisplay()
+	{
+		$output 	= "";
+		$arr_cmds 	= array();
+
+		$arr_modules = array(
+			'PJSIP' => array(
+				'module' => 'chan_pjsip',
+				'cmd' 	 => 'pjsip show endpoints',
+			),
+			'CHANSIP' => array(
+				'module' => 'chan_sip',
+				'cmd' 	 => 'sip show peers',
+			),
+			'IAX2' => array(
+				'module' => 'chan_iax2',
+				'cmd' 	 => 'iax2 show peers',
+			),
+			'SCCP' => array(
+				'module' => 'chan_sccp',
+				'cmd' 	 => 'sccp show devices',
+			),
+		);
+		foreach ($arr_modules as $key => $info)
+		{
+			if ($this->checkModuleLoad($info['module'])) 
+			{
+				$arr_cmds[$key] = $info['cmd'];
+			}
+		}
+		if (! empty($arr_cmds))
+		{
+			foreach ($arr_cmds as $key => $cmd)
+			{
+				$data 	 = $this->getOutput($cmd);
+				$output .= $this->getPanel($data, $key);
+			}
+		}
+		else
+		{
+			$output .= sprintf('<div class="panel-body" align="center"><pre>%s</pre></div>', _('Drivers (ChanSIP or PJSIP or IAX or SCCP) are not loaded into asterisk, hence no Peers information to display.'));
+		}
+		
+		return $output;
+	}
 }

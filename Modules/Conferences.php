@@ -1,31 +1,53 @@
 <?php
 namespace FreePBX\modules\Asteriskinfo\Modules;
 
-class Conferences{
-  public function __construct(){
-    $this->freepbx = \FreePBX::Create();
-    $this->astman = $this->freepbx->astman;
-  }
-  public function getDisplay(){
-    if(!$this->astman->connected()){
-      return _("Can't connect to Asterisk. Is Asterisk running and started by the correct user?");
-    }
-    $meetme_check = $this->astman->send_request('Command', array('Command' => 'module show like meetme'));
-    $confbridge_check = $this->astman->send_request('Command', array('Command' =>'module show like confbridge'));
-    $meetme_module = preg_match('/[1-9] modules loaded/', $meetme_check['data']);
-    $confbridge_module = preg_match('/[1-9] modules loaded/', $confbridge_check['data']);
-    if ($meetme_module) {
-    	$arr_conferences[$conf_meetme]="meetme list";
-    }
-    if ($confbridge_module) {
-	    $arr_conferences[$conf_confbridge]="confbridge list";
-    }
-    $arr_conferences = !empty($arr_conferences)&&is_array($arr_conferences)?$arr_conferences:[];
-    $output = '';
-    foreach ($arr_conferences as $key => $value) {
-      $data = $this->freepbx->Asteriskinfo->getOutput($value);
-      $output .= '<div class="panel panel-default"><div class="panel-body"><pre>'.$data.'</pre></div></div>';
-    }
-    return $output;
-  }
+require_once 'ModuleBase.php';
+
+class Conferences extends ModuleBase
+{
+	
+	public function __construct()
+	{
+		parent::__construct();
+		$this->name    = _("Conferences");
+		$this->nameraw = "conferences";
+	}
+
+	public function getDisplay()
+	{
+		$output = '';
+		if(!$this->astman->connected())
+		{
+			$output = _("Can't connect to Asterisk. Is Asterisk running and started by the correct user?");
+		}
+		else
+		{
+			$arr_cmds 	 = array();
+			$arr_modules = array(
+				array(
+					'module' => 'meetme',
+					'cmd' 	 => 'meetme list',
+					'title'  => _('MeetMe Conference Info'),
+				),
+				array(
+					'module' => 'confbridge',
+					'cmd' 	 => 'confbridge list',
+					'title'  => _('Conference Bridge Info'),
+				),
+			);
+			foreach ($arr_modules as $key => $info)
+			{
+				if ($this->checkModuleLoad($info['module'])) 
+				{
+					$arr_cmds[] = $info;
+				}
+			}
+			foreach ($arr_cmds as $key => $info)
+			{
+				$data 	 = $this->getOutput($info['cmd']);
+				$output .= $this->getPanel($data, $info['title']);
+			}
+		}
+		return $output;
+	}
 }

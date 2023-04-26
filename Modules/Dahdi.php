@@ -1,26 +1,44 @@
 <?php
 namespace FreePBX\modules\Asteriskinfo\Modules;
-class Dahdi{
-  public function __construct(){
-    $this->freepbx = \FreePBX::Create();
-  }
 
-  public function getDisplay(){
-    $chan_dahdi = ast_with_dahdi();
-    if($chan_dahdi){
-      $arr_dahdi                    = array();
-      $dahdidriverinfo              = _("Dahdi Channels");
-      $dahdipriinfo                 = _("Dahdi PRI Spans");
-      $arr_dahdi[$dahdidriverinfo]  = "dahdi show channels";
-      $arr_dahdi[$dahdipriinfo]     = "pri show spans";
-  
-      foreach ($arr_dahdi as $key => $value) {
-        $data = $this->freepbx->Asteriskinfo->getOutput($value);
-        $output .= '<div class="panel panel-default"><div class="panel-heading">'.$key.'</div><div class="panel-body"><pre>'.$data.'</pre></div></div>';
-      }
-    } else {
-      $output .= '<div class="panel-body" align="center"><pre> Dahdi is not loaded into asterisk, hence no channels / spans information to display.</pre></div>';
-    }
-    return $output;
-  }
+require_once 'ModuleBase.php';
+
+class Dahdi extends ModuleBase
+{
+
+	public function __construct()
+	{
+		parent::__construct();
+		$this->name    = _("Dahdi");
+		$this->nameraw = "dahdi";
+	}
+
+	public function getDisplay()
+	{
+		$output = "";
+		$chan_dahdi = ast_with_dahdi();
+		if($chan_dahdi)
+		{
+			$arr_dahdi = array(
+				array(
+					'title' => _("Dahdi Channels"),
+					'cmd' 	=> 'dahdi show channels',
+				),
+				array(
+					'title' => _("Dahdi PRI Spans"),
+					'cmd' 	=> 'pri show spans',
+				)
+			);
+			foreach ($arr_dahdi as $row)
+			{
+				$data 	 = $this->getOutput($row['cmd']);
+				$output .= $this->getPanel($data, $row['title']);
+			}
+		}
+		else
+		{
+			$output .= sprintf('<div class="panel-body" align="center"><pre>%s</pre></div>', _('Dahdi is not loaded into asterisk, hence no channels / spans information to display.'));
+		}
+		return $output;
+	}
 }
