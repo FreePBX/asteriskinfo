@@ -97,23 +97,23 @@ $row_style 	 = empty($row_style)    ? '' : sprintf('data-row-style="%s"', $row_s
 							break;
 
 						case "class":
-							if (!empty(trim($val)))
+							if (!empty(trim((string) $val)))
 							{
-								$oter_opt .= sprintf(' class="%s" ', trim($val));
+								$oter_opt .= sprintf(' class="%s" ', trim((string) $val));
 							}
 							break;
 					
 						case "formatter":
-							if (!empty(trim($val)))
+							if (!empty(trim((string) $val)))
 							{
-								$oter_opt .= sprintf(' data-formatter="%s" ', trim($val));
+								$oter_opt .= sprintf(' data-formatter="%s" ', trim((string) $val));
 							}
 							break;
 
 						case "width":
-							if (!empty(trim($val)))
+							if (!empty(trim((string) $val)))
 							{
-								$oter_opt .= sprintf(' data-width="%s" ', trim($val));
+								$oter_opt .= sprintf(' data-width="%s" ', trim((string) $val));
 							}
 							break;
 							break;

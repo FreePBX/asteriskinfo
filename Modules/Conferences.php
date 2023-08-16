@@ -22,19 +22,8 @@ class Conferences extends ModuleBase
 		}
 		else
 		{
-			$arr_cmds 	 = array();
-			$arr_modules = array(
-				array(
-					'module' => 'meetme',
-					'cmd' 	 => 'meetme list',
-					'title'  => _('MeetMe Conference Info'),
-				),
-				array(
-					'module' => 'confbridge',
-					'cmd' 	 => 'confbridge list',
-					'title'  => _('Conference Bridge Info'),
-				),
-			);
+			$arr_cmds 	 = [];
+			$arr_modules = [['module' => 'meetme', 'cmd' 	 => 'meetme list', 'title'  => _('MeetMe Conference Info')], ['module' => 'confbridge', 'cmd' 	 => 'confbridge list', 'title'  => _('Conference Bridge Info')]];
 			foreach ($arr_modules as $key => $info)
 			{
 				if ($this->checkModuleLoad($info['module'])) 

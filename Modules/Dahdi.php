@@ -19,16 +19,7 @@ class Dahdi extends ModuleBase
 		$chan_dahdi = ast_with_dahdi();
 		if($chan_dahdi)
 		{
-			$arr_dahdi = array(
-				array(
-					'title' => _("Dahdi Channels"),
-					'cmd' 	=> 'dahdi show channels',
-				),
-				array(
-					'title' => _("Dahdi PRI Spans"),
-					'cmd' 	=> 'pri show spans',
-				)
-			);
+			$arr_dahdi = [['title' => _("Dahdi Channels"), 'cmd' 	=> 'dahdi show channels'], ['title' => _("Dahdi PRI Spans"), 'cmd' 	=> 'pri show spans']];
 			foreach ($arr_dahdi as $row)
 			{
 				$data 	 = $this->getOutput($row['cmd']);

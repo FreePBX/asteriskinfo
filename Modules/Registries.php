@@ -17,21 +17,8 @@ class Registries extends ModuleBase
 	{
 		$output = "";
 
-		$arr_cmds 	 = array();
-		$arr_modules = array(
-			'PJSIP' => array(
-				'module' => 'chan_pjsip',
-				'cmd' 	 => 'pjsip show registrations',
-			),
-			'SIP' => array(
-				'module' => 'chan_sip',
-				'cmd' 	 => 'sip show registry',
-			),
-			'IAX2' => array(
-				'module' => 'chan_iax2',
-				'cmd' 	 => 'iax2 show registry',
-			),
-		);
+		$arr_cmds 	 = [];
+		$arr_modules = ['PJSIP' => ['module' => 'chan_pjsip', 'cmd' 	 => 'pjsip show registrations'], 'SIP' => ['module' => 'chan_sip', 'cmd' 	 => 'sip show registry'], 'IAX2' => ['module' => 'chan_iax2', 'cmd' 	 => 'iax2 show registry']];
 		foreach ($arr_modules as $key => $info)
 		{
 			if ($this->checkModuleLoad($info['module'])) 

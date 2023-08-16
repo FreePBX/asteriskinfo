@@ -5,7 +5,7 @@ require_once 'ModuleBase.php';
 
 class Fax extends ModuleBase
 {
-	private $name_pretty;
+	private readonly string $name_pretty;
 
 	public function __construct()
 	{
@@ -28,7 +28,7 @@ class Fax extends ModuleBase
 		$data_return = "";
 		if ($ajax == true)
 		{
-			$data_return = $this->buildDisplay(array(), $ajax);
+			$data_return = $this->buildDisplay([], $ajax);
 		}
 		else
 		{
@@ -41,75 +41,14 @@ class Fax extends ModuleBase
 	{
 		if ($ajax == true)
 		{
-			$data_template = array(
-				'table_id' 	  => $this->nameraw,
-				'module_id'   => $this->nameraw,
-				'class_extra' => 'table-asteriskinfo-fax',
-				'url_ajax'	  => sprintf('ajax.php?module=asteriskinfo&command=getGrid&module_info=%s', $this->nameraw),
-				'cols' => array(
-					'module' => array(
-						'text' 	    => _("Module"),
-						'class'     => 'col-fax-module',
-						'sortable'  => true,
-					),
-					'key' => array(
-						'text' 	   => _("Data"),
-						'class'    => 'col-fax-key',
-						'sortable' => true,
-					),
-					'val' => array(
-						'text' 	   => _("Value"),
-						'class'     => 'col-fax-val',
-						'sortable' => true,
-					),
-				),
-				'toolbar' => array(
-					array(
-						'type' 	   => 'dropdown-menu',
-						'icon' 	   => 'fa-filter',
-						'text' 	   => _("Modules"),
-						'ul-class' => 'dropdown-menu-filters',
-						'subitems' => array(
-							array(
-								'text' 		 => _("Global"),
-								'icon' 		 => 'fa-globe',
-								'extra-data' => array(
-									'filterKey' => 'module',
-									'filterVal' => 'Global',
-									'filterMod' => $this->nameraw,
-									'filterTab' => $this->nameraw,
-								),
-							),
-						),
-					),
-					array(
-						'type' 		 => 'button',
-						'icon' 		 => 'fa-undo',
-						'text'		 => _("Clean Filter"),
-						'class' 	 => 'table-filter-clean-all-btn',
-						'extra-data' => array(
-							'filterMod' => $this->nameraw,
-							'filterTab' => $this->nameraw,
-						),
-					)
-				),
-			);
+			$data_template = ['table_id' 	  => $this->nameraw, 'module_id'   => $this->nameraw, 'class_extra' => 'table-asteriskinfo-fax', 'url_ajax'	  => sprintf('ajax.php?module=asteriskinfo&command=getGrid&module_info=%s', $this->nameraw), 'cols' => ['module' => ['text' 	    => _("Module"), 'class'     => 'col-fax-module', 'sortable'  => true], 'key' => ['text' 	   => _("Data"), 'class'    => 'col-fax-key', 'sortable' => true], 'val' => ['text' 	   => _("Value"), 'class'     => 'col-fax-val', 'sortable' => true]], 'toolbar' => [['type' 	   => 'dropdown-menu', 'icon' 	   => 'fa-filter', 'text' 	   => _("Modules"), 'ul-class' => 'dropdown-menu-filters', 'subitems' => [['text' 		 => _("Global"), 'icon' 		 => 'fa-globe', 'extra-data' => ['filterKey' => 'module', 'filterVal' => 'Global', 'filterMod' => $this->nameraw, 'filterTab' => $this->nameraw]]]], ['type' 		 => 'button', 'icon' 		 => 'fa-undo', 'text'		 => _("Clean Filter"), 'class' 	 => 'table-filter-clean-all-btn', 'extra-data' => ['filterMod' => $this->nameraw, 'filterTab' => $this->nameraw]]]];
 			$cmdReturn = $this->getResultCmd();
 			if (! empty($cmdReturn['modules']) )
 			{
-				$data_template['toolbar'][0]['subitems'][] = array('type'=> 'divider');
+				$data_template['toolbar'][0]['subitems'][] = ['type'=> 'divider'];
 				foreach ($cmdReturn['modules'] as $moduleName => $moduleVal)
 				{
-					$data_template['toolbar'][0]['subitems'][] = array(
-						'text' 		 => $moduleName,
-						'icon' 		 => 'fa-plug',
-						'extra-data' => array(
-							'filterKey' => 'module',
-							'filterVal' => $moduleName,
-							'filterMod' => $this->nameraw,
-							'filterTab' => $this->nameraw,
-						),
-					);
+					$data_template['toolbar'][0]['subitems'][] = ['text' 		 => $moduleName, 'icon' 		 => 'fa-plug', 'extra-data' => ['filterKey' => 'module', 'filterVal' => $moduleName, 'filterMod' => $this->nameraw, 'filterTab' => $this->nameraw]];
 				}
 			}
 			$out = load_view(__DIR__.'/../views/view.asteriskinfo.grid.php', $data_template);
@@ -129,35 +68,24 @@ class Fax extends ModuleBase
 
 	public function getDataAjax()
 	{
-		$data_return = array(
-			'rows' 	 => array(),
-			'status' => true,
-		);
+		$data_return = ['rows' 	 => [], 'status' => true];
 
 		if (! empty($this->cmd))
 		{
 			$data_cmd = $this->getResultCmd();
 
 			// Format AJAX
-			$rows = array();
+			$rows = [];
 			foreach ($data_cmd['global'] as $name => $value)
 			{
-				$rows[] = array(
-					'module' => 'Global',
-					'key' 	 => $name,
-					'val' 	 => $value,
-				);
+				$rows[] = ['module' => 'Global', 'key' 	 => $name, 'val' 	 => $value];
 			}
 
 			foreach ($data_cmd['modules'] as $moduleName => $moduleVal)
 			{
 				foreach ($moduleVal as $propertyName => $propertyValue)
 				{
-					$rows[] = array(
-						'module' => $moduleName,
-						'key' 	 => $propertyName,
-						'val' 	 => $propertyValue,
-					);
+					$rows[] = ['module' => $moduleName, 'key' 	 => $propertyName, 'val' 	 => $propertyValue];
 				}
 			}
 
@@ -173,13 +101,13 @@ class Fax extends ModuleBase
 
 	private function getResultCmd()
 	{
-		$data_return = array();
+		$data_return = [];
 		if (! empty($this->cmd))
 		{
 			$return_cmd = $this->getOutput($this->cmd);
-			$cmd_lines  = explode("\n", $return_cmd);
+			$cmd_lines  = explode("\n", (string) $return_cmd);
 
-			$data_cmd = array();
+			$data_cmd = [];
 			$moduleSec = "";
 			
 			foreach ($cmd_lines as $line)
@@ -189,13 +117,13 @@ class Fax extends ModuleBase
 					continue;
 				}
 
-				if (strpos($line, ":") === false)
+				if (!str_contains($line, ":"))
 				{
 					$moduleSec = trim($line);
 				}
 				else
 				{
-					list($key, $val) = array_map('trim', explode(':', $line, 2));
+					[$key, $val] = array_map('trim', explode(':', $line, 2));
 					if (strtolower($key) ==  strtolower("FAX Statistics"))
 					{
 						// $moduleSec = $key;

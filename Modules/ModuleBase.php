@@ -43,7 +43,7 @@ class ModuleBase {
 		}
 		else
 		{
-			$this_class = get_class($this);
+			$this_class = static::class;
 			$data_return = substr($this_class, (strrpos($this_class, '\\') ?: -1) + 1) ;
 		}
 		return $data_return;
@@ -80,8 +80,8 @@ class ModuleBase {
 	public function checkModuleLoad($module)
 	{
 		$cmd_check = sprintf('module show like %s', $module);
-		$mod_check = $this->astman->send_request('Command', array('Command' => $cmd_check));
-		$mod_load  = preg_match('/[1-9] modules loaded/', $mod_check['data']);
+		$mod_check = $this->astman->send_request('Command', ['Command' => $cmd_check]);
+		$mod_load  = preg_match('/[1-9] modules loaded/', (string) $mod_check['data']);
 		return (bool) $mod_load;
 	}
 
@@ -92,7 +92,7 @@ class ModuleBase {
 
 	public function getDataAjax()
 	{
-		return array();
+		return [];
 	}
 
 	public function checkARIStatus()
@@ -115,14 +115,10 @@ class ModuleBase {
 
 	protected function getARIInfoApi($api)
 	{
-		$data_return = array(
-			'status' => true,
-			'error'  => '',
-			'data' 	 => array(),
-		);
+		$data_return = ['status' => true, 'error'  => '', 'data' 	 => []];
 
 		$data = $this->getOutput('ari show status');
-		if(preg_match('(No such command)', $data) === 1)
+		if(preg_match('(No such command)', (string) $data) === 1)
 		{
 			$data_return['status'] = false;
 			$data_return['error']  = _('The Asterisk REST Interface Module is not loaded in asterisk');
@@ -149,7 +145,7 @@ class ModuleBase {
 				}
 				else
 				{
-					$data_return['data'] = json_decode($result, true);
+					$data_return['data'] = json_decode($result, true, 512, JSON_THROW_ON_ERROR);
 				}
 			}
 		}

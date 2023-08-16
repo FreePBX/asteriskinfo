@@ -16,26 +16,9 @@ class Peers extends ModuleBase
 	public function getDisplay()
 	{
 		$output 	= "";
-		$arr_cmds 	= array();
+		$arr_cmds 	= [];
 
-		$arr_modules = array(
-			'PJSIP' => array(
-				'module' => 'chan_pjsip',
-				'cmd' 	 => 'pjsip show endpoints',
-			),
-			'CHANSIP' => array(
-				'module' => 'chan_sip',
-				'cmd' 	 => 'sip show peers',
-			),
-			'IAX2' => array(
-				'module' => 'chan_iax2',
-				'cmd' 	 => 'iax2 show peers',
-			),
-			'SCCP' => array(
-				'module' => 'chan_sccp',
-				'cmd' 	 => 'sccp show devices',
-			),
-		);
+		$arr_modules = ['PJSIP' => ['module' => 'chan_pjsip', 'cmd' 	 => 'pjsip show endpoints'], 'CHANSIP' => ['module' => 'chan_sip', 'cmd' 	 => 'sip show peers'], 'IAX2' => ['module' => 'chan_iax2', 'cmd' 	 => 'iax2 show peers'], 'SCCP' => ['module' => 'chan_sccp', 'cmd' 	 => 'sccp show devices']];
 		foreach ($arr_modules as $key => $info)
 		{
 			if ($this->checkModuleLoad($info['module'])) 

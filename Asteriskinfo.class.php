@@ -18,15 +18,12 @@ class Asteriskinfo implements \BMO
 		$this->db 	   = $freepbx->Database;
 		$this->astman  = $this->FreePBX->astman;
 		$this->config  = $this->FreePBX->Config;
-		$this->output  = array();
+		$this->output  = [];
 	}
 
 	public function install()
 	{
-		$configs = array(
-			'HTTPENABLED' => true,
-			'ENABLE_ARI'  => true,
-		);
+		$configs = ['HTTPENABLED' => true, 'ENABLE_ARI'  => true];
 		foreach ( $configs as $key => $value )
 		{
 			if(!$this->config->get($key))
@@ -41,24 +38,17 @@ class Asteriskinfo implements \BMO
 	public function restore($backup) {}
 	public function doConfigPageInit($page) {}
 
-	public function getRightNav($request, $params = array())
+	public function getRightNav($request, $params = [])
 	{
 		$modules = $this->listModules(true);
-		$data 	 = array(
-			'modules' => $modules,
-			'module'  => empty($_REQUEST['module']) ? 'all' : $_REQUEST['module'],
-		);
+		$data 	 = ['modules' => $modules, 'module'  => empty($_REQUEST['module']) ? 'all' : $_REQUEST['module']];
 		$data_return = $this->showPage("rnav", $data);
 		return $data_return;
 	}
 
-	public function showPage($page, $params = array())
+	public function showPage($page, $params = [])
 	{
-		$data = array(
-			"asteriskinfo"	=> $this,
-			'request'	 	=> $_REQUEST,
-			'page' 		 	=> $page,
-		);
+		$data = ["asteriskinfo"	=> $this, 'request'	 	=> $_REQUEST, 'page' 		 	=> $page];
 		$data = array_merge($data, $params);
 		switch ($page) 
 		{
@@ -94,8 +84,8 @@ class Asteriskinfo implements \BMO
 	}
 
 	public function getOutput($command){
-		$response = $this->astman->send_request('Command',array('Command'=>$command));
-		$new_value = htmlentities($response['data'],ENT_COMPAT | ENT_HTML401, "UTF-8");
+		$response = $this->astman->send_request('Command',['Command'=>$command]);
+		$new_value = htmlentities((string) $response['data'],ENT_COMPAT | ENT_HTML401, "UTF-8");
 		return ltrim($new_value,'Privilege: Command');
 	}
 
@@ -105,15 +95,12 @@ class Asteriskinfo implements \BMO
 
 		if ($includeAll === true)
 		{
-			$modules['all'] = array(
-				'class' => 'all',
-				'name'  => _('All'),
-			);
+			$modules['all'] = ['class' => 'all', 'name'  => _('All')];
 		}
 
 		foreach(glob($this->getPathModule("*")) as $file)
 		{
-			$module_name = basename($file,'.php');
+			$module_name = basename((string) $file,'.php');
 			$module_id 	 = strtolower($module_name);
 			if ($module_id != "modulebase")
 			{
@@ -152,13 +139,7 @@ class Asteriskinfo implements \BMO
 						$moduleAjax = $o->getByAjax();
 					}
 
-					$modules[$module_id] = array(
-						'class_full'  => $classNameFull,
-						'class' 	  => $className,
-						'name'  	  => $moduleName,
-						'name_pretty' => $namePretty,
-						'ajax'		  => $moduleAjax,
-					);
+					$modules[$module_id] = ['class_full'  => $classNameFull, 'class' 	  => $className, 'name'  	  => $moduleName, 'name_pretty' => $namePretty, 'ajax'		  => $moduleAjax];
 				}
 			}
 		}
@@ -170,7 +151,7 @@ class Asteriskinfo implements \BMO
 		$output 	= '';
 		$ls_modules = $this->listModules();
 
-		if (! array_key_exists(strtolower($module), $ls_modules))
+		if (! array_key_exists(strtolower((string) $module), $ls_modules))
 		{
 			$output =  sprintf(_("Error: Module '%s' not found!"), $module);
 		}
@@ -184,7 +165,7 @@ class Asteriskinfo implements \BMO
 			if(method_exists($o, 'getDisplay'))
 			{
 				$output = $o->getDisplay($isAjax);
-				$output = load_view(__DIR__.'/views/view.asteriskinfo.panel.php', array('title' => $moduleName, 'body' => $output));
+				$output = load_view(__DIR__.'/views/view.asteriskinfo.panel.php', ['title' => $moduleName, 'body' => $output]);
 			}
 		}
 		return $output;
@@ -219,35 +200,26 @@ class Asteriskinfo implements \BMO
 
 	public function ajaxRequest($req, &$setting)
 	{
-		// ** Allow remote consultation with Postman **
-		// ********************************************
-		// $setting['authenticate'] = false;
-		// $setting['allowremote'] = true;
-		// return true;
-		// ********************************************
-		switch($req) {
-			case 'getGrid':
-				return true;
-
-			default:
-				return false;
-		}
+		return match ($req) {
+      'getGrid' => true,
+      default => false,
+  };
 	}
 
 	public function ajaxHandler()
 	{
 		$request = $_REQUEST;
-		$command = isset($request['command']) ? trim($request['command']) : '';
+		$command = isset($request['command']) ? trim((string) $request['command']) : '';
 		switch($command)
 		{
 			case 'getGrid':
-				$module = isset($request['module_info']) ? strtolower(trim($request['module_info'])) : '';
+				$module = isset($request['module_info']) ? strtolower(trim((string) $request['module_info'])) : '';
 				if ($module == "all")
 				{
 					$module = "";
 				}
 
-				$ret = array();
+				$ret = [];
 				if (! empty($module))
 				{
 					$ls_modules = $this->listModules();
@@ -282,7 +254,7 @@ class Asteriskinfo implements \BMO
 				break;
 
 			default:
-				$retrun_data = array("status" => false, "message" => _("Command not found!"), "command" => $command);
+				$retrun_data = ["status" => false, "message" => _("Command not found!"), "command" => $command];
 		}
 		return $retrun_data;
 	}
