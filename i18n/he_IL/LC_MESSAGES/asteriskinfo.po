@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-27 10:38+0000\n"
+"POT-Creation-Date: 2023-08-16 10:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: Modules/Fax.php:120
+#: Modules/Fax.php:59
 msgid "AJAX shows up as disabled!"
 msgstr ""
 
-#: Asteriskinfo.class.php:110
+#: Asteriskinfo.class.php:98
 msgid "All"
 msgstr ""
 
@@ -52,7 +52,7 @@ msgid ""
 "user?"
 msgstr ""
 
-#: Modules/Channels.php:59
+#: Modules/Channels.php:36
 msgid "Channel Count"
 msgstr ""
 
@@ -60,19 +60,19 @@ msgstr ""
 msgid "Channels"
 msgstr ""
 
-#: Modules/Modules.php:177
+#: Modules/Modules.php:36
 msgid "Clean All Filters"
 msgstr ""
 
-#: Modules/Channels.php:107 Modules/Fax.php:88
+#: Modules/Channels.php:36 Modules/Fax.php:44
 msgid "Clean Filter"
 msgstr ""
 
-#: Asteriskinfo.class.php:285
+#: Asteriskinfo.class.php:257
 msgid "Command not found!"
 msgstr ""
 
-#: Modules/Conferences.php:35
+#: Modules/Conferences.php:26
 msgid "Conference Bridge Info"
 msgstr ""
 
@@ -80,7 +80,7 @@ msgstr ""
 msgid "Conferences"
 msgstr ""
 
-#: Modules/Modules.php:120
+#: Modules/Modules.php:36
 msgid "Core"
 msgstr ""
 
@@ -92,50 +92,50 @@ msgstr ""
 msgid "Dahdi"
 msgstr ""
 
-#: Modules/Dahdi.php:24
+#: Modules/Dahdi.php:22
 msgid "Dahdi Channels"
 msgstr ""
 
-#: Modules/Dahdi.php:28
+#: Modules/Dahdi.php:22
 msgid "Dahdi PRI Spans"
 msgstr ""
 
-#: Modules/Dahdi.php:40
+#: Modules/Dahdi.php:31
 msgid ""
 "Dahdi is not loaded into asterisk, hence no channels / spans information to "
 "display."
 msgstr ""
 
-#: Modules/Fax.php:56
+#: Modules/Fax.php:44
 msgid "Data"
 msgstr ""
 
-#: Modules/Modules.php:140
+#: Modules/Modules.php:36
 msgid "Deprecated"
 msgstr ""
 
-#: Modules/Modules.php:54
+#: Modules/Modules.php:36
 msgid "Description"
 msgstr ""
 
-#: Modules/Peers.php:56
+#: Modules/Peers.php:39
 msgid ""
 "Drivers (ChanSIP or PJSIP or IAX or SCCP) are not loaded into asterisk, "
 "hence no Peers information to display."
 msgstr ""
 
-#: Modules/Registries.php:52
+#: Modules/Registries.php:39
 msgid ""
 "Drivers (ChanSIP or PJSIP or IAX) are not loaded into asterisk, hence no "
 "registration information to display."
 msgstr ""
 
-#: Asteriskinfo.class.php:175 Asteriskinfo.class.php:278
+#: Asteriskinfo.class.php:156 Asteriskinfo.class.php:250
 #, php-format
 msgid "Error: Module '%s' not found!"
 msgstr ""
 
-#: Modules/Modules.php:130
+#: Modules/Modules.php:36
 msgid "Extended"
 msgstr ""
 
@@ -147,47 +147,47 @@ msgstr ""
 msgid "Fax Statistics"
 msgstr ""
 
-#: Modules/Fax.php:74
+#: Modules/Fax.php:44
 msgid "Global"
 msgstr ""
 
-#: Modules/Conferences.php:30
+#: Modules/Conferences.php:26
 msgid "MeetMe Conference Info"
 msgstr ""
 
-#: Modules/Fax.php:51
+#: Modules/Fax.php:44
 msgid "Module"
 msgstr ""
 
-#: Asteriskinfo.class.php:213
+#: Asteriskinfo.class.php:194
 msgid "Module Not Valid!"
 msgstr ""
 
-#: Modules/Fax.php:70 Modules/Modules.php:11
+#: Modules/Fax.php:44 Modules/Modules.php:11
 msgid "Modules"
 msgstr ""
 
-#: Modules/Modules.php:49
+#: Modules/Modules.php:36
 msgid "Name"
 msgstr ""
 
-#: Modules/Fax.php:169
+#: Modules/Fax.php:97
 msgid "No command detected!"
 msgstr ""
 
-#: Modules/Modules.php:88 assets/js/asteriskinfo.js:138
+#: Modules/Modules.php:36 assets/js/asteriskinfo.js:138
 msgid "Not Running"
 msgstr ""
 
-#: Modules/Channels.php:83 assets/js/asteriskinfo.js:89
+#: Modules/Channels.php:36 assets/js/asteriskinfo.js:89
 msgid "Offline"
 msgstr ""
 
-#: Modules/Channels.php:73 assets/js/asteriskinfo.js:84
+#: Modules/Channels.php:36 assets/js/asteriskinfo.js:84
 msgid "Online"
 msgstr ""
 
-#: Asteriskinfo.class.php:77
+#: Asteriskinfo.class.php:67
 #, php-format
 msgid "Page Not Found (%s)!!!!"
 msgstr ""
@@ -212,7 +212,7 @@ msgstr ""
 msgid "Registries"
 msgstr ""
 
-#: Modules/Modules.php:101 Modules/Modules.php:163
+#: Modules/Modules.php:36
 msgid "Remove Filter"
 msgstr ""
 
@@ -220,11 +220,11 @@ msgstr ""
 msgid "Reports"
 msgstr ""
 
-#: Modules/Channels.php:54
+#: Modules/Channels.php:36
 msgid "Resource"
 msgstr ""
 
-#: Modules/Modules.php:78 assets/js/asteriskinfo.js:133
+#: Modules/Modules.php:36 assets/js/asteriskinfo.js:133
 msgid "Running"
 msgstr ""
 
@@ -232,8 +232,7 @@ msgstr ""
 msgid "Statistics"
 msgstr ""
 
-#: Modules/Channels.php:43 Modules/Channels.php:68 Modules/Modules.php:43
-#: Modules/Modules.php:73
+#: Modules/Channels.php:36 Modules/Modules.php:36
 msgid "Status"
 msgstr ""
 
@@ -250,23 +249,23 @@ msgstr ""
 msgid "Subscriptions"
 msgstr ""
 
-#: Modules/Modules.php:64 Modules/Modules.php:115
+#: Modules/Modules.php:36
 msgid "Support Level"
 msgstr ""
 
-#: Modules/Channels.php:49
+#: Modules/Channels.php:36
 msgid "Tech"
 msgstr ""
 
-#: Modules/ModuleBase.php:128
+#: Modules/ModuleBase.php:124
 msgid "The Asterisk REST Interface Module is not loaded in asterisk"
 msgstr ""
 
-#: Modules/ModuleBase.php:136
+#: Modules/ModuleBase.php:132
 msgid "The Asterisk REST Interface is Currently Disabled."
 msgstr ""
 
-#: Modules/ModuleBase.php:148
+#: Modules/ModuleBase.php:144
 msgid ""
 "The Asterisk REST Interface is not able to connect please check "
 "configuration in advanced settings."
@@ -280,16 +279,16 @@ msgstr ""
 msgid "Undefined"
 msgstr ""
 
-#: Modules/Channels.php:93 Modules/Modules.php:150 assets/js/asteriskinfo.js:94
+#: Modules/Channels.php:36 Modules/Modules.php:36 assets/js/asteriskinfo.js:94
 #: assets/js/asteriskinfo.js:143
 msgid "Unknown"
 msgstr ""
 
-#: Modules/Modules.php:59
+#: Modules/Modules.php:36
 msgid "Use Count"
 msgstr ""
 
-#: Modules/Fax.php:61
+#: Modules/Fax.php:44
 msgid "Value"
 msgstr ""
 
