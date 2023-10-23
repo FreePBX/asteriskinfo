@@ -21,8 +21,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-21 09:09+0530\n"
-"PO-Revision-Date: 2023-03-13 09:01+0000\n"
-"Last-Translator: Klemens Starybrat <klemens.starybrat@gmail.com>\n"
+"PO-Revision-Date: 2023-10-24 18:00+0000\n"
+"Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
 "asteriskinfo/pl/>\n"
 "Language: pl\n"
@@ -55,7 +55,7 @@ msgstr "Informacja odsyłacza"
 
 #: page.asteriskinfo.php:11
 msgid "Asterisk doesn't appear to be running"
-msgstr "Asterisk wydaje się nie działać"
+msgstr "Asterisk nie wydaje się działać"
 
 #: Asteriskinfo.class.php:150
 msgid "Available: "
