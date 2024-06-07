@@ -140,7 +140,7 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: Modules/Fax.php:97
+#: Modules/Fax.php:101
 msgid "No command detected!"
 msgstr ""
 
