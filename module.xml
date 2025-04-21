@@ -10,7 +10,7 @@
 	<description>
 		Provides a snapshot of the current Asterisk configuration
 	</description>
-	<more-info>https://wiki.freepbx.org/display/FPG/Asterisk+Info+Module</more-info>
+	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/25723209/PBX+GUI+-+Asterisk+Info+Module</more-info>
 	<menuitems>
 		<asteriskinfo needsenginedb="yes">Asterisk Info</asteriskinfo>
 	</menuitems>
