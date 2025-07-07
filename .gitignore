@@ -1,2 +1,4 @@
 module.sig
 assets/less/cache/**
+/vendor/
+/.php-cs-fixer.cache

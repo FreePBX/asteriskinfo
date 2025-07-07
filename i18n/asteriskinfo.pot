@@ -5,202 +5,238 @@
 # FreePBX language template for asteriskinfo
 # Copyright (C) 2008-2024 Sangoma Technologies, Inc.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-07 11:35-0400\n"
+"POT-Creation-Date: 2025-07-15 16:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+"X-Poedit-SearchPathExcluded-1: i18n\n"
+"X-Poedit-SearchPathExcluded-2: vendor\n"
 
-#: Modules/Fax.php:59
-msgid "AJAX shows up as disabled!"
+#: Asteriskinfo.class.php:79
+#, php-format
+msgid "Page Not Found (%s)!!!!"
 msgstr ""
 
-#: Asteriskinfo.class.php:98
+#: Asteriskinfo.class.php:115
 msgid "All"
 msgstr ""
 
-#: asteriskinfo.i18n.php:4
-#: asteriskinfo.i18n.php:10
-#: views/page.asteriskinfo.php:5
-msgid "Asterisk Info"
+#: Asteriskinfo.class.php:169 Asteriskinfo.class.php:253
+#, php-format
+msgid "Error: Module '%s' not found!"
 msgstr ""
 
-#: views/page.asteriskinfo.php:8
-msgid "Asterisk doesn't appear to be running!"
+#: Asteriskinfo.class.php:198
+msgid "Module Not Valid!"
 msgstr ""
 
-#: Modules/Conferences.php:21
-msgid ""
-"Can't connect to Asterisk. Is Asterisk running and started by the correct "
-"user?"
+#: Asteriskinfo.class.php:248
+msgid "Error retrieving data"
 msgstr ""
 
-#: Modules/Channels.php:36
-msgid "Channel Count"
-msgstr ""
-
-#: Modules/Channels.php:11
-msgid "Channels"
-msgstr ""
-
-#: Modules/Modules.php:36
-msgid "Clean All Filters"
-msgstr ""
-
-#: Modules/Channels.php:36
-#: Modules/Fax.php:44
-msgid "Clean Filter"
-msgstr ""
-
-#: Asteriskinfo.class.php:257
+#: Asteriskinfo.class.php:262
 msgid "Command not found!"
 msgstr ""
 
-#: Modules/Conferences.php:26
-msgid "Conference Bridge Info"
+#: Modules/Channels.php:12
+msgid "Channels"
+msgstr ""
+
+#: Modules/Channels.php:42 Modules/Channels.php:67 Modules/Modules.php:42
+#: Modules/Modules.php:72
+msgid "Status"
+msgstr ""
+
+#: Modules/Channels.php:48
+msgid "Tech"
+msgstr ""
+
+#: Modules/Channels.php:53
+msgid "Resource"
+msgstr ""
+
+#: Modules/Channels.php:58
+msgid "Channel Count"
+msgstr ""
+
+#: Modules/Channels.php:72 assets/js/asteriskinfo.js:84
+msgid "Online"
+msgstr ""
+
+#: Modules/Channels.php:82 assets/js/asteriskinfo.js:89
+msgid "Offline"
+msgstr ""
+
+#: Modules/Channels.php:92 Modules/Modules.php:147
+#: assets/js/asteriskinfo.js:94 assets/js/asteriskinfo.js:143
+msgid "Unknown"
+msgstr ""
+
+#: Modules/Channels.php:106 Modules/Fax.php:86 Modules/Voicemail.php:116
+msgid "Clean Filter"
 msgstr ""
 
 #: Modules/Conferences.php:12
 msgid "Conferences"
 msgstr ""
 
-#: Modules/Modules.php:36
-msgid "Core"
+#: Modules/Conferences.php:20
+msgid ""
+"Can't connect to Asterisk. Is Asterisk running and started by the correct "
+"user?"
 msgstr ""
 
-#: views/page.asteriskinfo.php:13
-msgid "Current Asterisk Version:"
+#: Modules/Conferences.php:27
+msgid "MeetMe Conference Info"
+msgstr ""
+
+#: Modules/Conferences.php:32
+msgid "Conference Bridge Info"
 msgstr ""
 
 #: Modules/Dahdi.php:12
 msgid "Dahdi"
 msgstr ""
 
-#: Modules/Dahdi.php:22
+#: Modules/Dahdi.php:23
 msgid "Dahdi Channels"
 msgstr ""
 
-#: Modules/Dahdi.php:22
+#: Modules/Dahdi.php:27
 msgid "Dahdi PRI Spans"
 msgstr ""
 
-#: Modules/Dahdi.php:31
+#: Modules/Dahdi.php:36
 msgid ""
 "Dahdi is not loaded into asterisk, hence no channels / spans information to "
 "display."
 msgstr ""
 
-#: Modules/Fax.php:44
-msgid "Data"
-msgstr ""
-
-#: Modules/Modules.php:36
-msgid "Deprecated"
-msgstr ""
-
-#: Modules/Modules.php:36
-msgid "Description"
-msgstr ""
-
-#: Modules/Peers.php:39
-msgid ""
-"Drivers (ChanSIP or PJSIP or IAX or SCCP) are not loaded into asterisk, "
-"hence no Peers information to display."
-msgstr ""
-
-#: Modules/Registries.php:39
-msgid ""
-"Drivers (ChanSIP or PJSIP or IAX) are not loaded into asterisk, hence no "
-"registration information to display."
-msgstr ""
-
-#: Asteriskinfo.class.php:156
-#: Asteriskinfo.class.php:250
-#, php-format
-msgid "Error: Module '%s' not found!"
-msgstr ""
-
-#: Modules/Modules.php:36
-msgid "Extended"
-msgstr ""
-
-#: Modules/Fax.php:13
+#: Modules/Fax.php:14
 msgid "Fax"
 msgstr ""
 
-#: Modules/Fax.php:14
+#: Modules/Fax.php:15
 msgid "Fax Statistics"
 msgstr ""
 
-#: Modules/Fax.php:44
-msgid "Global"
+#: Modules/Fax.php:19
+msgid "Statistics"
 msgstr ""
 
-#: Modules/Conferences.php:26
-msgid "MeetMe Conference Info"
-msgstr ""
-
-#: Modules/Fax.php:44
+#: Modules/Fax.php:49
 msgid "Module"
 msgstr ""
 
-#: Asteriskinfo.class.php:194
-msgid "Module Not Valid!"
+#: Modules/Fax.php:54
+msgid "Data"
 msgstr ""
 
-#: Modules/Fax.php:44
-#: Modules/Modules.php:11
+#: Modules/Fax.php:59
+msgid "Value"
+msgstr ""
+
+#: Modules/Fax.php:68 Modules/Modules.php:12
 msgid "Modules"
 msgstr ""
 
-#: Modules/Modules.php:36
-msgid "Name"
+#: Modules/Fax.php:72
+msgid "Global"
 msgstr ""
 
-#: Modules/Fax.php:101
+#: Modules/Fax.php:115
+msgid "AJAX shows up as disabled!"
+msgstr ""
+
+#: Modules/Fax.php:159
 msgid "No command detected!"
 msgstr ""
 
-#: Modules/Modules.php:36
-#: assets/js/asteriskinfo.js:138
+#: Modules/ModuleBase.php:205
+msgid "The Asterisk REST Interface Module is not loaded in asterisk"
+msgstr ""
+
+#: Modules/ModuleBase.php:210
+msgid "The Asterisk REST Interface is Currently Disabled."
+msgstr ""
+
+#: Modules/ModuleBase.php:219
+msgid ""
+"The Asterisk REST Interface is not able to connect please check "
+"configuration in advanced settings."
+msgstr ""
+
+#: Modules/Modules.php:48
+msgid "Name"
+msgstr ""
+
+#: Modules/Modules.php:53
+msgid "Description"
+msgstr ""
+
+#: Modules/Modules.php:58
+msgid "Use Count"
+msgstr ""
+
+#: Modules/Modules.php:63 Modules/Modules.php:113
+msgid "Support Level"
+msgstr ""
+
+#: Modules/Modules.php:77 assets/js/asteriskinfo.js:133
+msgid "Running"
+msgstr ""
+
+#: Modules/Modules.php:86 assets/js/asteriskinfo.js:138
 msgid "Not Running"
 msgstr ""
 
-#: Modules/Channels.php:36
-#: assets/js/asteriskinfo.js:89
-msgid "Offline"
+#: Modules/Modules.php:99 Modules/Modules.php:160
+msgid "Remove Filter"
 msgstr ""
 
-#: Modules/Channels.php:36
-#: assets/js/asteriskinfo.js:84
-msgid "Online"
+#: Modules/Modules.php:118
+msgid "Core"
 msgstr ""
 
-#: Asteriskinfo.class.php:67
-#, php-format
-msgid "Page Not Found (%s)!!!!"
+#: Modules/Modules.php:127
+msgid "Extended"
+msgstr ""
+
+#: Modules/Modules.php:137
+msgid "Deprecated"
+msgstr ""
+
+#: Modules/Modules.php:174
+msgid "Clean All Filters"
 msgstr ""
 
 #: Modules/Peers.php:12
 msgid "Peers"
 msgstr ""
 
-#: asteriskinfo.i18n.php:8
-msgid "Provides a snapshot of the current Asterisk configuration"
+#: Modules/Peers.php:50
+msgid ""
+"Drivers (ChanSIP or PJSIP or IAX or SCCP) are not loaded into asterisk, "
+"hence no Peers information to display."
 msgstr ""
 
-#: Modules/Queues.php:11
+#: Modules/Queues.php:12
 msgid "Queues"
 msgstr ""
 
-#: Modules/Queues.php:15
+#: Modules/Queues.php:16
 msgid "Queues Info"
 msgstr ""
 
@@ -208,95 +244,120 @@ msgstr ""
 msgid "Registries"
 msgstr ""
 
-#: Modules/Modules.php:36
-msgid "Remove Filter"
+#: Modules/Registries.php:46
+msgid ""
+"Drivers (ChanSIP or PJSIP or IAX) are not loaded into asterisk, hence no "
+"registration information to display."
 msgstr ""
 
-#: asteriskinfo.i18n.php:6
-msgid "Reports"
-msgstr ""
-
-#: Modules/Channels.php:36
-msgid "Resource"
-msgstr ""
-
-#: Modules/Modules.php:36
-#: assets/js/asteriskinfo.js:133
-msgid "Running"
-msgstr ""
-
-#: Modules/Fax.php:18
-msgid "Statistics"
-msgstr ""
-
-#: Modules/Channels.php:36
-#: Modules/Modules.php:36
-msgid "Status"
-msgstr ""
-
-#: assets/js/asteriskinfo.js:102
-#: assets/js/asteriskinfo.js:147
-#, perl-format
-msgid "Status: %s"
-msgstr ""
-
-#: Modules/Subscriptions.php:15
-msgid "Subscribe/Notify"
-msgstr ""
-
-#: Modules/Subscriptions.php:11
+#: Modules/Subscriptions.php:12
 msgid "Subscriptions"
 msgstr ""
 
-#: Modules/Modules.php:36
-msgid "Support Level"
+#: Modules/Subscriptions.php:16
+msgid "Subscribe/Notify"
 msgstr ""
 
-#: Modules/Channels.php:36
-msgid "Tech"
+#: Modules/Voicemail.php:12
+msgid "Voicemail"
 msgstr ""
 
-#: Modules/ModuleBase.php:124
-msgid "The Asterisk REST Interface Module is not loaded in asterisk"
+#: Modules/Voicemail.php:16
+msgid "Voicemail Users"
 msgstr ""
 
-#: Modules/ModuleBase.php:132
-msgid "The Asterisk REST Interface is Currently Disabled."
+#: Modules/Voicemail.php:52
+msgid "Dialplan Context"
 msgstr ""
 
-#: Modules/ModuleBase.php:144
+#: Modules/Voicemail.php:55
 msgid ""
-"The Asterisk REST Interface is not able to connect please check "
-"configuration in advanced settings."
+"Logical call context to which the voicemail box belongs. Typically "
+"“default” if no advanced configuration is used."
 msgstr ""
 
-#: views/page.asteriskinfo.php:12
-msgid "This page supplies various information about Asterisk"
+#: Modules/Voicemail.php:58
+msgid "Mailbox Number"
+msgstr ""
+
+#: Modules/Voicemail.php:61
+msgid "The mailbox number, which is usually the same as the user ID."
+msgstr ""
+
+#: Modules/Voicemail.php:64
+msgid "User ID"
+msgstr ""
+
+#: Modules/Voicemail.php:67
+msgid ""
+"The user ID associated with the voicemail box, often the same as the "
+"mailbox number."
+msgstr ""
+
+#: Modules/Voicemail.php:70
+msgid "Time Zone"
+msgstr ""
+
+#: Modules/Voicemail.php:73
+msgid ""
+"Time zone used for voicemail message timestamps. If empty, the system "
+"default time zone is used."
+msgstr ""
+
+#: Modules/Voicemail.php:76
+msgid "New Voicemail Count"
+msgstr ""
+
+#: Modules/Voicemail.php:80
+msgid "The number of new voicemails in the mailbox."
+msgstr ""
+
+#: Modules/Voicemail.php:87
+msgid "New Messages"
+msgstr ""
+
+#: Modules/Voicemail.php:92
+msgid "With New Messages"
+msgstr ""
+
+#: Modules/Voicemail.php:102
+msgid "Without New Messages"
+msgstr ""
+
+#: Modules/Voicemail.php:245
+msgid "Error executing command"
 msgstr ""
 
 #: assets/js/asteriskinfo.js:99
 msgid "Undefined"
 msgstr ""
 
-#: Modules/Channels.php:36
-#: Modules/Modules.php:36
-#: assets/js/asteriskinfo.js:94
-#: assets/js/asteriskinfo.js:143
-msgid "Unknown"
+#: assets/js/asteriskinfo.js:102 assets/js/asteriskinfo.js:147
+#, javascript-format
+msgid "Status: %s"
 msgstr ""
 
-#: Modules/Modules.php:36
-msgid "Use Count"
+#: assets/js/asteriskinfo.js:168
+#, javascript-format
+msgid "%s New Messages"
 msgstr ""
 
-#: Modules/Fax.php:44
-msgid "Value"
+#: assets/js/asteriskinfo.js:176
+msgid "No New messages"
 msgstr ""
 
-#: Modules/Voicemail.php:11
-msgid "Voicemail"
+#: views/page.asteriskinfo.php:7
+msgid "Asterisk Info"
 msgstr ""
 
-#: Modules/Voicemail.php:15
-msgid "Voicemail Users"
+#: views/page.asteriskinfo.php:10
+msgid "Asterisk doesn't appear to be running!"
+msgstr ""
+
+#: views/page.asteriskinfo.php:14
+msgid "This page supplies various information about Asterisk"
+msgstr ""
+
+#: views/page.asteriskinfo.php:15
+msgid "Current Asterisk Version:"
 msgstr ""

@@ -1,27 +1,27 @@
 h5 {
-  color: #ff8a00;
+	color: #ff8a00;
 }
 
 table.box {
-  background-color:#095a9a;
-  border: none;
-  padding: 1px;
-  padding-top:0px;
-  /*width: 700;*/
-  text-align: left;
+	background-color:#095a9a;
+	border: none;
+	padding: 1px;
+	padding-top:0px;
+	/*width: 700;*/
+	text-align: left;
 }
 tr.boxheader {
-  background-color: #095a9a;
-  text-align: left;
+	background-color: #095a9a;
+	text-align: left;
 }
 td.boxheader {
-  text-align: left;
+  	text-align: left;
 }
 tr.boxbody {
-  color: #000000;
-  background-color: #e6e6e6;
-  text-align: left;
-  font-size: 12px;
+	color: #000000;
+	background-color: #e6e6e6;
+	text-align: left;
+	font-size: 12px;
 }
 
 .list-group-rnav {
@@ -136,5 +136,38 @@ tr.boxbody {
 	.col-fax-val {
 		width: 200px;
 		text-align: center;
+	}
+}
+
+.table-asteriskinfo-voicemail {
+
+	// Bounce animation for new voicemail icon
+	// NOTE: The feature is add in Font Awesome +6
+	@keyframes fa-bounce {
+    	0%, 100% { transform: translateY(0); }
+    	50%      { transform: translateY(-5px); }
+	}
+
+	.bounce-icon {
+    	animation: fa-bounce 1s infinite;
+	}
+	// End of bounce animation
+
+	.col-newmsg {
+		width: 1%;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+
+	tbody {
+		tr.voicemail-newmsg-yes td {
+			color: #3c763d;
+			background-color: #dff0d8;
+			i.fa {
+				color: #02cc02;
+  				background-color: #DFF0D8;
+  				border-color: #D6E9C6;
+			}
+		}
 	}
 }
