@@ -147,3 +147,39 @@ function modModulesStatusFormatter(value, row, index)
     let html = sprintf('<i class="fa %s fa-lg" title="%s"></i>', ico, sprintf(_('Status: %s'), title));
     return html;
 }
+
+function modVoicemailRowStyle(row, index)
+{
+    let classTR = sprintf('voicemail-newmsg-%s', row.isnewmsg);
+    return { classes: classTR };
+}
+
+function modNewMsgFormatter(value, row, index)
+{
+    let ico         = '';
+    let title       = '';
+    let colorClass  = '';
+    let badge       = '';
+    let animation   = '';
+
+    if (value > 0)
+    {   
+        ico         = 'fa-envelope';
+        title       = sprintf(_('%s New Messages'), value);
+        colorClass  = 'text-success bg-light rounded px-2 py-1';
+        badge       = sprintf('<span class="badge bg-success ms-1">%s</span>', value);
+        animation   = 'fa-bounce bounce-icon';
+    }
+    else
+    {
+        ico         = 'fa-envelope-open';
+        title       = _('No New messages');
+        colorClass  = 'bg-light rounded px-2 py-1';
+        badge       = `<span class="badge ms-1">${value}</span>`;
+    }
+
+    return sprintf(
+        `<span class="%s"><i class="fa %s fa-lg %s" title="%s"></i>%s</span>`,
+        colorClass, ico, animation, title, badge
+    );
+}
