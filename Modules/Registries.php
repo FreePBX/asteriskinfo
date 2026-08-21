@@ -13,7 +13,7 @@ class Registries extends ModuleBase
 		$this->nameraw = "registries";
 	}
 
-	public function getDisplay()
+	public function getDisplay($ajax = false)
 	{
 		$output = "";
 

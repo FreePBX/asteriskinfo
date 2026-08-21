@@ -9,10 +9,10 @@ class ModuleBase {
 	public $cmd   	  = "";
 	public $cmd_title = "";
 
-	protected $freepbx;
-	protected $config;
-	protected $astman;
-	protected $asteriskinfo;
+	protected \FreePBX $freepbx;
+	protected \FreePBX\Config $config;
+	protected mixed $astman;
+	protected \FreePBX\modules\Asteriskinfo $asteriskinfo;
 
 	protected $ariPassword  = "";
 	protected $ariUser 	  = "";
@@ -66,7 +66,7 @@ class ModuleBase {
 		}
 	}
 
-	public function getDisplay()
+	public function getDisplay($ajax = false)
 	{
 		$output = "";
 		if (! empty($this->cmd))
@@ -79,9 +79,12 @@ class ModuleBase {
 
 	public function checkModuleLoad($module)
 	{
+		if (!is_object($this->astman)) {
+			return false;
+		}
 		$cmd_check = sprintf('module show like %s', $module);
 		$mod_check = $this->astman->send_request('Command', ['Command' => $cmd_check]);
-		$mod_load  = preg_match('/[1-9] modules loaded/', (string) $mod_check['data']);
+		$mod_load  = preg_match('/[1-9] modules loaded/', (string) ($mod_check['data'] ?? ''));
 		return (bool) $mod_load;
 	}
 

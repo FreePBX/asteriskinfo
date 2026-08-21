@@ -13,7 +13,7 @@ class Peers extends ModuleBase
 		$this->nameraw = "peers";
 	}
 
-	public function getDisplay()
+	public function getDisplay($ajax = false)
 	{
 		$output 	= "";
 		$arr_cmds 	= [];

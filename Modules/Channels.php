@@ -67,7 +67,7 @@ class Channels extends ModuleBase
 		{
 			foreach($data_ari['data'] as $row)
 			{
-				$row['channel_count']  = is_countable($row['channel_ids']) ? count($row['channel_ids']) : 0;
+				$row['channel_count']  = is_countable($row['channel_ids'] ?? null) ? count($row['channel_ids']) : 0;
 				$data_return['rows'][] = $row;
 			}
 		}

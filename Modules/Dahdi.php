@@ -13,7 +13,7 @@ class Dahdi extends ModuleBase
 		$this->nameraw = "dahdi";
 	}
 
-	public function getDisplay()
+	public function getDisplay($ajax = false)
 	{
 		$output = "";
 		$chan_dahdi = ast_with_dahdi();
