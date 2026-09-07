@@ -13,10 +13,10 @@ class Conferences extends ModuleBase
 		$this->nameraw = "conferences";
 	}
 
-	public function getDisplay()
+	public function getDisplay($ajax = false)
 	{
 		$output = '';
-		if(!$this->astman->connected())
+		if(!is_object($this->astman) || !$this->astman->connected())
 		{
 			$output = _("Can't connect to Asterisk. Is Asterisk running and started by the correct user?");
 		}

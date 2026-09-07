@@ -4,11 +4,11 @@ use FreePBX\modules\Asteriskinfo\Modules;
 
 class Asteriskinfo implements \BMO
 {
-	public $FreePBX;
-	public $db;
-	public $astman;
-	public $config;
-	public $output;
+	public object $FreePBX;
+	public \FreePBX\Database $db;
+	public mixed $astman;
+	public \FreePBX\Config $config;
+	public array $output;
 
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
@@ -84,8 +84,11 @@ class Asteriskinfo implements \BMO
 	}
 
 	public function getOutput($command){
+		if (!is_object($this->astman)) {
+			return '';
+		}
 		$response = $this->astman->send_request('Command',['Command'=>$command]);
-		$new_value = htmlentities((string) $response['data'],ENT_COMPAT | ENT_HTML401, "UTF-8");
+		$new_value = htmlentities((string) ($response['data'] ?? ''),ENT_COMPAT | ENT_HTML401, "UTF-8");
 		return ltrim($new_value,'Privilege: Command');
 	}
 

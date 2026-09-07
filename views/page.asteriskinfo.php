@@ -3,7 +3,7 @@
 ?>
 <div class="container-fluid">
 	<h1><?php echo _("Asterisk Info")?></h1>
-	<?php if (! $asteriskinfo->astman->connected()): ?>
+	<?php if (!is_object($asteriskinfo->astman) || ! $asteriskinfo->astman->connected()): ?>
 		<div class="alert alert-danger alert-asterisk-stop" role="alert">
 			<i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <?php echo _("Asterisk doesn't appear to be running!"); ?>
 		</div>
