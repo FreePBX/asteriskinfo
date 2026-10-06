@@ -2,7 +2,7 @@
 msgid "AJAX shows up as disabled!"
 msgstr ""
 
-#: Asteriskinfo.class.php:98
+#: Asteriskinfo.class.php:101
 msgid "All"
 msgstr ""
 
@@ -37,7 +37,7 @@ msgstr ""
 msgid "Clean Filter"
 msgstr ""
 
-#: Asteriskinfo.class.php:257
+#: Asteriskinfo.class.php:260
 msgid "Command not found!"
 msgstr ""
 
@@ -99,7 +99,7 @@ msgid ""
 "registration information to display."
 msgstr ""
 
-#: Asteriskinfo.class.php:156 Asteriskinfo.class.php:250
+#: Asteriskinfo.class.php:159 Asteriskinfo.class.php:253
 #, php-format
 msgid "Error: Module '%s' not found!"
 msgstr ""
@@ -128,7 +128,7 @@ msgstr ""
 msgid "Module"
 msgstr ""
 
-#: Asteriskinfo.class.php:194
+#: Asteriskinfo.class.php:197
 msgid "Module Not Valid!"
 msgstr ""
 
@@ -226,15 +226,15 @@ msgstr ""
 msgid "Tech"
 msgstr ""
 
-#: Modules/ModuleBase.php:124
+#: Modules/ModuleBase.php:127
 msgid "The Asterisk REST Interface Module is not loaded in asterisk"
 msgstr ""
 
-#: Modules/ModuleBase.php:132
+#: Modules/ModuleBase.php:135
 msgid "The Asterisk REST Interface is Currently Disabled."
 msgstr ""
 
-#: Modules/ModuleBase.php:144
+#: Modules/ModuleBase.php:147
 msgid ""
 "The Asterisk REST Interface is not able to connect please check "
 "configuration in advanced settings."

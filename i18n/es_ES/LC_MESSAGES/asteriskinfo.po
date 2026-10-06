@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-07 11:35-0400\n"
+"POT-Creation-Date: 2026-10-06 06:10-0400\n"
 "PO-Revision-Date: 2022-12-25 13:42+0100\n"
 "Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -18,7 +18,7 @@ msgstr ""
 msgid "AJAX shows up as disabled!"
 msgstr ""
 
-#: Asteriskinfo.class.php:98
+#: Asteriskinfo.class.php:101
 msgid "All"
 msgstr "Todo"
 
@@ -55,7 +55,7 @@ msgstr ""
 msgid "Clean Filter"
 msgstr ""
 
-#: Asteriskinfo.class.php:257
+#: Asteriskinfo.class.php:260
 msgid "Command not found!"
 msgstr ""
 
@@ -123,7 +123,7 @@ msgstr ""
 "Los controladores (ChanSIP o PJSIP o IAX) no se cargan en asterisk, por lo "
 "tanto no hay información de registro para mostrar."
 
-#: Asteriskinfo.class.php:156 Asteriskinfo.class.php:250
+#: Asteriskinfo.class.php:159 Asteriskinfo.class.php:253
 #, php-format
 msgid "Error: Module '%s' not found!"
 msgstr ""
@@ -152,7 +152,7 @@ msgstr "Información de conferencia MeetMe"
 msgid "Module"
 msgstr ""
 
-#: Asteriskinfo.class.php:194
+#: Asteriskinfo.class.php:197
 msgid "Module Not Valid!"
 msgstr ""
 
@@ -250,15 +250,15 @@ msgstr ""
 msgid "Tech"
 msgstr "Tecnología"
 
-#: Modules/ModuleBase.php:124
+#: Modules/ModuleBase.php:127
 msgid "The Asterisk REST Interface Module is not loaded in asterisk"
 msgstr "El módulo de interfaz REST de Asterisk no está cargado en asterisk"
 
-#: Modules/ModuleBase.php:132
+#: Modules/ModuleBase.php:135
 msgid "The Asterisk REST Interface is Currently Disabled."
 msgstr "La interfaz REST de Asterisk está actualmente deshabilitada."
 
-#: Modules/ModuleBase.php:144
+#: Modules/ModuleBase.php:147
 msgid ""
 "The Asterisk REST Interface is not able to connect please check "
 "configuration in advanced settings."
